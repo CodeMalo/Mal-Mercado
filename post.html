@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Mal Mercado</title>
+<meta name="description" content="Análisis de mercados con IA. Contenido educativo, en español.">
+<link rel="icon" type="image/png" href="assets/malmercado_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H41D8JJQZX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H41D8JJQZX');
+</script>
+<style>
+  body[data-view="post"]{ background:#07090d; color:#eef2f6; }
+  body[data-view="post"] .topnav{ background:rgba(7,9,13,.8); border-bottom:1px solid rgba(255,255,255,.09); }
+  body[data-view="post"] .topnav__brand, body[data-view="post"] .topnav__link{ color:#eef2f6; }
+  body[data-view="post"] .topnav__link.is-active{ color:#3ef08c; }
+  body[data-view="post"] .article__title{ color:#fff; }
+  body[data-view="post"] .prose{ color:#c9d1d9; }
+  body[data-view="post"] .prose h2, body[data-view="post"] .prose h3{ color:#fff; }
+  body[data-view="post"] .foot{ color:#8b95a3; }
+  body[data-view="post"] .foot a{ color:#3ef08c; }
+</style>
+</head>
+<body data-view="post">
+
+  <nav class="topnav">
+    <a class="topnav__brand" href="index.html">Mal Mercado</a>
+    <a class="topnav__link" href="index.html">Inicio</a>
+    <a class="topnav__link is-active" href="blog.html">Blog</a>
+  </nav>
+
+  <main class="article" id="malo-article" data-fallback>
+    <div class="empty">Cargando…</div>
+  </main>
+
+  <footer class="foot">
+    Mal Mercado · <a href="blog.html">← todos los análisis</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
