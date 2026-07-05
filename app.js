@@ -287,13 +287,15 @@
       const cover = item.cover ? `<img class="article__cover" src="${esc(item.cover)}" alt="${esc(item.title)}">` : "";
       const meta = [item.date, item.read_min ? `${item.read_min} min read` : ""].filter(Boolean).join(" · ");
       const sources = (item.sources || []).length
-        ? `<div class="article__sources"><h3>Sources</h3><ul>${item.sources.map((s) => `<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a></li>`).join("")}</ul></div>` : "";
+        ? `<div class="article__sources"><h3>Fuentes</h3><ul>${item.sources.map((s) => `<li><a href="${esc(s)}" target="_blank" rel="noopener">${esc(s)}</a></li>`).join("")}</ul></div>` : "";
+      const credits = (item.image_credits || []).length
+        ? `<p class="article__credits" style="font-size:.8rem;color:#8b95a3;margin-top:1.2rem">Créditos de imágenes: ${item.image_credits.map(esc).join(" · ")}</p>` : "";
       root.innerHTML = `
         <p class="section__eyebrow">${esc(meta)}</p>
         <h1 class="article__title">${esc(item.title)}</h1>
         ${cover}
         <div class="prose">${mdToHtml(item.body)}</div>
-        ${sources}
+        ${sources}${credits}
         <div class="article__share"><span class="article__sharelabel">Share</span>${articleShareHTML(item)}</div>`;
       // Tus imágenes ORIGINALES, tejidas dentro del artículo (además de la portada Gemini)
       const imgs = item.images || [];

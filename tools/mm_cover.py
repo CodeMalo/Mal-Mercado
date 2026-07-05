@@ -53,16 +53,22 @@ def _wrap(draw, text, font, max_w):
     return lineas[:4]
 
 
-def render(title, out_path, kicker="SEÑAL DEL MERCADO", tickers=None):
+def _hex_rgb(h):
+    h = (h or "#3ef08c").lstrip("#")
+    return tuple(int(h[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def render(title, out_path, kicker="SEÑAL DEL MERCADO", tickers=None, acento="#3ef08c"):
     W, H = 1200, 630
+    ACC = _hex_rgb(acento)          # acento del post (rota por el grid)
     img = Image.new("RGB", (W, H), NEGRO)
     d = ImageDraw.Draw(img)
 
-    # Halo verde suave arriba-derecha (glow radial simulado por círculos)
-    for r, a in ((520, 10), (400, 14), (260, 18)):
+    # Halo del acento arriba-derecha (glow radial simulado por círculos)
+    for r, a in ((520, 12), (400, 16), (260, 20)):
         cap = Image.new("RGBA", (W, H), (0, 0, 0, 0))
         dc = ImageDraw.Draw(cap)
-        dc.ellipse([W - r, -r // 2, W + r, r], fill=(62, 240, 140, a))
+        dc.ellipse([W - r, -r // 2, W + r, r], fill=ACC + (a,))
         img = Image.alpha_composite(img.convert("RGBA"), cap).convert("RGB")
     d = ImageDraw.Draw(img)
 
@@ -72,11 +78,11 @@ def render(title, out_path, kicker="SEÑAL DEL MERCADO", tickers=None):
     fc = _font(20, bold=False)
     d.rectangle([0, 0, W, 46], fill=NEGRO_2)
     d.text((60, 13), cinta, font=fc, fill=GRIS)
-    d.rectangle([0, 46, W, 48], fill=VERDE)
+    d.rectangle([0, 46, W, 48], fill=ACC)
 
     # Kicker
     fk = _font(24, bold=True)
-    d.text((60, 96), kicker.upper(), font=fk, fill=VERDE)
+    d.text((60, 96), kicker.upper(), font=fk, fill=ACC)
 
     # Título grande, envuelto
     ft = _font(70, bold=True)
@@ -98,7 +104,7 @@ def render(title, out_path, kicker="SEÑAL DEL MERCADO", tickers=None):
     fm = _font(30, bold=True)
     d.text((140, marca_y), "MAL ", font=fm, fill=BLANCO)
     w_mal = d.textlength("MAL ", font=fm)
-    d.text((140 + w_mal, marca_y), "MERCADO", font=fm, fill=VERDE)
+    d.text((140 + w_mal, marca_y), "MERCADO", font=fm, fill=ACC)
     fs = _font(18, bold=False)
     d.text((140, marca_y + 40), "El mercado es ruido. Recibe la señal.", font=fs, fill=GRIS)
 

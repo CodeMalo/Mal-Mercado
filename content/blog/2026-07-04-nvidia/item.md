@@ -4,6 +4,7 @@ date: 2026-07-04
 status: published
 cover_topic: NVIDIA
 kicker: SEÑAL DEL MERCADO
+grid_index: 3
 tickers:
   - NVDA
 sources:

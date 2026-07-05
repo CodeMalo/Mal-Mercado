@@ -7,7 +7,7 @@ lenguaje NO imperativo, disclaimer CNBV, ilustración Nano Banana, copys por red
 import re
 from pathlib import Path
 
-import providers, mm_cover
+import providers, mm_cover, grid_color, imagenes_post
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
@@ -54,6 +54,40 @@ def mm_social(d, title, summary, body_md, cfg):
     return soc
 
 
+def _queries_imagen(topic, tickers):
+    """Búsquedas de fotos reales relevantes al tema (Openverse)."""
+    cripto = any(str(t).endswith("-USD") for t in tickers)
+    base = [topic, f"{topic} technology"]
+    base.append("cryptocurrency bitcoin" if cripto else "stock market finance")
+    return base
+
+
+def _imagenes(slug, topic, tickers, acento_nombre):
+    """3+ imágenes: 2 fotos REALES del tema (scraper Openverse, libres) + 1 imagen
+    Nano Banana de alto impacto (estilo Super Bowl: clara, ingeniosa, 3s de gancho).
+    Devuelve (rutas, creditos)."""
+    carpeta = PUBLIC / "media" / "blog"
+    reales = imagenes_post.fotos_reales(_queries_imagen(topic, tickers), slug, carpeta, n=2)
+    imgs = [r for r, _ in reales]
+    creditos = [c for _, c in reales if c]
+
+    # Imagen hero Nano Banana: foto editorial de alto impacto del tema.
+    hero_rel = f"public/media/blog/{slug}-hero.png"
+    hero_abs = carpeta / f"{slug}-hero.png"
+    brief = (
+        f"A bold, high-impact editorial photograph representing {topic} for a finance media cover. "
+        f"A clear, clever visual metaphor that grabs attention in 3 seconds — Super Bowl ad energy. "
+        f"Cinematic dramatic lighting with a subtle {acento_nombre} accent glow, magazine-cover quality, "
+        f"photorealistic, shallow depth of field. The subject is clearly and directly about {topic}. "
+        f"NO text, NO words, NO letters, NO numbers, NO watermarks, NO logos.")
+    try:
+        if providers.make_illustration(brief, hero_abs):
+            imgs.insert(0, hero_rel)   # el hero va primero
+    except Exception as e:
+        print(f"  (hero Nano Banana omitido: {e})")
+    return imgs, creditos
+
+
 def handle_blog(item, cfg):
     meta, slug, d = item["meta"], item["slug"], item["dir"]
     title = meta.get("title", slug.replace("-", " ").title())
@@ -98,27 +132,22 @@ def handle_blog(item, cfg):
     body_md = (txt.get("body") or item["body"]) + MM_DISCLAIMER
     read_min = max(1, round(len(re.findall(r"\w+", body_md)) / 200))
 
-    # Portada on-brand (PIL, sin API)
+    # Color del grid: cada post salta a un acento distinto (teoría del color).
+    try:
+        gidx = int(meta.get("grid_index", 0))
+    except Exception:
+        gidx = 0
+    color = grid_color.color_por_indice(gidx)
+
+    # Portada on-brand con el acento del post
     cover_rel = f"public/media/blog/{slug}.png"
     cover_abs = PUBLIC / "media" / "blog" / f"{slug}.png"
     if not cover_abs.exists() or providers._REGEN:
         mm_cover.render(title, cover_abs, kicker=meta.get("kicker", "SEÑAL DEL MERCADO"),
-                        tickers=[t for t in tickers[:6]] or None)
+                        tickers=[t for t in tickers[:6]] or None, acento=color["acento"])
 
-    # Ilustración Nano Banana (Gemini)
-    images = []
-    ilus_rel = f"public/media/blog/{slug}-ilustracion.png"
-    ilus_abs = PUBLIC / "media" / "blog" / f"{slug}-ilustracion.png"
-    brief_ilus = (
-        f"Editorial financial illustration for a markets article titled '{title}'. Theme: {topic}. "
-        f"Style: premium dark fintech, near-black background (#0b0d10), electric mint-green accent "
-        f"(#3ef08c), subtle violet. Abstract, data-driven: candlesticks, glowing trend lines, "
-        f"network nodes, soft glow. NO text, NO letters, NO human faces, NO logos. Wide 16:9.")
-    try:
-        if providers.make_illustration(brief_ilus, ilus_abs):
-            images.append(ilus_rel)
-    except Exception as e:
-        print(f"  (ilustración omitida: {e})")
+    # Imágenes REALES del tema (scraper) + hero Nano Banana de alto impacto
+    images, creditos = _imagenes(slug, topic, tickers, color["nombre_en"])
 
     social = mm_social(d, title, txt.get("summary", ""), body_md, cfg)
     tags = txt.get("tags") if isinstance(txt.get("tags"), list) else []
@@ -126,8 +155,9 @@ def handle_blog(item, cfg):
     return {
         "id": slug, "type": "blog", "title": title, "date": meta.get("date", ""),
         "summary": txt.get("summary", ""),
-        "cover": cover_rel, "accent": "#3ef08c", "body": body_md,
-        "images": images, "sources": sources, "read_min": read_min,
+        "cover": cover_rel, "accent": color["acento"], "accent2": color["acento2"],
+        "body": body_md, "images": images, "image_credits": creditos,
+        "sources": sources, "read_min": read_min,
         "category": txt.get("category", "Mercados"), "tags": tags, "social": social,
     }
 
