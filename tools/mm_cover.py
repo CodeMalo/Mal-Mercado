@@ -18,7 +18,7 @@ GRIS = (120, 132, 140)
 BLANCO = (238, 242, 246)
 
 ROOT = Path(__file__).resolve().parents[1]
-LOGO = ROOT / "assets" / "malmercado_logo.png"
+LOGO = ROOT / "assets" / "malmercado_mark.png"
 
 
 def _font(size, bold=True):
@@ -106,7 +106,7 @@ def render(title, out_path, kicker="SEÑAL DEL MERCADO", tickers=None, acento="#
     w_mal = d.textlength("MAL ", font=fm)
     d.text((140 + w_mal, marca_y), "MERCADO", font=fm, fill=ACC)
     fs = _font(18, bold=False)
-    d.text((140, marca_y + 40), "El mercado es ruido. Recibe la señal.", font=fs, fill=GRIS)
+    d.text((140, marca_y + 40), "El mercado es ruido. Recibe la noticia.", font=fs, fill=GRIS)
 
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)

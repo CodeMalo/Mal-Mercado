@@ -1,9 +1,9 @@
 ---
-title: Bitcoin en el foco: qué observan las señales del mercado
+title: Bitcoin en el foco: qué dicen las noticias del mercado
 date: 2026-07-04
 status: published
 cover_topic: Bitcoin
-kicker: SEÑAL DEL MERCADO
+kicker: NOTICIA DEL MERCADO
 tickers:
   - BTC-USD
 sources:

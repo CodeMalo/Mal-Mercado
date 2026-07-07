@@ -1,9 +1,9 @@
 ---
-title: Los mercados esta semana: qué observan las señales
+title: Los mercados esta semana: qué dicen las noticias
 date: 2026-07-04
 status: published
 cover_topic: Mercado
-kicker: SEÑAL DEL MERCADO
+kicker: NOTICIA DEL MERCADO
 sources:
   - https://news.google.com/rss/articles/CBMiVEFVX3lxTE5SRDk1ZENIQUIzSUZyMHZRNHpCR2xlcTI5UTJRYXVoMDBrM3BmNndBT29vV0dDZWdQazZHb2tURGZNYy1OMU93R0kyUUZUT3VmU2VhbA?oc=5
   - https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0waGJDeUpmeDhrQ3U5c085RzlUaF9UYThFc29hR3QzSGpBX2UzWXNjaWt4dVJmcDVDTEthckJ4ZDk3RV9GVGNjU1BpVmpocjIxMmVBZldzU1ozdlJYRGc5a1kwMDFsUzA?oc=5

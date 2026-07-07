@@ -1,9 +1,9 @@
 ---
-title: NVIDIA en el foco: qué observan las señales del mercado
+title: NVIDIA en el foco: qué dicen las noticias del mercado
 date: 2026-07-04
 status: published
 cover_topic: NVIDIA
-kicker: SEÑAL DEL MERCADO
+kicker: NOTICIA DEL MERCADO
 grid_index: 3
 tickers:
   - NVDA

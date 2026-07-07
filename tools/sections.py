@@ -97,7 +97,7 @@ def handle_blog(item, cfg):
 
     def _mock():
         return {"title": title,
-                "summary": f"{title}: qué observan las señales del mercado.",
+                "summary": f"{title}: qué dicen las noticias del mercado.",
                 "body": item["body"] or "(brief vacío)",
                 "category": "Mercados",
                 "tags": tickers[:5] or ["mercados", "inversión"]}
@@ -111,6 +111,9 @@ def handle_blog(item, cfg):
             "3. Cada sección hace UN trabajo. Sin relleno.\n"
             "4. PROHIBIDO: 'en el vertiginoso mundo', 'cambio de paradigma', 'revolucionario', "
             "'esto es importante porque' vacío, y cerrar con pregunta de engagement.\n"
+            "5. Esto es PERIODISMO de mercado (NOTICIAS), NO un servicio de señales de inversión. "
+            "NO enmarques el contenido como 'señales'; usa 'noticias', 'lo que reporta/observa el "
+            "mercado' o 'el análisis'. Evita la palabra 'señal/señales' salvo cita textual.\n"
             "LEGAL ABSOLUTO: NUNCA instrucciones de compra/venta. Describe lo que se OBSERVA. "
             "No inventes cifras. Devuelves SIEMPRE un único JSON válido, sin fences."),
         prompt=(
@@ -143,7 +146,7 @@ def handle_blog(item, cfg):
     cover_rel = f"public/media/blog/{slug}.png"
     cover_abs = PUBLIC / "media" / "blog" / f"{slug}.png"
     if not cover_abs.exists() or providers._REGEN:
-        mm_cover.render(title, cover_abs, kicker=meta.get("kicker", "SEÑAL DEL MERCADO"),
+        mm_cover.render(title, cover_abs, kicker=meta.get("kicker", "NOTICIA DEL MERCADO"),
                         tickers=[t for t in tickers[:6]] or None, acento=color["acento"])
 
     # Imágenes REALES del tema (scraper) + hero Nano Banana de alto impacto

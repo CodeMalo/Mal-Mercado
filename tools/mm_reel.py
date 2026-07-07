@@ -85,7 +85,7 @@ h1 .l:nth-child(4) span{{animation-delay:.36s}}
   </div>
   <div class="cierre">
     <span class="m">MAL <b>MERCADO</b></span>
-    <span class="cta">El mercado es ruido.<b>Recibe la señal.</b></span>
+    <span class="cta">El mercado es ruido.<b>Recibe la noticia.</b></span>
   </div>
 </div>
 </body></html>"""

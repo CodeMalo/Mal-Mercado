@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mal Mercado — El mercado es ruido. Recibe la señal.</title>
-<meta name="description" content="Un motor de IA lee miles de titulares en todos los idiomas, el sentimiento de Reddit y los fundamentales del mercado. Cada lunes recibes la señal del portafolio modelo.">
+<title>Mal Mercado — El mercado es ruido. Recibe la noticia.</title>
+<meta name="description" content="Un motor de IA lee miles de titulares en todos los idiomas, el sentimiento de Reddit y los fundamentales del mercado. Cada lunes recibes el análisis del portafolio modelo.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="icon" type="image/png" href="assets/malmercado_logo.png">
-<meta property="og:title" content="Mal Mercado — El mercado es ruido. Recibe la señal.">
-<meta property="og:description" content="Señales de inversión generadas con IA, cada lunes en tu correo. $10 MXN por semana.">
+<link rel="icon" type="image/png" href="assets/malmercado_mark.png">
+<meta property="og:title" content="Mal Mercado — El mercado es ruido. Recibe la noticia.">
+<meta property="og:description" content="Noticias y análisis de mercado con IA, cada lunes en tu correo. $10 MXN por semana.">
 <meta property="og:image" content="assets/malmercado_logo.png">
 <meta property="og:type" content="website">
 
@@ -33,7 +33,7 @@
   --texto:#eef2f6;
   --gris:#8b95a3;
   --gris-2:#5b6572;
-  --verde:#3ef08c;          /* señal */
+  --verde:#3ef08c;          /* verde */
   --verde-glow:rgba(62,240,140,.35);
   --violeta:#8b7bff;
   --rojo:#ff6b6b;
@@ -72,7 +72,7 @@ body{font-family:var(--sans);color:var(--texto);background:var(--negro);-webkit-
   background:rgba(7,9,13,.75);backdrop-filter:blur(14px);border-bottom:1px solid var(--panel-borde)}
 .nav__marca{font-family:var(--mono);font-weight:700;font-size:.95rem;text-decoration:none;color:var(--texto)}
 .nav__marca b{color:var(--verde)}
-.nav__cta{margin-left:auto;font-size:.83rem;font-weight:600;text-decoration:none;color:var(--negro);
+.nav__cta{margin-left:1rem;font-size:.83rem;font-weight:600;text-decoration:none;color:var(--negro);
   background:var(--verde);padding:.55rem 1.15rem;border-radius:8px;transition:filter .2s}
 .nav__cta:hover{filter:brightness(1.12)}
 
@@ -238,6 +238,49 @@ footer{border-top:1px solid var(--panel-borde);padding:2.8rem 0;font-size:.76rem
 footer b{color:var(--gris)}
 footer .marca{font-family:var(--mono);color:var(--texto);font-size:.95rem;margin-bottom:1rem;display:block}
 footer .marca b{color:var(--verde)}
+
+/* Nav link (blog) */
+.nav__link{margin-left:auto;font-size:.85rem;font-weight:600;text-decoration:none;color:var(--gris);transition:color .2s}
+.nav__link:hover{color:var(--texto)}
+
+/* ── Carrusel del blog ──────────────────────────────────────────────── */
+.blogcar__head{display:flex;align-items:flex-end;justify-content:space-between;gap:1.2rem;margin-bottom:1.6rem}
+.blogcar__more{font-family:var(--mono);font-size:.78rem;color:var(--verde);text-decoration:none;white-space:nowrap;
+  border:1px solid rgba(62,240,140,.3);padding:.55rem 1rem;border-radius:8px;transition:background .2s}
+.blogcar__more:hover{background:rgba(62,240,140,.1)}
+.blogcar{position:relative}
+.blogcar__rail{display:flex;gap:1.1rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  padding:.4rem .2rem 1.4rem;scrollbar-width:none;-ms-overflow-style:none;cursor:grab}
+.blogcar__rail::-webkit-scrollbar{display:none}
+.blogcar__rail:active{cursor:grabbing}
+.blogcar__card{scroll-snap-align:start;flex:0 0 clamp(258px,78vw,326px);background:var(--panel);
+  border:1px solid var(--panel-borde);border-radius:var(--r);overflow:hidden;text-decoration:none;color:inherit;
+  position:relative;transition:transform .25s,border-color .25s,box-shadow .25s;backdrop-filter:blur(8px)}
+.blogcar__card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--acc,#3ef08c);z-index:2}
+.blogcar__card:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--acc,#3ef08c) 55%,transparent);
+  box-shadow:0 18px 50px rgba(0,0,0,.45),0 0 34px color-mix(in srgb,var(--acc,#3ef08c) 22%,transparent)}
+.blogcar__media{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0b0e14}
+.blogcar__media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s ease}
+.blogcar__card:hover .blogcar__media img{transform:scale(1.06)}
+.blogcar__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(7,9,13,.82))}
+.blogcar__body{padding:1.05rem 1.15rem 1.25rem}
+.blogcar__tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--acc,#3ef08c);display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem}
+.blogcar__tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--acc,#3ef08c);
+  box-shadow:0 0 8px var(--acc,#3ef08c)}
+.blogcar__title{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.26;letter-spacing:-.01em;
+  margin-bottom:.55rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.blogcar__meta{font-family:var(--mono);font-size:.68rem;color:var(--gris-2);letter-spacing:.04em}
+.blogcar__foot{display:flex;align-items:center;justify-content:space-between;margin-top:.7rem;gap:1rem}
+.blogcar__dots{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap}
+.blogcar__dot{width:7px;height:7px;border-radius:50%;background:var(--gris-2);opacity:.4;border:0;padding:0;
+  cursor:pointer;transition:all .3s}
+.blogcar__dot.on{opacity:1;background:var(--verde);width:22px;border-radius:4px}
+.blogcar__nav{display:flex;gap:.5rem}
+.blogcar__btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--panel-borde);background:var(--panel);
+  color:var(--texto);font-size:1.25rem;line-height:1;cursor:pointer;display:grid;place-items:center;
+  transition:background .2s,border-color .2s;backdrop-filter:blur(8px)}
+.blogcar__btn:hover{border-color:rgba(62,240,140,.4);background:rgba(62,240,140,.08)}
 </style>
 </head>
 <body>
@@ -245,7 +288,8 @@ footer .marca b{color:var(--verde)}
 
 <nav class="nav">
   <a class="nav__marca" href="#">
-    <img src="assets/malmercado_logo.png" alt="Mal Mercado" style="height:30px;width:30px;object-fit:cover;object-position:top left;border-radius:6px;vertical-align:middle;margin-right:.55rem">mal<b>_</b>mercado</a>
+    <img src="assets/malmercado_mark.png" alt="Mal Mercado" style="height:30px;width:30px;object-fit:cover;object-position:center;border-radius:6px;vertical-align:middle;margin-right:.55rem">mal<b>_</b>mercado</a>
+  <a class="nav__link" href="blog.html">Blog</a>
   <a class="nav__cta" href="#precio">Obtener acceso</a>
 </nav>
 
@@ -264,8 +308,8 @@ footer .marca b{color:var(--verde)}
 
 <header class="hero">
   <div class="wrap">
-    <p class="chip anim d1">Motor de señales en vivo</p>
-    <h1 class="anim d2">El mercado es ruido.<br>Recibe <span class="grad">la señal</span>.</h1>
+    <p class="chip anim d1">Motor de noticias en vivo</p>
+    <h1 class="anim d2">El mercado es ruido.<br>Recibe <span class="grad">la noticia</span>.</h1>
     <p class="lede anim d3">Un motor de IA lee <b>miles de titulares</b>, el <b>sentimiento de Reddit y StockTwits</b>
     y los <b>fundamentales</b> de cada empresa — y lo destila cada lunes en los movimientos del
     <b>portafolio modelo</b>: qué entra, qué sale, con qué peso y por qué. Todo en porcentajes,
@@ -277,19 +321,19 @@ footer .marca b{color:var(--verde)}
       <span class="stat">+<b class="cnt" data-fin="80">0</b> titulares/día analizados con IA</span>
       <span class="stat"><b class="cnt" data-fin="17">0</b> fuentes de datos</span>
       <span class="stat"><b class="cnt" data-fin="39">0</b> activos monitoreados</span>
-      <span class="stat"><b class="cnt" data-fin="52">0</b> señales al año</span>
+      <span class="stat"><b class="cnt" data-fin="52">0</b> análisis al año</span>
     </div>
 
     <div class="terminal anim d5">
-      <div class="terminal__barra"><i></i><i></i><i></i><span>señales — lunes 07:00</span></div>
+      <div class="terminal__barra"><i></i><i></i><i></i><span>noticias — lunes 07:00</span></div>
       <div class="terminal__cuerpo">
 <span class="c">$ portafolio_modelo --semana actual</span><br>
 <span class="m">[núcleo]</span>  VOO &nbsp;— <span class="v">70%</span> de la asignación <span class="c">// S&amp;P 500, la base de largo plazo</span><br>
-<span class="m">[señal]</span> &nbsp;AAPL — <span class="v">15%</span> · score <span class="v">+0.36</span> <span class="c">// noticias +0.22 · social +0.56</span><br>
-<span class="m">[señal]</span> &nbsp;SOL &nbsp;— <span class="v">15%</span> · score <span class="v">+0.41</span> <span class="c">// momentum 1m +21.9%</span><br>
+<span class="m">[dato]</span> &nbsp;AAPL — <span class="v">15%</span> · score <span class="v">+0.36</span> <span class="c">// noticias +0.22 · social +0.56</span><br>
+<span class="m">[dato]</span> &nbsp;SOL &nbsp;— <span class="v">15%</span> · score <span class="v">+0.41</span> <span class="c">// momentum 1m +21.9%</span><br>
 <span class="a">[radar]</span> &nbsp;SNDK — ingresos <span class="v">+251%</span>, P/E 9 <span class="c">// 254 menciones en Reddit</span><br>
 <span class="c">[riesgo]</span> precio de protección calculado por posición<br>
-<span class="v">listo.</span> próxima señal: lunes <span class="cursor"></span>
+<span class="v">listo.</span> próxima edición: lunes <span class="cursor"></span>
       </div>
       <div class="grafico">
         <svg viewBox="0 0 560 110" preserveAspectRatio="none" aria-hidden="true">
@@ -305,7 +349,7 @@ footer .marca b{color:var(--verde)}
             d="M0,92 L35,86 L70,90 L105,76 L140,81 L175,66 L210,72 L245,56 L280,63 L315,48 L350,55 L385,40 L420,47 L455,32 L490,37 L525,24 L560,18"/>
           <circle class="punto" cx="560" cy="18" r="4"/>
         </svg>
-        <span class="grafico__label">señal compuesta · últimos 90 días</span>
+        <span class="grafico__label">score compuesto · últimos 90 días</span>
       </div>
     </div>
   </div>
@@ -331,11 +375,11 @@ footer .marca b{color:var(--verde)}
 <section>
   <div class="wrap">
     <p class="sec-chip anim">// el pipeline</p>
-    <h2 class="sec-title anim">Del ruido a la señal, cada semana.</h2>
+    <h2 class="sec-title anim">Del ruido a la noticia, cada semana.</h2>
     <div class="pipeline anim">
       <div class="nodo"><b>17 fuentes</b><span>14 medios financieros + Reddit, StockTwits y ApeWisdom, más fundamentales y precios</span></div>
       <div class="flujo"><i></i><i></i><i></i></div>
-      <div class="nodo nodo--core"><b>motor de señales</b><span>IA de lenguaje + señales cuantitativas + filtro de fundamentales</span></div>
+      <div class="nodo nodo--core"><b>motor de análisis</b><span>IA de lenguaje + análisis cuantitativo + filtro de fundamentales</span></div>
       <div class="flujo"><i></i><i></i><i></i></div>
       <div class="nodo nodo--out"><b>tu correo</b><span>el portafolio modelo, en porcentajes, cada lunes 07:00</span></div>
     </div>
@@ -348,8 +392,30 @@ footer .marca b{color:var(--verde)}
     <h2 class="sec-title anim">Tu análisis corre 24/7. Tú inviertes 10 minutos.</h2>
     <div class="pasos">
       <div class="paso anim"><span class="num">01</span><b>La IA procesa el mercado</b><p>Precios de 39 activos, titulares de 14 medios financieros — Bloomberg, Reuters, WSJ, Yahoo, CNBC entre ellos —, hilos de Reddit, sentimiento de StockTwits y fundamentales de cada empresa. Todo puntuado en un solo score por activo.</p></div>
-      <div class="paso anim"><span class="num">02</span><b>Recibes el plan cada lunes</b><p>La distribución exacta — un núcleo estable más las mejores señales de la semana — con montos proporcionales a lo que tú inviertas, precio y razón de cada orden.</p></div>
-      <div class="paso anim"><span class="num">03</span><b>Ejecutas en tu broker</b><p>GBM+, Bitso o el que uses. Tu dinero nunca pasa por nosotros. Y si una señal se rompe entre semana, te llega la alerta al momento.</p></div>
+      <div class="paso anim"><span class="num">02</span><b>Recibes el plan cada lunes</b><p>La distribución exacta — un núcleo estable más las mejores oportunidades de la semana — con montos proporcionales a lo que tú inviertas, precio y razón de cada orden.</p></div>
+      <div class="paso anim"><span class="num">03</span><b>Ejecutas en tu broker</b><p>GBM+, Bitso o el que uses. Tu dinero nunca pasa por nosotros. Y si una posición se rompe entre semana, te llega la alerta al momento.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" style="padding-top:0">
+  <div class="wrap">
+    <div class="blogcar__head">
+      <div>
+        <p class="sec-chip anim">// del blog</p>
+        <h2 class="sec-title anim" style="margin-bottom:0">Lo último del mercado, sin ruido.</h2>
+      </div>
+      <a class="blogcar__more anim" href="blog.html">Ver todo &rarr;</a>
+    </div>
+    <div class="blogcar anim">
+      <div class="blogcar__rail" id="blogRail"></div>
+      <div class="blogcar__foot">
+        <div class="blogcar__dots" id="blogDots"></div>
+        <div class="blogcar__nav">
+          <button class="blogcar__btn" id="blogPrev" aria-label="anterior">&lsaquo;</button>
+          <button class="blogcar__btn" id="blogNext" aria-label="siguiente">&rsaquo;</button>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -357,14 +423,14 @@ footer .marca b{color:var(--verde)}
 <section style="padding-top:0">
   <div class="wrap">
     <p class="sec-chip anim">// el stack</p>
-    <h2 class="sec-title anim">Lo que corre debajo de cada señal.</h2>
+    <h2 class="sec-title anim">Lo que corre debajo de cada análisis.</h2>
     <div class="grid">
       <div class="card anim"><span class="tag">nlp / llm</span><h3>Noticias leídas por IA</h3><p>Cada titular pasa por un modelo de lenguaje que extrae sentimiento, activos afectados y relevancia. Sin sesgos de un analista con prisa.</p></div>
       <div class="card anim"><span class="tag">social intel <i class="radar-mini"></i></span><h3>Radar de atención</h3><p>Detectamos qué activos concentran conversación en Reddit y StockTwits antes de que lleguen a los titulares — y los filtramos con fundamentales para separar hype de sustancia.</p></div>
-      <div class="card anim"><span class="tag">quant</span><h3>Señales cuantitativas</h3><p>Momentum multi-horizonte, tendencia, RSI y pronóstico de volatilidad. Cada activo recibe un score compuesto y auditable.</p>
+      <div class="card anim"><span class="tag">quant</span><h3>Análisis cuantitativo</h3><p>Momentum multi-horizonte, tendencia, RSI y pronóstico de volatilidad. Cada activo recibe un score compuesto y auditable.</p>
         <div class="barras" aria-hidden="true"><i style="--v:.45"></i><i style="--v:.62"></i><i style="--v:.38" class="neg"></i><i style="--v:.75"></i><i style="--v:.55"></i><i style="--v:.3" class="neg"></i><i style="--v:.85"></i><i style="--v:.68"></i></div></div>
       <div class="card anim"><span class="tag">risk engine</span><h3>Salidas automáticas</h3><p>Cada orden incluye su precio de protección calculado por volatilidad. Cuando se rompe, recibes la alerta — la disciplina no depende de tu fuerza de voluntad.</p></div>
-      <div class="card anim"><span class="tag">track record</span><h3>Historial verificable</h3><p>Cada señal se evalúa sola contra el S&amp;P 500 y el resultado se publica: porcentaje de aciertos, retornos, errores incluidos. Números, no promesas.</p></div>
+      <div class="card anim"><span class="tag">track record</span><h3>Historial verificable</h3><p>Cada análisis se evalúa solo contra el S&amp;P 500 y el resultado se publica: porcentaje de aciertos, retornos, errores incluidos. Números, no promesas.</p></div>
       <div class="card anim"><span class="tag">mx native</span><h3>Diseñado para México</h3><p>Montos en pesos, tipo de cambio del día, instrucciones para GBM+ y Bitso. Escala a cualquier monto: el plan es proporcional.</p></div>
     </div>
   </div>
@@ -385,7 +451,7 @@ footer .marca b{color:var(--verde)}
 <section id="precio" style="padding-top:1rem">
   <div class="wrap">
     <p class="sec-chip anim" style="text-align:center">// acceso</p>
-    <h2 class="sec-title anim" style="text-align:center;margin-inline:auto">Un año de señales. Un solo pago.</h2>
+    <h2 class="sec-title anim" style="text-align:center;margin-inline:auto">Un año de análisis. Un solo pago.</h2>
     <div class="precio-card anim">
       <p class="plan">acceso anual</p>
       <div class="monto">$10 <small>MXN / semana</small></div>
@@ -394,7 +460,7 @@ footer .marca b{color:var(--verde)}
         <li>Plan de inversión cada lunes — 52 entregas</li>
         <li>Alertas entre semana cuando algo importa</li>
         <li>Radar de atención social con fundamentales</li>
-        <li>Señales de salida y precios de protección</li>
+        <li>Alertas de salida y precios de protección</li>
         <li>Historial del modelo, público y auditable</li>
       </ul>
       <a class="btn" href="https://mpago.la/2porta3" rel="noopener">Obtener acceso</a>
@@ -447,6 +513,76 @@ const obsCnt = new IntersectionObserver(es => {
   es.forEach(e => { if (e.isIntersecting) { animarContador(e.target); obsCnt.unobserve(e.target); } });
 }, { threshold: 0.5 });
 document.querySelectorAll('.cnt').forEach(el => obsCnt.observe(el));
+
+// ── Carrusel del blog: lee public/content.json y muestra lo más nuevo ──
+(async function(){
+  const rail = document.getElementById('blogRail');
+  const sec = document.getElementById('blog');
+  if (!rail || !sec) return;
+  const escH = s => String(s==null?'':s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  const MES = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  const fecha = d => { const p=String(d||'').split('-'); return p.length===3 ? `${+p[2]} ${MES[+p[1]-1]} ${p[0]}` : (d||''); };
+
+  let items = [];
+  try {
+    const r = await fetch('public/content.json', { cache:'no-cache' });
+    const data = await r.json();
+    items = (data.items||[]).filter(i => i.type==='blog')
+      .sort((a,b)=> String(b.date||'').localeCompare(String(a.date||''))).slice(0,8);
+  } catch(e){}
+  if (!items.length){ sec.style.display='none'; return; }
+
+  rail.innerHTML = items.map(it => `
+    <a class="blogcar__card" href="post.html?id=${encodeURIComponent(it.id)}" style="--acc:${escH(it.accent||'#3ef08c')}">
+      <div class="blogcar__media">${it.cover?`<img src="${escH(it.cover)}" alt="${escH(it.title)}" loading="lazy">`:''}</div>
+      <div class="blogcar__body">
+        <span class="blogcar__tag">${escH(it.category||'Mercados')}</span>
+        <h3 class="blogcar__title">${escH(it.title)}</h3>
+        <span class="blogcar__meta">${escH(fecha(it.date))}${it.read_min?` &middot; ${it.read_min} min`:''}</span>
+      </div>
+    </a>`).join('');
+
+  const cards = [...rail.children];
+  const dotsWrap = document.getElementById('blogDots');
+  dotsWrap.innerHTML = cards.map((_,i)=>`<button class="blogcar__dot${i===0?' on':''}" data-i="${i}" aria-label="ir a la entrada ${i+1}"></button>`).join('');
+  const dots = [...dotsWrap.children];
+  let cur = 0;
+
+  const irA = i => { cur = Math.max(0, Math.min(cards.length-1, i));
+    rail.scrollTo({ left: cards[cur].offsetLeft - cards[0].offsetLeft, behavior:'smooth' }); };
+  dots.forEach(d => d.onclick = () => irA(+d.dataset.i));
+  document.getElementById('blogPrev').onclick = () => irA(cur-1);
+  document.getElementById('blogNext').onclick = () => irA(cur+1);
+
+  // Marca el dot activo según la tarjeta más centrada
+  let raf;
+  rail.addEventListener('scroll', () => {
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => {
+      const centro = rail.scrollLeft + rail.clientWidth/2;
+      let best=0, bestD=Infinity;
+      cards.forEach((c,i)=>{ const cc=(c.offsetLeft-cards[0].offsetLeft)+c.clientWidth/2; const dd=Math.abs(cc-centro);
+        if(dd<bestD){bestD=dd;best=i;} });
+      cur = best; dots.forEach((d,i)=>d.classList.toggle('on', i===best));
+    });
+  }, { passive:true });
+
+  // Auto-avance (se pausa al interactuar), respeta reduce-motion
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce) {
+    let pausado = false;
+    setInterval(() => { if(pausado) return; irA(cur >= cards.length-1 ? 0 : cur+1); }, 4800);
+    const car = sec.querySelector('.blogcar');
+    ['mouseenter','pointerdown','focusin'].forEach(ev => car.addEventListener(ev, ()=>pausado=true));
+    car.addEventListener('mouseleave', ()=>pausado=false);
+  }
+
+  // Arrastrar con el mouse (desktop)
+  let down=false, sx=0, sl=0;
+  rail.addEventListener('pointerdown', e=>{ down=true; sx=e.pageX; sl=rail.scrollLeft; });
+  rail.addEventListener('pointermove', e=>{ if(!down) return; rail.scrollLeft = sl-(e.pageX-sx); });
+  window.addEventListener('pointerup', ()=> down=false);
+})();
 </script>
 
 </body>
