@@ -192,7 +192,9 @@
   // ── Full card per section type (grids) ──────────────────────────────────────
   function card(item, cfg) {
     const label = SECTION_LABELS[item.type] || item.type;
-    const cover = item.cover ? `<img class="card__cover" src="${esc(item.cover)}" alt="${esc(item.title)}" loading="lazy">` : "";
+    // Fondo de la card = una imagen REAL del post (varía por post), no la portada plantilla.
+    const coverSrc = (Array.isArray(item.images) && item.images.find(Boolean)) || item.cover;
+    const cover = coverSrc ? `<img class="card__cover" src="${esc(coverSrc)}" alt="${esc(item.title)}" loading="lazy">` : "";
     let actions = "";
 
     if (item.type === "guias") {

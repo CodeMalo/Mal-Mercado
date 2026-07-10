@@ -534,7 +534,7 @@ document.querySelectorAll('.cnt').forEach(el => obsCnt.observe(el));
 
   rail.innerHTML = items.map(it => `
     <a class="blogcar__card" href="post.html?id=${encodeURIComponent(it.id)}" style="--acc:${escH(it.accent||'#3ef08c')}">
-      <div class="blogcar__media">${it.cover?`<img src="${escH(it.cover)}" alt="${escH(it.title)}" loading="lazy">`:''}</div>
+      <div class="blogcar__media">${(()=>{const src=(it.images&&it.images.find(Boolean))||it.cover;return src?`<img src="${escH(src)}" alt="${escH(it.title)}" loading="lazy">`:'';})()}</div>
       <div class="blogcar__body">
         <span class="blogcar__tag">${escH(it.category||'Mercados')}</span>
         <h3 class="blogcar__title">${escH(it.title)}</h3>

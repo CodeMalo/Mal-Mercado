@@ -156,7 +156,8 @@
 .card__tag--guias{ background:#fbf2d6; border-color:var(--yellow); }
 .card__tag--memes{ background:#e4f0f7; border-color:var(--blue); }
 .card__tag--blog{ background:#f8e7d6; border-color:var(--orange); }
-.card__title{ font-family:var(--font-display); font-weight:700; font-size:1.18rem; line-height:1.15; }
+.card__title{ font-family:var(--font-display); font-weight:700; font-size:1.18rem; line-height:1.15;
+  color:var(--ink, #1a1f24); }
 .card__text{ color:var(--ink-soft); font-size:.95rem; line-height:1.45; }
 .card__caption{
   font-size:.9rem; color:var(--ink-soft); line-height:1.5; white-space:pre-line;

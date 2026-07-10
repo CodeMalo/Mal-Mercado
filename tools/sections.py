@@ -113,7 +113,8 @@ def handle_blog(item, cfg):
             "'esto es importante porque' vacío, y cerrar con pregunta de engagement.\n"
             "5. Esto es PERIODISMO de mercado (NOTICIAS), NO un servicio de señales de inversión. "
             "NO enmarques el contenido como 'señales'; usa 'noticias', 'lo que reporta/observa el "
-            "mercado' o 'el análisis'. Evita la palabra 'señal/señales' salvo cita textual.\n"
+            "mercado' o 'el análisis'. NUNCA uses el sustantivo 'señal'/'señales' (ni siquiera "
+            "como sinónimo de indicio); di 'indicio', 'indicador', 'dato' o 'signo'.\n"
             "LEGAL ABSOLUTO: NUNCA instrucciones de compra/venta. Describe lo que se OBSERVA. "
             "No inventes cifras. Devuelves SIEMPRE un único JSON válido, sin fences."),
         prompt=(
