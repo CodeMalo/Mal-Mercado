@@ -136,34 +136,37 @@
   grid-template-columns:repeat(auto-fill, minmax(min(100%, 280px), 1fr));
 }
 
-/* ── Tarjeta ── */
+/* ── Tarjeta tipo póster: imagen de fondo + título grande ENCIMA ── */
 .card{
-  background:var(--panel); border:1px solid var(--border, #e8dfd0);
-  border-radius:18px; overflow:hidden; display:flex; flex-direction:column;
-  box-shadow:0 20px 40px -28px rgba(42,37,33,.4);
-  transition:transform .18s ease, box-shadow .18s ease;
+  position:relative; display:block; aspect-ratio:3/4; border-radius:18px; overflow:hidden;
+  text-decoration:none; background:#0b0e14; border:1px solid rgba(255,255,255,.06);
+  box-shadow:0 22px 44px -26px rgba(0,0,0,.65);
+  transition:transform .2s ease, box-shadow .2s ease;
 }
-.card:hover{ transform:translateY(-3px); box-shadow:0 26px 48px -26px rgba(42,37,33,.5); }
-/* barra de color de la publicación (teoría del color → el grid toma carácter) */
-.card__bar{ display:block; height:5px; background:var(--acc, var(--orange)); }
-.card__cover{ width:100%; aspect-ratio:16/9; object-fit:cover; background:var(--cream); }
-.card__body{ padding:1.1rem 1.2rem 1.3rem; display:flex; flex-direction:column; gap:.55rem; flex:1; }
-.card__tag{
-  align-self:flex-start; font-family:var(--font-mono); font-size:.68rem;
-  letter-spacing:.08em; text-transform:uppercase; padding:.2rem .55rem; border-radius:6px;
-  color:var(--ink); background:var(--cream); border:1px solid var(--border,#e8dfd0);
+.card:hover{ transform:translateY(-4px); box-shadow:0 34px 64px -28px rgba(0,0,0,.75); }
+.card__cover{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  transition:transform .55s ease; }
+.card:hover .card__cover{ transform:scale(1.05); }
+/* velo para que el título resalte sobre la imagen */
+.card__grad{ position:absolute; inset:0; z-index:1;
+  background:linear-gradient(to top, rgba(3,5,8,.96) 0%, rgba(3,5,8,.78) 26%,
+             rgba(3,5,8,.18) 54%, rgba(3,5,8,0) 76%); }
+.card__body{ position:absolute; left:0; right:0; bottom:0; z-index:2;
+  padding:1.4rem 1.35rem 1.5rem; display:flex; flex-direction:column; gap:.5rem; }
+.card .card__tag{
+  align-self:flex-start; font-family:var(--font-mono,ui-monospace,monospace); font-size:.62rem;
+  letter-spacing:.14em; text-transform:uppercase; padding:.24rem .6rem; border-radius:6px;
+  color:#07090d; background:var(--acc,#3ef08c); font-weight:700; margin:0;
 }
-.card__tag--guias{ background:#fbf2d6; border-color:var(--yellow); }
-.card__tag--memes{ background:#e4f0f7; border-color:var(--blue); }
-.card__tag--blog{ background:#f8e7d6; border-color:var(--orange); }
-.card__title{ font-family:var(--font-display); font-weight:700; font-size:1.18rem; line-height:1.15;
-  color:var(--ink, #1a1f24); }
-.card__text{ color:var(--ink-soft); font-size:.95rem; line-height:1.45; }
-.card__caption{
-  font-size:.9rem; color:var(--ink-soft); line-height:1.5; white-space:pre-line;
-  background:var(--cream); border-radius:10px; padding:.7rem .8rem; border:1px dashed var(--border,#e6ddcf);
-}
-.card__actions{ display:flex; flex-wrap:wrap; gap:.5rem; margin-top:auto; padding-top:.4rem; }
+.card .card__title{ font-family:var(--font-display,system-ui,sans-serif); font-weight:700;
+  font-size:clamp(1.65rem,2.6vw,2.1rem); line-height:1.08; letter-spacing:-.02em; color:#fff; margin:0;
+  text-shadow:0 2px 22px rgba(0,0,0,.65);
+  display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
+.card .card__text{ color:rgba(238,242,246,.82); font-size:.9rem; line-height:1.45; margin:0;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  text-shadow:0 1px 10px rgba(0,0,0,.55); }
+.card .card__more{ font-family:var(--font-mono,ui-monospace,monospace); font-size:.78rem;
+  font-weight:600; color:var(--acc,#3ef08c); margin-top:.15rem; }
 
 /* ── Botones ── */
 .btn{

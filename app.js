@@ -191,35 +191,24 @@
 
   // ── Full card per section type (grids) ──────────────────────────────────────
   function card(item, cfg) {
-    const label = SECTION_LABELS[item.type] || item.type;
-    // Fondo de la card = una imagen REAL del post (varía por post), no la portada plantilla.
+    // Card tipo póster: la imagen del post es el FONDO y el título grande va ENCIMA.
     const coverSrc = (Array.isArray(item.images) && item.images.find(Boolean)) || item.cover;
+    const href = isArticle(item.type) ? `post.html?id=${encodeURIComponent(item.id)}`
+                                      : (item.cta_url || "#");
+    const cat = esc(item.category || SECTION_LABELS[item.type] || "Mercado");
     const cover = coverSrc ? `<img class="card__cover" src="${esc(coverSrc)}" alt="${esc(item.title)}" loading="lazy">` : "";
-    let actions = "";
-
-    if (item.type === "guias") {
-      const dl = item.file ? `<a class="btn btn--primary" href="${esc(item.file)}" download>Download</a>` : "";
-      actions = `${dl}<a class="lead-cta" href="${esc(item.cta_url)}" target="_blank" rel="noopener">${esc(item.cta_text)}</a>`;
-    } else if (item.type === "memes") {
-      actions = memeShareHTML(item);
-    } else if (isArticle(item.type)) {
-      const label = "Leer";
-      actions = `<a class="btn btn--primary" href="post.html?id=${encodeURIComponent(item.id)}">${label}</a>`;
-    }
-
     const text = item.summary ? `<p class="card__text">${esc(item.summary)}</p>` : "";
-
     return el(`
-      <article class="card reveal" style="--acc:${esc(item.accent || "#e3924f")}">
-        <span class="card__bar"></span>
+      <a class="card reveal" href="${esc(href)}" style="--acc:${esc(item.accent || "#3ef08c")}">
         ${cover}
+        <span class="card__grad"></span>
         <div class="card__body">
-          <span class="card__tag card__tag--${esc(item.type)}">${esc(label)}</span>
+          <span class="card__tag">${cat}</span>
           <h3 class="card__title">${esc(item.title)}</h3>
           ${text}
-          <div class="card__actions">${actions}</div>
+          <span class="card__more">Leer &rarr;</span>
         </div>
-      </article>`);
+      </a>`);
   }
 
   // ── Instagram / TikTok: native share sheet, or copy link on desktop ─────────
