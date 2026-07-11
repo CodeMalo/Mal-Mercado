@@ -253,24 +253,24 @@ footer .marca b{color:var(--verde)}
   padding:.4rem .2rem 1.4rem;scrollbar-width:none;-ms-overflow-style:none;cursor:grab}
 .blogcar__rail::-webkit-scrollbar{display:none}
 .blogcar__rail:active{cursor:grabbing}
-.blogcar__card{scroll-snap-align:start;flex:0 0 clamp(258px,78vw,326px);background:var(--panel);
-  border:1px solid var(--panel-borde);border-radius:var(--r);overflow:hidden;text-decoration:none;color:inherit;
-  position:relative;transition:transform .25s,border-color .25s,box-shadow .25s;backdrop-filter:blur(8px)}
-.blogcar__card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--acc,#3ef08c);z-index:2}
-.blogcar__card:hover{transform:translateY(-5px);border-color:color-mix(in srgb,var(--acc,#3ef08c) 55%,transparent);
-  box-shadow:0 18px 50px rgba(0,0,0,.45),0 0 34px color-mix(in srgb,var(--acc,#3ef08c) 22%,transparent)}
-.blogcar__media{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0b0e14}
-.blogcar__media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s ease}
-.blogcar__card:hover .blogcar__media img{transform:scale(1.06)}
-.blogcar__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(7,9,13,.82))}
-.blogcar__body{padding:1.05rem 1.15rem 1.25rem}
-.blogcar__tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--acc,#3ef08c);display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem}
-.blogcar__tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--acc,#3ef08c);
-  box-shadow:0 0 8px var(--acc,#3ef08c)}
-.blogcar__title{font-family:var(--display);font-weight:600;font-size:1.02rem;line-height:1.26;letter-spacing:-.01em;
-  margin-bottom:.55rem;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-.blogcar__meta{font-family:var(--mono);font-size:.68rem;color:var(--gris-2);letter-spacing:.04em}
+/* Card tipo póster: imagen de fondo + título grande encima */
+.blogcar__card{scroll-snap-align:start;flex:0 0 clamp(244px,72vw,292px);aspect-ratio:3/4;position:relative;
+  border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;background:#0b0e14;
+  border:1px solid rgba(255,255,255,.06);transition:transform .25s,box-shadow .25s}
+.blogcar__card:hover{transform:translateY(-5px);
+  box-shadow:0 26px 56px rgba(0,0,0,.5),0 0 36px color-mix(in srgb,var(--acc,#3ef08c) 22%,transparent)}
+.blogcar__cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .55s ease}
+.blogcar__card:hover .blogcar__cover{transform:scale(1.06)}
+.blogcar__grad{position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to top,rgba(3,5,8,.96) 0%,rgba(3,5,8,.74) 28%,rgba(3,5,8,.12) 56%,transparent 78%)}
+.blogcar__body{position:absolute;left:0;right:0;bottom:0;z-index:2;padding:1.25rem 1.2rem 1.35rem}
+.blogcar__tag{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;
+  color:#07090d;background:var(--acc,#3ef08c);font-weight:700;padding:.24rem .55rem;border-radius:6px;
+  display:inline-block;margin-bottom:.6rem}
+.blogcar__title{font-family:var(--display);font-weight:700;font-size:1.4rem;line-height:1.1;letter-spacing:-.02em;
+  color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.6);margin-bottom:.5rem;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.blogcar__meta{font-family:var(--mono);font-size:.68rem;color:rgba(238,242,246,.7);letter-spacing:.04em}
 .blogcar__foot{display:flex;align-items:center;justify-content:space-between;margin-top:.7rem;gap:1rem}
 .blogcar__dots{display:flex;gap:.4rem;align-items:center;flex-wrap:wrap}
 .blogcar__dot{width:7px;height:7px;border-radius:50%;background:var(--gris-2);opacity:.4;border:0;padding:0;
@@ -534,7 +534,8 @@ document.querySelectorAll('.cnt').forEach(el => obsCnt.observe(el));
 
   rail.innerHTML = items.map(it => `
     <a class="blogcar__card" href="post.html?id=${encodeURIComponent(it.id)}" style="--acc:${escH(it.accent||'#3ef08c')}">
-      <div class="blogcar__media">${(()=>{const src=(it.images&&it.images.find(Boolean))||it.cover;return src?`<img src="${escH(src)}" alt="${escH(it.title)}" loading="lazy">`:'';})()}</div>
+      ${(()=>{const src=(it.images&&it.images.find(Boolean))||it.cover;return src?`<img class="blogcar__cover" src="${escH(src)}" alt="${escH(it.title)}" loading="lazy">`:'';})()}
+      <span class="blogcar__grad"></span>
       <div class="blogcar__body">
         <span class="blogcar__tag">${escH(it.category||'Mercados')}</span>
         <h3 class="blogcar__title">${escH(it.title)}</h3>
