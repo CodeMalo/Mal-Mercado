@@ -20,7 +20,13 @@
   gtag('config', 'G-H41D8JJQZX');
 </script>
 <style>
-  body[data-view="post"]{ background:#07090d; color:#eef2f6; }
+  html{ background:#07090d; }
+  #fondo{ position:fixed; inset:0; z-index:0; pointer-events:none; display:block; }
+  body[data-view="post"]{ background:transparent; color:#eef2f6; }
+  body[data-view="post"] .topnav, body[data-view="post"] main, body[data-view="post"] .foot{ position:relative; z-index:1; }
+  /* el artículo sobre un panel oscuro para leer bien encima del fondo */
+  body[data-view="post"] #malo-article{ background:rgba(7,9,13,.72); backdrop-filter:blur(6px);
+    border-radius:16px; padding:clamp(1.2rem,4vw,2.4rem); margin:1.5rem auto; }
   body[data-view="post"] .topnav{ background:rgba(7,9,13,.8); border-bottom:1px solid rgba(255,255,255,.09); }
   body[data-view="post"] .topnav__brand, body[data-view="post"] .topnav__link{ color:#eef2f6; }
   body[data-view="post"] .topnav__link.is-active{ color:#3ef08c; }
@@ -32,6 +38,13 @@
 </style>
 </head>
 <body data-view="post">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+}}
+</script>
+<canvas id="fondo" aria-hidden="true"></canvas>
 
   <nav class="topnav">
     <a class="topnav__brand" href="index.html">Mal Mercado</a>
@@ -48,5 +61,6 @@
   </footer>
 
   <script src="app.js"></script>
+  <script type="module" src="fondo.js?v=1"></script>
 </body>
 </html>
