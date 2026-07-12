@@ -25,10 +25,14 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def _item_hash(it):
+    # OJO: excluye lo que el PROPIO handler escribe (social_*.txt) — si entra al
+    # hash, cada build ve el dir "cambiado" y re-genera el post aunque el item.md
+    # sea idéntico (y un build sin keys lo sobrescribe con MOCK — pasó 2026-07-12).
     h = hashlib.sha256()
     h.update((it["dir"] / "item.md").read_bytes())
     for f in sorted(it["dir"].glob("*")):
-        if f.is_file() and f.name not in ("item.md", ".cache.json"):
+        if (f.is_file() and f.name not in ("item.md", ".cache.json")
+                and not f.name.startswith("social_")):
             h.update(f"{f.name}:{f.stat().st_size}".encode())
     return h.hexdigest()[:16]
 
