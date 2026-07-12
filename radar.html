@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Radar social y calculadora — Mal Mercado</title>
-<meta name="description" content="Qué está discutiendo internet sobre los mercados hoy, medido con datos. Y una calculadora para modelar la distribución de tu aporte semanal según tu apetito de riesgo.">
+<meta name="description" content="Qué discutió internet sobre los mercados la semana pasada, medido con datos, y una calculadora para simular la distribución y el crecimiento de tu aporte semanal.">
 <link rel="icon" type="image/png" href="assets/malmercado_mark.png">
 <meta property="og:title" content="Radar social y calculadora — Mal Mercado">
-<meta property="og:description" content="El ruido, medido. Menciones, sentimiento y una calculadora de distribución semanal.">
+<meta property="og:description" content="El ruido, medido. Menciones, sentimiento y una calculadora con simulación basada en el historial real del modelo.">
 <meta property="og:image" content="assets/malmercado_logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,10 +45,15 @@
   .rd-wrap{ max-width:900px; margin:0 auto; padding:1.5rem; }
   .rd-h2{ font-family:"Space Grotesk",sans-serif; font-size:1.4rem; margin:2.2rem 0 .3rem; }
   .rd-sub{ color:#8b95a3; font-size:.9rem; margin:0 0 1rem; line-height:1.6; }
+  .chip{ display:inline-block; font-family:"JetBrains Mono",monospace; font-size:.66rem;
+    letter-spacing:.1em; text-transform:uppercase; padding:.25rem .7rem; border-radius:99px;
+    background:rgba(62,240,140,.1); color:#3ef08c; border:1px solid rgba(62,240,140,.3);
+    vertical-align:middle; margin-left:.5rem; }
+  .chip.gris{ background:rgba(255,255,255,.06); color:#8b95a3; border-color:rgba(255,255,255,.14); }
 
   .rd-lista{ display:flex; flex-direction:column; gap:.5rem; }
   .rd-fila{ display:flex; align-items:center; gap:1rem; background:rgba(255,255,255,.04);
-    border:1px solid rgba(255,255,255,.09); border-radius:12px; padding:.7rem 1rem; }
+    border:1px solid rgba(255,255,255,.09); border-radius:12px; padding:.7rem 1rem; flex-wrap:wrap; }
   .rd-rank{ font-family:"JetBrains Mono",monospace; color:#3ef08c; font-weight:700; width:1.6rem; }
   .rd-tk{ font-weight:700; min-width:4.5rem; }
   .rd-nom{ color:#8b95a3; font-size:.82rem; flex:1; }
@@ -62,35 +67,53 @@
   /* Calculadora */
   .calc{ background:rgba(255,255,255,.04); border:1px solid rgba(62,240,140,.3);
     border-radius:16px; padding:1.6rem; margin-top:1rem; }
-  .calc label{ display:block; font-family:"JetBrains Mono",monospace; font-size:.7rem;
-    letter-spacing:.14em; text-transform:uppercase; color:#8b95a3; margin:1.1rem 0 .4rem; }
-  .calc input[type="number"]{ width:100%; max-width:240px; background:#0d1117; color:#eef2f6;
-    border:1px solid rgba(255,255,255,.15); border-radius:10px; padding:.7rem .9rem;
-    font-family:"JetBrains Mono",monospace; font-size:1.05rem; }
-  .calc input[type="range"]{ width:100%; max-width:420px; accent-color:#3ef08c; }
-  .calc select{ background:#0d1117; color:#eef2f6; border:1px solid rgba(255,255,255,.15);
-    border-radius:10px; padding:.6rem .9rem; font-family:"JetBrains Mono",monospace; }
-  .calc .riesgo-v{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:1.6rem;
-    color:#3ef08c; margin-left:.7rem; }
-  .calc-out{ display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:1rem; margin-top:1.4rem; }
-  .co-card{ background:rgba(7,9,13,.7); border:1px solid rgba(255,255,255,.1); border-radius:13px; padding:1rem 1.2rem; }
-  .co-card .k{ font-family:"JetBrains Mono",monospace; font-size:.64rem; letter-spacing:.13em;
-    text-transform:uppercase; color:#8b95a3; }
-  .co-card .v{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:1.55rem; margin-top:.25rem; }
-  .co-card .v.g{ color:#3ef08c; }
-  .co-card .s{ font-size:.76rem; color:#8b95a3; margin-top:.2rem; }
-  .calc-barra{ display:flex; height:14px; border-radius:99px; overflow:hidden; margin-top:1.2rem;
+  .calc-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0 1.2rem; }
+  .calc label{ display:block; font-family:"JetBrains Mono",monospace; font-size:.66rem;
+    letter-spacing:.13em; text-transform:uppercase; color:#8b95a3; margin:1rem 0 .35rem; }
+  .calc input[type="number"], .calc select{ width:100%; box-sizing:border-box; background:#0d1117;
+    color:#eef2f6; border:1px solid rgba(255,255,255,.15); border-radius:10px; padding:.65rem .85rem;
+    font-family:"JetBrains Mono",monospace; font-size:1rem; }
+  .calc input[type="range"]{ width:100%; accent-color:#3ef08c; margin-top:.55rem; }
+  .calc .riesgo-v{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:1.25rem;
+    color:#3ef08c; margin-left:.5rem; }
+  .calc-barra{ display:flex; height:12px; border-radius:99px; overflow:hidden; margin-top:1.1rem;
     border:1px solid rgba(255,255,255,.12); }
-  .calc-barra .b-nucleo{ background:#2b6cb0; }
+  .calc-barra .b-nucleo{ background:#4da3ff; }
   .calc-barra .b-din{ background:#3ef08c; }
-  .calc-leyenda{ display:flex; gap:1.4rem; font-size:.78rem; color:#8b95a3; margin-top:.5rem; }
+  .calc-leyenda{ display:flex; gap:1.4rem; font-size:.78rem; color:#8b95a3; margin-top:.5rem; flex-wrap:wrap; }
   .dot{ display:inline-block; width:9px; height:9px; border-radius:99px; margin-right:.35rem; }
+
+  .chart-caja{ position:relative; margin-top:1.4rem; background:rgba(7,9,13,.7);
+    border:1px solid rgba(255,255,255,.1); border-radius:13px; padding:1rem; }
+  .chart-caja .badge-sim{ position:absolute; top:.8rem; right:.9rem; font-family:"JetBrains Mono",monospace;
+    font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:#ffd166;
+    border:1px solid rgba(255,209,102,.45); background:rgba(255,209,102,.08);
+    padding:.22rem .6rem; border-radius:99px; }
+  #c-chart{ width:100%; height:340px; display:block; }
+  .chart-leyenda{ display:flex; gap:1.3rem; font-size:.78rem; color:#8b95a3; margin:.6rem 0 0 .2rem; flex-wrap:wrap; }
+  .linea-muestra{ display:inline-block; width:22px; height:3px; border-radius:2px; margin-right:.4rem; vertical-align:middle; }
+
+  .calc-out{ display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:1rem; margin-top:1.3rem; }
+  .co-card{ background:rgba(7,9,13,.7); border:1px solid rgba(255,255,255,.1); border-radius:13px; padding:1rem 1.1rem; }
+  .co-card .k{ font-family:"JetBrains Mono",monospace; font-size:.6rem; letter-spacing:.12em;
+    text-transform:uppercase; color:#8b95a3; }
+  .co-card .v{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:1.4rem; margin-top:.25rem; }
+  .co-card .v.g{ color:#3ef08c; } .co-card .v.az{ color:#4da3ff; }
+  .co-card .s{ font-size:.74rem; color:#8b95a3; margin-top:.2rem; }
+
+  .datos-reales{ background:rgba(77,163,255,.06); border:1px solid rgba(77,163,255,.3);
+    border-radius:13px; padding:1rem 1.2rem; margin-top:1.3rem; font-size:.85rem;
+    color:#c7cfd9; line-height:1.65; }
+  .datos-reales b{ color:#eef2f6; }
+  .datos-reales .titulo{ font-family:"JetBrains Mono",monospace; font-size:.64rem; letter-spacing:.13em;
+    text-transform:uppercase; color:#4da3ff; display:block; margin-bottom:.4rem; }
 
   .rd-nota{ background:rgba(62,240,140,.06); border:1px solid rgba(62,240,140,.25);
     border-radius:14px; padding:1.2rem 1.4rem; margin:1.5rem 0; line-height:1.65; color:#c7cfd9; font-size:.9rem; }
   .rd-nota h3{ margin:0 0 .5rem; font-family:"Space Grotesk",sans-serif; color:#eef2f6; }
   .rd-legal{ font-size:.78rem; color:#67707c; line-height:1.7; margin:2rem 0 1rem;
     border-top:1px solid rgba(255,255,255,.08); padding-top:1.2rem; }
+  .rd-captura{ margin:3rem 0 1rem; }
 </style>
 </head>
 <body data-view="static" data-section="blog">
@@ -111,40 +134,58 @@
   </nav>
 
   <header class="mm-hero">
-    <p class="eyebrow">Radar social · actualizado a diario</p>
+    <p class="eyebrow">Radar social · con una semana de desfase</p>
     <h1>El ruido, <span class="g">medido</span>.</h1>
-    <p>Nuestro sistema mide cada día la conversación pública sobre los mercados: menciones y
-    sentimiento en comunidades de inversión. Esto no es una recomendación — es el mapa de a qué
-    le está poniendo atención internet.</p>
+    <p>Nuestro sistema mide cada día la conversación pública sobre los mercados. Lo que ves aquí es
+    la foto de <b>la semana pasada</b>: los datos del día llegan primero, por correo, a los
+    suscriptores. Esto no es una recomendación — es el mapa de a qué le puso atención internet.</p>
   </header>
 
   <main class="rd-wrap">
-    <h2 class="rd-h2">Lo que más discute internet</h2>
-    <p class="rd-sub">Los activos con más conversación social en los últimos 3 días
-    (Reddit, StockTwits y agregadores), con el sentimiento medido de esa conversación.</p>
+    <h2 class="rd-h2">Lo que más discutió internet <span class="chip" id="chip-conv">semana pasada</span></h2>
+    <p class="rd-sub">Los activos con más conversación social (Reddit, StockTwits y agregadores)
+    y el sentimiento medido de esa conversación. Datos con desfase de una semana.</p>
     <div id="rd-conversacion" class="rd-lista"></div>
 
-    <h2 class="rd-h2">Apareciendo en el radar</h2>
+    <h2 class="rd-h2">Lo que apareció en el radar <span class="chip" id="chip-radar">semana pasada</span></h2>
     <p class="rd-sub">Nombres FUERA de las listas habituales que la conversación empezó a mover.
-    Aquí suele nacer el ruido: llegan antes a Reddit que a los titulares.</p>
+    Los suscriptores los recibieron por correo en su momento; aquí se publican una semana después.</p>
     <div id="rd-radar" class="rd-lista"></div>
 
-    <h2 class="rd-h2" id="calculadora">Calculadora de distribución semanal</h2>
-    <p class="rd-sub">Una forma clásica de organizar un aporte periódico: una parte a un
-    <b>núcleo diversificado</b> (por ejemplo, un ETF de índice amplio) y otra a
-    <b>posiciones dinámicas</b> que se revisan seguido. Mueve el control según tu apetito de
-    riesgo y mira cómo se repartiría tu aporte. Es un modelo educativo, no una recomendación.</p>
+    <h2 class="rd-h2" id="calculadora">Calculadora de crecimiento semanal <span class="chip gris">simulación</span></h2>
+    <p class="rd-sub">Simula cómo evolucionaría un aporte periódico repartido entre un
+    <b>núcleo diversificado</b> y <b>posiciones dinámicas</b>, usando el rendimiento
+    <a href="track.html" style="color:#3ef08c">histórico real del portafolio modelo</a>
+    (con una semana de desfase), y compáralo con dejar el dinero en una alternativa de ahorro.</p>
 
     <div class="calc">
-      <label for="c-aporte">Tu aporte semanal (MXN)</label>
-      <input type="number" id="c-aporte" value="1000" min="0" step="100">
+      <div class="calc-grid">
+        <div><label for="c-inicial">Capital inicial (MXN)</label>
+          <input type="number" id="c-inicial" value="0" min="0" step="500"></div>
+        <div><label for="c-aporte">Aporte semanal (MXN)</label>
+          <input type="number" id="c-aporte" value="1000" min="0" step="100"></div>
+        <div><label for="c-horizonte">Horizonte</label>
+          <select id="c-horizonte">
+            <option value="26">6 meses (26 semanas)</option>
+            <option value="52" selected>1 año (52 semanas)</option>
+            <option value="104">2 años (104 semanas)</option>
+            <option value="156">3 años (156 semanas)</option>
+          </select></div>
+        <div><label for="c-alt">Comparar contra</label>
+          <select id="c-alt">
+            <option value="0">Efectivo guardado — 0% anual</option>
+            <option value="0.02">Cuenta de ahorro típica — 2% anual</option>
+            <option value="0.05" selected>Pagaré bancario — 5% anual</option>
+            <option value="0.09">CETES (referencia aprox.) — 9% anual</option>
+          </select></div>
+      </div>
 
       <label for="c-riesgo">Apetito de riesgo — % a posiciones dinámicas
         <span class="riesgo-v" id="c-riesgo-v">30%</span></label>
       <input type="range" id="c-riesgo" min="0" max="50" step="5" value="30">
 
       <label for="c-jugadas">¿Entre cuántas posiciones dinámicas repartirías?</label>
-      <select id="c-jugadas">
+      <select id="c-jugadas" style="max-width:240px">
         <option value="1">1 posición</option>
         <option value="2" selected>2 posiciones</option>
         <option value="3">3 posiciones</option>
@@ -152,33 +193,74 @@
 
       <div class="calc-barra"><div class="b-nucleo" id="b-nucleo"></div><div class="b-din" id="b-din"></div></div>
       <div class="calc-leyenda">
-        <span><span class="dot" style="background:#2b6cb0"></span>Núcleo diversificado</span>
+        <span><span class="dot" style="background:#4da3ff"></span>Núcleo diversificado</span>
         <span><span class="dot" style="background:#3ef08c"></span>Posiciones dinámicas</span>
       </div>
 
+      <div class="chart-caja">
+        <span class="badge-sim">Simulación — no es rendimiento real</span>
+        <canvas id="c-chart"></canvas>
+        <div class="chart-leyenda">
+          <span><span class="linea-muestra" style="background:#3ef08c"></span>Portafolio simulado (rendimiento histórico real del modelo)</span>
+          <span><span class="linea-muestra" style="background:#4da3ff"></span>Alternativa de ahorro (escenario hipotético)</span>
+          <span><span class="linea-muestra" style="background:#8b95a3;height:2px;border-top:2px dashed #8b95a3;background:none"></span>Solo tus aportes</span>
+        </div>
+      </div>
+
       <div class="calc-out">
-        <div class="co-card"><div class="k">Núcleo diversificado</div>
-          <div class="v" id="o-nucleo">$700</div><div class="s" id="o-nucleo-p">70% del aporte</div></div>
-        <div class="co-card"><div class="k">Posiciones dinámicas</div>
-          <div class="v g" id="o-din">$300</div><div class="s" id="o-din-p">30% del aporte</div></div>
+        <div class="co-card"><div class="k">Núcleo por semana</div>
+          <div class="v az" id="o-nucleo">—</div><div class="s" id="o-nucleo-p"></div></div>
+        <div class="co-card"><div class="k">Dinámicas por semana</div>
+          <div class="v g" id="o-din">—</div><div class="s" id="o-din-p"></div></div>
         <div class="co-card"><div class="k">Por posición dinámica</div>
-          <div class="v g" id="o-por">$150</div><div class="s" id="o-por-s">2 posiciones</div></div>
-        <div class="co-card"><div class="k">Aportado en 52 semanas</div>
-          <div class="v" id="o-anual">$52,000</div><div class="s">solo tus aportes — sin suponer rendimientos</div></div>
+          <div class="v g" id="o-por">—</div><div class="s" id="o-por-s"></div></div>
+        <div class="co-card"><div class="k">Aportado al final</div>
+          <div class="v" id="o-aportado">—</div><div class="s">tu dinero, sin rendimiento</div></div>
+        <div class="co-card"><div class="k">Portafolio simulado</div>
+          <div class="v g" id="o-modelo">—</div><div class="s">al final del horizonte</div></div>
+        <div class="co-card"><div class="k">Alternativa de ahorro</div>
+          <div class="v az" id="o-banco">—</div><div class="s">al final del horizonte</div></div>
+      </div>
+
+      <div class="datos-reales" id="datos-reales">
+        <span class="titulo">Datos históricos reales que alimentan esta simulación</span>
+        <span id="dr-texto">Cargando el historial del modelo…</span>
       </div>
     </div>
+
+    <p class="rd-legal" style="border:none;margin-top:1rem">
+      <b style="color:#8b95a3">Sobre esta calculadora.</b> Es una herramienta informativa y educativa
+      basada en datos históricos y escenarios simulados. Lo que muestra NO es asesoría financiera,
+      ni una recomendación personalizada, ni una garantía o promesa de rendimientos futuros. El
+      desempeño pasado y las simulaciones no garantizan resultados futuros. Toda inversión implica
+      riesgo, incluida la pérdida parcial o total del capital. Las tasas de la alternativa de ahorro
+      son referencias aproximadas, no ofertas reales.
+    </p>
+    <p class="rd-legal" style="border:none;margin-top:0">
+      <b style="color:#8b95a3">Sobre el portafolio modelo.</b> El rendimiento usado corresponde al
+      portafolio modelo de Mal Mercado y se construye con el historial de asignaciones registradas
+      por el sistema, evaluadas de forma automática (ver <a href="track.html" style="color:#3ef08c">Historial</a>),
+      siempre con al menos una semana de desfase. La simulación combina ese historial con los datos
+      que TÚ introduces (capital, aportes, horizonte y riesgo). Los resultados hipotéticos pueden
+      diferir significativamente de resultados reales por comisiones, impuestos, liquidez, precios
+      de ejecución y condiciones de mercado, entre otros factores.
+    </p>
 
     <div class="rd-nota">
       <h3>Cómo leer esta página</h3>
       El radar mide <b>atención</b>, no calidad: que algo se discuta mucho no lo hace buena ni mala
-      inversión — a veces es exactamente al revés. La calculadora reparte un aporte según un
-      porcentaje que TÚ eliges; no dice en qué invertir, ni cuándo, ni promete resultado alguno.
-      Como referencia, el portafolio modelo de Mal Mercado — el que evaluamos en público en el
-      <a href="track.html" style="color:#3ef08c">Historial</a> — trabaja con una estructura 70/30.
-      Recuerda considerar las comisiones de tu broker: en aportes pequeños pesan más.
+      inversión — a veces es exactamente al revés. Aquí hay tres tipos de información y no se
+      mezclan: los <b>datos históricos reales</b> del modelo (caja azul y página de
+      <a href="track.html" style="color:#3ef08c">Historial</a>), la <b>simulación personalizada</b>
+      que tú armas con la calculadora (etiqueta amarilla), y los <b>escenarios hipotéticos</b> de
+      referencia como la alternativa de ahorro. Todo lo público va con una semana de desfase; el
+      dato del día viaja por correo. Recuerda considerar las comisiones de tu broker: en aportes
+      pequeños pesan más.
     </div>
 
-    <p class="rd-legal">
+    <div class="rd-captura" data-mm-captura></div>
+
+    <p class="rd-legal" id="legal-final">
       Mal Mercado es contenido educativo e informativo de análisis general de mercados: la misma
       información para todos los lectores. No es asesoría de inversión personalizada ni
       recomendación individualizada; no somos asesores registrados ante la CNBV. Invertir implica
@@ -193,35 +275,116 @@
 
 <script>
 (function(){
-  // ── Calculadora (independiente de los datos) ─────────────────────────────
   const $ = id => document.getElementById(id);
   const mxn = v => "$" + Math.round(v).toLocaleString("es-MX");
+  const pctS = v => (v >= 0 ? "+" : "") + (v * 100).toFixed(2) + "%";
+
+  // Rendimientos históricos reales del modelo (t-1). Llegan de radar.json;
+  // mientras tanto la simulación corre en 0% y lo dice.
+  let MODELO = { nucleo_sem: 0, dinamico_sem: 0, semanas: 0, corte: null };
+
+  function series(){
+    const C0 = Math.max(0, parseFloat($("c-inicial").value) || 0);
+    const A  = Math.max(0, parseFloat($("c-aporte").value) || 0);
+    const H  = parseInt($("c-horizonte").value, 10);
+    const r  = parseInt($("c-riesgo").value, 10) / 100;
+    const altSem = Math.pow(1 + parseFloat($("c-alt").value), 1 / 52) - 1;
+    const modSem = (1 - r) * MODELO.nucleo_sem + r * MODELO.dinamico_sem;
+    const mod = [C0], alt = [C0], apo = [C0];
+    for (let t = 1; t <= H; t++) {
+      mod.push((mod[t-1] + A) * (1 + modSem));
+      alt.push((alt[t-1] + A) * (1 + altSem));
+      apo.push(C0 + A * t);
+    }
+    return { C0, A, H, r, mod, alt, apo, modSem };
+  }
+
+  function dibujar(s){
+    const cv = $("c-chart"), dpr = window.devicePixelRatio || 1;
+    const W = cv.clientWidth || 800, Hpx = 340;
+    cv.width = W * dpr; cv.height = Hpx * dpr;
+    const ctx = cv.getContext("2d");
+    ctx.scale(dpr, dpr);
+    ctx.clearRect(0, 0, W, Hpx);
+    const M = { l: 74, r: 14, t: 26, b: 34 };
+    const todos = s.mod.concat(s.alt, s.apo);
+    let ymin = Math.min(...todos), ymax = Math.max(...todos);
+    if (ymax === ymin) ymax = ymin + 1;
+    const pad = (ymax - ymin) * 0.06; ymin = Math.max(0, ymin - pad); ymax += pad;
+    const X = t => M.l + (W - M.l - M.r) * t / s.H;
+    const Y = v => M.t + (Hpx - M.t - M.b) * (1 - (v - ymin) / (ymax - ymin));
+    // rejilla + etiquetas Y
+    ctx.font = "11px 'JetBrains Mono', monospace";
+    ctx.fillStyle = "#67707c"; ctx.strokeStyle = "rgba(255,255,255,.07)"; ctx.lineWidth = 1;
+    for (let i = 0; i <= 4; i++) {
+      const v = ymin + (ymax - ymin) * i / 4, y = Y(v);
+      ctx.beginPath(); ctx.moveTo(M.l, y); ctx.lineTo(W - M.r, y); ctx.stroke();
+      ctx.fillText(mxn(v), 6, y + 4);
+    }
+    // etiquetas X (semanas)
+    for (let i = 0; i <= 4; i++) {
+      const t = Math.round(s.H * i / 4);
+      ctx.fillText("sem " + t, X(t) - 18, Hpx - 10);
+    }
+    function linea(datos, color, dash){
+      ctx.beginPath();
+      ctx.setLineDash(dash || []);
+      ctx.strokeStyle = color; ctx.lineWidth = 2.4;
+      datos.forEach((v, t) => t ? ctx.lineTo(X(t), Y(v)) : ctx.moveTo(X(0), Y(v)));
+      ctx.stroke(); ctx.setLineDash([]);
+    }
+    linea(s.apo, "#8b95a3", [5, 5]);
+    linea(s.alt, "#4da3ff");
+    linea(s.mod, "#3ef08c");
+    // puntos finales
+    [["#4da3ff", s.alt], ["#3ef08c", s.mod]].forEach(([c, d]) => {
+      ctx.fillStyle = c; ctx.beginPath();
+      ctx.arc(X(s.H), Y(d[s.H]), 4, 0, 7); ctx.fill();
+    });
+  }
+
   function calc(){
-    const aporte = Math.max(0, parseFloat($("c-aporte").value) || 0);
-    const riesgo = parseInt($("c-riesgo").value, 10);
+    const s = series();
     const n = parseInt($("c-jugadas").value, 10);
-    const din = aporte * riesgo / 100, nuc = aporte - din;
-    $("c-riesgo-v").textContent = riesgo + "%";
-    $("o-nucleo").textContent = mxn(nuc);
-    $("o-nucleo-p").textContent = (100 - riesgo) + "% del aporte";
-    $("o-din").textContent = mxn(din);
-    $("o-din-p").textContent = riesgo + "% del aporte";
+    const din = s.A * s.r, nuc = s.A - din, rp = Math.round(s.r * 100);
+    $("c-riesgo-v").textContent = rp + "%";
+    $("o-nucleo").textContent = mxn(nuc);  $("o-nucleo-p").textContent = (100 - rp) + "% del aporte";
+    $("o-din").textContent = mxn(din);     $("o-din-p").textContent = rp + "% del aporte";
     $("o-por").textContent = mxn(n ? din / n : 0);
     $("o-por-s").textContent = n + (n === 1 ? " posición" : " posiciones");
-    $("o-anual").textContent = mxn(aporte * 52);
-    $("b-nucleo").style.width = (100 - riesgo) + "%";
-    $("b-din").style.width = riesgo + "%";
-    if (window.gtag) gtag("event", "calculadora_uso", { riesgo: riesgo });
+    $("o-aportado").textContent = mxn(s.apo[s.H]);
+    $("o-modelo").textContent = mxn(s.mod[s.H]);
+    $("o-banco").textContent = mxn(s.alt[s.H]);
+    dibujar(s);
+    if (window.gtag) gtag("event", "calculadora_uso", { riesgo: rp, horizonte: s.H });
   }
-  ["c-aporte","c-riesgo","c-jugadas"].forEach(id => $(id).addEventListener("input", calc));
+
+  ["c-inicial","c-aporte","c-horizonte","c-alt","c-riesgo","c-jugadas"]
+    .forEach(id => $(id).addEventListener("input", calc));
+  addEventListener("resize", () => calc());
   calc();
 
-  // ── Radar social (datos del motor) ───────────────────────────────────────
+  // ── Datos t-1 del motor ──────────────────────────────────────────────────
   const tag = s => s > 0.15 ? '<span class="tag pos">conversación positiva</span>'
              : s < -0.15 ? '<span class="tag neg">conversación negativa</span>'
              : '<span class="tag neu">conversación mixta</span>';
   const pct = v => (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%";
   fetch("public/radar.json?v=" + Date.now()).then(r => r.json()).then(d => {
+    MODELO = Object.assign(MODELO, d.modelo || {}, { corte: d.corte });
+    const aviso = MODELO.semanas < 12
+      ? " <b>Ojo:</b> el historial aún es corto — pocas semanas evaluadas hacen la simulación poco representativa; se vuelve más útil conforme el historial crece."
+      : "";
+    $("dr-texto").innerHTML =
+      "Rendimiento semanal promedio observado del portafolio modelo, evaluado automáticamente y " +
+      "publicado con una semana de desfase (corte: <b>" + d.corte + "</b>): núcleo <b>" +
+      pctS(MODELO.nucleo_sem) + "</b> · posiciones dinámicas <b>" + pctS(MODELO.dinamico_sem) +
+      "</b>, sobre <b>" + MODELO.semanas + " semana(s)</b> evaluadas. Sin comisiones ni impuestos. " +
+      "Verifícalo en el <a href='track.html' style='color:#4da3ff'>Historial público</a>." + aviso;
+    calc();
+    if (d.semana_de) {
+      $("chip-conv").textContent = "semana del " + d.corte;
+      $("chip-radar").textContent = "semana del " + d.semana_de;
+    }
     $("rd-conversacion").innerHTML = d.conversacion.map((c, i) => `
       <div class="rd-fila">
         <span class="rd-rank">${i + 1}</span>
@@ -229,7 +392,7 @@
         <span class="rd-nom">${c.nombre}</span>
         <span class="rd-num">${c.menciones.toLocaleString("es-MX")} menciones</span>
         ${tag(c.sentimiento)}
-      </div>`).join("") || '<p class="rd-sub">Sin datos hoy. Vuelve mañana.</p>';
+      </div>`).join("") || '<p class="rd-sub">Sin datos de esa semana.</p>';
     $("rd-radar").innerHTML = d.radar.map(r => `
       <div class="rd-fila">
         <span class="rd-rank">•</span>
@@ -237,14 +400,16 @@
         <span class="rd-nom">${r.menciones_reddit} menciones en Reddit</span>
         <span class="rd-num">1 mes: ${pct(r.ret_1m)}</span>
         <span class="rd-num">3 meses: ${pct(r.ret_3m)}</span>
-      </div>`).join("") || '<p class="rd-sub">Hoy no hay nombres nuevos en el radar.</p>';
-    const nota = document.querySelector(".rd-legal");
-    nota.textContent = "Actualizado: " + d.actualizado + ". " + nota.textContent;
+      </div>`).join("") || '<p class="rd-sub">Esa semana no hubo nombres nuevos en el radar.</p>';
+    const nota = $("legal-final");
+    nota.textContent = "Datos publicados con desfase: corte " + d.corte + ". " + nota.textContent;
   }).catch(() => {
     $("rd-conversacion").innerHTML = '<p class="rd-sub">El radar se está generando. Vuelve pronto.</p>';
+    $("dr-texto").innerHTML = "El historial del modelo se está generando; la simulación corre con 0% mientras tanto.";
   });
 })();
 </script>
+<script src="captura.js?v=1" defer></script>
 <script type="module" src="fondo.js?v=1"></script>
 </body>
 </html>
