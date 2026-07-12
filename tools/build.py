@@ -77,6 +77,36 @@ def main():
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\nListo: {len(cards)} item(s) → public/content.json")
+    write_sitemap()
+
+
+BASE_URL = "https://malmercado.com"
+
+
+def write_sitemap():
+    """sitemap.xml + robots.txt para Search Console. Se regenera en cada build,
+    así cada post nuevo entra solo. Lee public/content.json (la verdad publicada)."""
+    cj = ROOT / "public" / "content.json"
+    items = json.loads(cj.read_text(encoding="utf-8")).get("items", []) if cj.exists() else []
+    hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    urls = [(f"{BASE_URL}/", hoy, "daily", "1.0"),
+            (f"{BASE_URL}/blog.html", hoy, "daily", "0.9")]
+    for it in items:
+        if it.get("type") == "blog" and it.get("id"):
+            urls.append((f"{BASE_URL}/post.html?id={it['id']}",
+                         it.get("date") or hoy, "monthly", "0.7"))
+    cuerpo = "\n".join(
+        f"  <url><loc>{u}</loc><lastmod>{lm}</lastmod>"
+        f"<changefreq>{cf}</changefreq><priority>{pr}</priority></url>"
+        for u, lm, cf, pr in urls)
+    (ROOT / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f"{cuerpo}\n</urlset>\n", encoding="utf-8")
+    (ROOT / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n",
+        encoding="utf-8")
+    print(f"  ✓ sitemap.xml ({len(urls)} URLs) + robots.txt")
 
 
 if __name__ == "__main__":
