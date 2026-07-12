@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historial público — Mal Mercado</title>
+<meta name="description" content="El historial completo del portafolio modelo de Mal Mercado, evaluado automáticamente contra el S&P 500. Publicamos todo: aciertos y errores.">
+<link rel="icon" type="image/png" href="assets/malmercado_mark.png">
+<meta property="og:title" content="Historial público — Mal Mercado">
+<meta property="og:description" content="Publicamos todo, gane o pierda. Cada asignación del portafolio modelo, evaluada contra el S&P 500.">
+<meta property="og:image" content="assets/malmercado_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="app.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H41D8JJQZX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-H41D8JJQZX');
+</script>
+<style>
+  html{ background:#07090d; }
+  #fondo{ position:fixed; inset:0; z-index:0; pointer-events:none; display:block; }
+  body[data-section="blog"]{ background:transparent; color:#eef2f6; }
+  body[data-section="blog"] .topnav,
+  body[data-section="blog"] .mm-hero,
+  body[data-section="blog"] main,
+  body[data-section="blog"] .foot{ position:relative; z-index:1; }
+  body[data-section="blog"] .topnav{ background:rgba(7,9,13,.8); border-bottom:1px solid rgba(255,255,255,.09); }
+  body[data-section="blog"] .topnav__brand,
+  body[data-section="blog"] .topnav__link{ color:#eef2f6; }
+  body[data-section="blog"] .topnav__link.is-active{ color:#3ef08c; }
+  .mm-hero{ text-align:center; padding:3.5rem 1.5rem 1rem; }
+  .mm-hero .eyebrow{ font-family:"JetBrains Mono",monospace; font-size:.72rem; letter-spacing:.2em;
+    text-transform:uppercase; color:#3ef08c; }
+  .mm-hero h1{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:clamp(2rem,5vw,3.2rem);
+    letter-spacing:-.02em; margin:.6rem 0; }
+  .mm-hero h1 .g{ color:#3ef08c; }
+  .mm-hero p{ color:#8b95a3; max-width:56ch; margin:.5rem auto 0; line-height:1.6; }
+
+  .tr-wrap{ max-width:900px; margin:0 auto; padding:1.5rem; }
+  .tr-cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1rem; margin:1.5rem 0; }
+  .tr-card{ background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.09);
+    border-radius:14px; padding:1.2rem 1.4rem; }
+  .tr-card .k{ font-family:"JetBrains Mono",monospace; font-size:.68rem; letter-spacing:.14em;
+    text-transform:uppercase; color:#8b95a3; }
+  .tr-card .v{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:1.9rem; margin-top:.3rem; }
+  .tr-card .s{ font-size:.8rem; color:#8b95a3; margin-top:.2rem; }
+  .pos{ color:#3ef08c; } .neg{ color:#ff6b6b; } .neu{ color:#eef2f6; }
+
+  .tr-tabla{ width:100%; border-collapse:collapse; font-size:.86rem; margin:1rem 0 2rem; }
+  .tr-tabla th{ font-family:"JetBrains Mono",monospace; font-size:.66rem; letter-spacing:.12em;
+    text-transform:uppercase; color:#8b95a3; text-align:left; padding:.6rem .7rem;
+    border-bottom:1px solid rgba(255,255,255,.15); }
+  .tr-tabla td{ padding:.55rem .7rem; border-bottom:1px solid rgba(255,255,255,.06); }
+  .tr-tabla td.num{ font-family:"JetBrains Mono",monospace; }
+  .tr-tabla .tk{ font-weight:600; }
+  .tr-tabla .nom{ color:#8b95a3; font-size:.78rem; }
+
+  .tr-nota{ background:rgba(62,240,140,.06); border:1px solid rgba(62,240,140,.25);
+    border-radius:14px; padding:1.2rem 1.4rem; margin:1.5rem 0; line-height:1.65; color:#c7cfd9; }
+  .tr-nota h3{ margin:0 0 .5rem; font-family:"Space Grotesk",sans-serif; color:#eef2f6; }
+  .tr-legal{ font-size:.78rem; color:#67707c; line-height:1.7; margin:2rem 0 1rem;
+    border-top:1px solid rgba(255,255,255,.08); padding-top:1.2rem; }
+  .tr-vacio{ text-align:center; color:#8b95a3; padding:3rem 1rem; }
+</style>
+</head>
+<body data-view="static" data-section="blog">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.161.0/examples/jsm/"
+}}
+</script>
+<canvas id="fondo" aria-hidden="true"></canvas>
+
+  <nav class="topnav">
+    <a class="topnav__brand" href="index.html">Mal Mercado</a>
+    <a class="topnav__link" href="index.html">Inicio</a>
+    <a class="topnav__link" href="blog.html">Blog</a>
+    <a class="topnav__link is-active" href="track.html">Historial</a>
+  </nav>
+
+  <header class="mm-hero">
+    <p class="eyebrow">Historial público · portafolio modelo</p>
+    <h1>Publicamos todo.<br><span class="g">Gane o pierda.</span></h1>
+    <p>Cada asignación del portafolio modelo se evalúa automáticamente contra el S&P 500 a una semana
+    y a un mes. Nada se borra, nada se maquilla. Esta página se actualiza sola, todos los días.</p>
+  </header>
+
+  <main class="tr-wrap">
+    <div id="tr-cards" class="tr-cards"></div>
+    <div id="tr-cuerpo"></div>
+
+    <div class="tr-nota">
+      <h3>Cómo leer esta página</h3>
+      El <b>portafolio modelo</b> es la asignación que nuestro sistema publica cada semana a partir de
+      noticias en 7 idiomas, datos oficiales (SEC), fundamentales y sentimiento social. Cada asignación
+      se congela en su fecha y, cumplido el horizonte (1 semana o 1 mes), se compara con lo que hizo el
+      S&P 500 (VOO) en el mismo periodo. La evaluación es automática: ni elegimos qué mostrar, ni
+      podemos editarla después. Con pocas evaluaciones la muestra es pequeña — el historial se
+      construye en público, semana a semana, y eso incluye las rachas malas.
+    </div>
+
+    <p class="tr-legal">
+      Mal Mercado es contenido educativo e informativo de análisis general de mercados: la misma
+      información para todos los lectores. No es asesoría de inversión personalizada ni recomendación
+      individualizada; no somos asesores registrados ante la CNBV. Invertir implica riesgo de pérdida.
+      Los rendimientos pasados no garantizan rendimientos futuros. Cada persona es responsable de sus
+      propias decisiones.
+    </p>
+  </main>
+
+  <footer class="foot">
+    Mal Mercado · <a href="index.html">el servicio</a> · <a href="blog.html">blog</a>
+  </footer>
+
+<script>
+(async function(){
+  const HOR = { "1s": "1 semana", "1m": "1 mes" };
+  const pct = v => (v >= 0 ? "+" : "") + (v * 100).toFixed(2) + "%";
+  const cls = v => v > 0 ? "pos" : (v < 0 ? "neg" : "neu");
+  let d;
+  try {
+    d = await (await fetch("public/track.json?v=" + Date.now())).json();
+  } catch (e) {
+    document.getElementById("tr-cuerpo").innerHTML =
+      '<p class="tr-vacio">El historial se está generando. Vuelve pronto.</p>';
+    return;
+  }
+  const cards = [];
+  for (const r of d.resumen) {
+    const tasa = r.evaluaciones ? Math.round(100 * r.supera_voo / r.evaluaciones) : 0;
+    const delta = r.ret_modelo - r.ret_voo;
+    cards.push(`<div class="tr-card"><div class="k">Horizonte ${HOR[r.horizonte] || r.horizonte}</div>
+      <div class="v neu">${r.evaluaciones}</div><div class="s">evaluaciones</div></div>`);
+    cards.push(`<div class="tr-card"><div class="k">Superó al S&P 500</div>
+      <div class="v ${tasa >= 50 ? "pos" : "neg"}">${tasa}%</div>
+      <div class="s">${r.supera_voo} de ${r.evaluaciones} (${HOR[r.horizonte] || r.horizonte})</div></div>`);
+    cards.push(`<div class="tr-card"><div class="k">Modelo vs S&P 500 (prom.)</div>
+      <div class="v ${cls(delta)}">${pct(delta)}</div>
+      <div class="s">modelo ${pct(r.ret_modelo)} · S&P ${pct(r.ret_voo)}</div></div>`);
+  }
+  document.getElementById("tr-cards").innerHTML = cards.join("");
+
+  if (!d.evaluaciones.length) {
+    document.getElementById("tr-cuerpo").innerHTML =
+      '<p class="tr-vacio">Aún no hay evaluaciones completadas. El historial se construye en público.</p>';
+    return;
+  }
+  const filas = d.evaluaciones.map(e => {
+    const delta = e.ret - e.ret_voo;
+    return `<tr>
+      <td class="num">${e.fecha_reco}</td>
+      <td><span class="tk">${e.ticker}</span> <span class="nom">${e.nombre}</span></td>
+      <td>${e.tipo}</td>
+      <td>${HOR[e.horizonte] || e.horizonte}</td>
+      <td class="num ${cls(e.ret)}">${pct(e.ret)}</td>
+      <td class="num ${cls(e.ret_voo)}">${pct(e.ret_voo)}</td>
+      <td class="num ${cls(delta)}"><b>${pct(delta)}</b></td>
+    </tr>`;
+  }).join("");
+  document.getElementById("tr-cuerpo").innerHTML = `
+    <table class="tr-tabla">
+      <thead><tr><th>Fecha</th><th>Activo</th><th>Tipo</th><th>Horizonte</th>
+        <th>Modelo</th><th>S&P 500</th><th>Diferencia</th></tr></thead>
+      <tbody>${filas}</tbody>
+    </table>
+    <p class="tr-legal" style="border:none;padding-top:0;margin-top:0">
+      Actualizado: ${d.actualizado}. Retornos del activo en el periodo del horizonte, sin comisiones,
+      comparados con VOO (ETF del S&P 500) en el mismo periodo.</p>`;
+})();
+</script>
+<script type="module" src="fondo.js?v=1"></script>
+</body>
+</html>

@@ -90,7 +90,8 @@ def write_sitemap():
     items = json.loads(cj.read_text(encoding="utf-8")).get("items", []) if cj.exists() else []
     hoy = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     urls = [(f"{BASE_URL}/", hoy, "daily", "1.0"),
-            (f"{BASE_URL}/blog.html", hoy, "daily", "0.9")]
+            (f"{BASE_URL}/blog.html", hoy, "daily", "0.9"),
+            (f"{BASE_URL}/track.html", hoy, "daily", "0.8")]
     for it in items:
         if it.get("type") == "blog" and it.get("id"):
             urls.append((f"{BASE_URL}/post.html?id={it['id']}",
