@@ -1,15 +1,42 @@
 {
- "actualizado": "2026-07-12",
+ "actualizado": "2026-07-13",
  "resumen": [
   {
    "horizonte": "1s",
-   "evaluaciones": 9,
+   "evaluaciones": 12,
    "supera_voo": 3,
-   "ret_modelo": -0.00214,
-   "ret_voo": 0.00624
+   "ret_modelo": -0.00484,
+   "ret_voo": 0.00509
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-06",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.02346,
+   "ret_voo": 0.00162,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-06",
+   "ticker": "V",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.017,
+   "ret_voo": 0.00162,
+   "nombre": "Visa"
+  },
+  {
+   "fecha_reco": "2026-07-06",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": 0.00162,
+   "ret_voo": 0.00162,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-03",
    "ticker": "AAPL",
