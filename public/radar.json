@@ -1,99 +1,99 @@
 {
- "actualizado": "2026-07-13",
- "corte": "2026-07-06",
- "semana_de": "2026-07-03",
+ "actualizado": "2026-07-14",
+ "corte": "2026-07-07",
+ "semana_de": "2026-07-06",
  "conversacion": [
+  {
+   "ticker": "MU",
+   "nombre": "Micron",
+   "menciones": 313,
+   "sentimiento": 0.833
+  },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "menciones": 676,
-   "sentimiento": 0.75
-  },
-  {
-   "ticker": "META",
-   "nombre": "Meta",
-   "menciones": 590,
-   "sentimiento": 0.312
+   "menciones": 138,
+   "sentimiento": 0.5
   },
   {
    "ticker": "NVDA",
    "nombre": "NVIDIA",
-   "menciones": 404,
-   "sentimiento": 0.653
+   "menciones": 92,
+   "sentimiento": 0.9
   },
   {
-   "ticker": "TSLA",
-   "nombre": "Tesla",
-   "menciones": 371,
-   "sentimiento": 0.471
-  },
-  {
-   "ticker": "AAPL",
-   "nombre": "Apple",
-   "menciones": 360,
-   "sentimiento": 0.378
-  },
-  {
-   "ticker": "VOO",
-   "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 292,
-   "sentimiento": 0.818
+   "ticker": "META",
+   "nombre": "Meta",
+   "menciones": 67,
+   "sentimiento": 0.0
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 271,
-   "sentimiento": 0.53
+   "menciones": 58,
+   "sentimiento": 0.167
   },
   {
-   "ticker": "PLTR",
-   "nombre": "Palantir",
-   "menciones": 233,
-   "sentimiento": 0.596
+   "ticker": "MSTR",
+   "nombre": "MicroStrategy",
+   "menciones": 56,
+   "sentimiento": 0.429
   },
   {
-   "ticker": "MU",
-   "nombre": "Micron",
-   "menciones": 233,
-   "sentimiento": 0.619
+   "ticker": "NFLX",
+   "nombre": "Netflix",
+   "menciones": 47,
+   "sentimiento": 0.286
   },
   {
    "ticker": "AVGO",
    "nombre": "Broadcom",
-   "menciones": 206,
-   "sentimiento": 0.448
+   "menciones": 45,
+   "sentimiento": 0.833
+  },
+  {
+   "ticker": "TSLA",
+   "nombre": "Tesla",
+   "menciones": 43,
+   "sentimiento": 0.667
+  },
+  {
+   "ticker": "XOM",
+   "nombre": "Exxon",
+   "menciones": 42,
+   "sentimiento": -0.231
   }
  ],
  "radar": [
   {
    "ticker": "HOOD",
-   "menciones_reddit": 17,
-   "ret_1m": 0.2787,
-   "ret_3m": 0.6079
+   "menciones_reddit": 19,
+   "ret_1m": 0.3804,
+   "ret_3m": 0.6599
   },
   {
-   "ticker": "WEN",
-   "menciones_reddit": 32,
-   "ret_1m": 0.1928,
-   "ret_3m": 0.2464
+   "ticker": "RDDT",
+   "menciones_reddit": 19,
+   "ret_1m": 0.1744,
+   "ret_3m": 0.4636
+  },
+  {
+   "ticker": "IP",
+   "menciones_reddit": 19,
+   "ret_1m": 0.1443,
+   "ret_3m": 0.115
   },
   {
    "ticker": "DTE",
-   "menciones_reddit": 32,
-   "ret_1m": 0.0886,
-   "ret_3m": 0.0555
+   "menciones_reddit": 30,
+   "ret_1m": 0.0865,
+   "ret_3m": 0.0408
   },
   {
-   "ticker": "VTI",
-   "menciones_reddit": 28,
-   "ret_1m": -0.0121,
-   "ret_3m": 0.1441
-  },
-  {
-   "ticker": "SPY",
-   "menciones_reddit": 58,
-   "ret_1m": -0.0169,
-   "ret_3m": 0.1396
+   "ticker": "WEN",
+   "menciones_reddit": 99,
+   "ret_1m": 0.1825,
+   "ret_3m": 0.1773
   }
  ],
  "modelo": {
