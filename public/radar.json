@@ -1,104 +1,104 @@
 {
- "actualizado": "2026-07-17",
- "corte": "2026-07-10",
- "semana_de": "2026-07-09",
+ "actualizado": "2026-07-18",
+ "corte": "2026-07-11",
+ "semana_de": "2026-07-10",
  "conversacion": [
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 501,
-   "sentimiento": 0.467
+   "menciones": 1013,
+   "sentimiento": 0.503
   },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "menciones": 307,
-   "sentimiento": 0.125
-  },
-  {
-   "ticker": "NVDA",
-   "nombre": "NVIDIA",
-   "menciones": 290,
-   "sentimiento": 0.765
+   "menciones": 679,
+   "sentimiento": 0.062
   },
   {
    "ticker": "META",
    "nombre": "Meta",
-   "menciones": 175,
-   "sentimiento": 0.143
+   "menciones": 515,
+   "sentimiento": -0.143
   },
   {
-   "ticker": "AMD",
-   "nombre": "AMD",
-   "menciones": 94,
-   "sentimiento": 0.333
+   "ticker": "NVDA",
+   "nombre": "NVIDIA",
+   "menciones": 506,
+   "sentimiento": 0.682
   },
   {
    "ticker": "VOO",
    "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 87,
-   "sentimiento": 0.714
+   "menciones": 183,
+   "sentimiento": 0.69
   },
   {
    "ticker": "TSLA",
    "nombre": "Tesla",
-   "menciones": 77,
-   "sentimiento": 0.818
+   "menciones": 175,
+   "sentimiento": 0.534
   },
   {
-   "ticker": "ORCL",
-   "nombre": "Oracle",
-   "menciones": 69,
-   "sentimiento": 0.905
+   "ticker": "AMD",
+   "nombre": "AMD",
+   "menciones": 173,
+   "sentimiento": 0.452
   },
   {
    "ticker": "AVGO",
    "nombre": "Broadcom",
-   "menciones": 68,
+   "menciones": 122,
    "sentimiento": 1.0
   },
   {
-   "ticker": "GOOGL",
-   "nombre": "Alphabet",
-   "menciones": 61,
-   "sentimiento": 0.0
+   "ticker": "ORCL",
+   "nombre": "Oracle",
+   "menciones": 121,
+   "sentimiento": 0.686
+  },
+  {
+   "ticker": "NFLX",
+   "nombre": "Netflix",
+   "menciones": 120,
+   "sentimiento": 0.65
   }
  ],
  "radar": [
   {
    "ticker": "SNDK",
-   "menciones_reddit": 184,
-   "ret_1m": 0.179,
-   "ret_3m": 1.4792
+   "menciones_reddit": 156,
+   "ret_1m": 0.1321,
+   "ret_3m": 1.1889
   },
   {
-   "ticker": "IBM",
-   "menciones_reddit": 25,
-   "ret_1m": 0.0461,
-   "ret_3m": 0.2241
-  },
-  {
-   "ticker": "NBIS",
-   "menciones_reddit": 68,
-   "ret_1m": 0.0174,
-   "ret_3m": 0.7743
-  },
-  {
-   "ticker": "AM",
+   "ticker": "HOOD",
    "menciones_reddit": 30,
-   "ret_1m": 0.0626,
-   "ret_3m": 0.0192
+   "ret_1m": 0.3315,
+   "ret_3m": 0.5907
   },
   {
-   "ticker": "SMH",
-   "menciones_reddit": 25,
-   "ret_1m": 0.025,
-   "ret_3m": 0.4498
+   "ticker": "ES",
+   "menciones_reddit": 27,
+   "ret_1m": 0.0733,
+   "ret_3m": 0.0682
+  },
+  {
+   "ticker": "QQQ",
+   "menciones_reddit": 120,
+   "ret_1m": 0.0207,
+   "ret_3m": 0.184
+  },
+  {
+   "ticker": "SOXL",
+   "menciones_reddit": 28,
+   "ret_1m": -0.0744,
+   "ret_3m": 1.5934
   }
  ],
  "modelo": {
-  "nucleo_sem": 0.00047,
-  "dinamico_sem": -0.04059,
-  "semanas": 5
+  "nucleo_sem": -0.0018,
+  "dinamico_sem": -0.05148,
+  "semanas": 6
  }
 }
