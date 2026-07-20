@@ -1,15 +1,42 @@
 {
- "actualizado": "2026-07-19",
+ "actualizado": "2026-07-20",
  "resumen": [
   {
    "horizonte": "1s",
-   "evaluaciones": 24,
+   "evaluaciones": 27,
    "supera_voo": 3,
-   "ret_modelo": -0.04373,
-   "ret_voo": -0.0035
+   "ret_modelo": -0.04054,
+   "ret_voo": -0.00338
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-13",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.0364,
+   "ret_voo": -0.00241,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-13",
+   "ticker": "SHOP",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.00617,
+   "ret_voo": -0.00241,
+   "nombre": "Shopify"
+  },
+  {
+   "fecha_reco": "2026-07-13",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": -0.00241,
+   "ret_voo": -0.00241,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-12",
    "ticker": "AMD",
