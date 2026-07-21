@@ -1,15 +1,42 @@
 {
- "actualizado": "2026-07-20",
+ "actualizado": "2026-07-21",
  "resumen": [
   {
    "horizonte": "1s",
-   "evaluaciones": 27,
+   "evaluaciones": 30,
    "supera_voo": 3,
-   "ret_modelo": -0.04054,
-   "ret_voo": -0.00338
+   "ret_modelo": -0.0401,
+   "ret_voo": -0.00378
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-14",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.04032,
+   "ret_voo": -0.00744,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-14",
+   "ticker": "MU",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.06065,
+   "ret_voo": -0.00744,
+   "nombre": "Micron"
+  },
+  {
+   "fecha_reco": "2026-07-14",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": -0.00744,
+   "ret_voo": -0.00744,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-13",
    "ticker": "AMD",
