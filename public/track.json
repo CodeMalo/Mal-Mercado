@@ -1,15 +1,42 @@
 {
- "actualizado": "2026-07-23",
+ "actualizado": "2026-07-24",
  "resumen": [
   {
    "horizonte": "1s",
-   "evaluaciones": 33,
-   "supera_voo": 3,
-   "ret_modelo": -0.04146,
-   "ret_voo": -0.00496
+   "evaluaciones": 36,
+   "supera_voo": 4,
+   "ret_modelo": -0.0386,
+   "ret_voo": -0.00507
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-17",
+   "ticker": "KO",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.00129,
+   "ret_voo": -0.00634,
+   "nombre": "Coca-Cola"
+  },
+  {
+   "fecha_reco": "2026-07-17",
+   "ticker": "V",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.01364,
+   "ret_voo": -0.00634,
+   "nombre": "Visa"
+  },
+  {
+   "fecha_reco": "2026-07-17",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": -0.00634,
+   "ret_voo": -0.00634,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-16",
    "ticker": "KO",
