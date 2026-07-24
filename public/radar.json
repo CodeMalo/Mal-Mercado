@@ -1,67 +1,67 @@
 {
- "actualizado": "2026-07-22",
- "corte": "2026-07-15",
+ "actualizado": "2026-07-23",
+ "corte": "2026-07-16",
  "semana_de": "2026-07-14",
  "conversacion": [
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 1012,
-   "sentimiento": 0.778
+   "menciones": 402,
+   "sentimiento": 1.0
   },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "menciones": 721,
-   "sentimiento": 0.273
-  },
-  {
-   "ticker": "NVDA",
-   "nombre": "NVIDIA",
-   "menciones": 295,
-   "sentimiento": 0.736
+   "menciones": 343,
+   "sentimiento": 0.818
   },
   {
    "ticker": "ORCL",
    "nombre": "Oracle",
-   "menciones": 246,
-   "sentimiento": 0.688
+   "menciones": 153,
+   "sentimiento": 1.0
   },
   {
-   "ticker": "META",
-   "nombre": "Meta",
-   "menciones": 223,
-   "sentimiento": -0.263
-  },
-  {
-   "ticker": "AAPL",
-   "nombre": "Apple",
-   "menciones": 202,
-   "sentimiento": 0.056
+   "ticker": "NVDA",
+   "nombre": "NVIDIA",
+   "menciones": 145,
+   "sentimiento": 0.875
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 192,
-   "sentimiento": 0.591
+   "menciones": 95,
+   "sentimiento": 1.0
   },
   {
-   "ticker": "NFLX",
-   "nombre": "Netflix",
-   "menciones": 189,
-   "sentimiento": 0.589
+   "ticker": "AAPL",
+   "nombre": "Apple",
+   "menciones": 80,
+   "sentimiento": 0.25
   },
   {
-   "ticker": "VOO",
-   "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 179,
-   "sentimiento": 0.905
+   "ticker": "META",
+   "nombre": "Meta",
+   "menciones": 77,
+   "sentimiento": -0.556
   },
   {
    "ticker": "TSLA",
    "nombre": "Tesla",
-   "menciones": 176,
-   "sentimiento": 0.211
+   "menciones": 75,
+   "sentimiento": 0.5
+  },
+  {
+   "ticker": "NFLX",
+   "nombre": "Netflix",
+   "menciones": 75,
+   "sentimiento": 0.6
+  },
+  {
+   "ticker": "GOOGL",
+   "nombre": "Alphabet",
+   "menciones": 70,
+   "sentimiento": 1.0
   }
  ],
  "radar": [
@@ -97,8 +97,8 @@
   }
  ],
  "modelo": {
-  "nucleo_sem": -0.00378,
-  "dinamico_sem": -0.05525,
-  "semanas": 9
+  "nucleo_sem": -0.00496,
+  "dinamico_sem": -0.0569,
+  "semanas": 10
  }
 }
