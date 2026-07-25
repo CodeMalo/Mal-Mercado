@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T13:37:48+00:00",
+  "generated_at": "2026-07-25T13:37:47+00:00",
   "config": {
     "brand": "Mal Mercado",
     "tagline": "El mercado es ruido. Recibe la noticia.",
@@ -19,6 +19,192 @@
     }
   },
   "items": [
+    {
+      "id": "2026-07-25-nvidia",
+      "type": "blog",
+      "title": "NVIDIA y SK Group: 500 mil millones de dólares en centros de datos de IA",
+      "date": "2026-07-25",
+      "summary": "NVIDIA y SK Group anuncian una iniciativa de más de 500 mil millones de dólares en centros de datos de IA. Qué implica para el mercado de semiconductores y la industria tecnológica.",
+      "cover": "public/media/blog/2026-07-25-nvidia.png",
+      "accent": "#ee4f9e",
+      "accent2": "#e2423c",
+      "body": "## La cifra que puso a todos a hablar\n\nNVIDIA y SK Group —el conglomerado surcoreano que controla SK Hynix— anunciaron una iniciativa conjunta valuada en más de 500 mil millones de dólares para construir centros de datos de inteligencia artificial. El acuerdo incluye una asociación de memoria entre NVIDIA y SK Hynix, uno de los principales fabricantes mundiales de chips HBM (High Bandwidth Memory), el tipo de memoria que alimenta las GPU de alto rendimiento que usa la IA generativa.\n\nNo es un memorando de intención ni una hoja de ruta vaga. Es una estructura de inversión con nombre, cifra y socios identificados. Eso es lo que lo distingue de los anuncios habituales del sector.\n\n## Qué hace SK Hynix en esta historia\n\nSK Hynix ya era proveedor clave de NVIDIA antes de este acuerdo. Fabrica la memoria HBM3E que va dentro de los chips H100 y H200, los modelos más demandados por centros de datos en todo el mundo.\n\nLa nueva asociación formaliza esa relación y la escala. En términos prácticos, significa que NVIDIA asegura suministro de memoria para una demanda que sigue superando la oferta disponible en el mercado. Para SK Hynix, significa contratos de largo plazo con el proveedor de GPU más influyente del momento.\n\nLa comunidad de r/wallstreetbets lo recogió con sentimiento positivo, lo que refleja que el mercado minorista también lo interpretó como un dato constructivo para ambas empresas.\n\n## La destilación de IA: el concepto que ganó protagonismo esta semana\n\nAl mismo tiempo que el anuncio de NVIDIA y SK Group, Silicon Valley concentró atención en un concepto técnico: la destilación de modelos de IA.\n\nEn términos simples, la destilación consiste en entrenar un modelo de IA más pequeño usando como guía uno más grande. El modelo pequeño aprende a imitar el comportamiento del grande, pero consume muchos menos recursos computacionales.\n\nPor qué importa para el mercado:\n\n- Reduce el costo de inferencia (el proceso de usar un modelo ya entrenado para dar respuestas).\n- Abre la puerta a que empresas medianas desplieguen IA sin infraestructura masiva.\n- Genera debate sobre si la demanda de GPU de alta gama crecerá al ritmo que el mercado espera, o si los modelos más eficientes moderan esa curva.\n\nCNBC reportó que el tema dominó conversaciones tanto en el sector privado como en Washington esta semana. No es una tendencia menor: afecta directamente los supuestos de crecimiento sobre los que cotiza NVIDIA.\n\n## El frente que complica el panorama\n\nNo todo el flujo de noticias fue positivo para el ecosistema de IA esta semana.\n\nCNBC también reportó el surgimiento de una coalición de escépticos de IA que opera, según el análisis, justo fuera del radar de la administración Trump. El grupo incluye voces de distintos sectores —algunos técnicos, otros de política pública— que cuestionan el ritmo de inversión en infraestructura de IA y sus implicaciones regulatorias.\n\nEste tipo de presión no mueve mercados de forma inmediata, pero sí condiciona el entorno legislativo en el que operan las grandes empresas tecnológicas. Una regulación más estricta sobre centros de datos, consumo energético o uso de IA en sectores sensibles cambiaría los modelos de expansión que hoy descuenta el mercado.\n\n## Los hiperscalers: quiénes son y por qué aparecen en cada conversación sobre NVIDIA\n\nUn hilo educativo en r/wallstreetbets sobre hiperscalers —Amazon Web Services, Microsoft Azure, Google Cloud y Meta— ayuda a contextualizar por qué el anuncio de NVIDIA y SK Group tiene la escala que tiene.\n\nLos hiperscalers son los principales compradores de GPU de NVIDIA. Construyen la infraestructura sobre la que corren los modelos de IA que después venden como servicio. Su gasto en capital (capex) determina en gran medida cuánto crece la demanda de los chips que fabrica NVIDIA.\n\nCuando estos actores anuncian incrementos en su presupuesto de inversión, NVIDIA lo siente directamente en sus pedidos. Cuando moderan o difieren inversiones, también.\n\nEntender a los hiperscalers es entender el motor detrás del crecimiento que el mercado le asigna a NVIDIA.\n\n## Partnerships y componentes: el ecosistema más amplio\n\nMotley Fool reportó esta semana el desempeño comparativo de Littelfuse y Corning, dos empresas de componentes que compiten por contratos con grandes tecnológicas. El dato relevante: las alianzas con Big Tech siguen siendo el factor diferenciador en ingresos para proveedores del sector.\n\nEsto aplica directamente al caso de SK Hynix. Tener a NVIDIA como socio estratégico no es solo un contrato; es un posicionamiento competitivo que aleja a rivales como Micron o Samsung de ese espacio de suministro prioritario.\n\n## Preguntas frecuentes\n\n**¿Qué son los chips HBM y por qué los necesita NVIDIA?**\nHBM (High Bandwidth Memory) es un tipo de memoria de alta velocidad diseñada para trabajar junto a procesadores gráficos de alto rendimiento. Las GPU de NVIDIA para centros de datos de IA requieren este tipo de memoria porque procesan volúmenes masivos de datos en paralelo. Sin HBM suficiente, no hay GPU que abastecer.\n\n**¿La destilación de IA reduce la necesidad de chips de NVIDIA?**\nEso es parte del debate activo en el mercado. Los modelos destilados son más eficientes y requieren menos poder de cómputo para inferencia. Sin embargo, el entrenamiento de los modelos grandes desde los que se destila sigue requiriendo infraestructura intensiva. El efecto neto sobre la demanda de GPU aún no está resuelto.\n\n**¿Qué es un hiperscaler?**\nEs una empresa que opera infraestructura de cómputo a escala masiva: miles de servidores, centros de datos globales y servicios en la nube. Los principales son Amazon, Microsoft, Google y Meta. Son los mayores compradores de los chips de NVIDIA a nivel mundial.\n\n## En resumen\n\nLa semana dejó varios datos concretos sobre NVIDIA y su entorno:\n\n- NVIDIA y SK Group anunciaron una iniciativa conjunta de más de 500 mil millones de dólares en centros de datos de IA, con un componente formal de asociación en memoria con SK Hynix.\n- La destilación de modelos de IA ganó protagonismo como concepto técnico con implicaciones directas sobre los supuestos de demanda de GPU.\n- Una coalición escéptica de IA comienza a articularse en el entorno político de Washington, lo que podría condicionar el marco regulatorio del sector.\n- El ecosistema de proveedores y componentes confirma que las alianzas con grandes tecnológicas siguen siendo el factor que define quién gana la carrera de ingresos en semiconductores.\n\n---\n\n*Mal Mercado es contenido educativo e informativo de análisis general de mercados: la misma información para todos los lectores. No es asesoría de inversión personalizada ni recomendación individualizada; no somos asesores registrados ante la CNBV. Invertir implica riesgo de pérdida. Los rendimientos pasados no garantizan rendimientos futuros. Cada quien es responsable de sus propias decisiones.*",
+      "images": [
+        "public/media/blog/2026-07-25-nvidia-esc-1.jpg",
+        "public/media/blog/2026-07-25-nvidia-esc-2.jpg",
+        "public/media/blog/2026-07-25-nvidia-esc-3.jpg",
+        "public/media/blog/2026-07-25-nvidia-esc-4.jpg",
+        "public/media/blog/2026-07-25-nvidia-esc-5.jpg",
+        "public/media/blog/2026-07-25-nvidia-esc-6.jpg"
+      ],
+      "image_credits": [
+        "ZMASLO · BY · vía wikimedia"
+      ],
+      "sources": [
+        "https://www.reddit.com/r/wallstreetbets/comments/1v5u5db/sk_hynix_nvda_partnership/",
+        "https://www.cnbc.com/2026/07/25/hat-is-distillation-and-why-is-everyone-so-obsessed-with-it-this-week.html",
+        "https://www.cnbc.com/2026/07/25/trump-ai-data-center-backlash.html",
+        "https://www.fool.com/coverage/charts/2026/07/25/littelfuse-vs-corning-big-tech-partnerships-win-the-revenue-war/?source=iedfolrf0000001",
+        "https://www.reddit.com/r/wallstreetbets/comments/1v5ivu4/introduction_to_hyperscalers_scaling_a_doghouse/",
+        "https://www.investing.com/news/stock-market-news/nvidia-sk-group-unveil-500-billionplus-ai-data-centers-initiative-memory-partnership-4812652"
+      ],
+      "read_min": 5,
+      "category": "IA y mercados",
+      "tags": [
+        "nvidia",
+        "sk hynix",
+        "semiconductores",
+        "inteligencia artificial",
+        "centros de datos",
+        "hiperscalers"
+      ],
+      "social": {
+        "youtube": "título: NVIDIA y SK Group: 500 mil millones en centros de datos de IA — lo que el mercado está descontando\ndescripción: NVIDIA y SK Hynix formalizaron una de las asociaciones más grandes de la historia reciente en semiconductores. El análisis desglosa qué significa para la cadena de suministro de memoria HBM, qué es la destilación de modelos de IA y por qué ese concepto técnico tiene implicaciones directas sobre los supuestos de crecimiento de NVIDIA. Mal Mercado en malmercado.com",
+        "instagram": "500 mil millones de dólares. Esa es la cifra que NVIDIA y SK Group pusieron sobre la mesa para construir centros de datos de IA.\n\nNo es una intención. Es una estructura de inversión con socios, nombre y número. SK Hynix, que ya fabrica la memoria HBM3E que va dentro de los chips H100 y H200, formaliza su relación con NVIDIA y la escala. Un lado asegura suministro en un mercado donde la oferta no alcanza la demanda. El otro lado asegura contratos de largo plazo con el actor más influyente en GPU del momento.\n\nAl mismo tiempo, el concepto de destilación de modelos de IA gana terreno: modelos más pequeños que aprenden de los grandes y consumen menos recursos. El debate que abre es directo: si la eficiencia computacional avanza, la curva de demanda de GPU de alta gama podría ser distinta a lo que el mercado hoy descuenta.\n\nEl análisis completo está en el blog. Enlace en bio.\n#MalMercado #NVIDIA #SKHynix #Semiconductores #InteligenciaArtificial #MercadosTech #HBM",
+        "facebook": "NVIDIA y SK Group anunciaron esta semana una iniciativa conjunta de más de 500 mil millones de dólares orientada a la construcción de centros de datos de inteligencia artificial. El acuerdo incluye una asociación de memoria entre NVIDIA y SK Hynix, fabricante de los chips HBM3E que alimentan los modelos H100 y H200, los más demandados por la industria en este momento. Lo que distingue este anuncio de otros en el sector es su estructura: hay cifra, hay socios identificados y hay una lógica de suministro clara detrás.\n\nAl mismo tiempo, el mercado procesó esta semana otro debate de fondo: la destilación de modelos de IA. La técnica permite entrenar modelos más pequeños a partir de modelos grandes, reduciendo el costo computacional de forma significativa. Si la eficiencia avanza a este ritmo, los supuestos de crecimiento sobre los que cotiza NVIDIA merecen revisión. No es una señal negativa por sí sola, pero sí una variable que el análisis no puede ignorar.\n\nEl análisis completo, incluyendo el papel de los hiperscalers y el frente regulatorio que empieza a tomar forma en Washington, está disponible en el blog de Mal Mercado: https://codemalo.github.io/Mal-Mercado/blog.html",
+        "tiktok": "500 mil millones de dólares entre NVIDIA y SK Group para centros de datos de IA. Y al mismo tiempo, un concepto técnico llamado destilación de modelos amenaza con cambiar cuántas GPU necesita el mundo. El análisis está en el blog.\n#NVIDIA #Semiconductores #InteligenciaArtificial #MercadosTech",
+        "x": "NVIDIA y SK Group: 500 mil millones en centros de datos de IA. SK Hynix asegura contratos, NVIDIA asegura suministro de memoria HBM. Al mismo tiempo, la destilación de modelos abre preguntas sobre la curva de demanda que el mercado hoy descuenta. El análisis en el blog.",
+        "threads": "NVIDIA y SK Hynix formalizaron una asociación de 500 mil millones de dólares para infraestructura de IA. La misma semana en que la destilación de modelos dominó Silicon Valley y Washington. Dos noticias que apuntan en direcciones distintas sobre el futuro de la demanda de semiconductores. El análisis completo está en el blog de Mal Mercado.",
+        "linkedin": "NVIDIA y SK Group anunciaron esta semana una iniciativa de más de 500 mil millones de dólares para el desarrollo de centros de datos de inteligencia artificial. El núcleo del acuerdo es una asociación de memoria entre NVIDIA y SK Hynix, proveedor actual de los chips HBM3E presentes en los modelos H100 y H200. La formalización de esta relación resuelve un problema estructural conocido: la oferta de memoria de alto ancho de banda no ha logrado mantener el ritmo de la demanda. Para ambas partes, el acuerdo reduce incertidumbre en un segmento donde los plazos de producción se miden en años.\n\nSin embargo, el contexto de la semana no fue unidimensional. La destilación de modelos de IA concentró atención técnica y política al mismo tiempo: la posibilidad de entrenar modelos más pequeños y eficientes a partir de modelos grandes replantea los supuestos de crecimiento de infraestructura sobre los que cotiza buena parte del sector. No es una tendencia que invalide la inversión en GPU de alta gama, pero sí una variable que modifica la pendiente de esa curva.\n\nEl análisis completo, incluyendo el rol de los hiperscalers y el frente regulatorio emergente en Washington, está disponible en el blog de Mal Mercado: https://codemalo.github.io/Mal-Mercado/blog.html"
+      }
+    },
+    {
+      "id": "2026-07-25-mercado",
+      "type": "blog",
+      "title": "Mercados esta semana: pérdidas minoristas y un banco indio que sorprende",
+      "date": "2026-07-25",
+      "summary": "Un repaso a lo que reportan los mercados esta semana: desde la ansiedad de inversores minoristas hasta las ganancias récord de IDFC FIRST Bank en India.",
+      "cover": "public/media/blog/2026-07-25-mercado.png",
+      "accent": "#cb4fee",
+      "accent2": "#e23cad",
+      "body": "## Lo que se observa en los mercados esta semana\n\nDos tendencias dominaron la conversación financiera esta semana: la frustración visible de inversores minoristas en plataformas como Reddit, y un resultado corporativo que tomó por sorpresa a más de uno en el sector bancario asiático.\n\nNo son necesariamente contradictorias. Ocurren al mismo tiempo, en mercados distintos, y juntas describen bien el estado actual: incertidumbre en algunos frentes, fortaleza puntual en otros.\n\n---\n\n## El humor de wallstreetbets como termómetro del retail\n\nEl foro Reddit r/wallstreetbets no es una fuente de análisis institucional. Pero sí es un indicador de sentimiento entre inversores minoristas, y esta semana el tono fue notable.\n\nVarios posts con alto volumen de interacción mostraron un patrón claro: publicaciones sobre pérdidas, ansiedad por dejar posiciones abiertas durante el fin de semana y mensajes de despedida irónica. Uno de los más comentados llevaba el título \"Good idea me, leaving this over the weekend\", una expresión de arrepentimiento por no haber cerrado posiciones antes del cierre del viernes.\n\nEse tipo de contenido, aunque no ofrece datos duros, tiene un valor descriptivo. Cuando prolifera en foros de alta actividad, apunta a que una parte del público minorista está absorbiendo pérdidas o percibe el entorno como volátil. No es un dato de mercado en sentido estricto, pero es un dato de comportamiento.\n\nOtros posts de la semana, como \"Loss porn\" o \"Observe as I go fuck myself\", son referencias directas a posiciones que salieron mal. En el ecosistema de wallstreetbets, este tipo de publicaciones funciona como confesionario colectivo. Son anecdóticas por definición, pero su concentración en una misma semana dice algo sobre el estado de ánimo del segmento más especulativo del mercado.\n\n---\n\n## IDFC FIRST Bank: ganancias récord en el primer trimestre de 2026\n\nEn el otro extremo del espectro, IDFC FIRST Bank reportó esta semana sus resultados del primer trimestre fiscal 2026 con una ganancia neta que la institución describió como récord histórico.\n\nEl banco, con sede en India, presentó los resultados en una llamada de ganancias cuya transcripción fue publicada por Investing.com. Los números superaron las expectativas del consenso de analistas, según el reporte, impulsados por crecimiento en la cartera de crédito minorista y mejora en la calidad de activos.\n\nEste resultado se produce en un contexto donde el sector bancario indio ha mostrado resiliencia relativa frente a la desaceleración que enfrentan otras economías emergentes. India mantiene una de las tasas de crecimiento del PIB más altas entre las economías grandes del mundo, y ese contexto macroeconómico se refleja en los estados financieros de sus instituciones más dinámicas.\n\nPara inversores con exposición a mercados emergentes o interesados en el sector financiero asiático, el reporte de IDFC FIRST Bank es un dato concreto que vale la pena registrar.\n\n---\n\n## Preguntas frecuentes\n\n**¿Por qué importa lo que pasa en wallstreetbets si son solo memes?**\nPorque el foro agrupa a millones de inversores minoristas activos. Cuando el tono dominante de una semana es de pérdidas y arrepentimiento, eso refleja un estado de ánimo real que, en conjunto, puede tener efectos en el volumen y dirección de operaciones en activos de alta especulación como opciones o acciones de baja capitalización.\n\n**¿Qué es IDFC FIRST Bank y por qué aparece en un resumen de mercados globales?**\nEs un banco privado indio de tamaño mediano que cotiza en las bolsas BSE y NSE. Su resultado récord es relevante porque ilustra la dinámica del sector financiero en una de las economías de mayor crecimiento del mundo, y porque India ocupa cada vez más espacio en los portafolios de fondos globales de mercados emergentes.\n\n**¿Qué significa que el sentimiento en Reddit sea negativo esta semana?**\nSignifica que la percepción de riesgo entre inversores minoristas especulativos es elevada. No predice la dirección del mercado, pero es un indicador de comportamiento que complementa otros datos más formales.\n\n---\n\n## En resumen\n\nEsta semana los mercados presentaron dos caras bien distintas. Por un lado, el segmento minorista más especulativo mostró ansiedad y pérdidas visibles en foros de alta actividad. Por otro, el sector bancario indio entregó un resultado corporativo que superó expectativas.\n\nAmbos datos conviven sin cancelarse. El primero describe un estado de ánimo; el segundo, una realidad operativa concreta. Leer los dos juntos es parte de entender cómo funciona el mercado global en una semana ordinaria.\n\n---\n\n*Mal Mercado es contenido educativo e informativo de análisis general de mercados: la misma información para todos los lectores. No es asesoría de inversión personalizada ni recomendación individualizada; no somos asesores registrados ante la CNBV. Invertir implica riesgo de pérdida. Los rendimientos pasados no garantizan rendimientos futuros. Cada quien es responsable de sus propias decisiones.*",
+      "images": [
+        "public/media/blog/2026-07-25-mercado-esc-1.jpg",
+        "public/media/blog/2026-07-25-mercado-esc-2.jpg",
+        "public/media/blog/2026-07-25-mercado-esc-3.jpg",
+        "public/media/blog/2026-07-25-mercado-esc-4.jpg",
+        "public/media/blog/2026-07-25-mercado-esc-5.jpg",
+        "public/media/blog/2026-07-25-mercado-esc-6.jpg",
+        "public/media/blog/2026-07-25-mercado-esc-7.jpg",
+        "public/media/blog/2026-07-25-mercado-esc-8.jpg"
+      ],
+      "image_credits": [
+        "Ecelan · BY-SA · vía wikimedia"
+      ],
+      "sources": [
+        "https://www.reddit.com/r/wallstreetbets/comments/1v5y4aa/thank_you_regards/",
+        "https://www.reddit.com/r/wallstreetbets/comments/1v5y9c7/observe_as_i_go_fuck_myself/",
+        "https://www.reddit.com/r/wallstreetbets/comments/1v68aft/loss_porn/",
+        "https://www.reddit.com/r/wallstreetbets/comments/1v5su9g/it_only_took_a_few_years/",
+        "https://www.reddit.com/r/wallstreetbets/comments/1v5sep7/good_idea_me_leaving_this_over_the_weekend/",
+        "https://www.investing.com/news/transcripts/earnings-call-transcript-idfc-first-bank-posts-record-q1-2026-profit-93CH-4812788"
+      ],
+      "read_min": 4,
+      "category": "Macro",
+      "tags": [
+        "mercados esta semana",
+        "wallstreetbets",
+        "idfc first bank",
+        "sentimiento de mercado",
+        "inversores minoristas",
+        "mercados emergentes"
+      ],
+      "social": {
+        "youtube": {
+          "titulo": "Minoristas perdiendo y un banco indio bate récords: lo que observó el mercado esta semana",
+          "descripcion": "Dos señales opuestas dominaron los mercados esta semana. En Reddit, el foro wallstreetbets mostró un tono inusualmente cargado de pérdidas y arrepentimiento entre inversores minoristas. Al mismo tiempo, IDFC FIRST Bank reportó la ganancia neta más alta de su historia en el primer trimestre fiscal 2026. Mal Mercado analiza qué dice cada señal sobre el estado actual del mercado global. Lee el análisis completo en https://codemalo.github.io/Mal-Mercado/blog.html"
+        },
+        "instagram": {
+          "caption": "Dos historias distintas ocurrieron en los mercados esta semana. En un foro de millones de minoristas, el tono dominante fue de pérdidas y posiciones que salieron mal. En India, un banco mediano reportó ganancias récord que superaron las expectativas del consenso. No se contradicen. Describen exactamente el estado actual: incertidumbre en algunos frentes, fortaleza puntual en otros. Análisis completo en el blog de Mal Mercado, enlace en bio.",
+          "hashtags": "#MalMercado #MercadosFinancieros #InversionesLatam #MercadosEmergentes #India #WallStreet #AnalisisFinanciero"
+        },
+        "facebook": {
+          "copy": "Esta semana los mercados enviaron señales en direcciones opuestas, y vale la pena registrarlas juntas.\n\nEn wallstreetbets, el foro de Reddit que agrupa a millones de inversores minoristas, el tono de la semana fue de pérdidas acumuladas, arrepentimiento por posiciones abiertas durante el fin de semana y un sentimiento general de alta percepción de riesgo. No son datos duros de mercado, pero sí datos de comportamiento que describen el estado de ánimo del segmento más especulativo del mercado.\n\nEn el otro extremo, IDFC FIRST Bank en India reportó una ganancia neta récord en el primer trimestre fiscal 2026, impulsada por crecimiento en crédito minorista y mejora en calidad de activos. El contexto macroeconómico indio, con una de las tasas de crecimiento más altas entre las economías grandes del mundo, se refleja en sus instituciones financieras más dinámicas. El análisis completo está disponible en el blog de Mal Mercado: https://codemalo.github.io/Mal-Mercado/blog.html"
+        },
+        "tiktok": {
+          "gancho": "Mientras minoristas en Reddit confesaban pérdidas esta semana, un banco en India batía su récord histórico de ganancias. Así luce el mercado global ahora mismo: no hay una sola historia, hay varias ocurriendo al mismo tiempo. El análisis completo en el blog de Mal Mercado.",
+          "hashtags": "#MercadosFinancieros #MalMercado #InversionesLatam #India #WallStreetBets"
+        },
+        "x": {
+          "tuit": "Dos señales esta semana: wallstreetbets cargado de pérdidas y arrepentimiento minorista. Al mismo tiempo, IDFC FIRST Bank en India reporta ganancias récord. No se contradicen. Describen bien el estado actual del mercado. Análisis: https://codemalo.github.io/Mal-Mercado/blog.html"
+        },
+        "threads": {
+          "post": "Esta semana el mercado habló en dos idiomas distintos. Uno, el del sentimiento minorista en Reddit: pérdidas, ansiedad y posiciones que salieron mal. Otro, el de los resultados corporativos en India: IDFC FIRST Bank con ganancias récord que superaron al consenso. Mal Mercado lo analiza en el blog."
+        },
+        "linkedin": {
+          "post": "El análisis de mercados pocas veces viene en una sola dirección. Esta semana lo confirmó con claridad.\n\nPor un lado, el foro wallstreetbets mostró un patrón inusualmente concentrado de publicaciones sobre pérdidas, arrepentimiento por posiciones abiertas y percepción elevada de riesgo entre inversores minoristas. Es un indicador de sentimiento, no un dato institucional, pero cuando ese tono domina en un foro de alta actividad, describe algo real sobre el comportamiento de una parte del mercado.\n\nPor otro lado, IDFC FIRST Bank reportó la ganancia neta más alta de su historia en el primer trimestre fiscal 2026, superando las estimaciones del consenso de analistas. El resultado refleja la solidez relativa del sector bancario indio en un entorno macroeconómico que sigue siendo favorable. Para quienes siguen mercados emergentes o el sector financiero asiático, es un dato concreto que vale registrar. El análisis completo está disponible en Mal Mercado: https://codemalo.github.io/Mal-Mercado/blog.html"
+        }
+      }
+    },
+    {
+      "id": "2026-07-25-exxon",
+      "type": "blog",
+      "title": "Exxon y el petróleo bajo presión: conflictos, refinerías y el deal de Kuwait",
+      "date": "2026-07-25",
+      "summary": "Ataques en el Mar Rojo, un dron ucraniano en Rusia y un acuerdo de 16,000 millones en Kuwait mueven el panorama energético. Lo que reporta el mercado sobre XOM.",
+      "cover": "public/media/blog/2026-07-25-exxon.png",
+      "accent": "#ee714f",
+      "accent2": "#e2b83c",
+      "body": "El precio del petróleo no se mueve en el vacío. Esta semana, tres frentes geopolíticos simultáneos están reconfigurando los costos de producción, las rutas de exportación y la percepción de riesgo en el sector energético global, con consecuencias directas para empresas como Exxon Mobil (XOM).\n\n## El Mar Rojo sigue sin calmarse\n\nLos Houthis reclamaron haber atacado territorio saudí después de que Arabia Saudita lanzara operaciones militares contra posiciones del grupo en Yemen. Según Bloomberg, los ataques al Mar Rojo continúan interrumpiendo rutas de envío que mueven una parte significativa del crudo mundial.\n\nCNBC reporta que Arabia Saudita respondió con ataques directos a objetivos Houthi en Yemen luego de que la milicia apoyada por Irán golpeara embarcaciones comerciales. El efecto práctico: las aseguradoras elevan las primas para buques que transitan por esa zona, y varios operadores ya redirigen cargamentos por rutas más largas, lo que encarece el flete.\n\nBloomberg lo resume con claridad: el petróleo saudí puede salir al mercado, pero no de forma barata ni sencilla. Los costos logísticos absorbidos por refinadores y distribuidores terminan trasladándose al precio final.\n\n## Un dron ucraniano incendia una refinería rusa\n\nEl 25 de julio, Bloomberg reportó que un dron ucraniano provocó un incendio en la refinería de Tyumen, en Rusia. Tyumen es una de las regiones petroleras más importantes del país.\n\nEl dato relevante para el mercado: cada vez que una instalación de procesamiento sale de operación, aunque sea temporalmente, la oferta de productos refinados se contrae. Rusia ya opera bajo sanciones que limitan a quién puede venderle. Un daño físico en infraestructura añade otra variable de restricción al suministro global.\n\n## El deal de Kuwait: 16,000 millones de dólares\n\nNo todo el flujo de noticias es negativo para el sector. Bloomberg reporta que Blackstone, Brookfield y KKR cerraron un acuerdo de 16,000 millones de dólares con Kuwait Oil Company. Es uno de los contratos de infraestructura energética más grandes del año.\n\nEl movimiento confirma que el capital institucional de largo plazo sigue apostando por la infraestructura petrolera del Golfo Pérsico. Para el contexto de XOM y sus pares, este tipo de acuerdo refleja que la demanda estructural de crudo sigue siendo lo suficientemente robusta como para justificar compromisos de esa escala.\n\n## La Casa Blanca y los reactores nucleares\n\nEn paralelo, el gobierno de Biden convocó a directivos de empresas de energía nuclear para discutir un hito en reactores avanzados, según reporta un hilo en Reddit con respaldo de fuentes periodísticas. La reunión no involucra a Exxon directamente, pero sí marca una tendencia: la diversificación de la política energética estadounidense hacia fuentes que no dependen de rutas marítimas ni de regiones en conflicto.\n\nEso no desplaza al petróleo en el corto plazo, pero sí añade presión sobre la narrativa de largo plazo del sector.\n\n## Qué observa el mercado en XOM\n\nExxon Mobil opera en exploración, producción y refinación. Los factores anteriores la afectan de varias formas:\n\n- **Precios del crudo al alza por tensiones geopolíticas**: históricamente favorece los márgenes de upstream.\n- **Costos logísticos más altos**: afectan a refinadores y distribuidores que dependen del Golfo.\n- **Competencia institucional en infraestructura**: deals como el de Kuwait muestran que hay capital privado listo para entrar a activos que antes eran exclusivos de majors.\n- **Presión estructural de largo plazo desde la política energética de EE. UU.**: la apuesta nuclear no reemplaza al petróleo de inmediato, pero suma a la conversación sobre transición.\n\nEl precio de XOM responde a un conjunto de variables que van más allá de la oferta y la demanda puntual. Esta semana, varias de esas variables se movieron al mismo tiempo.\n\n## Preguntas frecuentes\n\n**¿Por qué los conflictos en el Mar Rojo afectan a Exxon si opera principalmente en EE. UU. y el Golfo de México?**\nExxon vende crudo y productos refinados en mercados globales. Cuando las rutas de transporte se encarecen o se interrumpen, el precio de referencia del petróleo sube o se vuelve más volátil. Eso afecta sus márgenes de venta y los costos de sus clientes industriales.\n\n**¿El incendio en Tyumen cambia algo para los consumidores en México?**\nDe forma indirecta. México importa algunos productos refinados y su precio de referencia sigue al mercado internacional. Una reducción de oferta en cualquier refinería grande presiona hacia arriba los precios de gasolina, diésel y otros derivados en los mercados de futuros.\n\n**¿Qué relación tiene la energía nuclear con el precio del petróleo?**\nEn el corto plazo, ninguna directa. Pero si la capacidad nuclear crece de forma sostenida en EE. UU., reduce la demanda futura de gas natural y eventualmente presiona la de petróleo. Las decisiones de inversión en el sector energético ya incorporan ese escenario de largo plazo.\n\n## En resumen\n\nEsta semana, el entorno de Exxon concentra tensiones geopolíticas en el Mar Rojo, daño físico en infraestructura rusa, un acuerdo institucional masivo en Kuwait y un giro de política energética hacia lo nuclear en Washington. Ninguno de estos factores actúa solo. El mercado los procesa en conjunto, y eso es lo que explica la volatilidad observada en el sector energético.\n\n---\n\n*Mal Mercado es contenido educativo e informativo de análisis general de mercados: la misma información para todos los lectores. No es asesoría de inversión personalizada ni recomendación individualizada; no somos asesores registrados ante la CNBV. Invertir implica riesgo de pérdida. Los rendimientos pasados no garantizan rendimientos futuros. Cada quien es responsable de sus propias decisiones.*",
+      "images": [
+        "public/media/blog/2026-07-25-exxon-esc-1.jpg",
+        "public/media/blog/2026-07-25-exxon-esc-2.jpg",
+        "public/media/blog/2026-07-25-exxon-esc-3.jpg",
+        "public/media/blog/2026-07-25-exxon-esc-4.jpg",
+        "public/media/blog/2026-07-25-exxon-esc-5.jpg",
+        "public/media/blog/2026-07-25-exxon-esc-6.jpg",
+        "public/media/blog/2026-07-25-exxon-esc-7.jpg",
+        "public/media/blog/2026-07-25-exxon-esc-8.jpg"
+      ],
+      "image_credits": [
+        "Johnny Silvercloud · BY-SA · vía wikimedia",
+        "Steve Jurvetson from Los Altos, USA · BY · vía wikimedia"
+      ],
+      "sources": [
+        "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSDFLZFEtQ2NORmJrTm5SdU5XaXpUTENudnhrNDV4ZkFtSTN2bVdDMm9EbndCOVNwUDlpcUxIbzBXZVRhVURjcGNiVE9zVUNvMVRaOW9IWVc3YzQzZDFxOFVxQzZmNHl3QUE4dTQwNVdCM29OcF9nNTN6ZmpObi1hZnRLNHI0cTRfaUFXRThsenY4dEhhWk53enBHRVotRDFOUXcyRWtWdw?oc=5",
+        "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQng3ckVTcWRyaUs3akdwbmR5dGZab3Y4VEYxbkJ4NGUya3NNQ0RaZUxDTHNjajRTbUt5Q05NVlB4RlZ6LVlpUkFkdUhuSWxiVjJXWkJCdVNxbmYyUW1mcGlKaGxlX09nWXB1MXNDQUFPQ1ZXcWRiTExnQ0k1eS1tWmNra0gxWE12Vkl6SEs0clpPYmxmSmVzQWhhTHZvaC1KVENUR1RCN2VPUk5sbFg3ejNsOEgwUjRqVjlQY0IzWmNGSk5i?oc=5",
+        "https://www.cnbc.com/2026/07/25/saudi-military-strikes-iran-backed-houthi-targets-yemen.html",
+        "https://news.google.com/rss/articles/CBMisgFBVV95cUxORFJOckl1b25kS3l3MG9hQWpHQW1TVzExNG9IRnUtNkVYdFIyZ0NfbnJyeXFhVzl3aGZNX3dmYUZDNTRKWElYem5QRTJzSmlpV3dNT2ZXUmk0aXhmMzVwU0E1aFVyb19xdXFXQjhkdTI2WUhOcmpJeVRFV3R5OHhLaXZodm1PS0llS2FhQVpSZXM0VkVNd1Y2NWJYeXZmZmRGZTJiZ3U3T25jOGZ3dXBYeXdR?oc=5",
+        "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdnFXRlNQbVFWbDlKS0hxcmNUajRJNWM4cWVQM0paMS1BcnlDNXYtZnFOT1NDSWlTaEY3dzYwQ2JkY3g2Zk8wbWxJRGEybUwxdF9jT2prUGx2MWprWHUwOHBUSllQcGN1NjV2NDRzTHExcHFsRVBaYU41cUw1enk4N2h5a19oeDQ0QmxaRXhfZmxfZURVYWdiSkRzRFcyTktxSy00NGlPZUdnTk9lS1FkYQ?oc=5",
+        "https://www.reddit.com/r/wallstreetbets/comments/1v5gga9/white_house_to_host_nuclear_energy_ceos_for/"
+      ],
+      "read_min": 4,
+      "category": "Acciones",
+      "tags": [
+        "exxon",
+        "xom",
+        "petróleo",
+        "mar rojo",
+        "geopolítica energética",
+        "energía"
+      ],
+      "social": {
+        "youtube": {
+          "titulo": "Exxon bajo presión: Mar Rojo, drones en Rusia y 16,000 millones en Kuwait",
+          "descripcion": "Tres frentes geopolíticos simultáneos están reconfigurando el precio del petróleo y los márgenes de empresas como Exxon Mobil. Ataques Houthi en el Mar Rojo, una refinería rusa incendiada por un dron ucraniano y el acuerdo de infraestructura más grande del año en Kuwait. Lo que el mercado observa en XOM esta semana. Análisis completo en Mal Mercado: https://codemalo.github.io/Mal-Mercado/blog.html"
+        },
+        "instagram": {
+          "caption": "El petróleo no se mueve en el vacío. Esta semana, tres frentes geopolíticos tocaron el mercado energético al mismo tiempo: ataques en el Mar Rojo que encarecen el flete, una refinería rusa fuera de operación por un dron ucraniano y un acuerdo de 16,000 millones de dólares en Kuwait que confirma que el capital institucional sigue apostando por infraestructura del Golfo. Lo que el análisis observa en Exxon Mobil es una acción expuesta a variables que van mucho más allá de la oferta y demanda del día. Análisis completo en el blog, link en bio.",
+          "hashtags": "#Petroleo #Exxon #XOM #MercadosFinancieros #GeopoliticaEnergetica #MalMercado #EnergiaGlobal"
+        },
+        "facebook": {
+          "copy": "Esta semana, tres eventos simultáneos movieron el panorama energético global con consecuencias directas para empresas como Exxon Mobil. Los ataques Houthi en el Mar Rojo siguen encareciendo el flete marítimo y elevando las primas de seguro para buques que transitan la zona. Un dron ucraniano incendió la refinería de Tyumen en Rusia, contrayendo la oferta de productos refinados en un mercado que ya opera bajo sanciones. Y Blackstone, Brookfield y KKR cerraron un acuerdo de 16,000 millones de dólares con Kuwait Oil Company, una señal de que el capital institucional de largo plazo no abandonó la infraestructura petrolera del Golfo.\n\nPara XOM, el análisis observa un entorno donde las tensiones geopolíticas históricamente favorecen los márgenes de upstream, pero los costos logísticos más altos presionan a refinadores y distribuidores. Al mismo tiempo, la política energética de Estados Unidos suma conversación sobre transición, aunque sin desplazar al petróleo en el corto plazo.\n\nAnálisis completo en Mal Mercado: https://codemalo.github.io/Mal-Mercado/blog.html"
+        },
+        "tiktok": {
+          "gancho": "Tres noticias que el mercado energético no puede ignorar esta semana: el Mar Rojo sigue en conflicto, una refinería rusa ardió y Kuwait cerró el deal de infraestructura más grande del año. Esto es lo que el análisis observa en Exxon Mobil.",
+          "hashtags": "#Petroleo #Exxon #MercadosFinancieros #MalMercado #Geopolitica"
+        },
+        "x": {
+          "tuit": "Mar Rojo en conflicto, una refinería rusa incendiada por dron y un acuerdo de 16,000 millones en Kuwait. Tres frentes geopolíticos simultáneos y lo que el análisis observa en Exxon Mobil esta semana. Mal Mercado: https://codemalo.github.io/Mal-Mercado/blog.html"
+        },
+        "threads": {
+          "post": "El precio del petróleo no se mueve en el vacío. Esta semana: ataques en el Mar Rojo que encarecen rutas de exportación, una refinería rusa fuera de operación y el deal de infraestructura más grande del año en Kuwait. Análisis de lo que el mercado observa en Exxon Mobil, disponible en el blog de Mal Mercado."
+        },
+        "linkedin": {
+          "post": "El sector energético global procesó esta semana tres variables geopolíticas de forma simultánea. Los ataques Houthi en el Mar Rojo siguen presionando al alza los costos de flete y las primas de seguro marítimo, trasladando costos a refinadores y distribuidores. En paralelo, un dron ucraniano dañó la refinería de Tyumen en Rusia, una región central para la producción petrolera del país, lo que añade presión a la oferta de productos refinados en un mercado ya restringido por sanciones.\n\nDel lado de la inversión institucional, Blackstone, Brookfield y KKR cerraron un acuerdo de 16,000 millones de dólares con Kuwait Oil Company, uno de los contratos de infraestructura energética más relevantes del año. El movimiento confirma que el capital de largo plazo mantiene confianza en la demanda estructural de crudo del Golfo Pérsico, incluso en un entorno de transición energética.\n\nPara empresas como Exxon Mobil, el análisis observa un entorno donde las tensiones geopolíticas históricamente favorecen márgenes en upstream, pero la competencia institucional en infraestructura y la diversificación de la política energética estadounidense hacia nuclear añaden capas de complejidad a la narrativa de largo plazo. Análisis completo en Mal Mercado: https://codemalo.github.io/Mal-Mercado/blog.html"
+        }
+      }
+    },
     {
       "id": "2026-07-24-vanguard-sp-500-etf",
       "type": "blog",
