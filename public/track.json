@@ -1,15 +1,42 @@
 {
- "actualizado": "2026-07-25",
+ "actualizado": "2026-07-26",
  "resumen": [
   {
    "horizonte": "1s",
-   "evaluaciones": 39,
-   "supera_voo": 5,
-   "ret_modelo": -0.03561,
-   "ret_voo": -0.00514
+   "evaluaciones": 42,
+   "supera_voo": 6,
+   "ret_modelo": -0.03306,
+   "ret_voo": -0.00519
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-19",
+   "ticker": "LLY",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": 0.01435,
+   "ret_voo": -0.0059,
+   "nombre": "Eli Lilly"
+  },
+  {
+   "fecha_reco": "2026-07-19",
+   "ticker": "V",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.00786,
+   "ret_voo": -0.0059,
+   "nombre": "Visa"
+  },
+  {
+   "fecha_reco": "2026-07-19",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": -0.0059,
+   "ret_voo": -0.0059,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-18",
    "ticker": "LLY",
