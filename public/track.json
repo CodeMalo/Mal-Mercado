@@ -1,15 +1,49 @@
 {
- "actualizado": "2026-07-29",
+ "actualizado": "2026-07-30",
  "resumen": [
   {
+   "horizonte": "1m",
+   "evaluaciones": 3,
+   "supera_voo": 1,
+   "ret_modelo": -0.00404,
+   "ret_voo": -0.01246
+  },
+  {
    "horizonte": "1s",
-   "evaluaciones": 51,
+   "evaluaciones": 54,
    "supera_voo": 10,
-   "ret_modelo": -0.02573,
-   "ret_voo": -0.0054
+   "ret_modelo": -0.03081,
+   "ret_voo": -0.00529
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-23",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.14853,
+   "ret_voo": -0.00339,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-23",
+   "ticker": "MU",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.19982,
+   "ret_voo": -0.00339,
+   "nombre": "Micron"
+  },
+  {
+   "fecha_reco": "2026-07-23",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": -0.00339,
+   "ret_voo": -0.00339,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-22",
    "ticker": "LLY",
@@ -453,6 +487,15 @@
   },
   {
    "fecha_reco": "2026-07-02",
+   "ticker": "AAPL",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": 0.08136,
+   "ret_voo": -0.01246,
+   "nombre": "Apple"
+  },
+  {
+   "fecha_reco": "2026-07-02",
    "ticker": "SOL-USD",
    "tipo": "jugada",
    "horizonte": "1s",
@@ -462,11 +505,29 @@
   },
   {
    "fecha_reco": "2026-07-02",
+   "ticker": "SOL-USD",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.08102,
+   "ret_voo": -0.01246,
+   "nombre": "Solana"
+  },
+  {
+   "fecha_reco": "2026-07-02",
    "ticker": "VOO",
    "tipo": "núcleo",
    "horizonte": "1s",
    "ret": 0.00881,
    "ret_voo": 0.00881,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
+  {
+   "fecha_reco": "2026-07-02",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1m",
+   "ret": -0.01246,
+   "ret_voo": -0.01246,
    "nombre": "Vanguard S&P 500 ETF"
   }
  ]

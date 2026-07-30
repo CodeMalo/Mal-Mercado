@@ -1,67 +1,67 @@
 {
- "actualizado": "2026-07-29",
- "corte": "2026-07-22",
+ "actualizado": "2026-07-30",
+ "corte": "2026-07-23",
  "semana_de": "2026-07-22",
  "conversacion": [
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 1099,
-   "sentimiento": 0.67
+   "menciones": 965,
+   "sentimiento": 0.595
   },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "menciones": 616,
-   "sentimiento": 0.116
+   "menciones": 514,
+   "sentimiento": 0.089
   },
   {
    "ticker": "NVDA",
    "nombre": "NVIDIA",
-   "menciones": 346,
-   "sentimiento": 0.247
+   "menciones": 284,
+   "sentimiento": 0.201
   },
   {
    "ticker": "TSLA",
    "nombre": "Tesla",
-   "menciones": 312,
-   "sentimiento": 0.427
+   "menciones": 263,
+   "sentimiento": 0.319
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 288,
-   "sentimiento": 0.369
+   "menciones": 237,
+   "sentimiento": 0.359
   },
   {
    "ticker": "GOOGL",
    "nombre": "Alphabet",
-   "menciones": 271,
-   "sentimiento": 0.565
+   "menciones": 226,
+   "sentimiento": 0.611
   },
   {
    "ticker": "ORCL",
    "nombre": "Oracle",
-   "menciones": 254,
-   "sentimiento": 0.384
+   "menciones": 214,
+   "sentimiento": 0.471
   },
   {
    "ticker": "VOO",
    "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 233,
-   "sentimiento": 0.917
+   "menciones": 174,
+   "sentimiento": 0.944
   },
   {
    "ticker": "NFLX",
    "nombre": "Netflix",
-   "menciones": 211,
-   "sentimiento": 0.245
+   "menciones": 170,
+   "sentimiento": 0.327
   },
   {
    "ticker": "META",
    "nombre": "Meta",
-   "menciones": 202,
-   "sentimiento": 0.845
+   "menciones": 161,
+   "sentimiento": 0.794
   }
  ],
  "radar": [
@@ -97,8 +97,8 @@
   }
  ],
  "modelo": {
-  "nucleo_sem": -0.0054,
-  "dinamico_sem": -0.03472,
-  "semanas": 16
+  "nucleo_sem": -0.00529,
+  "dinamico_sem": -0.04226,
+  "semanas": 17
  }
 }
