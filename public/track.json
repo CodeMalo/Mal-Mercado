@@ -1,22 +1,58 @@
 {
- "actualizado": "2026-07-30",
+ "actualizado": "2026-07-31",
  "resumen": [
   {
    "horizonte": "1m",
-   "evaluaciones": 3,
+   "evaluaciones": 9,
    "supera_voo": 1,
-   "ret_modelo": -0.00404,
-   "ret_voo": -0.01246
+   "ret_modelo": -0.02409,
+   "ret_voo": -0.004
   },
   {
    "horizonte": "1s",
-   "evaluaciones": 54,
+   "evaluaciones": 58,
    "supera_voo": 10,
-   "ret_modelo": -0.03081,
-   "ret_voo": -0.00529
+   "ret_modelo": -0.02985,
+   "ret_voo": -0.00433
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-24",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.02802,
+   "ret_voo": 0.00863,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-24",
+   "ticker": "LLY",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.04267,
+   "ret_voo": 0.00863,
+   "nombre": "Eli Lilly"
+  },
+  {
+   "fecha_reco": "2026-07-24",
+   "ticker": "MU",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.00541,
+   "ret_voo": 0.00863,
+   "nombre": "Micron"
+  },
+  {
+   "fecha_reco": "2026-07-24",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": 0.00863,
+   "ret_voo": 0.00863,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-23",
    "ticker": "AMD",
@@ -433,11 +469,29 @@
   },
   {
    "fecha_reco": "2026-07-03",
+   "ticker": "AAPL",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.0128,
+   "ret_voo": 0.00023,
+   "nombre": "Apple"
+  },
+  {
+   "fecha_reco": "2026-07-03",
    "ticker": "AMD",
    "tipo": "jugada",
    "horizonte": "1s",
    "ret": 0.04625,
    "ret_voo": 0.00496,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-03",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.02027,
+   "ret_voo": 0.00023,
    "nombre": "AMD"
   },
   {
@@ -451,11 +505,29 @@
   },
   {
    "fecha_reco": "2026-07-03",
+   "ticker": "LLY",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.05677,
+   "ret_voo": 0.00023,
+   "nombre": "Eli Lilly"
+  },
+  {
+   "fecha_reco": "2026-07-03",
    "ticker": "SOL-USD",
    "tipo": "jugada",
    "horizonte": "1s",
    "ret": -0.06211,
    "ret_voo": 0.00496,
+   "nombre": "Solana"
+  },
+  {
+   "fecha_reco": "2026-07-03",
+   "ticker": "SOL-USD",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.10586,
+   "ret_voo": 0.00023,
    "nombre": "Solana"
   },
   {
@@ -469,11 +541,29 @@
   },
   {
    "fecha_reco": "2026-07-03",
+   "ticker": "UNH",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.0092,
+   "ret_voo": 0.00023,
+   "nombre": "UnitedHealth"
+  },
+  {
+   "fecha_reco": "2026-07-03",
    "ticker": "VOO",
    "tipo": "núcleo",
    "horizonte": "1s",
    "ret": 0.00496,
    "ret_voo": 0.00496,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
+  {
+   "fecha_reco": "2026-07-03",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1m",
+   "ret": 0.00023,
+   "ret_voo": 0.00023,
    "nombre": "Vanguard S&P 500 ETF"
   },
   {
