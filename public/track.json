@@ -1,22 +1,49 @@
 {
- "actualizado": "2026-08-02",
+ "actualizado": "2026-08-03",
  "resumen": [
   {
    "horizonte": "1m",
-   "evaluaciones": 9,
-   "supera_voo": 1,
-   "ret_modelo": -0.02409,
-   "ret_voo": -0.004
+   "evaluaciones": 12,
+   "supera_voo": 2,
+   "ret_modelo": -0.02558,
+   "ret_voo": -0.00091
   },
   {
    "horizonte": "1s",
-   "evaluaciones": 64,
+   "evaluaciones": 67,
    "supera_voo": 10,
-   "ret_modelo": -0.03068,
-   "ret_voo": -0.00289
+   "ret_modelo": -0.03136,
+   "ret_voo": -0.00163
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-27",
+   "ticker": "AAPL",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.0994,
+   "ret_voo": 0.02516,
+   "nombre": "Apple"
+  },
+  {
+   "fecha_reco": "2026-07-27",
+   "ticker": "LLY",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.06361,
+   "ret_voo": 0.02516,
+   "nombre": "Eli Lilly"
+  },
+  {
+   "fecha_reco": "2026-07-27",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": 0.02516,
+   "ret_voo": 0.02516,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-26",
    "ticker": "AMD",
@@ -496,6 +523,15 @@
   },
   {
    "fecha_reco": "2026-07-06",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.12211,
+   "ret_voo": 0.00837,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-06",
    "ticker": "V",
    "tipo": "jugada",
    "horizonte": "1s",
@@ -505,11 +541,29 @@
   },
   {
    "fecha_reco": "2026-07-06",
+   "ticker": "V",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": 0.02357,
+   "ret_voo": 0.00837,
+   "nombre": "Visa"
+  },
+  {
+   "fecha_reco": "2026-07-06",
    "ticker": "VOO",
    "tipo": "núcleo",
    "horizonte": "1s",
    "ret": 0.00162,
    "ret_voo": 0.00162,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
+  {
+   "fecha_reco": "2026-07-06",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1m",
+   "ret": 0.00837,
+   "ret_voo": 0.00837,
    "nombre": "Vanguard S&P 500 ETF"
   },
   {
