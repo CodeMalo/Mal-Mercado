@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-03",
+ "actualizado": "2026-08-04",
  "resumen": [
   {
    "horizonte": "1m",
@@ -10,13 +10,40 @@
   },
   {
    "horizonte": "1s",
-   "evaluaciones": 67,
+   "evaluaciones": 70,
    "supera_voo": 10,
-   "ret_modelo": -0.03136,
-   "ret_voo": -0.00163
+   "ret_modelo": -0.03082,
+   "ret_voo": -0.00042
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-28",
+   "ticker": "LLY",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.08948,
+   "ret_voo": 0.02665,
+   "nombre": "Eli Lilly"
+  },
+  {
+   "fecha_reco": "2026-07-28",
+   "ticker": "MA",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": 0.00697,
+   "ret_voo": 0.02665,
+   "nombre": "Mastercard"
+  },
+  {
+   "fecha_reco": "2026-07-28",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": 0.02665,
+   "ret_voo": 0.02665,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-27",
    "ticker": "AAPL",

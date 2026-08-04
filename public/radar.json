@@ -1,104 +1,104 @@
 {
- "actualizado": "2026-08-03",
- "corte": "2026-07-27",
- "semana_de": "2026-07-27",
+ "actualizado": "2026-08-04",
+ "corte": "2026-07-28",
+ "semana_de": "2026-07-28",
  "conversacion": [
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 586,
-   "sentimiento": 0.722
-  },
-  {
-   "ticker": "MSFT",
-   "nombre": "Microsoft",
-   "menciones": 414,
-   "sentimiento": 0.545
-  },
-  {
-   "ticker": "TSLA",
-   "nombre": "Tesla",
-   "menciones": 400,
-   "sentimiento": -0.019
+   "menciones": 826,
+   "sentimiento": 0.65
   },
   {
    "ticker": "NVDA",
    "nombre": "NVIDIA",
-   "menciones": 342,
-   "sentimiento": 0.375
+   "menciones": 588,
+   "sentimiento": 0.329
+  },
+  {
+   "ticker": "MSFT",
+   "nombre": "Microsoft",
+   "menciones": 492,
+   "sentimiento": 0.649
+  },
+  {
+   "ticker": "TSLA",
+   "nombre": "Tesla",
+   "menciones": 340,
+   "sentimiento": -0.021
   },
   {
    "ticker": "AAPL",
    "nombre": "Apple",
-   "menciones": 254,
-   "sentimiento": 0.309
-  },
-  {
-   "ticker": "META",
-   "nombre": "Meta",
-   "menciones": 253,
-   "sentimiento": 0.278
-  },
-  {
-   "ticker": "VOO",
-   "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 248,
-   "sentimiento": 0.775
-  },
-  {
-   "ticker": "INTC",
-   "nombre": "Intel",
-   "menciones": 241,
-   "sentimiento": 0.144
-  },
-  {
-   "ticker": "GOOGL",
-   "nombre": "Alphabet",
-   "menciones": 225,
-   "sentimiento": 0.527
+   "menciones": 313,
+   "sentimiento": 0.268
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 213,
-   "sentimiento": 0.5
+   "menciones": 278,
+   "sentimiento": 0.325
+  },
+  {
+   "ticker": "META",
+   "nombre": "Meta",
+   "menciones": 266,
+   "sentimiento": 0.374
+  },
+  {
+   "ticker": "AMZN",
+   "nombre": "Amazon",
+   "menciones": 214,
+   "sentimiento": 0.748
+  },
+  {
+   "ticker": "VOO",
+   "nombre": "Vanguard S&P 500 ETF",
+   "menciones": 212,
+   "sentimiento": 0.847
+  },
+  {
+   "ticker": "GOOGL",
+   "nombre": "Alphabet",
+   "menciones": 197,
+   "sentimiento": 0.577
   }
  ],
  "radar": [
   {
-   "ticker": "FCF",
-   "menciones_reddit": 17,
-   "ret_1m": 0.0293,
-   "ret_3m": 0.1391
+   "ticker": "RDDT",
+   "menciones_reddit": 37,
+   "ret_1m": 0.0709,
+   "ret_3m": 0.1159
   },
   {
-   "ticker": "ES",
-   "menciones_reddit": 12,
-   "ret_1m": 0.0441,
-   "ret_3m": 0.1095
+   "ticker": "NOW",
+   "menciones_reddit": 48,
+   "ret_1m": 0.1048,
+   "ret_3m": 0.2012
   },
   {
    "ticker": "DTE",
-   "menciones_reddit": 25,
-   "ret_1m": -0.0251,
-   "ret_3m": 0.0223
+   "menciones_reddit": 70,
+   "ret_1m": -0.0455,
+   "ret_3m": 0.0142
   },
   {
    "ticker": "SPY",
-   "menciones_reddit": 125,
-   "ret_1m": 0.0103,
-   "ret_3m": 0.0417
+   "menciones_reddit": 365,
+   "ret_1m": 0.0131,
+   "ret_3m": 0.0354
   },
   {
-   "ticker": "HBM",
-   "menciones_reddit": 16,
-   "ret_1m": -0.0518,
-   "ret_3m": -0.0835
+   "ticker": "HOOD",
+   "menciones_reddit": 37,
+   "ret_1m": -0.0832,
+   "ret_3m": 0.0778
   }
  ],
  "modelo": {
-  "nucleo_sem": -0.00163,
-  "dinamico_sem": -0.04472,
-  "semanas": 21
+  "nucleo_sem": -0.00042,
+  "dinamico_sem": -0.04457,
+  "semanas": 22
  }
 }
