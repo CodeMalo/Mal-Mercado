@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-04",
+ "actualizado": "2026-08-05",
  "resumen": [
   {
    "horizonte": "1m",
@@ -10,13 +10,40 @@
   },
   {
    "horizonte": "1s",
-   "evaluaciones": 70,
+   "evaluaciones": 73,
    "supera_voo": 10,
-   "ret_modelo": -0.03082,
-   "ret_voo": -0.00042
+   "ret_modelo": -0.02871,
+   "ret_voo": 0.0022
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-07-29",
+   "ticker": "KO",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.0229,
+   "ret_voo": 0.06338,
+   "nombre": "Coca-Cola"
+  },
+  {
+   "fecha_reco": "2026-07-29",
+   "ticker": "MA",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": 0.02117,
+   "ret_voo": 0.06338,
+   "nombre": "Mastercard"
+  },
+  {
+   "fecha_reco": "2026-07-29",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": 0.06338,
+   "ret_voo": 0.06338,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-07-28",
    "ticker": "LLY",
