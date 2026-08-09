@@ -1,104 +1,104 @@
 {
- "actualizado": "2026-08-08",
- "corte": "2026-08-01",
- "semana_de": "2026-08-01",
+ "actualizado": "2026-08-09",
+ "corte": "2026-08-02",
+ "semana_de": "2026-08-02",
  "conversacion": [
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 1940,
-   "sentimiento": 0.804
+   "menciones": 1153,
+   "sentimiento": 0.782
   },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "menciones": 1701,
-   "sentimiento": 0.621
-  },
-  {
-   "ticker": "META",
-   "nombre": "Meta",
-   "menciones": 818,
-   "sentimiento": 0.159
+   "menciones": 804,
+   "sentimiento": 0.542
   },
   {
    "ticker": "AAPL",
    "nombre": "Apple",
-   "menciones": 723,
-   "sentimiento": 0.167
+   "menciones": 622,
+   "sentimiento": 0.417
   },
   {
    "ticker": "AMZN",
    "nombre": "Amazon",
-   "menciones": 557,
-   "sentimiento": 0.507
+   "menciones": 549,
+   "sentimiento": 0.672
   },
   {
    "ticker": "NVDA",
    "nombre": "NVIDIA",
-   "menciones": 547,
-   "sentimiento": 0.695
+   "menciones": 415,
+   "sentimiento": 0.79
   },
   {
-   "ticker": "TSLA",
-   "nombre": "Tesla",
-   "menciones": 338,
-   "sentimiento": 0.157
-  },
-  {
-   "ticker": "GOOGL",
-   "nombre": "Alphabet",
-   "menciones": 277,
-   "sentimiento": 0.878
+   "ticker": "META",
+   "nombre": "Meta",
+   "menciones": 327,
+   "sentimiento": 0.365
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 264,
-   "sentimiento": 0.664
+   "menciones": 270,
+   "sentimiento": 0.716
+  },
+  {
+   "ticker": "TSLA",
+   "nombre": "Tesla",
+   "menciones": 251,
+   "sentimiento": 0.322
+  },
+  {
+   "ticker": "GOOGL",
+   "nombre": "Alphabet",
+   "menciones": 242,
+   "sentimiento": 0.926
   },
   {
    "ticker": "VOO",
    "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 232,
-   "sentimiento": -0.3
+   "menciones": 194,
+   "sentimiento": -0.2
   }
  ],
  "radar": [
   {
    "ticker": "IP",
-   "menciones_reddit": 18,
+   "menciones_reddit": 16,
    "ret_1m": 0.0649,
    "ret_3m": 0.3622
   },
   {
-   "ticker": "YOU",
-   "menciones_reddit": 17,
-   "ret_1m": -0.0075,
-   "ret_3m": 0.0376
+   "ticker": "IT",
+   "menciones_reddit": 14,
+   "ret_1m": 0.129,
+   "ret_3m": 0.017
   },
   {
    "ticker": "SPY",
-   "menciones_reddit": 331,
+   "menciones_reddit": 69,
    "ret_1m": 0.0017,
    "ret_3m": 0.0422
   },
   {
    "ticker": "GOOG",
-   "menciones_reddit": 84,
+   "menciones_reddit": 20,
    "ret_1m": -0.0035,
    "ret_3m": -0.0657
   },
   {
-   "ticker": "WDC",
-   "menciones_reddit": 17,
-   "ret_1m": -0.0895,
-   "ret_3m": 0.2542
+   "ticker": "API",
+   "menciones_reddit": 21,
+   "ret_1m": -0.0148,
+   "ret_3m": 0.1299
   }
  ],
  "modelo": {
-  "nucleo_sem": 0.00583,
-  "dinamico_sem": -0.03928,
-  "semanas": 26
+  "nucleo_sem": 0.00686,
+  "dinamico_sem": -0.03721,
+  "semanas": 27
  }
 }
