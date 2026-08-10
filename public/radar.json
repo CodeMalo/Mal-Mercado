@@ -1,66 +1,66 @@
 {
- "actualizado": "2026-08-09",
- "corte": "2026-08-02",
+ "actualizado": "2026-08-10",
+ "corte": "2026-08-03",
  "semana_de": "2026-08-02",
  "conversacion": [
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 1153,
-   "sentimiento": 0.782
+   "menciones": 536,
+   "sentimiento": 0.75
   },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "menciones": 804,
-   "sentimiento": 0.542
+   "menciones": 254,
+   "sentimiento": 0.549
   },
   {
    "ticker": "AAPL",
    "nombre": "Apple",
-   "menciones": 622,
-   "sentimiento": 0.417
-  },
-  {
-   "ticker": "AMZN",
-   "nombre": "Amazon",
-   "menciones": 549,
-   "sentimiento": 0.672
+   "menciones": 218,
+   "sentimiento": 0.5
   },
   {
    "ticker": "NVDA",
    "nombre": "NVIDIA",
-   "menciones": 415,
-   "sentimiento": 0.79
+   "menciones": 208,
+   "sentimiento": 0.736
   },
   {
-   "ticker": "META",
-   "nombre": "Meta",
-   "menciones": 327,
-   "sentimiento": 0.365
-  },
-  {
-   "ticker": "AMD",
-   "nombre": "AMD",
-   "menciones": 270,
-   "sentimiento": 0.716
-  },
-  {
-   "ticker": "TSLA",
-   "nombre": "Tesla",
-   "menciones": 251,
-   "sentimiento": 0.322
+   "ticker": "AMZN",
+   "nombre": "Amazon",
+   "menciones": 190,
+   "sentimiento": 0.625
   },
   {
    "ticker": "GOOGL",
    "nombre": "Alphabet",
-   "menciones": 242,
-   "sentimiento": 0.926
+   "menciones": 164,
+   "sentimiento": 0.889
+  },
+  {
+   "ticker": "AMD",
+   "nombre": "AMD",
+   "menciones": 149,
+   "sentimiento": 0.699
+  },
+  {
+   "ticker": "TSLA",
+   "nombre": "Tesla",
+   "menciones": 128,
+   "sentimiento": 0.15
+  },
+  {
+   "ticker": "META",
+   "nombre": "Meta",
+   "menciones": 124,
+   "sentimiento": 0.381
   },
   {
    "ticker": "VOO",
    "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 194,
+   "menciones": 114,
    "sentimiento": -0.2
   }
  ],
@@ -97,8 +97,8 @@
   }
  ],
  "modelo": {
-  "nucleo_sem": 0.00686,
-  "dinamico_sem": -0.03721,
-  "semanas": 27
+  "nucleo_sem": 0.00731,
+  "dinamico_sem": -0.03501,
+  "semanas": 28
  }
 }

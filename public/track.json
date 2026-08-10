@@ -1,22 +1,49 @@
 {
- "actualizado": "2026-08-09",
+ "actualizado": "2026-08-10",
  "resumen": [
   {
    "horizonte": "1m",
-   "evaluaciones": 24,
-   "supera_voo": 2,
-   "ret_modelo": -0.04767,
-   "ret_voo": 0.01144
+   "evaluaciones": 27,
+   "supera_voo": 3,
+   "ret_modelo": -0.03766,
+   "ret_voo": 0.01369
   },
   {
    "horizonte": "1s",
-   "evaluaciones": 85,
-   "supera_voo": 11,
-   "ret_modelo": -0.0232,
-   "ret_voo": 0.00686
+   "evaluaciones": 88,
+   "supera_voo": 13,
+   "ret_modelo": -0.02152,
+   "ret_voo": 0.00731
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-08-03",
+   "ticker": "CRM",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": 0.02501,
+   "ret_voo": 0.01995,
+   "nombre": "Salesforce"
+  },
+  {
+   "fecha_reco": "2026-08-03",
+   "ticker": "MSFT",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": 0.03273,
+   "ret_voo": 0.01995,
+   "nombre": "Microsoft"
+  },
+  {
+   "fecha_reco": "2026-08-03",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": 0.01995,
+   "ret_voo": 0.01995,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-08-02",
    "ticker": "ADBE",
@@ -550,6 +577,15 @@
   },
   {
    "fecha_reco": "2026-07-13",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.11052,
+   "ret_voo": 0.03165,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-13",
    "ticker": "SHOP",
    "tipo": "jugada",
    "horizonte": "1s",
@@ -559,11 +595,29 @@
   },
   {
    "fecha_reco": "2026-07-13",
+   "ticker": "SHOP",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": 0.20611,
+   "ret_voo": 0.03165,
+   "nombre": "Shopify"
+  },
+  {
+   "fecha_reco": "2026-07-13",
    "ticker": "VOO",
    "tipo": "núcleo",
    "horizonte": "1s",
    "ret": -0.00241,
    "ret_voo": -0.00241,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
+  {
+   "fecha_reco": "2026-07-13",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1m",
+   "ret": 0.03165,
+   "ret_voo": 0.03165,
    "nombre": "Vanguard S&P 500 ETF"
   },
   {
