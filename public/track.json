@@ -1,22 +1,49 @@
 {
- "actualizado": "2026-08-10",
+ "actualizado": "2026-08-11",
  "resumen": [
   {
    "horizonte": "1m",
-   "evaluaciones": 27,
+   "evaluaciones": 30,
    "supera_voo": 3,
-   "ret_modelo": -0.03766,
-   "ret_voo": 0.01369
+   "ret_modelo": -0.04124,
+   "ret_voo": 0.01528
   },
   {
    "horizonte": "1s",
-   "evaluaciones": 88,
-   "supera_voo": 13,
-   "ret_modelo": -0.02152,
-   "ret_voo": 0.00731
+   "evaluaciones": 91,
+   "supera_voo": 14,
+   "ret_modelo": -0.02049,
+   "ret_voo": 0.00718
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-08-04",
+   "ticker": "AMZN",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": 0.00088,
+   "ret_voo": 0.00361,
+   "nombre": "Amazon"
+  },
+  {
+   "fecha_reco": "2026-08-04",
+   "ticker": "MSFT",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": 0.02453,
+   "ret_voo": 0.00361,
+   "nombre": "Microsoft"
+  },
+  {
+   "fecha_reco": "2026-08-04",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": 0.00361,
+   "ret_voo": 0.00361,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-08-03",
    "ticker": "CRM",
@@ -550,6 +577,15 @@
   },
   {
    "fecha_reco": "2026-07-14",
+   "ticker": "AMD",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.13775,
+   "ret_voo": 0.02958,
+   "nombre": "AMD"
+  },
+  {
+   "fecha_reco": "2026-07-14",
    "ticker": "MU",
    "tipo": "jugada",
    "horizonte": "1s",
@@ -559,11 +595,29 @@
   },
   {
    "fecha_reco": "2026-07-14",
+   "ticker": "MU",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.11197,
+   "ret_voo": 0.02958,
+   "nombre": "Micron"
+  },
+  {
+   "fecha_reco": "2026-07-14",
    "ticker": "VOO",
    "tipo": "núcleo",
    "horizonte": "1s",
    "ret": -0.00744,
    "ret_voo": -0.00744,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
+  {
+   "fecha_reco": "2026-07-14",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1m",
+   "ret": 0.02958,
+   "ret_voo": 0.02958,
    "nombre": "Vanguard S&P 500 ETF"
   },
   {
