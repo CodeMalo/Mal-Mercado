@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-08-11",
+ "actualizado": "2026-08-12",
  "resumen": [
   {
    "horizonte": "1m",
@@ -10,13 +10,40 @@
   },
   {
    "horizonte": "1s",
-   "evaluaciones": 91,
-   "supera_voo": 14,
-   "ret_modelo": -0.02049,
-   "ret_voo": 0.00718
+   "evaluaciones": 94,
+   "supera_voo": 15,
+   "ret_modelo": -0.01916,
+   "ret_voo": 0.00707
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-08-05",
+   "ticker": "AMZN",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.0197,
+   "ret_voo": 0.00363,
+   "nombre": "Amazon"
+  },
+  {
+   "fecha_reco": "2026-08-05",
+   "ticker": "PLTR",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": 0.07959,
+   "ret_voo": 0.00363,
+   "nombre": "Palantir"
+  },
+  {
+   "fecha_reco": "2026-08-05",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": 0.00363,
+   "ret_voo": 0.00363,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-08-04",
    "ticker": "AMZN",
