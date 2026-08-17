@@ -2,12 +2,14 @@
 sections.py — Handler del blog de Mal Mercado (sitio independiente).
 ===================================================================
 Un solo apartado: 'blog'. Voz financiera en español, identidad Mal Mercado,
-lenguaje NO imperativo, disclaimer CNBV, ilustración Nano Banana, copys por red.
+lenguaje NO imperativo, disclaimer CNBV, portada on-brand, copys por red.
+Las imágenes del artículo NO se generan aquí: son las escenas del reel
+(mm_hyperframes._enriquecer_blog). Ver la nota antes de handle_blog.
 """
 import re
 from pathlib import Path
 
-import providers, mm_cover, grid_color, imagenes_post
+import providers, mm_cover, grid_color
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
@@ -54,38 +56,19 @@ def mm_social(d, title, summary, body_md, cfg):
     return soc
 
 
-def _queries_imagen(topic, tickers):
-    """Búsquedas de fotos reales relevantes al tema (Openverse)."""
-    cripto = any(str(t).endswith("-USD") for t in tickers)
-    base = [topic, f"{topic} technology"]
-    base.append("cryptocurrency bitcoin" if cripto else "stock market finance")
-    return base
-
-
-def _imagenes(slug, topic, tickers, acento_nombre):
-    """3+ imágenes: 2 fotos REALES del tema (scraper Openverse, libres) + 1 imagen
-    Nano Banana de alto impacto (estilo Super Bowl: clara, ingeniosa, 3s de gancho).
-    Devuelve (rutas, creditos)."""
-    carpeta = PUBLIC / "media" / "blog"
-    reales = imagenes_post.fotos_reales(_queries_imagen(topic, tickers), slug, carpeta, n=2)
-    imgs = [r for r, _ in reales]
-    creditos = [c for _, c in reales if c]
-
-    # Imagen hero Nano Banana: foto editorial de alto impacto del tema.
-    hero_rel = f"public/media/blog/{slug}-hero.png"
-    hero_abs = carpeta / f"{slug}-hero.png"
-    brief = (
-        f"A bold, high-impact editorial photograph representing {topic} for a finance media cover. "
-        f"A clear, clever visual metaphor that grabs attention in 3 seconds — Super Bowl ad energy. "
-        f"Cinematic dramatic lighting with a subtle {acento_nombre} accent glow, magazine-cover quality, "
-        f"photorealistic, shallow depth of field. The subject is clearly and directly about {topic}. "
-        f"NO text, NO words, NO letters, NO numbers, NO watermarks, NO logos.")
-    try:
-        if providers.make_illustration(brief, hero_abs):
-            imgs.insert(0, hero_rel)   # el hero va primero
-    except Exception as e:
-        print(f"  (hero Nano Banana omitido: {e})")
-    return imgs, creditos
+# ILUSTRACIÓN DEL POST — la ponen las escenas del reel, no este archivo (2026-08-16).
+# Aquí se generaban un hero Nano Banana (~$0.04/post) y 2 fotos de Openverse. Ninguno
+# se publicaba: `mm_hyperframes._enriquecer_blog` pisa `item.images` con las escenas
+# MINI MUNDO del reel en cada corrida, así que el hero solo vivía como imagen 2 del
+# reel (fuera desde el 2026-08-16, rompía la tira) y las fotos no se veían en ningún
+# lado — pero SÍ dejaban su línea de créditos en el artículo, atribuyendo a un
+# fotógrafo imágenes que no estaban ahí. Se retiraron los tres: la generación, las
+# fotos y los créditos falsos.
+#
+# Efecto en el post SIN reel (el escritor del guion falló → no hay escenas): la card
+# cae a `item.cover`, la portada on-brand de mm_cover. Mejor que una foto de banco
+# fuera de tema. En `public/media/blog/` quedan los `<slug>-hero.png` y
+# `<slug>-fotoN.jpg` históricos: no los referencia nadie, se pueden borrar.
 
 
 def handle_blog(item, cfg):
@@ -150,9 +133,6 @@ def handle_blog(item, cfg):
         mm_cover.render(title, cover_abs, kicker=meta.get("kicker", "NOTICIA DEL MERCADO"),
                         tickers=[t for t in tickers[:6]] or None, acento=color["acento"])
 
-    # Imágenes REALES del tema (scraper) + hero Nano Banana de alto impacto
-    images, creditos = _imagenes(slug, topic, tickers, color["nombre_en"])
-
     social = mm_social(d, title, txt.get("summary", ""), body_md, cfg)
     tags = txt.get("tags") if isinstance(txt.get("tags"), list) else []
 
@@ -160,7 +140,8 @@ def handle_blog(item, cfg):
         "id": slug, "type": "blog", "title": title, "date": meta.get("date", ""),
         "summary": txt.get("summary", ""),
         "cover": cover_rel, "accent": color["acento"], "accent2": color["acento2"],
-        "body": body_md, "images": images, "image_credits": creditos,
+        # images: las llena _enriquecer_blog con las escenas del reel (ver nota arriba).
+        "body": body_md, "images": [], "image_credits": [],
         "sources": sources, "read_min": read_min,
         "category": txt.get("category", "Mercados"), "tags": tags, "social": social,
     }

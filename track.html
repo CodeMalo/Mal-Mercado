@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Historial público — Mal Mercado</title>
-<meta name="description" content="El historial completo del portafolio modelo de Mal Mercado, evaluado automáticamente contra el S&P 500. Publicamos todo: aciertos y errores.">
+<meta name="description" content="El historial completo del portafolio modelo de Mal Mercado: el rendimiento de cada posición según su antigüedad, contra el S&P 500 en la misma ventana. Publicamos todo: aciertos y errores.">
 <link rel="icon" type="image/png" href="assets/malmercado_mark.png">
 <meta property="og:title" content="Historial público — Mal Mercado">
-<meta property="og:description" content="Publicamos todo, gane o pierda. Cada asignación del portafolio modelo, evaluada contra el S&P 500.">
+<meta property="og:description" content="Publicamos todo, gane o pierda. Cada posición del portafolio modelo medida por su antigüedad, junto a lo que hizo el S&P 500 en el mismo periodo.">
 <meta property="og:image" content="assets/malmercado_logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,14 +52,28 @@
   .tr-card .s{ font-size:.8rem; color:#8b95a3; margin-top:.2rem; }
   .pos{ color:#3ef08c; } .neg{ color:#ff6b6b; } .neu{ color:#eef2f6; }
 
-  .tr-tabla{ width:100%; border-collapse:collapse; font-size:.86rem; margin:1rem 0 2rem; }
+  .tr-h2{ font-family:"Space Grotesk",sans-serif; font-size:1.3rem; margin:2.4rem 0 .3rem; }
+  .tr-sub{ color:#8b95a3; font-size:.88rem; margin:0 0 1rem; line-height:1.6; }
+  .tr-scroll{ overflow-x:auto; margin:1rem 0 2rem; }
+  .tr-tabla{ width:100%; min-width:560px; border-collapse:collapse; font-size:.86rem; }
   .tr-tabla th{ font-family:"JetBrains Mono",monospace; font-size:.66rem; letter-spacing:.12em;
     text-transform:uppercase; color:#8b95a3; text-align:left; padding:.6rem .7rem;
-    border-bottom:1px solid rgba(255,255,255,.15); }
-  .tr-tabla td{ padding:.55rem .7rem; border-bottom:1px solid rgba(255,255,255,.06); }
+    border-bottom:1px solid rgba(255,255,255,.15); white-space:nowrap; }
+  .tr-tabla td{ padding:.55rem .7rem; border-bottom:1px solid rgba(255,255,255,.06); white-space:nowrap; }
   .tr-tabla td.num{ font-family:"JetBrains Mono",monospace; }
   .tr-tabla .tk{ font-weight:600; }
-  .tr-tabla .nom{ color:#8b95a3; font-size:.78rem; }
+  .tr-tabla .nom{ color:#8b95a3; font-size:.78rem; white-space:normal; }
+  .tr-tabla .edad{ font-weight:600; }
+
+  .tr-tabs{ display:flex; gap:.5rem; flex-wrap:wrap; margin:.2rem 0 .4rem; }
+  .tr-tab{ font-family:"JetBrains Mono",monospace; font-size:.68rem; letter-spacing:.1em;
+    text-transform:uppercase; padding:.5rem .9rem; border-radius:99px; cursor:pointer;
+    background:rgba(255,255,255,.05); color:#8b95a3; border:1px solid rgba(255,255,255,.12); }
+  .tr-tab.on{ background:rgba(62,240,140,.12); color:#3ef08c; border-color:rgba(62,240,140,.45); }
+  .tr-mas{ display:inline-block; font-family:"JetBrains Mono",monospace; font-size:.7rem;
+    letter-spacing:.1em; text-transform:uppercase; padding:.6rem 1.1rem; border-radius:99px;
+    cursor:pointer; background:rgba(255,255,255,.05); color:#c7cfd9;
+    border:1px solid rgba(255,255,255,.14); }
 
   .tr-nota{ background:rgba(62,240,140,.06); border:1px solid rgba(62,240,140,.25);
     border-radius:14px; padding:1.2rem 1.4rem; margin:1.5rem 0; line-height:1.65; color:#c7cfd9; }
@@ -89,8 +103,9 @@
   <header class="mm-hero">
     <p class="eyebrow">Historial público · portafolio modelo</p>
     <h1>Publicamos todo.<br><span class="g">Gane o pierda.</span></h1>
-    <p>Cada asignación del portafolio modelo se evalúa automáticamente contra el S&P 500 a una semana
-    y a un mes. Nada se borra, nada se maquilla. Esta página se actualiza sola, todos los días.</p>
+    <p>Cada posición del portafolio modelo se mide por su <b>antigüedad</b> — el tiempo que lleva desde
+    que se publicó — y siempre junto a lo que hizo el S&P 500 en esa misma ventana. Nada se borra, nada
+    se maquilla. Esta página se actualiza sola, todos los días.</p>
   </header>
 
   <main class="tr-wrap">
@@ -99,12 +114,16 @@
 
     <div class="tr-nota">
       <h3>Cómo leer esta página</h3>
-      El <b>portafolio modelo</b> es la asignación que nuestro sistema publica cada semana a partir de
-      noticias en 7 idiomas, datos oficiales (SEC), fundamentales y sentimiento social. Cada asignación
-      se congela en su fecha y, cumplido el horizonte (1 semana o 1 mes), se compara con lo que hizo el
-      S&P 500 (VOO) en el mismo periodo. La evaluación es automática: ni elegimos qué mostrar, ni
-      podemos editarla después. Con pocas evaluaciones la muestra es pequeña — el historial se
-      construye en público, semana a semana, y eso incluye las rachas malas.
+      El <b>portafolio modelo</b> es la asignación que nuestro sistema publica a partir de noticias en
+      7 idiomas, datos oficiales (SEC), fundamentales y sentimiento social. Cada asignación se congela
+      en su fecha y a partir de ahí se sigue con precios de cierre: lo que ves es su rendimiento
+      <b>según los días que lleva</b>, contra el rendimiento del S&P 500 (VOO) medido entre esas mismas
+      dos fechas. Por eso una posición de ayer y una de hace dos meses nunca se comparan entre sí: se
+      comparan cada una con su propio benchmark, en su propia ventana. El cálculo es automático: ni
+      elegimos qué mostrar, ni podemos editarlo después. Los promedios son simples por posición (sin
+      ponderar por monto, sin comisiones ni impuestos) y todo se publica con al menos una semana de
+      desfase. Con pocas posiciones medidas la muestra es pequeña — el historial se construye en
+      público, semana a semana, y eso incluye las rachas malas.
     </div>
 
     <p class="tr-legal">
@@ -124,9 +143,15 @@
 
 <script>
 (async function(){
-  const HOR = { "1s": "1 semana", "1m": "1 mes" };
   const pct = v => (v >= 0 ? "+" : "") + (v * 100).toFixed(2) + "%";
   const cls = v => v > 0 ? "pos" : (v < 0 ? "neg" : "neu");
+  // Antigüedad = días que lleva la posición desde que se publicó. El rendimiento
+  // se mide en esa ventana y SIEMPRE contra el S&P 500 en la misma ventana.
+  const NOMBRE_EDAD = { 1:"1 día", 3:"3 días", 7:"1 semana", 14:"2 semanas", 30:"1 mes",
+                        60:"2 meses", 90:"3 meses", 180:"6 meses", 365:"1 año" };
+  const etiqueta = n => NOMBRE_EDAD[n] || (n + " días");
+  const dias = n => n === 1 ? "1 día" : n + " días";
+
   let d;
   try {
     d = await (await fetch("public/track.json?v=" + Date.now())).json();
@@ -135,47 +160,108 @@
       '<p class="tr-vacio">El historial se está generando. Vuelve pronto.</p>';
     return;
   }
-  const cards = [];
-  for (const r of d.resumen) {
-    const tasa = r.evaluaciones ? Math.round(100 * r.supera_voo / r.evaluaciones) : 0;
-    const delta = r.ret_modelo - r.ret_voo;
-    cards.push(`<div class="tr-card"><div class="k">Horizonte ${HOR[r.horizonte] || r.horizonte}</div>
-      <div class="v neu">${r.evaluaciones}</div><div class="s">evaluaciones</div></div>`);
-    cards.push(`<div class="tr-card"><div class="k">Superó al S&P 500</div>
-      <div class="v ${tasa >= 50 ? "pos" : "neg"}">${tasa}%</div>
-      <div class="s">${r.supera_voo} de ${r.evaluaciones} (${HOR[r.horizonte] || r.horizonte})</div></div>`);
-    cards.push(`<div class="tr-card"><div class="k">Modelo vs S&P 500 (prom.)</div>
+  const ANTIG = d.antiguedad || { todo: [], jugadas: [] };
+  const POS = d.posiciones || [];
+  const tramo = (serie, n) => (ANTIG[serie] || []).find(r => r.dias === n);
+
+  // ── Tarjetas: el número y su comparativa, a las antigüedades cabeza de cartel.
+  const cards = [`<div class="tr-card"><div class="k">Posiciones seguidas</div>
+      <div class="v neu">${POS.length}</div>
+      <div class="s">cada una con su antigüedad, recalculada a diario</div></div>`];
+  for (const n of [7, 30]) {
+    const r = tramo("todo", n);
+    if (!r) continue;
+    const delta = r.ret - r.ret_voo, tasa = r.n ? Math.round(100 * r.supera / r.n) : 0;
+    cards.push(`<div class="tr-card"><div class="k">A ${etiqueta(n)} de antigüedad</div>
       <div class="v ${cls(delta)}">${pct(delta)}</div>
-      <div class="s">modelo ${pct(r.ret_modelo)} · S&P ${pct(r.ret_voo)}</div></div>`);
+      <div class="s">modelo ${pct(r.ret)} · S&P ${pct(r.ret_voo)} · ${r.n} posiciones</div></div>`);
+    cards.push(`<div class="tr-card"><div class="k">Superan al S&P (${etiqueta(n)})</div>
+      <div class="v ${tasa >= 50 ? "pos" : "neg"}">${tasa}%</div>
+      <div class="s">${r.supera} de ${r.n} posiciones</div></div>`);
   }
   document.getElementById("tr-cards").innerHTML = cards.join("");
 
-  if (!d.evaluaciones.length) {
+  if (!POS.length && !(ANTIG.todo || []).length) {
     document.getElementById("tr-cuerpo").innerHTML =
-      '<p class="tr-vacio">Aún no hay evaluaciones completadas. El historial se construye en público.</p>';
+      '<p class="tr-vacio">Aún no hay posiciones con antigüedad suficiente. El historial se construye en público.</p>';
     return;
   }
-  const filas = d.evaluaciones.map(e => {
-    const delta = e.ret - e.ret_voo;
+
+  // ── Tabla 1: la escalera de antigüedad (promedios) ────────────────────────
+  const escalera = serie => (ANTIG[serie] || []).map(r => {
+    const delta = r.ret - r.ret_voo, tasa = r.n ? Math.round(100 * r.supera / r.n) : 0;
     return `<tr>
-      <td class="num">${e.fecha_reco}</td>
-      <td><span class="tk">${e.ticker}</span> <span class="nom">${e.nombre}</span></td>
-      <td>${e.tipo}</td>
-      <td>${HOR[e.horizonte] || e.horizonte}</td>
-      <td class="num ${cls(e.ret)}">${pct(e.ret)}</td>
-      <td class="num ${cls(e.ret_voo)}">${pct(e.ret_voo)}</td>
+      <td class="edad">${etiqueta(r.dias)}</td>
+      <td class="num">${r.n}</td>
+      <td class="num ${cls(r.ret)}">${pct(r.ret)}</td>
+      <td class="num ${cls(r.ret_voo)}">${pct(r.ret_voo)}</td>
+      <td class="num ${cls(delta)}"><b>${pct(delta)}</b></td>
+      <td class="num">${r.supera} de ${r.n} (${tasa}%)</td>
+    </tr>`;
+  }).join("") || '<tr><td colspan="6" class="tr-vacio">Sin posiciones medidas todavía.</td></tr>';
+
+  // ── Tabla 2: posición por posición, con lo que lleva HASTA HOY ────────────
+  const fila = p => {
+    const delta = p.ret - p.ret_voo;
+    return `<tr>
+      <td class="num">${p.fecha}</td>
+      <td><span class="tk">${p.ticker}</span> <span class="nom">${p.nombre}</span></td>
+      <td>${p.tipo}</td>
+      <td class="num edad">${dias(p.dias)}</td>
+      <td class="num ${cls(p.ret)}">${pct(p.ret)}</td>
+      <td class="num ${cls(p.ret_voo)}">${pct(p.ret_voo)}</td>
       <td class="num ${cls(delta)}"><b>${pct(delta)}</b></td>
     </tr>`;
-  }).join("");
+  };
+  const TOPE = 30;
+
   document.getElementById("tr-cuerpo").innerHTML = `
-    <table class="tr-tabla">
-      <thead><tr><th>Fecha</th><th>Activo</th><th>Tipo</th><th>Horizonte</th>
-        <th>Modelo</th><th>S&P 500</th><th>Diferencia</th></tr></thead>
-      <tbody>${filas}</tbody>
-    </table>
-    <p class="tr-legal" style="border:none;padding-top:0;margin-top:0">
-      Actualizado: ${d.actualizado}. Retornos del activo en el periodo del horizonte, sin comisiones,
-      comparados con VOO (ETF del S&P 500) en el mismo periodo.</p>`;
+    <h2 class="tr-h2">Rendimiento por antigüedad</h2>
+    <p class="tr-sub">Promedio de todas las posiciones que ya alcanzaron cada antigüedad, contra el
+      S&P 500 en la misma ventana. Una posición publicada hace dos meses aporta su dato a "1 día",
+      "1 semana" y "1 mes": el mismo activo, medido en cada etapa de su vida.</p>
+    <div class="tr-tabs" id="tr-tabs">
+      <span class="tr-tab on" data-serie="todo">Todo el portafolio modelo</span>
+      <span class="tr-tab" data-serie="jugadas">Solo posiciones dinámicas</span>
+    </div>
+    <div class="tr-scroll">
+      <table class="tr-tabla">
+        <thead><tr><th>Antigüedad</th><th>Posiciones medidas</th><th>Modelo</th>
+          <th>S&P 500</th><th>Diferencia</th><th>Superan al S&P</th></tr></thead>
+        <tbody id="tr-escalera">${escalera("todo")}</tbody>
+      </table>
+    </div>
+
+    <h2 class="tr-h2">Cada posición, con su antigüedad</h2>
+    <p class="tr-sub">Lo que lleva cada asignación desde el día que se publicó hasta el último cierre,
+      y lo que hizo el S&P 500 en ese mismo periodo. Mañana esta misma fila aparece con un día más de
+      antigüedad y su número actualizado.</p>
+    <div class="tr-scroll">
+      <table class="tr-tabla">
+        <thead><tr><th>Publicada</th><th>Activo</th><th>Tipo</th><th>Antigüedad</th>
+          <th>Modelo</th><th>S&P 500</th><th>Diferencia</th></tr></thead>
+        <tbody id="tr-filas">${POS.slice(0, TOPE).map(fila).join("")}</tbody>
+      </table>
+    </div>
+    ${POS.length > TOPE ? `<span class="tr-mas" id="tr-mas">Ver las ${POS.length} posiciones</span>` : ""}
+    <p class="tr-legal" style="border:none;padding-top:1rem">
+      Actualizado: ${d.actualizado}. Precios de cierre, sin comisiones, impuestos ni tipo de cambio,
+      comparados siempre con VOO (ETF del S&P 500) entre las mismas dos fechas. Solo se publican
+      posiciones con al menos ${d.desfase_dias || 7} días de antigüedad: el dato del día llega antes,
+      por correo, a los suscriptores.</p>`;
+
+  const tabs = document.getElementById("tr-tabs");
+  tabs.addEventListener("click", e => {
+    const t = e.target.closest(".tr-tab");
+    if (!t) return;
+    tabs.querySelectorAll(".tr-tab").forEach(x => x.classList.toggle("on", x === t));
+    document.getElementById("tr-escalera").innerHTML = escalera(t.dataset.serie);
+  });
+  const mas = document.getElementById("tr-mas");
+  if (mas) mas.addEventListener("click", () => {
+    document.getElementById("tr-filas").innerHTML = POS.map(fila).join("");
+    mas.remove();
+  });
 })();
 </script>
 <script type="module" src="fondo.js?v=1"></script>
