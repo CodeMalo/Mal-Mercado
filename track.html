@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Historial público — Mal Mercado</title>
-<meta name="description" content="El historial completo del portafolio modelo de Mal Mercado: el rendimiento de cada posición según su antigüedad, contra el S&P 500 en la misma ventana. Publicamos todo: aciertos y errores.">
+<meta name="description" content="El historial completo del portafolio modelo de Mal Mercado: cada recomendación con su precio de entrada, su precio de hoy y lo que valdrían hoy $100 puestos ese día. Publicamos todo: aciertos y errores.">
 <link rel="icon" type="image/png" href="assets/malmercado_mark.png">
 <meta property="og:title" content="Historial público — Mal Mercado">
-<meta property="og:description" content="Publicamos todo, gane o pierda. Cada posición del portafolio modelo medida por su antigüedad, junto a lo que hizo el S&P 500 en el mismo periodo.">
+<meta property="og:description" content="Publicamos todo, gane o pierda. Cada recomendación con su precio de entrada y lo que vale hoy, actualizado todos los días.">
 <meta property="og:image" content="assets/malmercado_logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,12 +50,18 @@
     text-transform:uppercase; color:#8b95a3; }
   .tr-card .v{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:1.9rem; margin-top:.3rem; }
   .tr-card .s{ font-size:.8rem; color:#8b95a3; margin-top:.2rem; }
+  .tr-card.destacada{ border-color:rgba(62,240,140,.45); background:rgba(62,240,140,.07); }
+  .tr-card.destacada .v{ font-size:2.3rem; }
   .pos{ color:#3ef08c; } .neg{ color:#ff6b6b; } .neu{ color:#eef2f6; }
 
   .tr-h2{ font-family:"Space Grotesk",sans-serif; font-size:1.3rem; margin:2.4rem 0 .3rem; }
+  .tr-h3{ font-family:"Space Grotesk",sans-serif; font-size:1.05rem; margin:2rem 0 .2rem;
+    display:flex; align-items:baseline; gap:.7rem; flex-wrap:wrap; }
+  .tr-cuenta{ font-family:"JetBrains Mono",monospace; font-size:.72rem; color:#8b95a3;
+    font-weight:400; letter-spacing:.02em; }
   .tr-sub{ color:#8b95a3; font-size:.88rem; margin:0 0 1rem; line-height:1.6; }
   .tr-scroll{ overflow-x:auto; margin:1rem 0 2rem; }
-  .tr-tabla{ width:100%; min-width:560px; border-collapse:collapse; font-size:.86rem; }
+  .tr-tabla{ width:100%; min-width:760px; border-collapse:collapse; font-size:.86rem; }
   .tr-tabla th{ font-family:"JetBrains Mono",monospace; font-size:.66rem; letter-spacing:.12em;
     text-transform:uppercase; color:#8b95a3; text-align:left; padding:.6rem .7rem;
     border-bottom:1px solid rgba(255,255,255,.15); white-space:nowrap; }
@@ -64,6 +70,21 @@
   .tr-tabla .tk{ font-weight:600; }
   .tr-tabla .nom{ color:#8b95a3; font-size:.78rem; white-space:normal; }
   .tr-tabla .edad{ font-weight:600; }
+  .tr-tabla .tipo{ display:block; color:#67707c; font-size:.7rem; }
+  .tr-tabla .precio{ color:#c7cfd9; }
+  .tr-tabla .sub{ display:block; color:#8b95a3; font-size:.72rem; font-weight:400; }
+
+  .chart-caja{ position:relative; margin:1.2rem 0 1.6rem; background:rgba(7,9,13,.7);
+    border:1px solid rgba(255,255,255,.1); border-radius:13px; padding:1rem; }
+  #tr-chart{ width:100%; display:block; }
+  .chart-leyenda{ display:flex; gap:1.3rem; font-size:.78rem; color:#8b95a3;
+    margin:.6rem 0 0 .2rem; flex-wrap:wrap; }
+  .chart-leyenda .punto{ display:inline-block; width:9px; height:9px; border-radius:99px;
+    background:#3ef08c; margin-right:.4rem; vertical-align:middle; }
+  .tr-tabla .tipo{ display:block; color:#67707c; font-size:.7rem; }
+  .tr-tabla .precio{ color:#c7cfd9; }
+  .tr-tabla .flecha{ color:#67707c; padding:0 .15rem; }
+  .tr-tabla .sub{ display:block; color:#8b95a3; font-size:.72rem; font-weight:400; }
 
   .tr-tabs{ display:flex; gap:.5rem; flex-wrap:wrap; margin:.2rem 0 .4rem; }
   .tr-tab{ font-family:"JetBrains Mono",monospace; font-size:.68rem; letter-spacing:.1em;
@@ -103,9 +124,9 @@
   <header class="mm-hero">
     <p class="eyebrow">Historial público · portafolio modelo</p>
     <h1>Publicamos todo.<br><span class="g">Gane o pierda.</span></h1>
-    <p>Cada posición del portafolio modelo se mide por su <b>antigüedad</b> — el tiempo que lleva desde
-    que se publicó — y siempre junto a lo que hizo el S&P 500 en esa misma ventana. Nada se borra, nada
-    se maquilla. Esta página se actualiza sola, todos los días.</p>
+    <p>Cada recomendación queda aquí con el <b>precio al que se publicó</b> y lo que vale <b>hoy</b>.
+    Nada se borra, nada se maquilla. La lista solo crece y los valores se recalculan solos, todos los
+    días, con el cierre más reciente.</p>
   </header>
 
   <main class="tr-wrap">
@@ -115,15 +136,15 @@
     <div class="tr-nota">
       <h3>Cómo leer esta página</h3>
       El <b>portafolio modelo</b> es la asignación que nuestro sistema publica a partir de noticias en
-      7 idiomas, datos oficiales (SEC), fundamentales y sentimiento social. Cada asignación se congela
-      en su fecha y a partir de ahí se sigue con precios de cierre: lo que ves es su rendimiento
-      <b>según los días que lleva</b>, contra el rendimiento del S&P 500 (VOO) medido entre esas mismas
-      dos fechas. Por eso una posición de ayer y una de hace dos meses nunca se comparan entre sí: se
-      comparan cada una con su propio benchmark, en su propia ventana. El cálculo es automático: ni
-      elegimos qué mostrar, ni podemos editarlo después. Los promedios son simples por posición (sin
-      ponderar por monto, sin comisiones ni impuestos) y todo se publica con al menos una semana de
-      desfase. Con pocas posiciones medidas la muestra es pequeña — el historial se construye en
-      público, semana a semana, y eso incluye las rachas malas.
+      7 idiomas, datos oficiales (SEC), fundamentales y sentimiento social. Cada recomendación se
+      congela con el <b>precio al que se publicó</b> — no con el cierre posterior, que ya recogió el
+      movimiento del día — y a partir de ahí se revalúa con el último cierre disponible. Por eso el
+      número que ves siempre es <b>a hoy</b>: la misma fila mañana trae un día más de antigüedad y su
+      valor actualizado. El cálculo es automático: ni elegimos qué mostrar, ni podemos editarlo
+      después. Los $100 por recomendación son una base fija para leer el rendimiento en dinero, sin
+      comisiones ni impuestos, y todo se publica con al menos una semana de desfase. Con pocas
+      recomendaciones la muestra es pequeña — el historial se construye en público, semana a semana,
+      y eso incluye las rachas malas.
     </div>
 
     <p class="tr-legal">
@@ -145,11 +166,9 @@
 (async function(){
   const pct = v => (v >= 0 ? "+" : "") + (v * 100).toFixed(2) + "%";
   const cls = v => v > 0 ? "pos" : (v < 0 ? "neg" : "neu");
-  // Antigüedad = días que lleva la posición desde que se publicó. El rendimiento
-  // se mide en esa ventana y SIEMPRE contra el S&P 500 en la misma ventana.
-  const NOMBRE_EDAD = { 1:"1 día", 3:"3 días", 7:"1 semana", 14:"2 semanas", 30:"1 mes",
-                        60:"2 meses", 90:"3 meses", 180:"6 meses", 365:"1 año" };
-  const etiqueta = n => NOMBRE_EDAD[n] || (n + " días");
+  const usd = v => "$" + Number(v).toLocaleString("es-MX", { minimumFractionDigits: 2,
+                                                            maximumFractionDigits: 2 });
+  const din = v => "$" + Number(v).toLocaleString("es-MX", { maximumFractionDigits: 0 });
   const dias = n => n === 1 ? "1 día" : n + " días";
 
   let d;
@@ -160,108 +179,172 @@
       '<p class="tr-vacio">El historial se está generando. Vuelve pronto.</p>';
     return;
   }
-  const ANTIG = d.antiguedad || { todo: [], jugadas: [] };
-  const POS = d.posiciones || [];
-  const tramo = (serie, n) => (ANTIG[serie] || []).find(r => r.dias === n);
+  const T = d.total || {}, ENT = d.entradas || [], POR = d.portafolio || [];
+  // El núcleo (VOO) y las jugadas se leen por separado: el núcleo ES el índice, así
+  // que empata con el benchmark por construcción y, mezclado, tapa a las jugadas.
+  const TN = d.total_nucleo || {}, TJ = d.total_jugadas || {};
+  const NUC = ENT.filter(e => e.tipo === "núcleo");
+  const JUG = ENT.filter(e => e.tipo !== "núcleo");
+  const BASE = d.base || 100, CIERRE = d.cierre || d.actualizado;
 
-  // ── Tarjetas: el número y su comparativa, a las antigüedades cabeza de cartel.
-  const cards = [`<div class="tr-card"><div class="k">Posiciones seguidas</div>
-      <div class="v neu">${POS.length}</div>
-      <div class="s">cada una con su antigüedad, recalculada a diario</div></div>`];
-  for (const n of [7, 30]) {
-    const r = tramo("todo", n);
-    if (!r) continue;
-    const delta = r.ret - r.ret_voo, tasa = r.n ? Math.round(100 * r.supera / r.n) : 0;
-    cards.push(`<div class="tr-card"><div class="k">A ${etiqueta(n)} de antigüedad</div>
-      <div class="v ${cls(delta)}">${pct(delta)}</div>
-      <div class="s">modelo ${pct(r.ret)} · S&P ${pct(r.ret_voo)} · ${r.n} posiciones</div></div>`);
-    cards.push(`<div class="tr-card"><div class="k">Superan al S&P (${etiqueta(n)})</div>
-      <div class="v ${tasa >= 50 ? "pos" : "neg"}">${tasa}%</div>
-      <div class="s">${r.supera} de ${r.n} posiciones</div></div>`);
-  }
-  document.getElementById("tr-cards").innerHTML = cards.join("");
-
-  if (!POS.length && !(ANTIG.todo || []).length) {
+  if (!ENT.length) {
     document.getElementById("tr-cuerpo").innerHTML =
-      '<p class="tr-vacio">Aún no hay posiciones con antigüedad suficiente. El historial se construye en público.</p>';
+      '<p class="tr-vacio">Aún no hay recomendaciones con antigüedad suficiente. El historial se construye en público.</p>';
     return;
   }
 
-  // ── Tabla 1: la escalera de antigüedad (promedios) ────────────────────────
-  const escalera = serie => (ANTIG[serie] || []).map(r => {
-    const delta = r.ret - r.ret_voo, tasa = r.n ? Math.round(100 * r.supera / r.n) : 0;
-    return `<tr>
-      <td class="edad">${etiqueta(r.dias)}</td>
-      <td class="num">${r.n}</td>
-      <td class="num ${cls(r.ret)}">${pct(r.ret)}</td>
-      <td class="num ${cls(r.ret_voo)}">${pct(r.ret_voo)}</td>
-      <td class="num ${cls(delta)}"><b>${pct(delta)}</b></td>
-      <td class="num">${r.supera} de ${r.n} (${tasa}%)</td>
-    </tr>`;
-  }).join("") || '<tr><td colspan="6" class="tr-vacio">Sin posiciones medidas todavía.</td></tr>';
+  // ── Tarjetas: la simulación completa, de un vistazo ───────────────────────
+  document.getElementById("tr-cards").innerHTML = `
+    <div class="tr-card destacada"><div class="k">Valen hoy</div>
+      <div class="v ${cls(T.ret)}">${din(T.valor)}</div>
+      <div class="s">${pct(T.ret)} · al cierre del ${CIERRE}</div></div>
+    <div class="tr-card"><div class="k">Simulado</div>
+      <div class="v neu">${din(T.invertido)}</div>
+      <div class="s">${din(BASE)} en cada una de las ${T.entradas} recomendaciones,
+        repartidas en ${T.activos} activos</div></div>
+    <div class="tr-card"><div class="k">El núcleo, hoy</div>
+      <div class="v ${cls(TN.ret)}">${din(TN.valor)}</div>
+      <div class="s">${pct(TN.ret)} · de ${din(TN.invertido)} en ${TN.entradas} recomendaciones</div></div>
+    <div class="tr-card"><div class="k">Las jugadas, hoy</div>
+      <div class="v ${cls(TJ.ret)}">${din(TJ.valor)}</div>
+      <div class="s">${pct(TJ.ret)} · de ${din(TJ.invertido)} en ${TJ.entradas} recomendaciones</div></div>`;
 
-  // ── Tabla 2: posición por posición, con lo que lleva HASTA HOY ────────────
-  const fila = p => {
-    const delta = p.ret - p.ret_voo;
-    return `<tr>
-      <td class="num">${p.fecha}</td>
-      <td><span class="tk">${p.ticker}</span> <span class="nom">${p.nombre}</span></td>
-      <td>${p.tipo}</td>
-      <td class="num edad">${dias(p.dias)}</td>
-      <td class="num ${cls(p.ret)}">${pct(p.ret)}</td>
-      <td class="num ${cls(p.ret_voo)}">${pct(p.ret_voo)}</td>
-      <td class="num ${cls(delta)}"><b>${pct(delta)}</b></td>
+  // ── 1) Cada recomendación, con su precio de entrada ───────────────────────
+  const filaEntrada = e => `<tr>
+      <td class="num">${e.fecha}</td>
+      <td><span class="tk">${e.ticker}</span> <span class="nom">${e.nombre}</span></td>
+      <td class="num edad">${dias(e.dias)}</td>
+      <td class="num precio">${usd(e.precio_ini)}</td>
+      <td class="num precio">${usd(e.precio_hoy)}</td>
+      <td class="num ${cls(e.ret)}">${pct(e.ret)}</td>
+      <td class="num"><b class="${cls(e.valor - BASE)}">${usd(e.valor)}</b></td>
     </tr>`;
-  };
   const TOPE = 30;
+  const bloque = (titulo, lista, tot, id, texto) => !lista.length ? "" : `
+    <h3 class="tr-h3">${titulo}
+      <span class="tr-cuenta">${lista.length} recomendaciones · ${din(tot.invertido)} →
+        <b class="${cls(tot.ret)}">${din(tot.valor)}</b> (${pct(tot.ret)})</span></h3>
+    <p class="tr-sub">${texto}</p>
+    <div class="tr-scroll">
+      <table class="tr-tabla">
+        <thead><tr><th>Recomendada</th><th>Activo</th><th>Antigüedad</th>
+          <th>Precio de entrada</th><th>Precio hoy</th><th>Rendimiento a hoy</th>
+          <th>${din(BASE)} valen hoy</th></tr></thead>
+        <tbody id="filas-${id}">${lista.slice(0, TOPE).map(filaEntrada).join("")}</tbody>
+      </table>
+    </div>
+    ${lista.length > TOPE
+      ? `<span class="tr-mas" data-mas="${id}">Ver las ${lista.length}</span>` : ""}`;
+
+  // ── 2) Resumen por activo ─────────────────────────────────────────────────
+  const filaActivo = p => `<tr>
+      <td><span class="tk">${p.ticker}</span> <span class="nom">${p.nombre}</span></td>
+      <td class="num">${p.entradas}</td>
+      <td class="num">${p.primera} → ${p.ultima}</td>
+      <td class="num">${din(p.invertido)}</td>
+      <td class="num"><b class="${cls(p.ret)}">${din(p.valor)}</b></td>
+      <td class="num ${cls(p.ret)}"><b>${pct(p.ret)}</b></td>
+    </tr>`;
 
   document.getElementById("tr-cuerpo").innerHTML = `
-    <h2 class="tr-h2">Rendimiento por antigüedad</h2>
-    <p class="tr-sub">Promedio de todas las posiciones que ya alcanzaron cada antigüedad, contra el
-      S&P 500 en la misma ventana. Una posición publicada hace dos meses aporta su dato a "1 día",
-      "1 semana" y "1 mes": el mismo activo, medido en cada etapa de su vida.</p>
-    <div class="tr-tabs" id="tr-tabs">
-      <span class="tr-tab on" data-serie="todo">Todo el portafolio modelo</span>
-      <span class="tr-tab" data-serie="jugadas">Solo posiciones dinámicas</span>
+    <h2 class="tr-h2">Cada recomendación, desde su precio de entrada</h2>
+    <p class="tr-sub">El día que se publicó, el <b>precio al que el modelo la publicó ese día</b>
+      y el precio de hoy (último cierre: <b>${CIERRE}</b>). La última columna simula
+      <b>${din(BASE)} puestos ese día</b> en esa posición y lo que valen hoy. Cada recomendación
+      nueva se agrega abajo y el valor de todas se recalcula solo, todos los días: lo que ves es
+      siempre el rendimiento <b>a hoy</b>, no a una ventana fija. <b>Van en dos tablas</b>: el núcleo por un
+      lado y las jugadas por otro, porque no se juzgan igual.</p>
+
+    ${bloque("El núcleo", NUC, TN, "nuc",
+      "La parte aburrida del portafolio modelo: el ETF del mercado completo, la posición de " +
+      "largo plazo. Aquí el modelo no elige nada: sigue al índice.")}
+
+    ${bloque("Las jugadas", JUG, TJ, "jug",
+      "Aquí sí se está jugando algo: las posiciones que el modelo eligió a partir de noticias, " +
+      "datos oficiales y conversación social. Esta es la tabla que dice si el trabajo sirve.")}
+
+    <h2 class="tr-h2">Resumen por activo</h2>
+    <p class="tr-sub">Cuántas veces se recomendó cada activo, cuánto suma esa simulación y
+      cuánto vale hoy. La gráfica muestra <b>cuándo</b> se fue comprando cada uno: cada punto es
+      una recomendación, y el ancho de la barra es el periodo en que el modelo lo estuvo
+      señalando.</p>
+    <div class="chart-caja">
+      <canvas id="tr-chart"></canvas>
+      <div class="chart-leyenda">
+        <span><span class="punto"></span>Cada punto, una recomendación de ese activo</span>
+        <span>El tamaño crece cuando varias caen en la misma semana</span>
+      </div>
     </div>
     <div class="tr-scroll">
       <table class="tr-tabla">
-        <thead><tr><th>Antigüedad</th><th>Posiciones medidas</th><th>Modelo</th>
-          <th>S&P 500</th><th>Diferencia</th><th>Superan al S&P</th></tr></thead>
-        <tbody id="tr-escalera">${escalera("todo")}</tbody>
+        <thead><tr><th>Activo</th><th>Compras</th><th>De / a</th><th>Simulado</th>
+          <th>Vale hoy</th><th>Rendimiento</th></tr></thead>
+        <tbody>${POR.map(filaActivo).join("")}</tbody>
       </table>
     </div>
 
-    <h2 class="tr-h2">Cada posición, con su antigüedad</h2>
-    <p class="tr-sub">Lo que lleva cada asignación desde el día que se publicó hasta el último cierre,
-      y lo que hizo el S&P 500 en ese mismo periodo. Mañana esta misma fila aparece con un día más de
-      antigüedad y su número actualizado.</p>
-    <div class="tr-scroll">
-      <table class="tr-tabla">
-        <thead><tr><th>Publicada</th><th>Activo</th><th>Tipo</th><th>Antigüedad</th>
-          <th>Modelo</th><th>S&P 500</th><th>Diferencia</th></tr></thead>
-        <tbody id="tr-filas">${POS.slice(0, TOPE).map(fila).join("")}</tbody>
-      </table>
-    </div>
-    ${POS.length > TOPE ? `<span class="tr-mas" id="tr-mas">Ver las ${POS.length} posiciones</span>` : ""}
     <p class="tr-legal" style="border:none;padding-top:1rem">
-      Actualizado: ${d.actualizado}. Precios de cierre, sin comisiones, impuestos ni tipo de cambio,
-      comparados siempre con VOO (ETF del S&P 500) entre las mismas dos fechas. Solo se publican
-      posiciones con al menos ${d.desfase_dias || 7} días de antigüedad: el dato del día llega antes,
-      por correo, a los suscriptores.</p>`;
+      Actualizado: ${d.actualizado}. El <b>precio de entrada es el que el modelo publicó ese día</b>
+      (no el cierre posterior, que ya recoge el movimiento de la jornada); el precio de hoy es el
+      último cierre disponible, y el rendimiento es siempre <b>a hoy</b>: se recalcula cada día con
+      el cierre más reciente. Precios en dólares, sin comisiones, impuestos ni tipo de cambio. La
+      simulación de ${din(BASE)} por recomendación es una base fija para leer el rendimiento en
+      dinero: no es el monto de nadie y no proyecta nada hacia el futuro. Solo se publican
+      recomendaciones con al menos ${d.desfase_dias || 7} días: el dato del día llega antes, por
+      correo, a los suscriptores.</p>`;
 
-  const tabs = document.getElementById("tr-tabs");
-  tabs.addEventListener("click", e => {
-    const t = e.target.closest(".tr-tab");
-    if (!t) return;
-    tabs.querySelectorAll(".tr-tab").forEach(x => x.classList.toggle("on", x === t));
-    document.getElementById("tr-escalera").innerHTML = escalera(t.dataset.serie);
-  });
-  const mas = document.getElementById("tr-mas");
-  if (mas) mas.addEventListener("click", () => {
-    document.getElementById("tr-filas").innerHTML = POS.map(fila).join("");
-    mas.remove();
-  });
+  // ── Gráfica: cuándo se compró cada activo ─────────────────────────────────
+  function dibujar(){
+    const cv = document.getElementById("tr-chart");
+    if (!cv) return;
+    const dpr = window.devicePixelRatio || 1;
+    const W = cv.clientWidth || 800;
+    const filas = POR.slice(0, 18);
+    const H = Math.max(180, filas.length * 24 + 46);
+    cv.width = W * dpr; cv.height = H * dpr; cv.style.height = H + "px";
+    const ctx = cv.getContext("2d");
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    const M = { l: Math.min(78, W * 0.22), r: 14, t: 10, b: 26 };
+    const todas = ENT.map(e => e.fecha).sort();
+    const t0 = new Date(todas[0]).getTime(), t1 = new Date(CIERRE).getTime();
+    const X = f => M.l + (W - M.l - M.r) * (new Date(f).getTime() - t0) / ((t1 - t0) || 1);
+    ctx.font = "11px 'JetBrains Mono', monospace";
+    filas.forEach((p, i) => {
+      const y = M.t + i * 24 + 12;
+      ctx.strokeStyle = "rgba(255,255,255,.06)";
+      ctx.beginPath(); ctx.moveTo(M.l, y); ctx.lineTo(W - M.r, y); ctx.stroke();
+      // periodo en que el modelo lo estuvo señalando
+      ctx.strokeStyle = "rgba(62,240,140,.28)"; ctx.lineWidth = 3;
+      ctx.beginPath(); ctx.moveTo(X(p.primera), y); ctx.lineTo(X(p.ultima), y); ctx.stroke();
+      ctx.lineWidth = 1;
+      const veces = {};
+      p.fechas.forEach(f => { veces[f] = (veces[f] || 0) + 1; });
+      Object.entries(veces).forEach(([f, n]) => {
+        ctx.fillStyle = p.ret >= 0 ? "#3ef08c" : "#ff6b6b";
+        ctx.beginPath(); ctx.arc(X(f), y, 3 + Math.min(3, n - 1), 0, 7); ctx.fill();
+      });
+      ctx.fillStyle = "#c7cfd9"; ctx.textAlign = "right";
+      ctx.fillText(p.ticker, M.l - 8, y + 4);
+      ctx.textAlign = "left";
+    });
+    // eje de fechas
+    ctx.fillStyle = "#67707c"; ctx.textAlign = "center";
+    for (let i = 0; i <= 3; i++) {
+      const t = t0 + (t1 - t0) * i / 3, f = new Date(t).toISOString().slice(5, 10);
+      ctx.fillText(f, Math.min(W - M.r - 14, Math.max(M.l + 14, X(new Date(t).toISOString().slice(0, 10)))), H - 8);
+    }
+    ctx.textAlign = "left";
+  }
+  dibujar();
+  addEventListener("resize", dibujar);
+
+  document.querySelectorAll("[data-mas]").forEach(b => b.addEventListener("click", () => {
+    const id = b.dataset.mas;
+    document.getElementById("filas-" + id).innerHTML =
+      (id === "nuc" ? NUC : JUG).map(filaEntrada).join("");
+    b.remove();
+  }));
 })();
 </script>
 <script type="module" src="fondo.js?v=1"></script>

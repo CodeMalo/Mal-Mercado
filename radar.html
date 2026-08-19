@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Radar social y rendimiento por antigüedad — Mal Mercado</title>
-<meta name="description" content="Qué discutió internet sobre los mercados la semana pasada, medido con datos, y el rendimiento del portafolio modelo según la antigüedad de cada posición, contra el S&P 500 en la misma ventana.">
+<title>Radar social y rendimiento a hoy — Mal Mercado</title>
+<meta name="description" content="Qué discutió internet sobre los mercados la semana pasada, medido con datos, y cuánto vale hoy cada recomendación del portafolio modelo desde el precio al que se publicó.">
 <link rel="icon" type="image/png" href="assets/malmercado_mark.png">
-<meta property="og:title" content="Radar social y rendimiento por antigüedad — Mal Mercado">
-<meta property="og:description" content="El ruido, medido. Menciones, sentimiento y el rendimiento real del portafolio modelo por antigüedad de cada posición, siempre junto a su comparativa.">
+<meta property="og:title" content="Radar social y rendimiento a hoy — Mal Mercado">
+<meta property="og:description" content="El ruido, medido. Menciones, sentimiento y cuánto vale hoy el dinero simulado en cada recomendación del portafolio modelo.">
 <meta property="og:image" content="assets/malmercado_logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,17 +83,23 @@
   .chart-leyenda{ display:flex; gap:1.3rem; font-size:.78rem; color:#8b95a3; margin:.6rem 0 0 .2rem; flex-wrap:wrap; }
   .linea-muestra{ display:inline-block; width:22px; height:10px; border-radius:3px; margin-right:.4rem; vertical-align:middle; }
 
-  .ant-scroll{ overflow-x:auto; margin-top:1.3rem; }
-  .ant-tabla{ width:100%; min-width:520px; border-collapse:collapse; font-size:.86rem; }
-  .ant-tabla th{ font-family:"JetBrains Mono",monospace; font-size:.62rem; letter-spacing:.11em;
-    text-transform:uppercase; color:#8b95a3; text-align:left; padding:.55rem .6rem;
-    border-bottom:1px solid rgba(255,255,255,.15); white-space:nowrap; }
-  .ant-tabla td{ padding:.55rem .6rem; border-bottom:1px solid rgba(255,255,255,.06); white-space:nowrap; }
-  .ant-tabla td.num{ font-family:"JetBrains Mono",monospace; }
-  .ant-tabla .edad{ font-weight:600; }
-  .ant-tabla tr.hoy td{ background:rgba(62,240,140,.05); }
+  .ant-hoy{ text-align:center; padding:.6rem 0 .2rem; }
+  .ant-hoy-k{ font-family:"JetBrains Mono",monospace; font-size:.66rem; letter-spacing:.14em;
+    text-transform:uppercase; color:#8b95a3; }
+  .ant-hoy-v{ font-family:"Space Grotesk",sans-serif; font-weight:700;
+    font-size:clamp(2.4rem,7vw,3.6rem); letter-spacing:-.02em; margin:.2rem 0 .4rem; }
+  .ant-hoy-s{ color:#c7cfd9; font-size:.88rem; line-height:1.6; max-width:60ch;
+    margin:0 auto; }
+  .ant-split{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:1rem; margin-top:1.3rem; }
+  .ant-caja{ background:rgba(7,9,13,.7); border:1px solid rgba(255,255,255,.1);
+    border-radius:13px; padding:1rem 1.1rem; }
+  .ant-caja-k{ font-family:"JetBrains Mono",monospace; font-size:.62rem; letter-spacing:.13em;
+    text-transform:uppercase; color:#8b95a3; }
+  .ant-caja-v{ font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:1.5rem;
+    margin-top:.25rem; }
+  .ant-caja-s{ font-size:.76rem; color:#8b95a3; margin-top:.3rem; line-height:1.55; }
   .pos{ color:#3ef08c; } .neg{ color:#ff6b6b; } .neu{ color:#eef2f6; }
-  .ant-vacio{ color:#8b95a3; font-size:.88rem; padding:1.5rem .2rem; }
 
   .rd-nota{ background:rgba(62,240,140,.06); border:1px solid rgba(62,240,140,.25);
     border-radius:14px; padding:1.2rem 1.4rem; margin:1.5rem 0; line-height:1.65; color:#c7cfd9; font-size:.9rem; }
@@ -139,54 +145,46 @@
     Los suscriptores los recibieron por correo en su momento; aquí se publican una semana después.</p>
     <div id="rd-radar" class="rd-lista"></div>
 
-    <h2 class="rd-h2" id="rendimiento">Rendimiento por antigüedad <span class="chip">dato histórico</span></h2>
-    <p class="rd-sub">Una posición no rinde "en el año": rinde según el <b>tiempo que lleva abierta</b>.
-    Medir todo contra la misma fecha de corte mezcla lo que se publicó hace tres días con lo de hace
-    dos meses, y esa comparación no es justa. Aquí cada asignación del portafolio modelo se mide por su
-    <b>antigüedad</b> — a los N días de haberse publicado — y siempre junto a lo que hizo el S&amp;P 500
-    en <b>exactamente esa misma ventana</b>. El número nunca va solo: va con su comparativa. Se
-    recalcula todos los días, así que la posición de ayer aparece mañana con un día más encima.</p>
+    <h2 class="rd-h2" id="rendimiento">Cuánto vale hoy <span class="chip">dato histórico</span></h2>
+    <p class="rd-sub">Cada recomendación que ha publicado el portafolio modelo entra aquí con
+    <b>$100 puestos el día que salió</b>, al precio que el modelo publicó esa mañana. La curva es lo
+    que vale ese dinero <b>hasta el último cierre</b>: no es una proyección ni una ventana fija: se
+    recalcula solo, todos los días, así que mañana la misma recomendación aparece con un día más y su
+    valor de mañana. El detalle recomendación por recomendación, con su
+    <b>precio de entrada y su precio de hoy</b>, está en el
+    <a href="track.html" style="color:#3ef08c">Historial</a>.</p>
 
     <div class="ant">
-      <div class="ant-tabs" id="ant-tabs">
-        <span class="ant-tab on" data-serie="todo">Todo el portafolio modelo</span>
-        <span class="ant-tab" data-serie="jugadas">Solo posiciones dinámicas</span>
+      <div class="ant-hoy">
+        <div class="ant-hoy-k">Valen hoy</div>
+        <div class="ant-hoy-v" id="ant-valor">—</div>
+        <div class="ant-hoy-s" id="ant-detalle">Cargando el historial del modelo…</div>
       </div>
 
       <div class="chart-caja">
         <span class="badge-dato">Rendimiento ya ocurrido</span>
         <canvas id="ant-chart"></canvas>
         <div class="chart-leyenda">
-          <span><span class="linea-muestra" style="background:#3ef08c"></span>Portafolio modelo</span>
-          <span><span class="linea-muestra" style="background:#4da3ff"></span>S&amp;P 500 (VOO) en la misma ventana</span>
+          <span><span class="linea-muestra" style="background:#3ef08c"></span>Lo que vale el dinero simulado</span>
+          <span><span class="linea-muestra" style="background:#67707c;height:0;border-top:2px dashed #67707c"></span>Lo que se fue poniendo</span>
         </div>
       </div>
 
-      <div class="ant-scroll">
-        <table class="ant-tabla" id="ant-tabla">
-          <thead><tr>
-            <th>Antigüedad</th><th>Posiciones medidas</th><th>Modelo</th>
-            <th>S&amp;P 500</th><th>Diferencia</th><th>Superan al S&amp;P</th>
-          </tr></thead>
-          <tbody id="ant-filas"></tbody>
-        </table>
-      </div>
-      <p class="ant-vacio" id="ant-estado">Cargando el historial del modelo…</p>
+      <div class="ant-split" id="ant-split"></div>
     </div>
 
     <p class="rd-legal" style="border:none;margin-top:1rem">
-      <b style="color:#8b95a3">Cómo se calculan estas cifras.</b> Cada asignación registrada por el
-      sistema se congela en su fecha y se sigue con precios de cierre: a los N días de antigüedad se
-      compara su rendimiento con el del S&amp;P 500 (VOO) medido entre esas mismas dos fechas. Lo que
-      ves es el <b>promedio simple por posición</b> de todas las que ya alcanzaron esa antigüedad — no
-      está ponderado por monto, no descuenta comisiones, impuestos ni tipo de cambio, y no representa
-      una cuenta real. Cuando una antigüedad tiene pocas posiciones, el promedio dice poco: la columna
-      "posiciones medidas" está ahí para que lo juzgues tú.
+      <b style="color:#8b95a3">Cómo se calcula.</b> Cada recomendación se congela con el
+      <b>precio al que el modelo la publicó ese día</b> — no con el cierre posterior, que ya recogió el
+      movimiento de la jornada — y desde ahí se revalúa con el último cierre disponible de cada
+      jornada. Los $100 por recomendación son una base fija para leer el rendimiento en dinero: no es
+      el monto de nadie, no descuenta comisiones, impuestos ni tipo de cambio, y no representa una
+      cuenta real. Los precios son cierres en dólares.
     </p>
     <p class="rd-legal" style="border:none;margin-top:0">
       <b style="color:#8b95a3">Sobre el portafolio modelo.</b> Corresponde a las asignaciones que
-      registra el sistema de Mal Mercado, evaluadas de forma automática y publicadas con al menos una
-      semana de desfase (el detalle posición por posición está en el
+      registra el sistema de Mal Mercado, calculadas de forma automática y publicadas con al menos una
+      semana de desfase (el detalle está en el
       <a href="track.html" style="color:#3ef08c">Historial</a>). Esto es información histórica y
       educativa: NO es asesoría financiera, ni una recomendación personalizada, ni una promesa o
       garantía de rendimientos futuros. El desempeño pasado no garantiza resultados futuros y toda
@@ -197,10 +195,11 @@
       <h3>Cómo leer esta página</h3>
       El radar mide <b>atención</b>, no calidad: que algo se discuta mucho no lo hace buena ni mala
       inversión — a veces es exactamente al revés. Lo de abajo es otra cosa: <b>rendimiento que ya
-      ocurrió</b>, medido por antigüedad de cada posición y siempre contra el S&amp;P 500 en la misma
-      ventana. No hay simulaciones ni proyecciones en esta página: ningún número de aquí supone lo que
-      pasará mañana. Todo lo público va con una semana de desfase; el dato del día viaja por correo.
-      Y al comparar con tu caso real, considera las comisiones de tu broker: en montos pequeños pesan más.
+      ocurrió</b> — lo que valdría hoy el dinero puesto en cada recomendación, desde el precio al que
+      se publicó. No hay simulaciones a futuro ni proyecciones en esta página: ningún número de aquí
+      supone lo que pasará mañana. Todo lo público va con una semana de desfase; el dato del día viaja
+      por correo. Y al comparar con tu caso real, considera las comisiones de tu broker: en montos
+      pequeños pesan más.
     </div>
 
     <div class="rd-captura" data-mm-captura></div>
@@ -223,16 +222,13 @@
   const $ = id => document.getElementById(id);
   const pctS = v => (v >= 0 ? "+" : "") + (v * 100).toFixed(2) + "%";
   const cls = v => v > 0 ? "pos" : (v < 0 ? "neg" : "neu");
+  const din = v => "$" + Number(v).toLocaleString("es-MX", { maximumFractionDigits: 0 });
 
-  // ── Rendimiento por antigüedad ────────────────────────────────────────────
-  // Cada tramo es una ANTIGÜEDAD (días desde que la posición se publicó) con el
-  // promedio del modelo y el del S&P 500 en esa MISMA ventana. Llega de radar.json.
-  const NOMBRE_EDAD = { 1:"1 día", 3:"3 días", 7:"1 semana", 14:"2 semanas", 30:"1 mes",
-                        60:"2 meses", 90:"3 meses", 180:"6 meses", 365:"1 año" };
-  const CORTA = { 1:"1d", 3:"3d", 7:"1sem", 14:"2sem", 30:"1m", 60:"2m", 90:"3m", 180:"6m", 365:"1a" };
-  const etiqueta = d => NOMBRE_EDAD[d] || (d + " días");
-  let ANTIG = { todo: [], jugadas: [] }, serie = "todo";
-  const tramos = () => ANTIG[serie] || [];
+  // ── Cuánto vale hoy ───────────────────────────────────────────────────────
+  // La curva del dinero simulado ($100 por recomendación, desde el precio que el
+  // modelo publicó ese día) revaluado con el cierre de cada jornada. Termina HOY:
+  // eso es lo que la página pone al frente. Llega de radar.json.
+  let SERIE = [], TOT = null;
 
   function dibujar(){
     const cv = $("ant-chart"), dpr = window.devicePixelRatio || 1;
@@ -241,69 +237,42 @@
     const ctx = cv.getContext("2d");
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     ctx.clearRect(0, 0, W, Hpx);
-    const d = tramos();
-    if (!d.length) return;
-    const angosto = W < 520;                   // móvil: etiquetas cortas, menos margen
-    const M = { l: angosto ? 44 : 58, r: 14, t: 24, b: 34 };
-    const vals = d.reduce((a, r) => a.concat([r.ret, r.ret_voo]), [0]);
+    if (SERIE.length < 2) return;
+    const M = { l: 62, r: 16, t: 22, b: 30 };
+    const vals = SERIE.reduce((a, p) => a.concat([p.valor, p.invertido]), []);
     let ymin = Math.min(...vals), ymax = Math.max(...vals);
-    const pad = (ymax - ymin) * 0.15 || 0.005;
-    ymin -= pad; ymax += pad;
+    const pad = (ymax - ymin) * 0.12 || 1;
+    ymin = Math.max(0, ymin - pad); ymax += pad;
+    const X = i => M.l + (W - M.l - M.r) * i / (SERIE.length - 1);
     const Y = v => M.t + (Hpx - M.t - M.b) * (1 - (v - ymin) / (ymax - ymin));
-    const ancho = (W - M.l - M.r) / d.length;
-    ctx.font = (angosto ? "9px" : "11px") + " 'JetBrains Mono', monospace";
+    ctx.font = "11px 'JetBrains Mono', monospace";
     ctx.lineWidth = 1;
     for (let i = 0; i <= 4; i++) {
       const v = ymin + (ymax - ymin) * i / 4, y = Y(v);
       ctx.strokeStyle = "rgba(255,255,255,.07)";
       ctx.beginPath(); ctx.moveTo(M.l, y); ctx.lineTo(W - M.r, y); ctx.stroke();
-      ctx.fillStyle = "#67707c";
-      ctx.fillText((v * 100).toFixed(angosto ? 0 : 1) + "%", 4, y + 4);
+      ctx.fillStyle = "#67707c"; ctx.fillText(din(v), 6, y + 4);
     }
-    const y0 = Y(0);   // el cero manda: aquí hay rendimientos negativos
-    ctx.strokeStyle = "rgba(255,255,255,.3)";
-    ctx.beginPath(); ctx.moveTo(M.l, y0); ctx.lineTo(W - M.r, y0); ctx.stroke();
-    d.forEach((r, i) => {
-      const centro = M.l + ancho * (i + 0.5);
-      const bw = Math.max(8, Math.min(28, ancho / 3.2));
-      [[r.ret, "#3ef08c", -1], [r.ret_voo, "#4da3ff", 1]].forEach(([v, color, lado]) => {
-        const x = lado < 0 ? centro - bw - 3 : centro + 3, y = Y(v);
-        ctx.fillStyle = color;
-        ctx.fillRect(x, Math.min(y, y0), bw, Math.max(2, Math.abs(y - y0)));
-      });
-      ctx.fillStyle = "#8b95a3"; ctx.textAlign = "center";
-      ctx.fillText(angosto ? (CORTA[r.dias] || r.dias + "d") : etiqueta(r.dias), centro, Hpx - 11);
-      ctx.textAlign = "left";
+    const linea = (campo, color, dash) => {
+      ctx.beginPath(); ctx.setLineDash(dash || []);
+      ctx.strokeStyle = color; ctx.lineWidth = dash ? 1.6 : 2.6;
+      SERIE.forEach((p, i) => i ? ctx.lineTo(X(i), Y(p[campo])) : ctx.moveTo(X(0), Y(p[campo])));
+      ctx.stroke(); ctx.setLineDash([]);
+    };
+    linea("invertido", "#67707c", [5, 5]);
+    linea("valor", "#3ef08c");
+    // el punto de hoy, que es de lo que trata la gráfica
+    const fin = SERIE[SERIE.length - 1];
+    ctx.fillStyle = "#3ef08c";
+    ctx.beginPath(); ctx.arc(X(SERIE.length - 1), Y(fin.valor), 4.5, 0, 7); ctx.fill();
+    // fechas
+    ctx.fillStyle = "#67707c"; ctx.textAlign = "center";
+    [0, Math.floor((SERIE.length - 1) / 2), SERIE.length - 1].forEach(i => {
+      ctx.fillText(SERIE[i].fecha.slice(5), Math.min(W - M.r - 16, Math.max(M.l + 16, X(i))), Hpx - 9);
     });
+    ctx.textAlign = "left";
   }
 
-  function tabla(){
-    const d = tramos();
-    $("ant-filas").innerHTML = d.map(r => {
-      const dif = r.ret - r.ret_voo, tasa = r.n ? Math.round(100 * r.supera / r.n) : 0;
-      return `<tr>
-        <td class="edad">${etiqueta(r.dias)}</td>
-        <td class="num">${r.n}</td>
-        <td class="num ${cls(r.ret)}">${pctS(r.ret)}</td>
-        <td class="num ${cls(r.ret_voo)}">${pctS(r.ret_voo)}</td>
-        <td class="num ${cls(dif)}"><b>${pctS(dif)}</b></td>
-        <td class="num">${r.supera} de ${r.n} (${tasa}%)</td>
-      </tr>`;
-    }).join("");
-    $("ant-tabla").style.display = d.length ? "" : "none";
-    $("ant-estado").style.display = d.length ? "none" : "";
-  }
-
-  function pintar(){ dibujar(); tabla(); }
-
-  $("ant-tabs").addEventListener("click", e => {
-    const tab = e.target.closest(".ant-tab");
-    if (!tab) return;
-    serie = tab.dataset.serie;
-    document.querySelectorAll(".ant-tab").forEach(t => t.classList.toggle("on", t === tab));
-    pintar();
-    if (window.gtag) gtag("event", "antiguedad_vista", { serie: serie });
-  });
   addEventListener("resize", dibujar);
 
   // ── Datos t-1 del motor ──────────────────────────────────────────────────
@@ -312,8 +281,29 @@
              : '<span class="tag neu">conversación mixta</span>';
   const pct = v => (v >= 0 ? "+" : "") + (v * 100).toFixed(1) + "%";
   fetch("public/radar.json?v=" + Date.now()).then(r => r.json()).then(d => {
-    ANTIG = d.antiguedad || ANTIG;
-    pintar();
+    SERIE = d.serie || [];
+    TOT = d.total;
+    const BASE = d.base || 100;
+    if (TOT && TOT.entradas) {
+      $("ant-valor").innerHTML = '<span class="' + cls(TOT.ret) + '">' + din(TOT.valor) + "</span>";
+      $("ant-detalle").innerHTML =
+        "<b class='" + cls(TOT.ret) + "'>" + pctS(TOT.ret) + "</b> sobre los " + din(TOT.invertido) +
+        " simulados ($" + BASE + " en cada una de las " + TOT.entradas + " recomendaciones publicadas, " +
+        "repartidas en " + TOT.activos + " activos). Al cierre del <b>" + (d.cierre || d.corte) + "</b>.";
+      const bloque = (t, titulo, nota) => !t || !t.entradas ? "" :
+        '<div class="ant-caja"><div class="ant-caja-k">' + titulo + '</div>' +
+        '<div class="ant-caja-v ' + cls(t.ret) + '">' + din(t.valor) + "</div>" +
+        '<div class="ant-caja-s">' + pctS(t.ret) + " · de " + din(t.invertido) + " en " +
+        t.entradas + " recomendaciones. " + nota + "</div></div>";
+      $("ant-split").innerHTML =
+        bloque(d.total_nucleo, "El núcleo",
+               "El ETF del mercado completo: la posición de largo plazo, donde el modelo no elige nada.") +
+        bloque(d.total_jugadas, "Las jugadas",
+               "Las posiciones que el modelo sí eligió a partir de noticias, datos oficiales y conversación social.");
+    } else {
+      $("ant-detalle").textContent = "El historial del modelo se está generando. Vuelve pronto.";
+    }
+    dibujar();
     if (d.semana_de) {
       $("chip-conv").textContent = "semana del " + d.corte;
       $("chip-radar").textContent = "semana del " + d.semana_de;
@@ -338,8 +328,7 @@
     nota.textContent = "Datos publicados con desfase: corte " + d.corte + ". " + nota.textContent;
   }).catch(() => {
     $("rd-conversacion").innerHTML = '<p class="rd-sub">El radar se está generando. Vuelve pronto.</p>';
-    $("ant-tabla").style.display = "none";
-    $("ant-estado").textContent = "El historial del modelo se está generando. Vuelve pronto.";
+    $("ant-detalle").textContent = "El historial del modelo se está generando. Vuelve pronto.";
   });
 })();
 </script>
