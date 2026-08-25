@@ -1,6 +1,6 @@
 {
- "actualizado": "2026-08-24",
- "corte": "2026-08-17",
+ "actualizado": "2026-08-25",
+ "corte": "2026-08-18",
  "semana_de": "2026-08-17",
  "conversacion": [
   {
@@ -96,37 +96,37 @@
    "ret_3m": 0.0517
   }
  ],
- "cierre": "2026-08-24",
+ "cierre": "2026-08-25",
  "base": 100,
  "total": {
-  "entradas": 121,
-  "invertido": 12100,
-  "valor": 12201.46,
-  "valor_voo": 12273.05,
+  "entradas": 124,
+  "invertido": 12400,
+  "valor": 12578.51,
+  "valor_voo": 12614.26,
   "ganan": 50,
   "activos": 17,
-  "ret": 0.00839,
-  "ret_voo": 0.0143
+  "ret": 0.0144,
+  "ret_voo": 0.01728
  },
  "total_nucleo": {
-  "entradas": 39,
-  "invertido": 3900,
-  "valor": 3954.09,
-  "valor_voo": 3954.09,
+  "entradas": 40,
+  "invertido": 4000,
+  "valor": 4067.36,
+  "valor_voo": 4067.36,
   "ganan": 0,
   "activos": 1,
-  "ret": 0.01387,
-  "ret_voo": 0.01387
+  "ret": 0.01684,
+  "ret_voo": 0.01684
  },
  "total_jugadas": {
-  "entradas": 82,
-  "invertido": 8200,
-  "valor": 8247.37,
-  "valor_voo": 8318.96,
+  "entradas": 84,
+  "invertido": 8400,
+  "valor": 8511.15,
+  "valor_voo": 8546.9,
   "ganan": 50,
   "activos": 16,
-  "ret": 0.00578,
-  "ret_voo": 0.01451
+  "ret": 0.01323,
+  "ret_voo": 0.01749
  },
  "serie": [
   {
@@ -291,28 +291,33 @@
   },
   {
    "fecha": "2026-08-18",
-   "invertido": 12100,
-   "valor": 12101.69
+   "invertido": 12400,
+   "valor": 12401.69
   },
   {
    "fecha": "2026-08-19",
-   "invertido": 12100,
-   "valor": 12189.57
+   "invertido": 12400,
+   "valor": 12494.24
   },
   {
    "fecha": "2026-08-20",
-   "invertido": 12100,
-   "valor": 12154.44
+   "invertido": 12400,
+   "valor": 12455.75
   },
   {
    "fecha": "2026-08-21",
-   "invertido": 12100,
-   "valor": 12268.37
+   "invertido": 12400,
+   "valor": 12572.37
   },
   {
    "fecha": "2026-08-24",
-   "invertido": 12100,
-   "valor": 12201.43
+   "invertido": 12400,
+   "valor": 12514.81
+  },
+  {
+   "fecha": "2026-08-25",
+   "invertido": 12400,
+   "valor": 12578.56
   }
  ]
 }
