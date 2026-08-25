@@ -1,132 +1,132 @@
 {
- "actualizado": "2026-08-23",
- "corte": "2026-08-16",
- "semana_de": "2026-08-16",
+ "actualizado": "2026-08-24",
+ "corte": "2026-08-17",
+ "semana_de": "2026-08-17",
  "conversacion": [
-  {
-   "ticker": "NVDA",
-   "nombre": "NVIDIA",
-   "menciones": 73,
-   "sentimiento": 1.0
-  },
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 67,
-   "sentimiento": 0.889
+   "menciones": 439,
+   "sentimiento": 0.944
   },
   {
-   "ticker": "VOO",
-   "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 53,
-   "sentimiento": -0.429
-  },
-  {
-   "ticker": "TSLA",
-   "nombre": "Tesla",
-   "menciones": 46,
-   "sentimiento": 0.833
-  },
-  {
-   "ticker": "MSFT",
-   "nombre": "Microsoft",
-   "menciones": 45,
-   "sentimiento": 0.0
-  },
-  {
-   "ticker": "MSTR",
-   "nombre": "MicroStrategy",
-   "menciones": 45,
-   "sentimiento": 0.077
-  },
-  {
-   "ticker": "AVGO",
-   "nombre": "Broadcom",
-   "menciones": 43,
-   "sentimiento": 1.0
+   "ticker": "NVDA",
+   "nombre": "NVIDIA",
+   "menciones": 304,
+   "sentimiento": 0.707
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 42,
-   "sentimiento": 0.556
+   "menciones": 173,
+   "sentimiento": 0.631
+  },
+  {
+   "ticker": "VOO",
+   "nombre": "Vanguard S&P 500 ETF",
+   "menciones": 167,
+   "sentimiento": -0.104
+  },
+  {
+   "ticker": "MSFT",
+   "nombre": "Microsoft",
+   "menciones": 153,
+   "sentimiento": -0.069
+  },
+  {
+   "ticker": "TSLA",
+   "nombre": "Tesla",
+   "menciones": 141,
+   "sentimiento": 0.525
   },
   {
    "ticker": "NFLX",
    "nombre": "Netflix",
-   "menciones": 41,
-   "sentimiento": 0.714
+   "menciones": 138,
+   "sentimiento": 0.86
+  },
+  {
+   "ticker": "GOOGL",
+   "nombre": "Alphabet",
+   "menciones": 131,
+   "sentimiento": 0.264
+  },
+  {
+   "ticker": "MSTR",
+   "nombre": "MicroStrategy",
+   "menciones": 123,
+   "sentimiento": 0.58
   },
   {
    "ticker": "AMZN",
    "nombre": "Amazon",
-   "menciones": 39,
-   "sentimiento": 1.0
+   "menciones": 119,
+   "sentimiento": 0.667
   }
  ],
  "radar": [
   {
-   "ticker": "NBIS",
-   "menciones_reddit": 29,
-   "ret_1m": 0.6166,
-   "ret_3m": 0.2556
-  },
-  {
-   "ticker": "RMD",
-   "menciones_reddit": 23,
-   "ret_1m": 0.1308,
-   "ret_3m": 0.1327
-  },
-  {
    "ticker": "SNDK",
-   "menciones_reddit": 21,
-   "ret_1m": 0.163,
-   "ret_3m": 0.1869
+   "menciones_reddit": 210,
+   "ret_1m": 0.3064,
+   "ret_3m": 0.2575
   },
   {
-   "ticker": "IP",
-   "menciones_reddit": 12,
-   "ret_1m": 0.088,
-   "ret_3m": 0.3234
+   "ticker": "NBIS",
+   "menciones_reddit": 66,
+   "ret_1m": 0.5323,
+   "ret_3m": 0.2381
   },
   {
-   "ticker": "API",
-   "menciones_reddit": 19,
-   "ret_1m": 0.16,
-   "ret_3m": 0.2052
+   "ticker": "ONDS",
+   "menciones_reddit": 29,
+   "ret_1m": 0.3648,
+   "ret_3m": -0.1615
+  },
+  {
+   "ticker": "SPCX",
+   "menciones_reddit": 71,
+   "ret_1m": 0.1936,
+   "ret_3m": 0.0
+  },
+  {
+   "ticker": "SPY",
+   "menciones_reddit": 127,
+   "ret_1m": 0.0432,
+   "ret_3m": 0.0517
   }
  ],
- "cierre": "2026-08-22",
+ "cierre": "2026-08-24",
  "base": 100,
  "total": {
-  "entradas": 118,
-  "invertido": 11800,
-  "valor": 11974.24,
-  "valor_voo": 12010.35,
-  "ganan": 40,
+  "entradas": 121,
+  "invertido": 12100,
+  "valor": 12201.46,
+  "valor_voo": 12273.05,
+  "ganan": 50,
   "activos": 17,
-  "ret": 0.01477,
-  "ret_voo": 0.01783
+  "ret": 0.00839,
+  "ret_voo": 0.0143
  },
  "total_nucleo": {
-  "entradas": 38,
-  "invertido": 3800,
-  "valor": 3866.15,
-  "valor_voo": 3866.15,
+  "entradas": 39,
+  "invertido": 3900,
+  "valor": 3954.09,
+  "valor_voo": 3954.09,
   "ganan": 0,
   "activos": 1,
-  "ret": 0.01741,
-  "ret_voo": 0.01741
+  "ret": 0.01387,
+  "ret_voo": 0.01387
  },
  "total_jugadas": {
-  "entradas": 80,
-  "invertido": 8000,
-  "valor": 8108.09,
-  "valor_voo": 8144.2,
-  "ganan": 40,
+  "entradas": 82,
+  "invertido": 8200,
+  "valor": 8247.37,
+  "valor_voo": 8318.96,
+  "ganan": 50,
   "activos": 16,
-  "ret": 0.01351,
-  "ret_voo": 0.01802
+  "ret": 0.00578,
+  "ret_voo": 0.01451
  },
  "serie": [
   {
@@ -286,28 +286,33 @@
   },
   {
    "fecha": "2026-08-17",
-   "invertido": 11800,
-   "valor": 11880.33
+   "invertido": 12100,
+   "valor": 12180.27
   },
   {
    "fecha": "2026-08-18",
-   "invertido": 11800,
-   "valor": 11811.08
+   "invertido": 12100,
+   "valor": 12101.69
   },
   {
    "fecha": "2026-08-19",
-   "invertido": 11800,
-   "valor": 11899.12
+   "invertido": 12100,
+   "valor": 12189.57
   },
   {
    "fecha": "2026-08-20",
-   "invertido": 11800,
-   "valor": 11860.6
+   "invertido": 12100,
+   "valor": 12154.44
   },
   {
    "fecha": "2026-08-21",
-   "invertido": 11800,
-   "valor": 11973.58
+   "invertido": 12100,
+   "valor": 12268.37
+  },
+  {
+   "fecha": "2026-08-24",
+   "invertido": 12100,
+   "valor": 12201.43
   }
  ]
 }
