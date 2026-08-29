@@ -1,67 +1,67 @@
 {
- "actualizado": "2026-08-28",
- "corte": "2026-08-21",
+ "actualizado": "2026-08-29",
+ "corte": "2026-08-22",
  "semana_de": "2026-08-21",
  "conversacion": [
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 881,
-   "sentimiento": 0.568
-  },
-  {
-   "ticker": "META",
-   "nombre": "Meta",
-   "menciones": 644,
-   "sentimiento": -0.27
-  },
-  {
-   "ticker": "NVDA",
-   "nombre": "NVIDIA",
-   "menciones": 509,
-   "sentimiento": 0.545
+   "menciones": 375,
+   "sentimiento": 0.644
   },
   {
    "ticker": "WMT",
    "nombre": "Walmart",
-   "menciones": 320,
-   "sentimiento": 0.485
+   "menciones": 260,
+   "sentimiento": 0.45
   },
   {
-   "ticker": "GOOGL",
-   "nombre": "Alphabet",
-   "menciones": 300,
-   "sentimiento": 0.257
+   "ticker": "NVDA",
+   "nombre": "NVIDIA",
+   "menciones": 241,
+   "sentimiento": 0.349
+  },
+  {
+   "ticker": "META",
+   "nombre": "Meta",
+   "menciones": 228,
+   "sentimiento": -0.394
   },
   {
    "ticker": "MSTR",
    "nombre": "MicroStrategy",
-   "menciones": 282,
-   "sentimiento": 0.479
-  },
-  {
-   "ticker": "VOO",
-   "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 273,
-   "sentimiento": -0.242
-  },
-  {
-   "ticker": "TSLA",
-   "nombre": "Tesla",
-   "menciones": 268,
-   "sentimiento": 0.103
-  },
-  {
-   "ticker": "MSFT",
-   "nombre": "Microsoft",
-   "menciones": 259,
-   "sentimiento": 0.464
+   "menciones": 203,
+   "sentimiento": 0.6
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 256,
-   "sentimiento": 0.724
+   "menciones": 145,
+   "sentimiento": 0.492
+  },
+  {
+   "ticker": "GOOGL",
+   "nombre": "Alphabet",
+   "menciones": 143,
+   "sentimiento": -0.208
+  },
+  {
+   "ticker": "TSLA",
+   "nombre": "Tesla",
+   "menciones": 138,
+   "sentimiento": 0.118
+  },
+  {
+   "ticker": "AAPL",
+   "nombre": "Apple",
+   "menciones": 131,
+   "sentimiento": 0.667
+  },
+  {
+   "ticker": "VOO",
+   "nombre": "Vanguard S&P 500 ETF",
+   "menciones": 126,
+   "sentimiento": -0.568
   }
  ],
  "radar": [
@@ -96,16 +96,16 @@
    "ret_3m": 0.0325
   }
  ],
- "cierre": "2026-08-28",
+ "cierre": "2026-08-29",
  "base": 100,
  "total": {
   "entradas": 133,
   "invertido": 13300,
-  "valor": 13609.99,
+  "valor": 13603.05,
   "valor_voo": 13609.66,
   "ganan": 43,
   "activos": 18,
-  "ret": 0.02331,
+  "ret": 0.02279,
   "ret_voo": 0.02328
  },
  "total_nucleo": {
@@ -121,11 +121,11 @@
  "total_jugadas": {
   "entradas": 90,
   "invertido": 9000,
-  "valor": 9211.82,
+  "valor": 9204.88,
   "valor_voo": 9211.49,
   "ganan": 43,
   "activos": 17,
-  "ret": 0.02354,
+  "ret": 0.02276,
   "ret_voo": 0.0235
  },
  "serie": [
