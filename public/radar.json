@@ -1,132 +1,132 @@
 {
- "actualizado": "2026-09-15",
- "corte": "2026-09-08",
- "semana_de": "2026-09-08",
+ "actualizado": "2026-09-16",
+ "corte": "2026-09-09",
+ "semana_de": "2026-09-09",
  "conversacion": [
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 293,
+   "menciones": 413,
    "sentimiento": 0.902
   },
   {
    "ticker": "NVDA",
    "nombre": "NVIDIA",
-   "menciones": 263,
-   "sentimiento": 0.879
+   "menciones": 362,
+   "sentimiento": 0.629
+  },
+  {
+   "ticker": "META",
+   "nombre": "Meta",
+   "menciones": 245,
+   "sentimiento": 0.431
   },
   {
    "ticker": "TSLA",
    "nombre": "Tesla",
-   "menciones": 195,
-   "sentimiento": 0.354
-  },
-  {
-   "ticker": "MSFT",
-   "nombre": "Microsoft",
-   "menciones": 186,
-   "sentimiento": 0.446
-  },
-  {
-   "ticker": "AMZN",
-   "nombre": "Amazon",
-   "menciones": 174,
-   "sentimiento": 0.5
-  },
-  {
-   "ticker": "AAPL",
-   "nombre": "Apple",
-   "menciones": 173,
-   "sentimiento": 0.469
-  },
-  {
-   "ticker": "ORCL",
-   "nombre": "Oracle",
-   "menciones": 170,
-   "sentimiento": 0.974
-  },
-  {
-   "ticker": "AVGO",
-   "nombre": "Broadcom",
-   "menciones": 166,
-   "sentimiento": 1.0
+   "menciones": 222,
+   "sentimiento": 0.196
   },
   {
    "ticker": "INTC",
    "nombre": "Intel",
-   "menciones": 166,
-   "sentimiento": 0.875
+   "menciones": 215,
+   "sentimiento": 0.833
   },
   {
-   "ticker": "VOO",
-   "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 160,
-   "sentimiento": -0.488
+   "ticker": "AAPL",
+   "nombre": "Apple",
+   "menciones": 203,
+   "sentimiento": 0.46
+  },
+  {
+   "ticker": "ORCL",
+   "nombre": "Oracle",
+   "menciones": 199,
+   "sentimiento": 0.883
+  },
+  {
+   "ticker": "AMZN",
+   "nombre": "Amazon",
+   "menciones": 197,
+   "sentimiento": 0.7
+  },
+  {
+   "ticker": "AMD",
+   "nombre": "AMD",
+   "menciones": 191,
+   "sentimiento": 0.433
+  },
+  {
+   "ticker": "GOOGL",
+   "nombre": "Alphabet",
+   "menciones": 190,
+   "sentimiento": 0.523
   }
  ],
  "radar": [
   {
    "ticker": "SNDK",
-   "menciones_reddit": 46,
-   "ret_1m": 0.4681,
-   "ret_3m": 0.0838
+   "menciones_reddit": 53,
+   "ret_1m": 0.4056,
+   "ret_3m": 0.0568
   },
   {
    "ticker": "NBIS",
-   "menciones_reddit": 32,
-   "ret_1m": 0.2655,
-   "ret_3m": 0.0912
-  },
-  {
-   "ticker": "USO",
-   "menciones_reddit": 13,
-   "ret_1m": 0.2305,
-   "ret_3m": 0.0741
+   "menciones_reddit": 65,
+   "ret_1m": 0.3458,
+   "ret_3m": 0.1256
   },
   {
    "ticker": "AGI",
-   "menciones_reddit": 250,
-   "ret_1m": 0.1116,
-   "ret_3m": 0.0286
+   "menciones_reddit": 93,
+   "ret_1m": 0.1357,
+   "ret_3m": 0.0783
   },
   {
-   "ticker": "AM",
-   "menciones_reddit": 27,
-   "ret_1m": 0.0599,
-   "ret_3m": 0.068
+   "ticker": "USO",
+   "menciones_reddit": 23,
+   "ret_1m": 0.1813,
+   "ret_3m": 0.1329
+  },
+  {
+   "ticker": "CRWV",
+   "menciones_reddit": 26,
+   "ret_1m": 0.1281,
+   "ret_3m": 0.0105
   }
  ],
- "cierre": "2026-09-15",
+ "cierre": "2026-09-16",
  "base": 100,
  "total": {
-  "entradas": 181,
-  "invertido": 18100,
-  "valor": 18019.0,
-  "valor_voo": 18155.18,
-  "ganan": 43,
+  "entradas": 184,
+  "invertido": 18400,
+  "valor": 18196.74,
+  "valor_voo": 18445.02,
+  "ganan": 40,
   "activos": 21,
-  "ret": -0.00448,
-  "ret_voo": 0.00305
+  "ret": -0.01105,
+  "ret_voo": 0.00245
  },
  "total_nucleo": {
-  "entradas": 59,
-  "invertido": 5900,
-  "valor": 5915.44,
-  "valor_voo": 5915.44,
+  "entradas": 60,
+  "invertido": 6000,
+  "valor": 6012.12,
+  "valor_voo": 6012.12,
   "ganan": 0,
   "activos": 1,
-  "ret": 0.00262,
-  "ret_voo": 0.00262
+  "ret": 0.00202,
+  "ret_voo": 0.00202
  },
  "total_jugadas": {
-  "entradas": 122,
-  "invertido": 12200,
-  "valor": 12103.56,
-  "valor_voo": 12239.74,
-  "ganan": 43,
+  "entradas": 124,
+  "invertido": 12400,
+  "valor": 12184.62,
+  "valor_voo": 12432.9,
+  "ganan": 40,
   "activos": 20,
-  "ret": -0.0079,
-  "ret_voo": 0.00326
+  "ret": -0.01737,
+  "ret_voo": 0.00265
  },
  "serie": [
   {
@@ -177,217 +177,222 @@
   {
    "fecha": "2026-07-16",
    "invertido": 3300,
-   "valor": 3163.18
+   "valor": 3162.58
   },
   {
    "fecha": "2026-07-17",
    "invertido": 3600,
-   "valor": 3430.99
+   "valor": 3429.85
   },
   {
    "fecha": "2026-07-20",
    "invertido": 4500,
-   "valor": 4343.22
+   "valor": 4342.07
   },
   {
    "fecha": "2026-07-21",
    "invertido": 4800,
-   "valor": 4770.69
+   "valor": 4769.55
   },
   {
    "fecha": "2026-07-22",
    "invertido": 5100,
-   "valor": 5043.14
+   "valor": 5041.99
   },
   {
    "fecha": "2026-07-23",
    "invertido": 5400,
-   "valor": 5287.23
+   "valor": 5286.09
   },
   {
    "fecha": "2026-07-24",
    "invertido": 5800,
-   "valor": 5625.59
+   "valor": 5624.44
   },
   {
    "fecha": "2026-07-27",
    "invertido": 6700,
-   "valor": 6518.65
+   "valor": 6517.48
   },
   {
    "fecha": "2026-07-28",
    "invertido": 7000,
-   "valor": 6730.3
+   "valor": 6729.07
   },
   {
    "fecha": "2026-07-29",
    "invertido": 7300,
-   "valor": 6869.9
+   "valor": 6868.06
   },
   {
    "fecha": "2026-07-30",
    "invertido": 7600,
-   "valor": 7346.47
+   "valor": 7344.04
   },
   {
    "fecha": "2026-07-31",
    "invertido": 7900,
-   "valor": 7548.44
+   "valor": 7545.45
   },
   {
    "fecha": "2026-08-03",
    "invertido": 8800,
-   "valor": 8480.85
+   "valor": 8477.29
   },
   {
    "fecha": "2026-08-04",
    "invertido": 9100,
-   "valor": 8987.83
+   "valor": 8984.28
   },
   {
    "fecha": "2026-08-05",
    "invertido": 9400,
-   "valor": 9327.53
+   "valor": 9323.98
   },
   {
    "fecha": "2026-08-06",
    "invertido": 9700,
-   "valor": 9666.51
+   "valor": 9662.96
   },
   {
    "fecha": "2026-08-07",
    "invertido": 10000,
-   "valor": 10004.11
+   "valor": 10000.55
   },
   {
    "fecha": "2026-08-10",
    "invertido": 10900,
-   "valor": 10949.76
+   "valor": 10946.2
   },
   {
    "fecha": "2026-08-11",
    "invertido": 11200,
-   "valor": 11203.97
+   "valor": 11200.43
   },
   {
    "fecha": "2026-08-12",
    "invertido": 11500,
-   "valor": 11509.76
+   "valor": 11506.21
   },
   {
    "fecha": "2026-08-13",
    "invertido": 11500,
-   "valor": 11689.65
+   "valor": 11686.07
   },
   {
    "fecha": "2026-08-14",
    "invertido": 11500,
-   "valor": 11678.42
+   "valor": 11674.83
   },
   {
    "fecha": "2026-08-17",
    "invertido": 12100,
-   "valor": 12179.71
+   "valor": 12176.14
   },
   {
    "fecha": "2026-08-18",
    "invertido": 12400,
-   "valor": 12401.12
+   "valor": 12397.49
   },
   {
    "fecha": "2026-08-19",
    "invertido": 12700,
-   "valor": 12801.09
+   "valor": 12797.39
   },
   {
    "fecha": "2026-08-20",
    "invertido": 13000,
-   "valor": 13055.3
+   "valor": 13051.59
   },
   {
    "fecha": "2026-08-21",
    "invertido": 13300,
-   "valor": 13488.76
+   "valor": 13485.03
   },
   {
    "fecha": "2026-08-24",
    "invertido": 13900,
-   "valor": 14025.78
+   "valor": 14022.01
   },
   {
    "fecha": "2026-08-25",
    "invertido": 14200,
-   "valor": 14382.38
+   "valor": 14378.63
   },
   {
    "fecha": "2026-08-26",
    "invertido": 14500,
-   "valor": 14644.29
+   "valor": 14640.6
   },
   {
    "fecha": "2026-08-27",
    "invertido": 14800,
-   "valor": 15222.74
+   "valor": 15219.09
   },
   {
    "fecha": "2026-08-28",
    "invertido": 15100,
-   "valor": 15489.4
+   "valor": 15485.73
   },
   {
    "fecha": "2026-08-31",
    "invertido": 16000,
-   "valor": 16297.75
+   "valor": 16294.12
   },
   {
    "fecha": "2026-09-01",
    "invertido": 16300,
-   "valor": 16356.32
+   "valor": 16352.72
   },
   {
    "fecha": "2026-09-02",
    "invertido": 16600,
-   "valor": 16631.61
+   "valor": 16628.0
   },
   {
    "fecha": "2026-09-03",
    "invertido": 16600,
-   "valor": 16960.48
+   "valor": 16956.85
   },
   {
    "fecha": "2026-09-04",
    "invertido": 16900,
-   "valor": 17147.52
+   "valor": 17143.92
   },
   {
    "fecha": "2026-09-08",
    "invertido": 18100,
-   "valor": 18081.46
+   "valor": 18077.84
   },
   {
    "fecha": "2026-09-09",
-   "invertido": 18100,
-   "valor": 17967.93
+   "invertido": 18400,
+   "valor": 18260.77
   },
   {
    "fecha": "2026-09-10",
-   "invertido": 18100,
-   "valor": 17759.63
+   "invertido": 18400,
+   "valor": 18043.89
   },
   {
    "fecha": "2026-09-11",
-   "invertido": 18100,
-   "valor": 17937.52
+   "invertido": 18400,
+   "valor": 18224.1
   },
   {
    "fecha": "2026-09-14",
-   "invertido": 18100,
-   "valor": 18058.28
+   "invertido": 18400,
+   "valor": 18343.46
   },
   {
    "fecha": "2026-09-15",
-   "invertido": 18100,
-   "valor": 18019.05
+   "invertido": 18400,
+   "valor": 18183.98
+  },
+  {
+   "fecha": "2026-09-16",
+   "invertido": 18400,
+   "valor": 18196.8
   }
  ]
 }
