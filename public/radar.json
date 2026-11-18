@@ -1,67 +1,67 @@
 {
- "actualizado": "2026-11-17",
- "corte": "2026-11-10",
+ "actualizado": "2026-11-18",
+ "corte": "2026-11-11",
  "semana_de": "2026-11-10",
  "conversacion": [
   {
    "ticker": "NVDA",
    "nombre": "NVIDIA",
-   "menciones": 3044,
-   "sentimiento": 0.387
+   "menciones": 2928,
+   "sentimiento": 0.278
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 565,
-   "sentimiento": 0.453
+   "menciones": 524,
+   "sentimiento": 0.354
   },
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 420,
+   "menciones": 348,
    "sentimiento": 0.833
   },
   {
    "ticker": "GOOGL",
    "nombre": "Alphabet",
-   "menciones": 260,
-   "sentimiento": 0.562
+   "menciones": 224,
+   "sentimiento": 0.583
   },
   {
    "ticker": "MSFT",
    "nombre": "Microsoft",
-   "menciones": 247,
-   "sentimiento": 0.628
+   "menciones": 198,
+   "sentimiento": 0.504
   },
   {
    "ticker": "TSLA",
    "nombre": "Tesla",
-   "menciones": 207,
-   "sentimiento": 0.294
+   "menciones": 173,
+   "sentimiento": 0.132
   },
   {
    "ticker": "AMZN",
    "nombre": "Amazon",
-   "menciones": 204,
-   "sentimiento": 0.786
-  },
-  {
-   "ticker": "AVGO",
-   "nombre": "Broadcom",
-   "menciones": 199,
-   "sentimiento": 0.747
+   "menciones": 165,
+   "sentimiento": 0.799
   },
   {
    "ticker": "AAPL",
    "nombre": "Apple",
-   "menciones": 193,
-   "sentimiento": 0.464
+   "menciones": 158,
+   "sentimiento": 0.285
   },
   {
-   "ticker": "VOO",
-   "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 192,
-   "sentimiento": 0.197
+   "ticker": "AVGO",
+   "nombre": "Broadcom",
+   "menciones": 157,
+   "sentimiento": 0.746
+  },
+  {
+   "ticker": "INTC",
+   "nombre": "Intel",
+   "menciones": 141,
+   "sentimiento": 0.373
   }
  ],
  "radar": [
@@ -96,37 +96,37 @@
    "ret_3m": -0.0208
   }
  ],
- "cierre": "2026-11-17",
+ "cierre": "2026-11-18",
  "base": 100,
  "total": {
   "entradas": 367,
   "invertido": 36700,
-  "valor": 34162.94,
-  "valor_voo": 35694.59,
-  "ganan": 93,
+  "valor": 33415.96,
+  "valor_voo": 35323.69,
+  "ganan": 78,
   "activos": 29,
-  "ret": -0.06913,
-  "ret_voo": -0.0274
+  "ret": -0.08948,
+  "ret_voo": -0.0375
  },
  "total_nucleo": {
   "entradas": 120,
   "invertido": 12000,
-  "valor": 11669.02,
-  "valor_voo": 11669.02,
+  "valor": 11547.77,
+  "valor_voo": 11547.77,
   "ganan": 0,
   "activos": 1,
-  "ret": -0.02758,
-  "ret_voo": -0.02758
+  "ret": -0.03769,
+  "ret_voo": -0.03769
  },
  "total_jugadas": {
   "entradas": 247,
   "invertido": 24700,
-  "valor": 22493.92,
-  "valor_voo": 24025.57,
-  "ganan": 93,
+  "valor": 21868.19,
+  "valor_voo": 23775.92,
+  "ganan": 78,
   "activos": 28,
-  "ret": -0.08931,
-  "ret_voo": -0.0273
+  "ret": -0.11465,
+  "ret_voo": -0.03741
  },
  "serie": [
   {
@@ -608,6 +608,11 @@
    "fecha": "2026-11-16",
    "invertido": 36700,
    "valor": 34140.64
+  },
+  {
+   "fecha": "2026-11-17",
+   "invertido": 36700,
+   "valor": 33431.68
   }
  ]
 }
