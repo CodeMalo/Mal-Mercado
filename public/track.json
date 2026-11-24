@@ -1,37 +1,37 @@
 {
- "actualizado": "2026-11-23",
+ "actualizado": "2026-11-24",
  "desfase_dias": 7,
- "cierre": "2026-11-23",
+ "cierre": "2026-11-24",
  "base": 100,
  "total": {
-  "entradas": 382,
-  "invertido": 38200,
-  "valor": 32310.51,
-  "valor_voo": 34719.93,
-  "ganan": 87,
+  "entradas": 385,
+  "invertido": 38500,
+  "valor": 34118.93,
+  "valor_voo": 36562.55,
+  "ganan": 83,
   "activos": 30,
-  "ret": -0.15418,
-  "ret_voo": -0.0911
+  "ret": -0.11379,
+  "ret_voo": -0.05032
  },
  "total_nucleo": {
-  "entradas": 125,
-  "invertido": 12500,
-  "valor": 11359.2,
-  "valor_voo": 11359.2,
+  "entradas": 126,
+  "invertido": 12600,
+  "valor": 11963.85,
+  "valor_voo": 11963.85,
   "ganan": 0,
   "activos": 1,
-  "ret": -0.09126,
-  "ret_voo": -0.09126
+  "ret": -0.05049,
+  "ret_voo": -0.05049
  },
  "total_jugadas": {
-  "entradas": 257,
-  "invertido": 25700,
-  "valor": 20951.31,
-  "valor_voo": 23360.73,
-  "ganan": 87,
+  "entradas": 259,
+  "invertido": 25900,
+  "valor": 22155.08,
+  "valor_voo": 24598.7,
+  "ganan": 83,
   "activos": 29,
-  "ret": -0.18477,
-  "ret_voo": -0.09102
+  "ret": -0.14459,
+  "ret_voo": -0.05024
  },
  "serie": [
   {
@@ -516,39 +516,86 @@
   },
   {
    "fecha": "2026-11-17",
-   "invertido": 38200,
-   "valor": 34912.08
+   "invertido": 38500,
+   "valor": 35207.5
   },
   {
    "fecha": "2026-11-18",
-   "invertido": 38200,
-   "valor": 34627.46
+   "invertido": 38500,
+   "valor": 34919.96
   },
   {
    "fecha": "2026-11-19",
-   "invertido": 38200,
-   "valor": 33677.62
+   "invertido": 38500,
+   "valor": 33963.41
   },
   {
    "fecha": "2026-11-20",
-   "invertido": 38200,
-   "valor": 32264.82
+   "invertido": 38500,
+   "valor": 32546.89
+  },
+  {
+   "fecha": "2026-11-23",
+   "invertido": 38500,
+   "valor": 34156.38
   }
  ],
  "entradas": [
   {
+   "fecha": "2026-11-17",
+   "ticker": "VOO",
+   "nombre": "Vanguard S&P 500 ETF",
+   "tipo": "núcleo",
+   "precio_ini": 680.26,
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 7,
+   "ret": -0.02403,
+   "ret_voo": -0.02403,
+   "valor": 97.6,
+   "valor_voo": 97.6
+  },
+  {
+   "fecha": "2026-11-17",
+   "ticker": "MA",
+   "nombre": "Mastercard",
+   "tipo": "jugada",
+   "precio_ini": 661.71,
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 7,
+   "ret": -0.03964,
+   "ret_voo": -0.02403,
+   "valor": 96.04,
+   "valor_voo": 97.6
+  },
+  {
+   "fecha": "2026-11-17",
+   "ticker": "LLY",
+   "nombre": "Eli Lilly",
+   "tipo": "jugada",
+   "precio_ini": 1431.67,
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 7,
+   "ret": -0.04685,
+   "ret_voo": -0.02403,
+   "valor": 95.32,
+   "valor_voo": 97.6
+  },
+  {
    "fecha": "2026-11-16",
    "ticker": "VOO",
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 693.38,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 7,
-   "ret": -0.08342,
-   "ret_voo": -0.08342,
-   "valor": 91.66,
-   "valor_voo": 91.66
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 8,
+   "ret": -0.0425,
+   "ret_voo": -0.0425,
+   "valor": 95.75,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-16",
@@ -556,13 +603,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1443.5,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 7,
-   "ret": -0.06678,
-   "ret_voo": -0.08342,
-   "valor": 93.32,
-   "valor_voo": 91.66
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 8,
+   "ret": -0.05466,
+   "ret_voo": -0.0425,
+   "valor": 94.53,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-16",
@@ -570,13 +617,13 @@
    "nombre": "Costco",
    "tipo": "jugada",
    "precio_ini": 1106.21,
-   "precio_hoy": 1102.15,
-   "cierre": "2026-11-20",
-   "dias": 7,
-   "ret": -0.00367,
-   "ret_voo": -0.08342,
-   "valor": 99.63,
-   "valor_voo": 91.66
+   "precio_hoy": 1097.91,
+   "cierre": "2026-11-23",
+   "dias": 8,
+   "ret": -0.0075,
+   "ret_voo": -0.0425,
+   "valor": 99.25,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-15",
@@ -584,13 +631,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 693.38,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 8,
-   "ret": -0.08342,
-   "ret_voo": -0.08342,
-   "valor": 91.66,
-   "valor_voo": 91.66
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 9,
+   "ret": -0.0425,
+   "ret_voo": -0.0425,
+   "valor": 95.75,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-15",
@@ -598,13 +645,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1443.5,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 8,
-   "ret": -0.06678,
-   "ret_voo": -0.08342,
-   "valor": 93.32,
-   "valor_voo": 91.66
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 9,
+   "ret": -0.05466,
+   "ret_voo": -0.0425,
+   "valor": 94.53,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-15",
@@ -612,13 +659,13 @@
    "nombre": "Costco",
    "tipo": "jugada",
    "precio_ini": 1106.21,
-   "precio_hoy": 1102.15,
-   "cierre": "2026-11-20",
-   "dias": 8,
-   "ret": -0.00367,
-   "ret_voo": -0.08342,
-   "valor": 99.63,
-   "valor_voo": 91.66
+   "precio_hoy": 1097.91,
+   "cierre": "2026-11-23",
+   "dias": 9,
+   "ret": -0.0075,
+   "ret_voo": -0.0425,
+   "valor": 99.25,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-14",
@@ -626,13 +673,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 693.38,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 9,
-   "ret": -0.08342,
-   "ret_voo": -0.08342,
-   "valor": 91.66,
-   "valor_voo": 91.66
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 10,
+   "ret": -0.0425,
+   "ret_voo": -0.0425,
+   "valor": 95.75,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-14",
@@ -640,13 +687,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1443.5,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 9,
-   "ret": -0.06678,
-   "ret_voo": -0.08342,
-   "valor": 93.32,
-   "valor_voo": 91.66
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 10,
+   "ret": -0.05466,
+   "ret_voo": -0.0425,
+   "valor": 94.53,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-14",
@@ -654,13 +701,13 @@
    "nombre": "Costco",
    "tipo": "jugada",
    "precio_ini": 1106.21,
-   "precio_hoy": 1102.15,
-   "cierre": "2026-11-20",
-   "dias": 9,
-   "ret": -0.00367,
-   "ret_voo": -0.08342,
-   "valor": 99.63,
-   "valor_voo": 91.66
+   "precio_hoy": 1097.91,
+   "cierre": "2026-11-23",
+   "dias": 10,
+   "ret": -0.0075,
+   "ret_voo": -0.0425,
+   "valor": 99.25,
+   "valor_voo": 95.75
   },
   {
    "fecha": "2026-11-13",
@@ -668,13 +715,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 696.0,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 10,
-   "ret": -0.08687,
-   "ret_voo": -0.08687,
-   "valor": 91.31,
-   "valor_voo": 91.31
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 11,
+   "ret": -0.04611,
+   "ret_voo": -0.04611,
+   "valor": 95.39,
+   "valor_voo": 95.39
   },
   {
    "fecha": "2026-11-13",
@@ -682,13 +729,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1427.28,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 10,
-   "ret": -0.05617,
-   "ret_voo": -0.08687,
-   "valor": 94.38,
-   "valor_voo": 91.31
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 11,
+   "ret": -0.04392,
+   "ret_voo": -0.04611,
+   "valor": 95.61,
+   "valor_voo": 95.39
   },
   {
    "fecha": "2026-11-13",
@@ -696,13 +743,13 @@
    "nombre": "Costco",
    "tipo": "jugada",
    "precio_ini": 1092.21,
-   "precio_hoy": 1102.15,
-   "cierre": "2026-11-20",
-   "dias": 10,
-   "ret": 0.0091,
-   "ret_voo": -0.08687,
-   "valor": 100.91,
-   "valor_voo": 91.31
+   "precio_hoy": 1097.91,
+   "cierre": "2026-11-23",
+   "dias": 11,
+   "ret": 0.00522,
+   "ret_voo": -0.04611,
+   "valor": 100.52,
+   "valor_voo": 95.39
   },
   {
    "fecha": "2026-11-12",
@@ -710,13 +757,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 698.35,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 11,
-   "ret": -0.08994,
-   "ret_voo": -0.08994,
-   "valor": 91.01,
-   "valor_voo": 91.01
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 12,
+   "ret": -0.04932,
+   "ret_voo": -0.04932,
+   "valor": 95.07,
+   "valor_voo": 95.07
   },
   {
    "fecha": "2026-11-12",
@@ -724,13 +771,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1437.29,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 11,
-   "ret": -0.06274,
-   "ret_voo": -0.08994,
-   "valor": 93.73,
-   "valor_voo": 91.01
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 12,
+   "ret": -0.05057,
+   "ret_voo": -0.04932,
+   "valor": 94.94,
+   "valor_voo": 95.07
   },
   {
    "fecha": "2026-11-12",
@@ -738,13 +785,13 @@
    "nombre": "Costco",
    "tipo": "jugada",
    "precio_ini": 1087.61,
-   "precio_hoy": 1102.15,
-   "cierre": "2026-11-20",
-   "dias": 11,
-   "ret": 0.01337,
-   "ret_voo": -0.08994,
-   "valor": 101.34,
-   "valor_voo": 91.01
+   "precio_hoy": 1097.91,
+   "cierre": "2026-11-23",
+   "dias": 12,
+   "ret": 0.00947,
+   "ret_voo": -0.04932,
+   "valor": 100.95,
+   "valor_voo": 95.07
   },
   {
    "fecha": "2026-11-10",
@@ -752,13 +799,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 691.87,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 13,
-   "ret": -0.08142,
-   "ret_voo": -0.08142,
-   "valor": 91.86,
-   "valor_voo": 91.86
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 14,
+   "ret": -0.04041,
+   "ret_voo": -0.04041,
+   "valor": 95.96,
+   "valor_voo": 95.96
   },
   {
    "fecha": "2026-11-10",
@@ -766,13 +813,13 @@
    "nombre": "Procter & Gamble",
    "tipo": "jugada",
    "precio_ini": 168.32,
-   "precio_hoy": 169.37,
-   "cierre": "2026-11-20",
-   "dias": 13,
-   "ret": 0.00624,
-   "ret_voo": -0.08142,
-   "valor": 100.62,
-   "valor_voo": 91.86
+   "precio_hoy": 169.6,
+   "cierre": "2026-11-23",
+   "dias": 14,
+   "ret": 0.0076,
+   "ret_voo": -0.04041,
+   "valor": 100.76,
+   "valor_voo": 95.96
   },
   {
    "fecha": "2026-11-10",
@@ -780,13 +827,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1411.95,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 13,
-   "ret": -0.04592,
-   "ret_voo": -0.08142,
-   "valor": 95.41,
-   "valor_voo": 91.86
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 14,
+   "ret": -0.03354,
+   "ret_voo": -0.04041,
+   "valor": 96.65,
+   "valor_voo": 95.96
   },
   {
    "fecha": "2026-11-09",
@@ -794,13 +841,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 675.99,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 14,
-   "ret": -0.05984,
-   "ret_voo": -0.05984,
-   "valor": 94.02,
-   "valor_voo": 94.02
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 15,
+   "ret": -0.01787,
+   "ret_voo": -0.01787,
+   "valor": 98.21,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-09",
@@ -808,13 +855,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 652.7,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 14,
-   "ret": -0.04154,
-   "ret_voo": -0.05984,
-   "valor": 95.85,
-   "valor_voo": 94.02
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 15,
+   "ret": -0.02638,
+   "ret_voo": -0.01787,
+   "valor": 97.36,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-09",
@@ -822,13 +869,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1354.0,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 14,
-   "ret": -0.00509,
-   "ret_voo": -0.05984,
-   "valor": 99.49,
-   "valor_voo": 94.02
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 15,
+   "ret": 0.00783,
+   "ret_voo": -0.01787,
+   "valor": 100.78,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-08",
@@ -836,13 +883,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 675.99,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 15,
-   "ret": -0.05984,
-   "ret_voo": -0.05984,
-   "valor": 94.02,
-   "valor_voo": 94.02
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 16,
+   "ret": -0.01787,
+   "ret_voo": -0.01787,
+   "valor": 98.21,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-08",
@@ -850,13 +897,13 @@
    "nombre": "Visa",
    "tipo": "jugada",
    "precio_ini": 422.65,
-   "precio_hoy": 401.87,
-   "cierre": "2026-11-20",
-   "dias": 15,
-   "ret": -0.04917,
-   "ret_voo": -0.05984,
-   "valor": 95.08,
-   "valor_voo": 94.02
+   "precio_hoy": 409.4,
+   "cierre": "2026-11-23",
+   "dias": 16,
+   "ret": -0.03135,
+   "ret_voo": -0.01787,
+   "valor": 96.87,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-08",
@@ -864,13 +911,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1354.0,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 15,
-   "ret": -0.00509,
-   "ret_voo": -0.05984,
-   "valor": 99.49,
-   "valor_voo": 94.02
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 16,
+   "ret": 0.00783,
+   "ret_voo": -0.01787,
+   "valor": 100.78,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-07",
@@ -878,13 +925,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 675.99,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 16,
-   "ret": -0.05984,
-   "ret_voo": -0.05984,
-   "valor": 94.02,
-   "valor_voo": 94.02
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 17,
+   "ret": -0.01787,
+   "ret_voo": -0.01787,
+   "valor": 98.21,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-07",
@@ -892,13 +939,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1354.0,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 16,
-   "ret": -0.00509,
-   "ret_voo": -0.05984,
-   "valor": 99.49,
-   "valor_voo": 94.02
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 17,
+   "ret": 0.00783,
+   "ret_voo": -0.01787,
+   "valor": 100.78,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-07",
@@ -906,13 +953,13 @@
    "nombre": "Disney",
    "tipo": "jugada",
    "precio_ini": 116.75,
-   "precio_hoy": 117.98,
-   "cierre": "2026-11-20",
-   "dias": 16,
-   "ret": 0.01054,
-   "ret_voo": -0.05984,
-   "valor": 101.05,
-   "valor_voo": 94.02
+   "precio_hoy": 120.27,
+   "cierre": "2026-11-23",
+   "dias": 17,
+   "ret": 0.03015,
+   "ret_voo": -0.01787,
+   "valor": 103.01,
+   "valor_voo": 98.21
   },
   {
    "fecha": "2026-11-06",
@@ -920,13 +967,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 673.97,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 17,
-   "ret": -0.05702,
-   "ret_voo": -0.05702,
-   "valor": 94.3,
-   "valor_voo": 94.3
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 18,
+   "ret": -0.01493,
+   "ret_voo": -0.01493,
+   "valor": 98.51,
+   "valor_voo": 98.51
   },
   {
    "fecha": "2026-11-06",
@@ -934,13 +981,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1364.73,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 17,
-   "ret": -0.01291,
-   "ret_voo": -0.05702,
-   "valor": 98.71,
-   "valor_voo": 94.3
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 18,
+   "ret": -0.0001,
+   "ret_voo": -0.01493,
+   "valor": 99.99,
+   "valor_voo": 98.51
   },
   {
    "fecha": "2026-11-06",
@@ -948,13 +995,13 @@
    "nombre": "Disney",
    "tipo": "jugada",
    "precio_ini": 117.22,
-   "precio_hoy": 117.98,
-   "cierre": "2026-11-20",
-   "dias": 17,
-   "ret": 0.00648,
-   "ret_voo": -0.05702,
-   "valor": 100.65,
-   "valor_voo": 94.3
+   "precio_hoy": 120.27,
+   "cierre": "2026-11-23",
+   "dias": 18,
+   "ret": 0.02602,
+   "ret_voo": -0.01493,
+   "valor": 102.6,
+   "valor_voo": 98.51
   },
   {
    "fecha": "2026-11-05",
@@ -962,13 +1009,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 704.78,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 18,
-   "ret": -0.09824,
-   "ret_voo": -0.09824,
-   "valor": 90.18,
-   "valor_voo": 90.18
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 19,
+   "ret": -0.05799,
+   "ret_voo": -0.05799,
+   "valor": 94.2,
+   "valor_voo": 94.2
   },
   {
    "fecha": "2026-11-05",
@@ -976,13 +1023,13 @@
    "nombre": "Visa",
    "tipo": "jugada",
    "precio_ini": 436.57,
-   "precio_hoy": 401.87,
-   "cierre": "2026-11-20",
-   "dias": 18,
-   "ret": -0.07948,
-   "ret_voo": -0.09824,
-   "valor": 92.05,
-   "valor_voo": 90.18
+   "precio_hoy": 409.4,
+   "cierre": "2026-11-23",
+   "dias": 19,
+   "ret": -0.06224,
+   "ret_voo": -0.05799,
+   "valor": 93.78,
+   "valor_voo": 94.2
   },
   {
    "fecha": "2026-11-05",
@@ -990,13 +1037,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 672.68,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 18,
-   "ret": -0.07,
-   "ret_voo": -0.09824,
-   "valor": 93.0,
-   "valor_voo": 90.18
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 19,
+   "ret": -0.0553,
+   "ret_voo": -0.05799,
+   "valor": 94.47,
+   "valor_voo": 94.2
   },
   {
    "fecha": "2026-11-04",
@@ -1004,13 +1051,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 693.54,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 19,
-   "ret": -0.08363,
-   "ret_voo": -0.08363,
-   "valor": 91.64,
-   "valor_voo": 91.64
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 20,
+   "ret": -0.04272,
+   "ret_voo": -0.04272,
+   "valor": 95.73,
+   "valor_voo": 95.73
   },
   {
    "fecha": "2026-11-04",
@@ -1018,13 +1065,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 647.18,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 19,
-   "ret": -0.03336,
-   "ret_voo": -0.08363,
-   "valor": 96.66,
-   "valor_voo": 91.64
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 20,
+   "ret": -0.01808,
+   "ret_voo": -0.04272,
+   "valor": 98.19,
+   "valor_voo": 95.73
   },
   {
    "fecha": "2026-11-04",
@@ -1032,13 +1079,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1409.38,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 19,
-   "ret": -0.04418,
-   "ret_voo": -0.08363,
-   "valor": 95.58,
-   "valor_voo": 91.64
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 20,
+   "ret": -0.03177,
+   "ret_voo": -0.04272,
+   "valor": 96.82,
+   "valor_voo": 95.73
   },
   {
    "fecha": "2026-11-03",
@@ -1046,13 +1093,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 691.32,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 20,
-   "ret": -0.08069,
-   "ret_voo": -0.08069,
-   "valor": 91.93,
-   "valor_voo": 91.93
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 21,
+   "ret": -0.03965,
+   "ret_voo": -0.03965,
+   "valor": 96.04,
+   "valor_voo": 96.04
   },
   {
    "fecha": "2026-11-03",
@@ -1060,13 +1107,13 @@
    "nombre": "Visa",
    "tipo": "jugada",
    "precio_ini": 425.51,
-   "precio_hoy": 401.87,
-   "cierre": "2026-11-20",
-   "dias": 20,
-   "ret": -0.05556,
-   "ret_voo": -0.08069,
-   "valor": 94.44,
-   "valor_voo": 91.93
+   "precio_hoy": 409.4,
+   "cierre": "2026-11-23",
+   "dias": 21,
+   "ret": -0.03786,
+   "ret_voo": -0.03965,
+   "valor": 96.21,
+   "valor_voo": 96.04
   },
   {
    "fecha": "2026-11-03",
@@ -1074,13 +1121,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1410.99,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 20,
-   "ret": -0.04527,
-   "ret_voo": -0.08069,
-   "valor": 95.47,
-   "valor_voo": 91.93
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 21,
+   "ret": -0.03288,
+   "ret_voo": -0.03965,
+   "valor": 96.71,
+   "valor_voo": 96.04
   },
   {
    "fecha": "2026-11-02",
@@ -1088,13 +1135,13 @@
    "nombre": "Exxon",
    "tipo": "jugada",
    "precio_ini": 187.25,
-   "precio_hoy": 159.99,
-   "cierre": "2026-11-20",
-   "dias": 21,
-   "ret": -0.14558,
-   "ret_voo": -0.0853,
-   "valor": 85.44,
-   "valor_voo": 91.47
+   "precio_hoy": 156.9,
+   "cierre": "2026-11-23",
+   "dias": 22,
+   "ret": -0.16208,
+   "ret_voo": -0.04447,
+   "valor": 83.79,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-11-02",
@@ -1102,13 +1149,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 694.81,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 21,
-   "ret": -0.0853,
-   "ret_voo": -0.0853,
-   "valor": 91.47,
-   "valor_voo": 91.47
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 22,
+   "ret": -0.04447,
+   "ret_voo": -0.04447,
+   "valor": 95.55,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-11-02",
@@ -1116,13 +1163,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1417.54,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 21,
-   "ret": -0.04968,
-   "ret_voo": -0.0853,
-   "valor": 95.03,
-   "valor_voo": 91.47
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 22,
+   "ret": -0.03735,
+   "ret_voo": -0.04447,
+   "valor": 96.27,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-11-01",
@@ -1130,13 +1177,13 @@
    "nombre": "Exxon",
    "tipo": "jugada",
    "precio_ini": 187.25,
-   "precio_hoy": 159.99,
-   "cierre": "2026-11-20",
-   "dias": 22,
-   "ret": -0.14558,
-   "ret_voo": -0.0853,
-   "valor": 85.44,
-   "valor_voo": 91.47
+   "precio_hoy": 156.9,
+   "cierre": "2026-11-23",
+   "dias": 23,
+   "ret": -0.16208,
+   "ret_voo": -0.04447,
+   "valor": 83.79,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-11-01",
@@ -1144,13 +1191,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 694.81,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 22,
-   "ret": -0.0853,
-   "ret_voo": -0.0853,
-   "valor": 91.47,
-   "valor_voo": 91.47
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 23,
+   "ret": -0.04447,
+   "ret_voo": -0.04447,
+   "valor": 95.55,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-11-01",
@@ -1158,13 +1205,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1417.54,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 22,
-   "ret": -0.04968,
-   "ret_voo": -0.0853,
-   "valor": 95.03,
-   "valor_voo": 91.47
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 23,
+   "ret": -0.03735,
+   "ret_voo": -0.04447,
+   "valor": 96.27,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-10-31",
@@ -1172,13 +1219,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 694.81,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 23,
-   "ret": -0.0853,
-   "ret_voo": -0.0853,
-   "valor": 91.47,
-   "valor_voo": 91.47
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 24,
+   "ret": -0.04447,
+   "ret_voo": -0.04447,
+   "valor": 95.55,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-10-31",
@@ -1186,13 +1233,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 638.01,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 23,
-   "ret": -0.01947,
-   "ret_voo": -0.0853,
-   "valor": 98.05,
-   "valor_voo": 91.47
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 24,
+   "ret": -0.00397,
+   "ret_voo": -0.04447,
+   "valor": 99.6,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-10-31",
@@ -1200,13 +1247,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1417.54,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 23,
-   "ret": -0.04968,
-   "ret_voo": -0.0853,
-   "valor": 95.03,
-   "valor_voo": 91.47
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 24,
+   "ret": -0.03735,
+   "ret_voo": -0.04447,
+   "valor": 96.27,
+   "valor_voo": 95.55
   },
   {
    "fecha": "2026-10-30",
@@ -1214,13 +1261,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 699.36,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 24,
-   "ret": -0.09125,
-   "ret_voo": -0.09125,
-   "valor": 90.87,
-   "valor_voo": 90.87
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 25,
+   "ret": -0.05069,
+   "ret_voo": -0.05069,
+   "valor": 94.93,
+   "valor_voo": 94.93
   },
   {
    "fecha": "2026-10-30",
@@ -1228,13 +1275,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 643.64,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 24,
-   "ret": -0.02804,
-   "ret_voo": -0.09125,
-   "valor": 97.2,
-   "valor_voo": 90.87
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 25,
+   "ret": -0.01268,
+   "ret_voo": -0.05069,
+   "valor": 98.73,
+   "valor_voo": 94.93
   },
   {
    "fecha": "2026-10-30",
@@ -1242,13 +1289,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1433.99,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 24,
-   "ret": -0.06059,
-   "ret_voo": -0.09125,
-   "valor": 93.94,
-   "valor_voo": 90.87
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 25,
+   "ret": -0.04839,
+   "ret_voo": -0.05069,
+   "valor": 95.16,
+   "valor_voo": 94.93
   },
   {
    "fecha": "2026-10-29",
@@ -1256,13 +1303,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 706.49,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 25,
-   "ret": -0.10043,
-   "ret_voo": -0.10043,
-   "valor": 89.96,
-   "valor_voo": 89.96
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 26,
+   "ret": -0.06027,
+   "ret_voo": -0.06027,
+   "valor": 93.97,
+   "valor_voo": 93.97
   },
   {
    "fecha": "2026-10-29",
@@ -1270,13 +1317,13 @@
    "nombre": "Tesla",
    "tipo": "jugada",
    "precio_ini": 405.95,
-   "precio_hoy": 345.82,
-   "cierre": "2026-11-20",
-   "dias": 25,
-   "ret": -0.14812,
-   "ret_voo": -0.10043,
-   "valor": 85.19,
-   "valor_voo": 89.96
+   "precio_hoy": 385.46,
+   "cierre": "2026-11-23",
+   "dias": 26,
+   "ret": -0.05047,
+   "ret_voo": -0.06027,
+   "valor": 94.95,
+   "valor_voo": 93.97
   },
   {
    "fecha": "2026-10-29",
@@ -1284,13 +1331,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1330.0,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 25,
-   "ret": 0.01286,
-   "ret_voo": -0.10043,
-   "valor": 101.29,
-   "valor_voo": 89.96
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 26,
+   "ret": 0.02602,
+   "ret_voo": -0.06027,
+   "valor": 102.6,
+   "valor_voo": 93.97
   },
   {
    "fecha": "2026-10-28",
@@ -1298,13 +1345,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.84,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 26,
-   "ret": -0.10341,
-   "ret_voo": -0.10341,
-   "valor": 89.66,
-   "valor_voo": 89.66
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 27,
+   "ret": -0.06339,
+   "ret_voo": -0.06339,
+   "valor": 93.66,
+   "valor_voo": 93.66
   },
   {
    "fecha": "2026-10-28",
@@ -1312,13 +1359,13 @@
    "nombre": "Tesla",
    "tipo": "jugada",
    "precio_ini": 409.86,
-   "precio_hoy": 345.82,
-   "cierre": "2026-11-20",
-   "dias": 26,
-   "ret": -0.15625,
-   "ret_voo": -0.10341,
-   "valor": 84.38,
-   "valor_voo": 89.66
+   "precio_hoy": 385.46,
+   "cierre": "2026-11-23",
+   "dias": 27,
+   "ret": -0.05953,
+   "ret_voo": -0.06339,
+   "valor": 94.05,
+   "valor_voo": 93.66
   },
   {
    "fecha": "2026-10-28",
@@ -1326,13 +1373,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1266.58,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 26,
-   "ret": 0.06358,
-   "ret_voo": -0.10341,
-   "valor": 106.36,
-   "valor_voo": 89.66
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 27,
+   "ret": 0.07739,
+   "ret_voo": -0.06339,
+   "valor": 107.74,
+   "valor_voo": 93.66
   },
   {
    "fecha": "2026-10-27",
@@ -1340,13 +1387,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 705.43,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 27,
-   "ret": -0.09907,
-   "ret_voo": -0.09907,
-   "valor": 90.09,
-   "valor_voo": 90.09
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 28,
+   "ret": -0.05886,
+   "ret_voo": -0.05886,
+   "valor": 94.11,
+   "valor_voo": 94.11
   },
   {
    "fecha": "2026-10-27",
@@ -1354,13 +1401,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 198.64,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 27,
-   "ret": -0.27764,
-   "ret_voo": -0.09907,
-   "valor": 72.24,
-   "valor_voo": 90.09
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 28,
+   "ret": -0.19774,
+   "ret_voo": -0.05886,
+   "valor": 80.23,
+   "valor_voo": 94.11
   },
   {
    "fecha": "2026-10-27",
@@ -1368,13 +1415,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 244.85,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 27,
-   "ret": -0.26232,
-   "ret_voo": -0.09907,
-   "valor": 73.77,
-   "valor_voo": 90.09
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 28,
+   "ret": -0.24256,
+   "ret_voo": -0.05886,
+   "valor": 75.74,
+   "valor_voo": 94.11
   },
   {
    "fecha": "2026-10-26",
@@ -1382,13 +1429,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 700.7,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 28,
-   "ret": -0.09299,
-   "ret_voo": -0.09299,
-   "valor": 90.7,
-   "valor_voo": 90.7
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 29,
+   "ret": -0.0525,
+   "ret_voo": -0.0525,
+   "valor": 94.75,
+   "valor_voo": 94.75
   },
   {
    "fecha": "2026-10-26",
@@ -1396,13 +1443,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 169.43,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 28,
-   "ret": -0.26979,
-   "ret_voo": -0.09369,
-   "valor": 73.02,
-   "valor_voo": 90.63
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 29,
+   "ret": -0.20734,
+   "ret_voo": -0.05323,
+   "valor": 79.27,
+   "valor_voo": 94.68
   },
   {
    "fecha": "2026-10-26",
@@ -1410,13 +1457,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 197.79,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 28,
-   "ret": -0.27453,
-   "ret_voo": -0.09299,
-   "valor": 72.55,
-   "valor_voo": 90.7
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 29,
+   "ret": -0.1943,
+   "ret_voo": -0.0525,
+   "valor": 80.57,
+   "valor_voo": 94.75
   },
   {
    "fecha": "2026-10-26",
@@ -1424,13 +1471,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1286.85,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 28,
-   "ret": 0.04683,
-   "ret_voo": -0.09299,
-   "valor": 104.68,
-   "valor_voo": 90.7
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 29,
+   "ret": 0.06042,
+   "ret_voo": -0.0525,
+   "valor": 106.04,
+   "valor_voo": 94.75
   },
   {
    "fecha": "2026-10-25",
@@ -1438,13 +1485,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 698.58,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 29,
-   "ret": -0.09024,
-   "ret_voo": -0.09024,
-   "valor": 90.98,
-   "valor_voo": 90.98
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 30,
+   "ret": -0.04963,
+   "ret_voo": -0.04963,
+   "valor": 95.04,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-10-25",
@@ -1452,13 +1499,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 196.75,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 29,
-   "ret": -0.2707,
-   "ret_voo": -0.09024,
-   "valor": 72.93,
-   "valor_voo": 90.98
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 30,
+   "ret": -0.19004,
+   "ret_voo": -0.04963,
+   "valor": 81.0,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-10-25",
@@ -1466,13 +1513,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1273.46,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 29,
-   "ret": 0.05783,
-   "ret_voo": -0.09024,
-   "valor": 105.78,
-   "valor_voo": 90.98
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 30,
+   "ret": 0.07157,
+   "ret_voo": -0.04963,
+   "valor": 107.16,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-10-24",
@@ -1480,13 +1527,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 698.58,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 30,
-   "ret": -0.09024,
-   "ret_voo": -0.09024,
-   "valor": 90.98,
-   "valor_voo": 90.98
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 31,
+   "ret": -0.04963,
+   "ret_voo": -0.04963,
+   "valor": 95.04,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-10-24",
@@ -1494,13 +1541,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 168.68,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 30,
-   "ret": -0.26654,
-   "ret_voo": -0.09024,
-   "valor": 73.35,
-   "valor_voo": 90.98
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 31,
+   "ret": -0.20382,
+   "ret_voo": -0.04963,
+   "valor": 79.62,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-10-24",
@@ -1508,13 +1555,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1273.46,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 30,
-   "ret": 0.05783,
-   "ret_voo": -0.09024,
-   "valor": 105.78,
-   "valor_voo": 90.98
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 31,
+   "ret": 0.07157,
+   "ret_voo": -0.04963,
+   "valor": 107.16,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-10-23",
@@ -1522,13 +1569,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 698.47,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 31,
-   "ret": -0.0901,
-   "ret_voo": -0.0901,
-   "valor": 90.99,
-   "valor_voo": 90.99
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 32,
+   "ret": -0.04948,
+   "ret_voo": -0.04948,
+   "valor": 95.05,
+   "valor_voo": 95.05
   },
   {
    "fecha": "2026-10-23",
@@ -1536,13 +1583,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 168.81,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 31,
-   "ret": -0.26711,
-   "ret_voo": -0.0901,
-   "valor": 73.29,
-   "valor_voo": 90.99
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 32,
+   "ret": -0.20443,
+   "ret_voo": -0.04948,
+   "valor": 79.56,
+   "valor_voo": 95.05
   },
   {
    "fecha": "2026-10-23",
@@ -1550,13 +1597,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 248.49,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 31,
-   "ret": -0.27313,
-   "ret_voo": -0.0901,
-   "valor": 72.69,
-   "valor_voo": 90.99
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 32,
+   "ret": -0.25365,
+   "ret_voo": -0.04948,
+   "valor": 74.63,
+   "valor_voo": 95.05
   },
   {
    "fecha": "2026-10-22",
@@ -1564,13 +1611,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 704.36,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 32,
-   "ret": -0.09771,
-   "ret_voo": -0.09771,
-   "valor": 90.23,
-   "valor_voo": 90.23
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 33,
+   "ret": -0.05743,
+   "ret_voo": -0.05743,
+   "valor": 94.26,
+   "valor_voo": 94.26
   },
   {
    "fecha": "2026-10-22",
@@ -1578,13 +1625,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 174.38,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 32,
-   "ret": -0.29051,
-   "ret_voo": -0.09771,
-   "valor": 70.95,
-   "valor_voo": 90.23
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 33,
+   "ret": -0.22984,
+   "ret_voo": -0.05743,
+   "valor": 77.02,
+   "valor_voo": 94.26
   },
   {
    "fecha": "2026-10-22",
@@ -1592,13 +1639,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 200.69,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 32,
-   "ret": -0.28502,
-   "ret_voo": -0.09771,
-   "valor": 71.5,
-   "valor_voo": 90.23
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 33,
+   "ret": -0.20594,
+   "ret_voo": -0.05743,
+   "valor": 79.41,
+   "valor_voo": 94.26
   },
   {
    "fecha": "2026-10-21",
@@ -1606,13 +1653,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.65,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 33,
-   "ret": -0.10317,
-   "ret_voo": -0.10317,
-   "valor": 89.68,
-   "valor_voo": 89.68
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 34,
+   "ret": -0.06313,
+   "ret_voo": -0.06313,
+   "valor": 93.69,
+   "valor_voo": 93.69
   },
   {
    "fecha": "2026-10-21",
@@ -1620,13 +1667,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 172.84,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 33,
-   "ret": -0.28419,
-   "ret_voo": -0.10317,
-   "valor": 71.58,
-   "valor_voo": 89.68
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 34,
+   "ret": -0.22298,
+   "ret_voo": -0.06313,
+   "valor": 77.7,
+   "valor_voo": 93.69
   },
   {
    "fecha": "2026-10-21",
@@ -1634,13 +1681,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1262.81,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 33,
-   "ret": 0.06676,
-   "ret_voo": -0.10317,
-   "valor": 106.68,
-   "valor_voo": 89.68
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 34,
+   "ret": 0.08061,
+   "ret_voo": -0.06313,
+   "valor": 108.06,
+   "valor_voo": 93.69
   },
   {
    "fecha": "2026-10-20",
@@ -1648,13 +1695,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 703.51,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 34,
-   "ret": -0.09662,
-   "ret_voo": -0.09662,
-   "valor": 90.34,
-   "valor_voo": 90.34
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 35,
+   "ret": -0.05629,
+   "ret_voo": -0.05629,
+   "valor": 94.37,
+   "valor_voo": 94.37
   },
   {
    "fecha": "2026-10-20",
@@ -1662,13 +1709,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 172.6,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 34,
-   "ret": -0.2832,
-   "ret_voo": -0.09662,
-   "valor": 71.68,
-   "valor_voo": 90.34
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 35,
+   "ret": -0.2219,
+   "ret_voo": -0.05629,
+   "valor": 77.81,
+   "valor_voo": 94.37
   },
   {
    "fecha": "2026-10-20",
@@ -1676,13 +1723,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1264.36,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 34,
-   "ret": 0.06545,
-   "ret_voo": -0.09662,
-   "valor": 106.54,
-   "valor_voo": 90.34
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 35,
+   "ret": 0.07928,
+   "ret_voo": -0.05629,
+   "valor": 107.93,
+   "valor_voo": 94.37
   },
   {
    "fecha": "2026-10-19",
@@ -1690,13 +1737,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 705.24,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 35,
-   "ret": -0.09883,
-   "ret_voo": -0.09883,
-   "valor": 90.12,
-   "valor_voo": 90.12
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 36,
+   "ret": -0.0586,
+   "ret_voo": -0.0586,
+   "valor": 94.14,
+   "valor_voo": 94.14
   },
   {
    "fecha": "2026-10-19",
@@ -1704,13 +1751,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 171.87,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 35,
-   "ret": -0.28015,
-   "ret_voo": -0.09883,
-   "valor": 71.98,
-   "valor_voo": 90.12
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 36,
+   "ret": -0.2186,
+   "ret_voo": -0.0586,
+   "valor": 78.14,
+   "valor_voo": 94.14
   },
   {
    "fecha": "2026-10-19",
@@ -1718,13 +1765,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1240.23,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 35,
-   "ret": 0.08618,
-   "ret_voo": -0.09883,
-   "valor": 108.62,
-   "valor_voo": 90.12
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 36,
+   "ret": 0.10028,
+   "ret_voo": -0.0586,
+   "valor": 110.03,
+   "valor_voo": 94.14
   },
   {
    "fecha": "2026-10-18",
@@ -1732,13 +1779,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 701.61,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 36,
-   "ret": -0.09417,
-   "ret_voo": -0.09417,
-   "valor": 90.58,
-   "valor_voo": 90.58
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 37,
+   "ret": -0.05373,
+   "ret_voo": -0.05373,
+   "valor": 94.63,
+   "valor_voo": 94.63
   },
   {
    "fecha": "2026-10-18",
@@ -1746,13 +1793,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 169.52,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 36,
-   "ret": -0.27017,
-   "ret_voo": -0.09417,
-   "valor": 72.98,
-   "valor_voo": 90.58
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 37,
+   "ret": -0.20776,
+   "ret_voo": -0.05373,
+   "valor": 79.22,
+   "valor_voo": 94.63
   },
   {
    "fecha": "2026-10-18",
@@ -1760,13 +1807,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 240.7,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 36,
-   "ret": -0.24961,
-   "ret_voo": -0.09417,
-   "valor": 75.04,
-   "valor_voo": 90.58
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 37,
+   "ret": -0.2295,
+   "ret_voo": -0.05373,
+   "valor": 77.05,
+   "valor_voo": 94.63
   },
   {
    "fecha": "2026-10-17",
@@ -1774,13 +1821,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 701.61,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 37,
-   "ret": -0.09417,
-   "ret_voo": -0.09417,
-   "valor": 90.58,
-   "valor_voo": 90.58
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 38,
+   "ret": -0.05373,
+   "ret_voo": -0.05373,
+   "valor": 94.63,
+   "valor_voo": 94.63
   },
   {
    "fecha": "2026-10-17",
@@ -1788,13 +1835,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 169.52,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 37,
-   "ret": -0.27017,
-   "ret_voo": -0.09417,
-   "valor": 72.98,
-   "valor_voo": 90.58
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 38,
+   "ret": -0.20776,
+   "ret_voo": -0.05373,
+   "valor": 79.22,
+   "valor_voo": 94.63
   },
   {
    "fecha": "2026-10-17",
@@ -1802,13 +1849,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 240.7,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 37,
-   "ret": -0.24961,
-   "ret_voo": -0.09417,
-   "valor": 75.04,
-   "valor_voo": 90.58
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 38,
+   "ret": -0.2295,
+   "ret_voo": -0.05373,
+   "valor": 77.05,
+   "valor_voo": 94.63
   },
   {
    "fecha": "2026-10-16",
@@ -1816,13 +1863,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 710.52,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 38,
-   "ret": -0.10553,
-   "ret_voo": -0.10553,
-   "valor": 89.45,
-   "valor_voo": 89.45
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 39,
+   "ret": -0.0656,
+   "ret_voo": -0.0656,
+   "valor": 93.44,
+   "valor_voo": 93.44
   },
   {
    "fecha": "2026-10-16",
@@ -1830,13 +1877,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 202.28,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 38,
-   "ret": -0.29064,
-   "ret_voo": -0.10553,
-   "valor": 70.94,
-   "valor_voo": 89.45
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 39,
+   "ret": -0.21218,
+   "ret_voo": -0.0656,
+   "valor": 78.78,
+   "valor_voo": 93.44
   },
   {
    "fecha": "2026-10-16",
@@ -1844,13 +1891,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 250.14,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 38,
-   "ret": -0.27792,
-   "ret_voo": -0.10553,
-   "valor": 72.21,
-   "valor_voo": 89.45
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 39,
+   "ret": -0.25858,
+   "ret_voo": -0.0656,
+   "valor": 74.14,
+   "valor_voo": 93.44
   },
   {
    "fecha": "2026-10-15",
@@ -1858,13 +1905,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 704.34,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 39,
-   "ret": -0.09768,
-   "ret_voo": -0.09768,
-   "valor": 90.23,
-   "valor_voo": 90.23
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 40,
+   "ret": -0.0574,
+   "ret_voo": -0.0574,
+   "valor": 94.26,
+   "valor_voo": 94.26
   },
   {
    "fecha": "2026-10-15",
@@ -1872,13 +1919,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 164.76,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 39,
-   "ret": -0.24909,
-   "ret_voo": -0.09768,
-   "valor": 75.09,
-   "valor_voo": 90.23
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 40,
+   "ret": -0.18487,
+   "ret_voo": -0.0574,
+   "valor": 81.51,
+   "valor_voo": 94.26
   },
   {
    "fecha": "2026-10-15",
@@ -1886,13 +1933,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 195.81,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 39,
-   "ret": -0.2672,
-   "ret_voo": -0.09768,
-   "valor": 73.28,
-   "valor_voo": 90.23
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 40,
+   "ret": -0.18615,
+   "ret_voo": -0.0574,
+   "valor": 81.39,
+   "valor_voo": 94.26
   },
   {
    "fecha": "2026-10-13",
@@ -1900,13 +1947,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 714.46,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 41,
-   "ret": -0.11046,
-   "ret_voo": -0.11046,
-   "valor": 88.95,
-   "valor_voo": 88.95
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 42,
+   "ret": -0.07075,
+   "ret_voo": -0.07075,
+   "valor": 92.92,
+   "valor_voo": 92.92
   },
   {
    "fecha": "2026-10-13",
@@ -1914,13 +1961,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 175.88,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 41,
-   "ret": -0.29657,
-   "ret_voo": -0.11046,
-   "valor": 70.34,
-   "valor_voo": 88.95
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 42,
+   "ret": -0.23641,
+   "ret_voo": -0.07075,
+   "valor": 76.36,
+   "valor_voo": 92.92
   },
   {
    "fecha": "2026-10-13",
@@ -1928,13 +1975,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 207.91,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 41,
-   "ret": -0.30985,
-   "ret_voo": -0.11046,
-   "valor": 69.02,
-   "valor_voo": 88.95
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 42,
+   "ret": -0.23351,
+   "ret_voo": -0.07075,
+   "valor": 76.65,
+   "valor_voo": 92.92
   },
   {
    "fecha": "2026-10-12",
@@ -1942,13 +1989,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 715.85,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 42,
-   "ret": -0.11219,
-   "ret_voo": -0.11219,
-   "valor": 88.78,
-   "valor_voo": 88.78
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 43,
+   "ret": -0.07256,
+   "ret_voo": -0.07256,
+   "valor": 92.74,
+   "valor_voo": 92.74
   },
   {
    "fecha": "2026-10-12",
@@ -1956,13 +2003,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 173.64,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 42,
-   "ret": -0.28749,
-   "ret_voo": -0.11219,
-   "valor": 71.25,
-   "valor_voo": 88.78
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 43,
+   "ret": -0.22656,
+   "ret_voo": -0.07256,
+   "valor": 77.34,
+   "valor_voo": 92.74
   },
   {
    "fecha": "2026-10-12",
@@ -1970,13 +2017,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 209.16,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 42,
-   "ret": -0.31397,
-   "ret_voo": -0.11219,
-   "valor": 68.6,
-   "valor_voo": 88.78
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 43,
+   "ret": -0.2381,
+   "ret_voo": -0.07256,
+   "valor": 76.19,
+   "valor_voo": 92.74
   },
   {
    "fecha": "2026-10-11",
@@ -1984,13 +2031,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 715.59,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 43,
-   "ret": -0.11187,
-   "ret_voo": -0.11187,
-   "valor": 88.81,
-   "valor_voo": 88.81
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 44,
+   "ret": -0.07222,
+   "ret_voo": -0.07222,
+   "valor": 92.78,
+   "valor_voo": 92.78
   },
   {
    "fecha": "2026-10-11",
@@ -1998,13 +2045,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 170.85,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 43,
-   "ret": -0.27586,
-   "ret_voo": -0.11187,
-   "valor": 72.41,
-   "valor_voo": 88.81
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 44,
+   "ret": -0.21393,
+   "ret_voo": -0.07222,
+   "valor": 78.61,
+   "valor_voo": 92.78
   },
   {
    "fecha": "2026-10-11",
@@ -2012,13 +2059,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 209.05,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 43,
-   "ret": -0.31361,
-   "ret_voo": -0.11187,
-   "valor": 68.64,
-   "valor_voo": 88.81
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 44,
+   "ret": -0.23769,
+   "ret_voo": -0.07222,
+   "valor": 76.23,
+   "valor_voo": 92.78
   },
   {
    "fecha": "2026-10-10",
@@ -2026,13 +2073,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 715.59,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 44,
-   "ret": -0.11187,
-   "ret_voo": -0.11187,
-   "valor": 88.81,
-   "valor_voo": 88.81
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 45,
+   "ret": -0.07222,
+   "ret_voo": -0.07222,
+   "valor": 92.78,
+   "valor_voo": 92.78
   },
   {
    "fecha": "2026-10-10",
@@ -2040,13 +2087,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 170.85,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 44,
-   "ret": -0.27586,
-   "ret_voo": -0.11187,
-   "valor": 72.41,
-   "valor_voo": 88.81
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 45,
+   "ret": -0.21393,
+   "ret_voo": -0.07222,
+   "valor": 78.61,
+   "valor_voo": 92.78
   },
   {
    "fecha": "2026-10-10",
@@ -2054,13 +2101,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 209.05,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 44,
-   "ret": -0.31361,
-   "ret_voo": -0.11187,
-   "valor": 68.64,
-   "valor_voo": 88.81
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 45,
+   "ret": -0.23769,
+   "ret_voo": -0.07222,
+   "valor": 76.23,
+   "valor_voo": 92.78
   },
   {
    "fecha": "2026-10-08",
@@ -2068,13 +2115,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 712.04,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 46,
-   "ret": -0.10744,
-   "ret_voo": -0.10744,
-   "valor": 89.26,
-   "valor_voo": 89.26
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 47,
+   "ret": -0.06759,
+   "ret_voo": -0.06759,
+   "valor": 93.24,
+   "valor_voo": 93.24
   },
   {
    "fecha": "2026-10-08",
@@ -2082,13 +2129,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 165.54,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 46,
-   "ret": -0.25263,
-   "ret_voo": -0.10744,
-   "valor": 74.74,
-   "valor_voo": 89.26
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 47,
+   "ret": -0.18872,
+   "ret_voo": -0.06759,
+   "valor": 81.13,
+   "valor_voo": 93.24
   },
   {
    "fecha": "2026-10-08",
@@ -2096,13 +2143,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 636.76,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 46,
-   "ret": -0.33352,
-   "ret_voo": -0.10744,
-   "valor": 66.65,
-   "valor_voo": 89.26
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 47,
+   "ret": -0.28786,
+   "ret_voo": -0.06759,
+   "valor": 71.21,
+   "valor_voo": 93.24
   },
   {
    "fecha": "2026-10-07",
@@ -2110,13 +2157,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 713.17,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 47,
-   "ret": -0.10885,
-   "ret_voo": -0.10885,
-   "valor": 89.11,
-   "valor_voo": 89.11
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 48,
+   "ret": -0.06907,
+   "ret_voo": -0.06907,
+   "valor": 93.09,
+   "valor_voo": 93.09
   },
   {
    "fecha": "2026-10-07",
@@ -2124,13 +2171,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 634.69,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 47,
-   "ret": -0.33134,
-   "ret_voo": -0.10885,
-   "valor": 66.87,
-   "valor_voo": 89.11
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 48,
+   "ret": -0.28554,
+   "ret_voo": -0.06907,
+   "valor": 71.45,
+   "valor_voo": 93.09
   },
   {
    "fecha": "2026-10-07",
@@ -2138,13 +2185,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.25,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 47,
-   "ret": -0.41716,
-   "ret_voo": -0.10885,
-   "valor": 58.28,
-   "valor_voo": 89.11
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 48,
+   "ret": -0.42388,
+   "ret_voo": -0.06907,
+   "valor": 57.61,
+   "valor_voo": 93.09
   },
   {
    "fecha": "2026-10-06",
@@ -2152,13 +2199,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 715.25,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 48,
-   "ret": -0.11144,
-   "ret_voo": -0.11144,
-   "valor": 88.86,
-   "valor_voo": 88.86
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 49,
+   "ret": -0.07178,
+   "ret_voo": -0.07178,
+   "valor": 92.82,
+   "valor_voo": 92.82
   },
   {
    "fecha": "2026-10-06",
@@ -2166,13 +2213,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 648.13,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 48,
-   "ret": -0.34521,
-   "ret_voo": -0.11144,
-   "valor": 65.48,
-   "valor_voo": 88.86
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 49,
+   "ret": -0.30036,
+   "ret_voo": -0.07178,
+   "valor": 69.96,
+   "valor_voo": 92.82
   },
   {
    "fecha": "2026-10-06",
@@ -2180,13 +2227,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.28,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 48,
-   "ret": -0.47961,
-   "ret_voo": -0.11144,
-   "valor": 52.04,
-   "valor_voo": 88.86
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 49,
+   "ret": -0.48561,
+   "ret_voo": -0.07178,
+   "valor": 51.44,
+   "valor_voo": 92.82
   },
   {
    "fecha": "2026-10-05",
@@ -2194,13 +2241,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 707.54,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 49,
-   "ret": -0.10176,
-   "ret_voo": -0.10176,
-   "valor": 89.82,
-   "valor_voo": 89.82
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 50,
+   "ret": -0.06166,
+   "ret_voo": -0.06166,
+   "valor": 93.83,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-05",
@@ -2208,13 +2255,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 163.98,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 49,
-   "ret": -0.52555,
-   "ret_voo": -0.10176,
-   "valor": 47.44,
-   "valor_voo": 89.82
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 50,
+   "ret": -0.4853,
+   "ret_voo": -0.06166,
+   "valor": 51.47,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-05",
@@ -2222,13 +2269,13 @@
    "nombre": "Meta",
    "tipo": "jugada",
    "precio_ini": 737.92,
-   "precio_hoy": 560.84,
-   "cierre": "2026-11-20",
-   "dias": 49,
-   "ret": -0.23997,
-   "ret_voo": -0.10272,
-   "valor": 76.0,
-   "valor_voo": 89.73
+   "precio_hoy": 597.6,
+   "cierre": "2026-11-23",
+   "dias": 50,
+   "ret": -0.19016,
+   "ret_voo": -0.06267,
+   "valor": 80.98,
+   "valor_voo": 93.73
   },
   {
    "fecha": "2026-10-05",
@@ -2236,13 +2283,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.28,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 49,
-   "ret": -0.47961,
-   "ret_voo": -0.10176,
-   "valor": 52.04,
-   "valor_voo": 89.82
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 50,
+   "ret": -0.48561,
+   "ret_voo": -0.06166,
+   "valor": 51.44,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-04",
@@ -2250,13 +2297,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 707.54,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 50,
-   "ret": -0.10176,
-   "ret_voo": -0.10176,
-   "valor": 89.82,
-   "valor_voo": 89.82
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 51,
+   "ret": -0.06166,
+   "ret_voo": -0.06166,
+   "valor": 93.83,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-04",
@@ -2264,13 +2311,13 @@
    "nombre": "Solana",
    "tipo": "jugada",
    "precio_ini": 121.73,
-   "precio_hoy": 72.55,
-   "cierre": "2026-11-23",
-   "dias": 50,
-   "ret": -0.40401,
-   "ret_voo": -0.10176,
-   "valor": 59.6,
-   "valor_voo": 89.82
+   "precio_hoy": 69.79,
+   "cierre": "2026-11-24",
+   "dias": 51,
+   "ret": -0.42668,
+   "ret_voo": -0.06166,
+   "valor": 57.33,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-04",
@@ -2278,13 +2325,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 160.01,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 50,
-   "ret": -0.51378,
-   "ret_voo": -0.10176,
-   "valor": 48.62,
-   "valor_voo": 89.82
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 51,
+   "ret": -0.47253,
+   "ret_voo": -0.06166,
+   "valor": 52.75,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-03",
@@ -2292,13 +2339,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 707.54,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 51,
-   "ret": -0.10176,
-   "ret_voo": -0.10176,
-   "valor": 89.82,
-   "valor_voo": 89.82
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 52,
+   "ret": -0.06166,
+   "ret_voo": -0.06166,
+   "valor": 93.83,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-03",
@@ -2306,13 +2353,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 160.01,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 51,
-   "ret": -0.51378,
-   "ret_voo": -0.10176,
-   "valor": 48.62,
-   "valor_voo": 89.82
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 52,
+   "ret": -0.47253,
+   "ret_voo": -0.06166,
+   "valor": 52.75,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-03",
@@ -2320,13 +2367,13 @@
    "nombre": "Meta",
    "tipo": "jugada",
    "precio_ini": 728.08,
-   "precio_hoy": 560.84,
-   "cierre": "2026-11-20",
-   "dias": 51,
-   "ret": -0.2297,
-   "ret_voo": -0.10176,
-   "valor": 77.03,
-   "valor_voo": 89.82
+   "precio_hoy": 597.6,
+   "cierre": "2026-11-23",
+   "dias": 52,
+   "ret": -0.17921,
+   "ret_voo": -0.06166,
+   "valor": 82.08,
+   "valor_voo": 93.83
   },
   {
    "fecha": "2026-10-02",
@@ -2334,13 +2381,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.41,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 52,
-   "ret": -0.10286,
-   "ret_voo": -0.10286,
-   "valor": 89.71,
-   "valor_voo": 89.71
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 53,
+   "ret": -0.06282,
+   "ret_voo": -0.06282,
+   "valor": 93.72,
+   "valor_voo": 93.72
   },
   {
    "fecha": "2026-10-02",
@@ -2348,13 +2395,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 166.04,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 52,
-   "ret": -0.53144,
-   "ret_voo": -0.10286,
-   "valor": 46.86,
-   "valor_voo": 89.71
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 53,
+   "ret": -0.49169,
+   "ret_voo": -0.06282,
+   "valor": 50.83,
+   "valor_voo": 93.72
   },
   {
    "fecha": "2026-10-02",
@@ -2362,13 +2409,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 615.73,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 52,
-   "ret": -0.31075,
-   "ret_voo": -0.10286,
-   "valor": 68.92,
-   "valor_voo": 89.71
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 53,
+   "ret": -0.26354,
+   "ret_voo": -0.06282,
+   "valor": 73.65,
+   "valor_voo": 93.72
   },
   {
    "fecha": "2026-10-01",
@@ -2376,13 +2423,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 702.63,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 53,
-   "ret": -0.09548,
-   "ret_voo": -0.09548,
-   "valor": 90.45,
-   "valor_voo": 90.45
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 54,
+   "ret": -0.05511,
+   "ret_voo": -0.05511,
+   "valor": 94.49,
+   "valor_voo": 94.49
   },
   {
    "fecha": "2026-10-01",
@@ -2390,13 +2437,13 @@
    "nombre": "Meta",
    "tipo": "jugada",
    "precio_ini": 725.18,
-   "precio_hoy": 560.84,
-   "cierre": "2026-11-20",
-   "dias": 53,
-   "ret": -0.22662,
-   "ret_voo": -0.09548,
-   "valor": 77.34,
-   "valor_voo": 90.45
+   "precio_hoy": 597.6,
+   "cierre": "2026-11-23",
+   "dias": 54,
+   "ret": -0.17593,
+   "ret_voo": -0.05511,
+   "valor": 82.41,
+   "valor_voo": 94.49
   },
   {
    "fecha": "2026-10-01",
@@ -2404,13 +2451,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 611.76,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 53,
-   "ret": -0.30628,
-   "ret_voo": -0.09548,
-   "valor": 69.37,
-   "valor_voo": 90.45
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 54,
+   "ret": -0.25876,
+   "ret_voo": -0.05511,
+   "valor": 74.12,
+   "valor_voo": 94.49
   },
   {
    "fecha": "2026-09-30",
@@ -2418,13 +2465,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 704.61,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 54,
-   "ret": -0.09803,
-   "ret_voo": -0.09803,
-   "valor": 90.2,
-   "valor_voo": 90.2
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 55,
+   "ret": -0.05776,
+   "ret_voo": -0.05776,
+   "valor": 94.22,
+   "valor_voo": 94.22
   },
   {
    "fecha": "2026-09-30",
@@ -2432,13 +2479,13 @@
    "nombre": "Meta",
    "tipo": "jugada",
    "precio_ini": 738.79,
-   "precio_hoy": 560.84,
-   "cierre": "2026-11-20",
-   "dias": 54,
-   "ret": -0.24087,
-   "ret_voo": -0.09803,
-   "valor": 75.91,
-   "valor_voo": 90.2
+   "precio_hoy": 597.6,
+   "cierre": "2026-11-23",
+   "dias": 55,
+   "ret": -0.19111,
+   "ret_voo": -0.05776,
+   "valor": 80.89,
+   "valor_voo": 94.22
   },
   {
    "fecha": "2026-09-30",
@@ -2446,13 +2493,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 607.57,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 54,
-   "ret": -0.3015,
-   "ret_voo": -0.09803,
-   "valor": 69.85,
-   "valor_voo": 90.2
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 55,
+   "ret": -0.25365,
+   "ret_voo": -0.05776,
+   "valor": 74.64,
+   "valor_voo": 94.22
   },
   {
    "fecha": "2026-09-29",
@@ -2460,13 +2507,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 704.59,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 55,
-   "ret": -0.098,
-   "ret_voo": -0.098,
-   "valor": 90.2,
-   "valor_voo": 90.2
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 56,
+   "ret": -0.05774,
+   "ret_voo": -0.05774,
+   "valor": 94.23,
+   "valor_voo": 94.23
   },
   {
    "fecha": "2026-09-29",
@@ -2474,13 +2521,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 161.11,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 55,
-   "ret": -0.5171,
-   "ret_voo": -0.098,
-   "valor": 48.29,
-   "valor_voo": 90.2
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 56,
+   "ret": -0.47613,
+   "ret_voo": -0.05774,
+   "valor": 52.39,
+   "valor_voo": 94.23
   },
   {
    "fecha": "2026-09-29",
@@ -2488,13 +2535,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 616.22,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 55,
-   "ret": -0.3113,
-   "ret_voo": -0.098,
-   "valor": 68.87,
-   "valor_voo": 90.2
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 56,
+   "ret": -0.26413,
+   "ret_voo": -0.05774,
+   "valor": 73.59,
+   "valor_voo": 94.23
   },
   {
    "fecha": "2026-09-28",
@@ -2502,13 +2549,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 706.26,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 56,
-   "ret": -0.10013,
-   "ret_voo": -0.10013,
-   "valor": 89.99,
-   "valor_voo": 89.99
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 57,
+   "ret": -0.05996,
+   "ret_voo": -0.05996,
+   "valor": 94.0,
+   "valor_voo": 94.0
   },
   {
    "fecha": "2026-09-28",
@@ -2516,13 +2563,13 @@
    "nombre": "Solana",
    "tipo": "jugada",
    "precio_ini": 119.88,
-   "precio_hoy": 72.55,
-   "cierre": "2026-11-23",
-   "dias": 56,
-   "ret": -0.39481,
-   "ret_voo": -0.10013,
-   "valor": 60.52,
-   "valor_voo": 89.99
+   "precio_hoy": 69.79,
+   "cierre": "2026-11-24",
+   "dias": 57,
+   "ret": -0.41783,
+   "ret_voo": -0.05996,
+   "valor": 58.22,
+   "valor_voo": 94.0
   },
   {
    "fecha": "2026-09-28",
@@ -2530,13 +2577,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 613.85,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 56,
-   "ret": -0.30864,
-   "ret_voo": -0.10007,
-   "valor": 69.14,
-   "valor_voo": 89.99
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 57,
+   "ret": -0.26129,
+   "ret_voo": -0.0599,
+   "valor": 73.87,
+   "valor_voo": 94.01
   },
   {
    "fecha": "2026-09-28",
@@ -2544,13 +2591,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.25,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 56,
-   "ret": -0.41716,
-   "ret_voo": -0.10013,
-   "valor": 58.28,
-   "valor_voo": 89.99
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 57,
+   "ret": -0.42388,
+   "ret_voo": -0.05996,
+   "valor": 57.61,
+   "valor_voo": 94.0
   },
   {
    "fecha": "2026-09-27",
@@ -2558,13 +2605,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 710.79,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 57,
-   "ret": -0.10587,
-   "ret_voo": -0.10587,
-   "valor": 89.41,
-   "valor_voo": 89.41
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 58,
+   "ret": -0.06595,
+   "ret_voo": -0.06595,
+   "valor": 93.4,
+   "valor_voo": 93.4
   },
   {
    "fecha": "2026-09-27",
@@ -2572,13 +2619,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 158.61,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 57,
-   "ret": -0.50949,
-   "ret_voo": -0.10587,
-   "valor": 49.05,
-   "valor_voo": 89.41
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 58,
+   "ret": -0.46788,
+   "ret_voo": -0.06595,
+   "valor": 53.21,
+   "valor_voo": 93.4
   },
   {
    "fecha": "2026-09-27",
@@ -2586,13 +2633,13 @@
    "nombre": "Intel",
    "tipo": "jugada",
    "precio_ini": 123.0,
-   "precio_hoy": 51.28,
-   "cierre": "2026-11-20",
-   "dias": 57,
-   "ret": -0.58309,
-   "ret_voo": -0.10587,
-   "valor": 41.69,
-   "valor_voo": 89.41
+   "precio_hoy": 59.66,
+   "cierre": "2026-11-23",
+   "dias": 58,
+   "ret": -0.51496,
+   "ret_voo": -0.06595,
+   "valor": 48.5,
+   "valor_voo": 93.4
   },
   {
    "fecha": "2026-09-26",
@@ -2600,13 +2647,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 710.79,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 58,
-   "ret": -0.10587,
-   "ret_voo": -0.10587,
-   "valor": 89.41,
-   "valor_voo": 89.41
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 59,
+   "ret": -0.06595,
+   "ret_voo": -0.06595,
+   "valor": 93.4,
+   "valor_voo": 93.4
   },
   {
    "fecha": "2026-09-26",
@@ -2614,13 +2661,13 @@
    "nombre": "Qualcomm",
    "tipo": "jugada",
    "precio_ini": 201.97,
-   "precio_hoy": 149.94,
-   "cierre": "2026-11-20",
-   "dias": 58,
-   "ret": -0.25761,
-   "ret_voo": -0.10587,
-   "valor": 74.24,
-   "valor_voo": 89.41
+   "precio_hoy": 165.38,
+   "cierre": "2026-11-23",
+   "dias": 59,
+   "ret": -0.18117,
+   "ret_voo": -0.06595,
+   "valor": 81.88,
+   "valor_voo": 93.4
   },
   {
    "fecha": "2026-09-26",
@@ -2628,13 +2675,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 158.61,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 58,
-   "ret": -0.50949,
-   "ret_voo": -0.10587,
-   "valor": 49.05,
-   "valor_voo": 89.41
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 59,
+   "ret": -0.46788,
+   "ret_voo": -0.06595,
+   "valor": 53.21,
+   "valor_voo": 93.4
   },
   {
    "fecha": "2026-09-25",
@@ -2642,13 +2689,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 707.84,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 59,
-   "ret": -0.10214,
-   "ret_voo": -0.10214,
-   "valor": 89.79,
-   "valor_voo": 89.79
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 60,
+   "ret": -0.06206,
+   "ret_voo": -0.06206,
+   "valor": 93.79,
+   "valor_voo": 93.79
   },
   {
    "fecha": "2026-09-25",
@@ -2656,13 +2703,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 162.12,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 59,
-   "ret": -0.52011,
-   "ret_voo": -0.10214,
-   "valor": 47.99,
-   "valor_voo": 89.79
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 60,
+   "ret": -0.4794,
+   "ret_voo": -0.06206,
+   "valor": 52.06,
+   "valor_voo": 93.79
   },
   {
    "fecha": "2026-09-25",
@@ -2670,13 +2717,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.25,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 59,
-   "ret": -0.41716,
-   "ret_voo": -0.10214,
-   "valor": 58.28,
-   "valor_voo": 89.79
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 60,
+   "ret": -0.42388,
+   "ret_voo": -0.06206,
+   "valor": 57.61,
+   "valor_voo": 93.79
   },
   {
    "fecha": "2026-09-24",
@@ -2684,13 +2731,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 704.1,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 60,
-   "ret": -0.09737,
-   "ret_voo": -0.09737,
-   "valor": 90.26,
-   "valor_voo": 90.26
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 61,
+   "ret": -0.05708,
+   "ret_voo": -0.05708,
+   "valor": 94.29,
+   "valor_voo": 94.29
   },
   {
    "fecha": "2026-09-24",
@@ -2698,13 +2745,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 189.38,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 60,
-   "ret": -0.24232,
-   "ret_voo": -0.09737,
-   "valor": 75.77,
-   "valor_voo": 90.26
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 61,
+   "ret": -0.15852,
+   "ret_voo": -0.05708,
+   "valor": 84.15,
+   "valor_voo": 94.29
   },
   {
    "fecha": "2026-09-24",
@@ -2712,13 +2759,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 161.38,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 60,
-   "ret": -0.51791,
-   "ret_voo": -0.09737,
-   "valor": 48.21,
-   "valor_voo": 90.26
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 61,
+   "ret": -0.47701,
+   "ret_voo": -0.05708,
+   "valor": 52.3,
+   "valor_voo": 94.29
   },
   {
    "fecha": "2026-09-23",
@@ -2726,13 +2773,13 @@
    "nombre": "XRP",
    "tipo": "jugada",
    "precio_ini": 1.57,
-   "precio_hoy": 0.94,
-   "cierre": "2026-11-23",
-   "dias": 61,
-   "ret": -0.40032,
-   "ret_voo": -0.10759,
-   "valor": 59.97,
-   "valor_voo": 89.24
+   "precio_hoy": 0.92,
+   "cierre": "2026-11-24",
+   "dias": 62,
+   "ret": -0.41478,
+   "ret_voo": -0.06775,
+   "valor": 58.52,
+   "valor_voo": 93.22
   },
   {
    "fecha": "2026-09-23",
@@ -2740,13 +2787,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 712.16,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 61,
-   "ret": -0.10759,
-   "ret_voo": -0.10759,
-   "valor": 89.24,
-   "valor_voo": 89.24
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 62,
+   "ret": -0.06775,
+   "ret_voo": -0.06775,
+   "valor": 93.22,
+   "valor_voo": 93.22
   },
   {
    "fecha": "2026-09-23",
@@ -2754,13 +2801,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 167.82,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 61,
-   "ret": -0.53641,
-   "ret_voo": -0.10759,
-   "valor": 46.36,
-   "valor_voo": 89.24
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 62,
+   "ret": -0.49708,
+   "ret_voo": -0.06775,
+   "valor": 50.29,
+   "valor_voo": 93.22
   },
   {
    "fecha": "2026-09-22",
@@ -2768,13 +2815,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 713.41,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 62,
-   "ret": -0.10915,
-   "ret_voo": -0.10915,
-   "valor": 89.08,
-   "valor_voo": 89.08
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 63,
+   "ret": -0.06939,
+   "ret_voo": -0.06939,
+   "valor": 93.06,
+   "valor_voo": 93.06
   },
   {
    "fecha": "2026-09-22",
@@ -2782,13 +2829,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 167.82,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 62,
-   "ret": -0.53641,
-   "ret_voo": -0.10915,
-   "valor": 46.36,
-   "valor_voo": 89.08
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 63,
+   "ret": -0.49708,
+   "ret_voo": -0.06939,
+   "valor": 50.29,
+   "valor_voo": 93.06
   },
   {
    "fecha": "2026-09-22",
@@ -2796,13 +2843,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.25,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 62,
-   "ret": -0.41716,
-   "ret_voo": -0.10915,
-   "valor": 58.28,
-   "valor_voo": 89.08
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 63,
+   "ret": -0.42388,
+   "ret_voo": -0.06939,
+   "valor": 57.61,
+   "valor_voo": 93.06
   },
   {
    "fecha": "2026-09-21",
@@ -2810,13 +2857,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 706.43,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 63,
-   "ret": -0.10035,
-   "ret_voo": -0.10035,
-   "valor": 89.97,
-   "valor_voo": 89.97
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 64,
+   "ret": -0.06019,
+   "ret_voo": -0.06019,
+   "valor": 93.98,
+   "valor_voo": 93.98
   },
   {
    "fecha": "2026-09-21",
@@ -2824,13 +2871,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 153.92,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 63,
-   "ret": -0.49454,
-   "ret_voo": -0.10035,
-   "valor": 50.55,
-   "valor_voo": 89.97
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 64,
+   "ret": -0.45166,
+   "ret_voo": -0.06019,
+   "valor": 54.83,
+   "valor_voo": 93.98
   },
   {
    "fecha": "2026-09-21",
@@ -2838,13 +2885,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.24,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 63,
-   "ret": -0.39287,
-   "ret_voo": -0.10035,
-   "valor": 60.71,
-   "valor_voo": 89.97
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 64,
+   "ret": -0.39987,
+   "ret_voo": -0.06019,
+   "valor": 60.01,
+   "valor_voo": 93.98
   },
   {
    "fecha": "2026-09-20",
@@ -2852,13 +2899,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 701.78,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 64,
-   "ret": -0.09439,
-   "ret_voo": -0.09439,
-   "valor": 90.56,
-   "valor_voo": 90.56
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 65,
+   "ret": -0.05396,
+   "ret_voo": -0.05396,
+   "valor": 94.6,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-09-20",
@@ -2866,13 +2913,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 153.92,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 64,
-   "ret": -0.49454,
-   "ret_voo": -0.09439,
-   "valor": 50.55,
-   "valor_voo": 90.56
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 65,
+   "ret": -0.45166,
+   "ret_voo": -0.05396,
+   "valor": 54.83,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-09-20",
@@ -2880,13 +2927,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.22,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 64,
-   "ret": -0.33768,
-   "ret_voo": -0.09439,
-   "valor": 66.23,
-   "valor_voo": 90.56
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 65,
+   "ret": -0.34532,
+   "ret_voo": -0.05396,
+   "valor": 65.47,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-09-19",
@@ -2894,13 +2941,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 701.78,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 65,
-   "ret": -0.09439,
-   "ret_voo": -0.09439,
-   "valor": 90.56,
-   "valor_voo": 90.56
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 66,
+   "ret": -0.05396,
+   "ret_voo": -0.05396,
+   "valor": 94.6,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-09-19",
@@ -2908,13 +2955,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 153.92,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 65,
-   "ret": -0.49454,
-   "ret_voo": -0.09439,
-   "valor": 50.55,
-   "valor_voo": 90.56
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 66,
+   "ret": -0.45166,
+   "ret_voo": -0.05396,
+   "valor": 54.83,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-09-19",
@@ -2922,13 +2969,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.23,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 65,
-   "ret": -0.36648,
-   "ret_voo": -0.09439,
-   "valor": 63.35,
-   "valor_voo": 90.56
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 66,
+   "ret": -0.37378,
+   "ret_voo": -0.05396,
+   "valor": 62.62,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-09-18",
@@ -2936,13 +2983,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 701.68,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 66,
-   "ret": -0.09426,
-   "ret_voo": -0.09426,
-   "valor": 90.57,
-   "valor_voo": 90.57
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 67,
+   "ret": -0.05383,
+   "ret_voo": -0.05383,
+   "valor": 94.62,
+   "valor_voo": 94.62
   },
   {
    "fecha": "2026-09-18",
@@ -2950,13 +2997,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 137.82,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 66,
-   "ret": -0.4355,
-   "ret_voo": -0.09426,
-   "valor": 56.45,
-   "valor_voo": 90.57
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 67,
+   "ret": -0.38761,
+   "ret_voo": -0.05383,
+   "valor": 61.24,
+   "valor_voo": 94.62
   },
   {
    "fecha": "2026-09-18",
@@ -2964,13 +3011,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 242.72,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 66,
-   "ret": -0.25585,
-   "ret_voo": -0.09426,
-   "valor": 74.41,
-   "valor_voo": 90.57
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 67,
+   "ret": -0.23591,
+   "ret_voo": -0.05383,
+   "valor": 76.41,
+   "valor_voo": 94.62
   },
   {
    "fecha": "2026-09-17",
@@ -2978,13 +3025,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 701.35,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 67,
-   "ret": -0.09383,
-   "ret_voo": -0.09383,
-   "valor": 90.62,
-   "valor_voo": 90.62
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 68,
+   "ret": -0.05338,
+   "ret_voo": -0.05338,
+   "valor": 94.66,
+   "valor_voo": 94.66
   },
   {
    "fecha": "2026-09-17",
@@ -2992,13 +3039,13 @@
    "nombre": "Meta",
    "tipo": "jugada",
    "precio_ini": 679.59,
-   "precio_hoy": 560.84,
-   "cierre": "2026-11-20",
-   "dias": 67,
-   "ret": -0.17474,
-   "ret_voo": -0.09383,
-   "valor": 82.53,
-   "valor_voo": 90.62
+   "precio_hoy": 597.6,
+   "cierre": "2026-11-23",
+   "dias": 68,
+   "ret": -0.12065,
+   "ret_voo": -0.05338,
+   "valor": 87.94,
+   "valor_voo": 94.66
   },
   {
    "fecha": "2026-09-17",
@@ -3006,13 +3053,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 245.66,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 67,
-   "ret": -0.26476,
-   "ret_voo": -0.09383,
-   "valor": 73.52,
-   "valor_voo": 90.62
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 68,
+   "ret": -0.24505,
+   "ret_voo": -0.05338,
+   "valor": 75.49,
+   "valor_voo": 94.66
   },
   {
    "fecha": "2026-09-16",
@@ -3020,13 +3067,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 698.22,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 68,
-   "ret": -0.08977,
-   "ret_voo": -0.08977,
-   "valor": 91.02,
-   "valor_voo": 91.02
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 69,
+   "ret": -0.04914,
+   "ret_voo": -0.04914,
+   "valor": 95.09,
+   "valor_voo": 95.09
   },
   {
    "fecha": "2026-09-16",
@@ -3034,13 +3081,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 253.73,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 68,
-   "ret": -0.28814,
-   "ret_voo": -0.08977,
-   "valor": 71.19,
-   "valor_voo": 91.02
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 69,
+   "ret": -0.26907,
+   "ret_voo": -0.04914,
+   "valor": 73.09,
+   "valor_voo": 95.09
   },
   {
    "fecha": "2026-09-16",
@@ -3048,13 +3095,13 @@
    "nombre": "Apple",
    "tipo": "jugada",
    "precio_ini": 333.92,
-   "precio_hoy": 342.56,
-   "cierre": "2026-11-20",
-   "dias": 68,
-   "ret": 0.02587,
-   "ret_voo": -0.08977,
-   "valor": 102.59,
-   "valor_voo": 91.02
+   "precio_hoy": 349.08,
+   "cierre": "2026-11-23",
+   "dias": 69,
+   "ret": 0.0454,
+   "ret_voo": -0.04914,
+   "valor": 104.54,
+   "valor_voo": 95.09
   },
   {
    "fecha": "2026-09-15",
@@ -3062,13 +3109,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 698.54,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 69,
-   "ret": -0.09019,
-   "ret_voo": -0.09019,
-   "valor": 90.98,
-   "valor_voo": 90.98
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 70,
+   "ret": -0.04957,
+   "ret_voo": -0.04957,
+   "valor": 95.04,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-09-15",
@@ -3076,13 +3123,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 258.4,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 69,
-   "ret": -0.30101,
-   "ret_voo": -0.09019,
-   "valor": 69.9,
-   "valor_voo": 90.98
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 70,
+   "ret": -0.28228,
+   "ret_voo": -0.04957,
+   "valor": 71.77,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-09-15",
@@ -3090,13 +3137,13 @@
    "nombre": "Apple",
    "tipo": "jugada",
    "precio_ini": 330.34,
-   "precio_hoy": 342.56,
-   "cierre": "2026-11-20",
-   "dias": 69,
-   "ret": 0.03699,
-   "ret_voo": -0.09019,
-   "valor": 103.7,
-   "valor_voo": 90.98
+   "precio_hoy": 349.08,
+   "cierre": "2026-11-23",
+   "dias": 70,
+   "ret": 0.05673,
+   "ret_voo": -0.04957,
+   "valor": 105.67,
+   "valor_voo": 95.04
   },
   {
    "fecha": "2026-09-14",
@@ -3104,13 +3151,13 @@
    "nombre": "Exxon",
    "tipo": "jugada",
    "precio_ini": 168.71,
-   "precio_hoy": 159.99,
-   "cierre": "2026-11-20",
-   "dias": 70,
-   "ret": -0.05169,
-   "ret_voo": -0.08924,
-   "valor": 94.83,
-   "valor_voo": 91.08
+   "precio_hoy": 156.9,
+   "cierre": "2026-11-23",
+   "dias": 71,
+   "ret": -0.07,
+   "ret_voo": -0.04858,
+   "valor": 93.0,
+   "valor_voo": 95.14
   },
   {
    "fecha": "2026-09-14",
@@ -3118,13 +3165,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 697.81,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 70,
-   "ret": -0.08924,
-   "ret_voo": -0.08924,
-   "valor": 91.08,
-   "valor_voo": 91.08
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 71,
+   "ret": -0.04858,
+   "ret_voo": -0.04858,
+   "valor": 95.14,
+   "valor_voo": 95.14
   },
   {
    "fecha": "2026-09-14",
@@ -3132,13 +3179,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 254.54,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 70,
-   "ret": -0.29041,
-   "ret_voo": -0.08924,
-   "valor": 70.96,
-   "valor_voo": 91.08
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 71,
+   "ret": -0.27139,
+   "ret_voo": -0.04858,
+   "valor": 72.86,
+   "valor_voo": 95.14
   },
   {
    "fecha": "2026-09-13",
@@ -3146,13 +3193,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 702.56,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 71,
-   "ret": -0.09539,
-   "ret_voo": -0.09539,
-   "valor": 90.46,
-   "valor_voo": 90.46
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 72,
+   "ret": -0.05501,
+   "ret_voo": -0.05501,
+   "valor": 94.5,
+   "valor_voo": 94.5
   },
   {
    "fecha": "2026-09-13",
@@ -3160,13 +3207,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 975.26,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 71,
-   "ret": -0.39041,
-   "ret_voo": -0.09539,
-   "valor": 60.96,
-   "valor_voo": 90.46
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 72,
+   "ret": -0.27435,
+   "ret_voo": -0.05501,
+   "valor": 72.57,
+   "valor_voo": 94.5
   },
   {
    "fecha": "2026-09-13",
@@ -3174,13 +3221,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 247.72,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 71,
-   "ret": -0.27087,
-   "ret_voo": -0.09539,
-   "valor": 72.91,
-   "valor_voo": 90.46
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 72,
+   "ret": -0.25133,
+   "ret_voo": -0.05501,
+   "valor": 74.87,
+   "valor_voo": 94.5
   },
   {
    "fecha": "2026-09-12",
@@ -3188,13 +3235,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 702.56,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 72,
-   "ret": -0.09539,
-   "ret_voo": -0.09539,
-   "valor": 90.46,
-   "valor_voo": 90.46
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 73,
+   "ret": -0.05501,
+   "ret_voo": -0.05501,
+   "valor": 94.5,
+   "valor_voo": 94.5
   },
   {
    "fecha": "2026-09-12",
@@ -3202,13 +3249,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 975.26,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 72,
-   "ret": -0.39041,
-   "ret_voo": -0.09539,
-   "valor": 60.96,
-   "valor_voo": 90.46
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 73,
+   "ret": -0.27435,
+   "ret_voo": -0.05501,
+   "valor": 72.57,
+   "valor_voo": 94.5
   },
   {
    "fecha": "2026-09-12",
@@ -3216,13 +3263,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 247.72,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 72,
-   "ret": -0.27087,
-   "ret_voo": -0.09539,
-   "valor": 72.91,
-   "valor_voo": 90.46
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 73,
+   "ret": -0.25133,
+   "ret_voo": -0.05501,
+   "valor": 74.87,
+   "valor_voo": 94.5
   },
   {
    "fecha": "2026-09-11",
@@ -3230,13 +3277,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 702.72,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 73,
-   "ret": -0.0956,
-   "ret_voo": -0.0956,
-   "valor": 90.44,
-   "valor_voo": 90.44
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 74,
+   "ret": -0.05523,
+   "ret_voo": -0.05523,
+   "valor": 94.48,
+   "valor_voo": 94.48
   },
   {
    "fecha": "2026-09-11",
@@ -3244,13 +3291,13 @@
    "nombre": "Oracle",
    "tipo": "jugada",
    "precio_ini": 164.78,
-   "precio_hoy": 101.19,
-   "cierre": "2026-11-20",
-   "dias": 73,
-   "ret": -0.38591,
-   "ret_voo": -0.0956,
-   "valor": 61.41,
-   "valor_voo": 90.44
+   "precio_hoy": 113.68,
+   "cierre": "2026-11-23",
+   "dias": 74,
+   "ret": -0.31011,
+   "ret_voo": -0.05523,
+   "valor": 68.99,
+   "valor_voo": 94.48
   },
   {
    "fecha": "2026-09-11",
@@ -3258,13 +3305,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 987.0,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 73,
-   "ret": -0.39766,
-   "ret_voo": -0.0956,
-   "valor": 60.23,
-   "valor_voo": 90.44
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 74,
+   "ret": -0.28298,
+   "ret_voo": -0.05523,
+   "valor": 71.7,
+   "valor_voo": 94.48
   },
   {
    "fecha": "2026-09-10",
@@ -3272,13 +3319,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 697.14,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 74,
-   "ret": -0.08836,
-   "ret_voo": -0.08836,
-   "valor": 91.16,
-   "valor_voo": 91.16
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 75,
+   "ret": -0.04767,
+   "ret_voo": -0.04767,
+   "valor": 95.23,
+   "valor_voo": 95.23
   },
   {
    "fecha": "2026-09-10",
@@ -3286,13 +3333,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 994.5,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 74,
-   "ret": -0.4022,
-   "ret_voo": -0.08836,
-   "valor": 59.78,
-   "valor_voo": 91.16
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 75,
+   "ret": -0.28839,
+   "ret_voo": -0.04767,
+   "valor": 71.16,
+   "valor_voo": 95.23
   },
   {
    "fecha": "2026-09-10",
@@ -3300,13 +3347,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 128.35,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 74,
-   "ret": -0.39384,
-   "ret_voo": -0.08836,
-   "valor": 60.62,
-   "valor_voo": 91.16
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 75,
+   "ret": -0.34242,
+   "ret_voo": -0.04767,
+   "valor": 65.76,
+   "valor_voo": 95.23
   },
   {
    "fecha": "2026-09-09",
@@ -3314,13 +3361,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 702.18,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 75,
-   "ret": -0.0949,
-   "ret_voo": -0.0949,
-   "valor": 90.51,
-   "valor_voo": 90.51
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 76,
+   "ret": -0.0545,
+   "ret_voo": -0.0545,
+   "valor": 94.55,
+   "valor_voo": 94.55
   },
   {
    "fecha": "2026-09-09",
@@ -3328,13 +3375,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 1000.79,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 75,
-   "ret": -0.40596,
-   "ret_voo": -0.0949,
-   "valor": 59.4,
-   "valor_voo": 90.51
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 76,
+   "ret": -0.29286,
+   "ret_voo": -0.0545,
+   "valor": 70.71,
+   "valor_voo": 94.55
   },
   {
    "fecha": "2026-09-09",
@@ -3342,13 +3389,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 141.3,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 75,
-   "ret": -0.4494,
-   "ret_voo": -0.0949,
-   "valor": 55.06,
-   "valor_voo": 90.51
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 76,
+   "ret": -0.40269,
+   "ret_voo": -0.0545,
+   "valor": 59.73,
+   "valor_voo": 94.55
   },
   {
    "fecha": "2026-09-08",
@@ -3356,13 +3403,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 707.01,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 76,
-   "ret": -0.10109,
-   "ret_voo": -0.10109,
-   "valor": 89.89,
-   "valor_voo": 89.89
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 77,
+   "ret": -0.06096,
+   "ret_voo": -0.06096,
+   "valor": 93.9,
+   "valor_voo": 93.9
   },
   {
    "fecha": "2026-09-08",
@@ -3370,13 +3417,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 1016.59,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 76,
-   "ret": -0.41519,
-   "ret_voo": -0.10109,
-   "valor": 58.48,
-   "valor_voo": 89.89
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 77,
+   "ret": -0.30385,
+   "ret_voo": -0.06096,
+   "valor": 69.62,
+   "valor_voo": 93.9
   },
   {
    "fecha": "2026-09-08",
@@ -3384,13 +3431,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 142.8,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 76,
-   "ret": -0.45518,
-   "ret_voo": -0.10109,
-   "valor": 54.48,
-   "valor_voo": 89.89
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 77,
+   "ret": -0.40896,
+   "ret_voo": -0.06096,
+   "valor": 59.1,
+   "valor_voo": 93.9
   },
   {
    "fecha": "2026-09-07",
@@ -3398,13 +3445,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.01,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 77,
-   "ret": -0.10236,
-   "ret_voo": -0.10236,
-   "valor": 89.76,
-   "valor_voo": 89.76
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 78,
+   "ret": -0.06229,
+   "ret_voo": -0.06229,
+   "valor": 93.77,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-07",
@@ -3412,13 +3459,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 1016.59,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 77,
-   "ret": -0.41519,
-   "ret_voo": -0.10236,
-   "valor": 58.48,
-   "valor_voo": 89.76
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 78,
+   "ret": -0.30385,
+   "ret_voo": -0.06229,
+   "valor": 69.62,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-07",
@@ -3426,13 +3473,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 142.8,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 77,
-   "ret": -0.45518,
-   "ret_voo": -0.10236,
-   "valor": 54.48,
-   "valor_voo": 89.76
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 78,
+   "ret": -0.40896,
+   "ret_voo": -0.06229,
+   "valor": 59.1,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-06",
@@ -3440,13 +3487,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.01,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 78,
-   "ret": -0.10236,
-   "ret_voo": -0.10236,
-   "valor": 89.76,
-   "valor_voo": 89.76
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 79,
+   "ret": -0.06229,
+   "ret_voo": -0.06229,
+   "valor": 93.77,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-06",
@@ -3454,13 +3501,13 @@
    "nombre": "Solana",
    "tipo": "jugada",
    "precio_ini": 106.16,
-   "precio_hoy": 72.55,
-   "cierre": "2026-11-23",
-   "dias": 78,
-   "ret": -0.3166,
-   "ret_voo": -0.10236,
-   "valor": 68.34,
-   "valor_voo": 89.76
+   "precio_hoy": 69.79,
+   "cierre": "2026-11-24",
+   "dias": 79,
+   "ret": -0.3426,
+   "ret_voo": -0.06229,
+   "valor": 65.74,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-06",
@@ -3468,13 +3515,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 1016.59,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 78,
-   "ret": -0.41519,
-   "ret_voo": -0.10236,
-   "valor": 58.48,
-   "valor_voo": 89.76
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 79,
+   "ret": -0.30385,
+   "ret_voo": -0.06229,
+   "valor": 69.62,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-05",
@@ -3482,13 +3529,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.01,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 79,
-   "ret": -0.10236,
-   "ret_voo": -0.10236,
-   "valor": 89.76,
-   "valor_voo": 89.76
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 80,
+   "ret": -0.06229,
+   "ret_voo": -0.06229,
+   "valor": 93.77,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-05",
@@ -3496,13 +3543,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 1016.59,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 79,
-   "ret": -0.41519,
-   "ret_voo": -0.10236,
-   "valor": 58.48,
-   "valor_voo": 89.76
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 80,
+   "ret": -0.30385,
+   "ret_voo": -0.06229,
+   "valor": 69.62,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-05",
@@ -3510,13 +3557,13 @@
    "nombre": "MicroStrategy",
    "tipo": "jugada",
    "precio_ini": 142.8,
-   "precio_hoy": 77.8,
-   "cierre": "2026-11-20",
-   "dias": 79,
-   "ret": -0.45518,
-   "ret_voo": -0.10236,
-   "valor": 54.48,
-   "valor_voo": 89.76
+   "precio_hoy": 84.4,
+   "cierre": "2026-11-23",
+   "dias": 80,
+   "ret": -0.40896,
+   "ret_voo": -0.06229,
+   "valor": 59.1,
+   "valor_voo": 93.77
   },
   {
    "fecha": "2026-09-04",
@@ -3524,13 +3571,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 709.79,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 80,
-   "ret": -0.10461,
-   "ret_voo": -0.10461,
-   "valor": 89.54,
-   "valor_voo": 89.54
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 81,
+   "ret": -0.06464,
+   "ret_voo": -0.06464,
+   "valor": 93.54,
+   "valor_voo": 93.54
   },
   {
    "fecha": "2026-09-04",
@@ -3538,13 +3585,13 @@
    "nombre": "Ethereum",
    "tipo": "jugada",
    "precio_ini": 2452.24,
-   "precio_hoy": 1723.32,
-   "cierre": "2026-11-23",
-   "dias": 80,
-   "ret": -0.29725,
-   "ret_voo": -0.10461,
-   "valor": 70.28,
-   "valor_voo": 89.54
+   "precio_hoy": 1691.25,
+   "cierre": "2026-11-24",
+   "dias": 81,
+   "ret": -0.31032,
+   "ret_voo": -0.06464,
+   "valor": 68.97,
+   "valor_voo": 93.54
   },
   {
    "fecha": "2026-09-04",
@@ -3552,13 +3599,13 @@
    "nombre": "Bitcoin",
    "tipo": "jugada",
    "precio_ini": 79382.69,
-   "precio_hoy": 61245.83,
-   "cierre": "2026-11-23",
-   "dias": 80,
-   "ret": -0.22847,
-   "ret_voo": -0.10461,
-   "valor": 77.15,
-   "valor_voo": 89.54
+   "precio_hoy": 60056.44,
+   "cierre": "2026-11-24",
+   "dias": 81,
+   "ret": -0.24346,
+   "ret_voo": -0.06464,
+   "valor": 75.65,
+   "valor_voo": 93.54
   },
   {
    "fecha": "2026-09-02",
@@ -3566,13 +3613,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 700.58,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 82,
-   "ret": -0.09284,
-   "ret_voo": -0.09284,
-   "valor": 90.72,
-   "valor_voo": 90.72
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 83,
+   "ret": -0.05234,
+   "ret_voo": -0.05234,
+   "valor": 94.77,
+   "valor_voo": 94.77
   },
   {
    "fecha": "2026-09-02",
@@ -3580,13 +3627,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 260.93,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 82,
-   "ret": -0.30778,
-   "ret_voo": -0.09284,
-   "valor": 69.22,
-   "valor_voo": 90.72
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 83,
+   "ret": -0.28923,
+   "ret_voo": -0.05234,
+   "valor": 71.08,
+   "valor_voo": 94.77
   },
   {
    "fecha": "2026-09-02",
@@ -3594,13 +3641,13 @@
    "nombre": "Bitcoin",
    "tipo": "jugada",
    "precio_ini": 76793.31,
-   "precio_hoy": 61245.83,
-   "cierre": "2026-11-23",
-   "dias": 82,
-   "ret": -0.20246,
-   "ret_voo": -0.09284,
-   "valor": 79.75,
-   "valor_voo": 90.72
+   "precio_hoy": 60056.44,
+   "cierre": "2026-11-24",
+   "dias": 83,
+   "ret": -0.21795,
+   "ret_voo": -0.05234,
+   "valor": 78.21,
+   "valor_voo": 94.77
   },
   {
    "fecha": "2026-09-01",
@@ -3608,13 +3655,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 699.94,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 83,
-   "ret": -0.09201,
-   "ret_voo": -0.09201,
-   "valor": 90.8,
-   "valor_voo": 90.8
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 84,
+   "ret": -0.05148,
+   "ret_voo": -0.05148,
+   "valor": 94.85,
+   "valor_voo": 94.85
   },
   {
    "fecha": "2026-09-01",
@@ -3622,13 +3669,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 186.38,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 83,
-   "ret": -0.23012,
-   "ret_voo": -0.09201,
-   "valor": 76.99,
-   "valor_voo": 90.8
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 84,
+   "ret": -0.14497,
+   "ret_voo": -0.05148,
+   "valor": 85.5,
+   "valor_voo": 94.85
   },
   {
    "fecha": "2026-09-01",
@@ -3636,13 +3683,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 257.13,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 83,
-   "ret": -0.29755,
-   "ret_voo": -0.09201,
-   "valor": 70.24,
-   "valor_voo": 90.8
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 84,
+   "ret": -0.27873,
+   "ret_voo": -0.05148,
+   "valor": 72.13,
+   "valor_voo": 94.85
   },
   {
    "fecha": "2026-08-31",
@@ -3650,13 +3697,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 705.35,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 84,
-   "ret": -0.09897,
-   "ret_voo": -0.09897,
-   "valor": 90.1,
-   "valor_voo": 90.1
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 85,
+   "ret": -0.05875,
+   "ret_voo": -0.05875,
+   "valor": 94.12,
+   "valor_voo": 94.12
   },
   {
    "fecha": "2026-08-31",
@@ -3664,13 +3711,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 184.93,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 84,
-   "ret": -0.22408,
-   "ret_voo": -0.09897,
-   "valor": 77.59,
-   "valor_voo": 90.1
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 85,
+   "ret": -0.13827,
+   "ret_voo": -0.05875,
+   "valor": 86.17,
+   "valor_voo": 94.12
   },
   {
    "fecha": "2026-08-31",
@@ -3678,13 +3725,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 256.0,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 84,
-   "ret": -0.29445,
-   "ret_voo": -0.09897,
-   "valor": 70.55,
-   "valor_voo": 90.1
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 85,
+   "ret": -0.27555,
+   "ret_voo": -0.05875,
+   "valor": 72.45,
+   "valor_voo": 94.12
   },
   {
    "fecha": "2026-08-30",
@@ -3692,13 +3739,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 707.24,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 85,
-   "ret": -0.10138,
-   "ret_voo": -0.10138,
-   "valor": 89.86,
-   "valor_voo": 89.86
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 86,
+   "ret": -0.06127,
+   "ret_voo": -0.06127,
+   "valor": 93.87,
+   "valor_voo": 93.87
   },
   {
    "fecha": "2026-08-30",
@@ -3706,13 +3753,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 186.29,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 85,
-   "ret": -0.22975,
-   "ret_voo": -0.10138,
-   "valor": 77.03,
-   "valor_voo": 89.86
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 86,
+   "ret": -0.14456,
+   "ret_voo": -0.06127,
+   "valor": 85.54,
+   "valor_voo": 93.87
   },
   {
    "fecha": "2026-08-30",
@@ -3720,13 +3767,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 256.0,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 85,
-   "ret": -0.29445,
-   "ret_voo": -0.10138,
-   "valor": 70.55,
-   "valor_voo": 89.86
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 86,
+   "ret": -0.27555,
+   "ret_voo": -0.06127,
+   "valor": 72.45,
+   "valor_voo": 93.87
   },
   {
    "fecha": "2026-08-29",
@@ -3734,13 +3781,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 709.26,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 86,
-   "ret": -0.10394,
-   "ret_voo": -0.10394,
-   "valor": 89.61,
-   "valor_voo": 89.61
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 87,
+   "ret": -0.06394,
+   "ret_voo": -0.06394,
+   "valor": 93.61,
+   "valor_voo": 93.61
   },
   {
    "fecha": "2026-08-29",
@@ -3748,13 +3795,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 185.12,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 86,
-   "ret": -0.22488,
-   "ret_voo": -0.10394,
-   "valor": 77.51,
-   "valor_voo": 89.61
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 87,
+   "ret": -0.13915,
+   "ret_voo": -0.06394,
+   "valor": 86.08,
+   "valor_voo": 93.61
   },
   {
    "fecha": "2026-08-29",
@@ -3762,13 +3809,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 253.4,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 86,
-   "ret": -0.28721,
-   "ret_voo": -0.10394,
-   "valor": 71.28,
-   "valor_voo": 89.61
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 87,
+   "ret": -0.26811,
+   "ret_voo": -0.06394,
+   "valor": 73.19,
+   "valor_voo": 93.61
   },
   {
    "fecha": "2026-08-28",
@@ -3776,13 +3823,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 709.26,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 87,
-   "ret": -0.10394,
-   "ret_voo": -0.10394,
-   "valor": 89.61,
-   "valor_voo": 89.61
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 88,
+   "ret": -0.06394,
+   "ret_voo": -0.06394,
+   "valor": 93.61,
+   "valor_voo": 93.61
   },
   {
    "fecha": "2026-08-28",
@@ -3790,13 +3837,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 185.12,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 87,
-   "ret": -0.22488,
-   "ret_voo": -0.10394,
-   "valor": 77.51,
-   "valor_voo": 89.61
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 88,
+   "ret": -0.13915,
+   "ret_voo": -0.06394,
+   "valor": 86.08,
+   "valor_voo": 93.61
   },
   {
    "fecha": "2026-08-28",
@@ -3804,13 +3851,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 253.4,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 87,
-   "ret": -0.28721,
-   "ret_voo": -0.10394,
-   "valor": 71.28,
-   "valor_voo": 89.61
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 88,
+   "ret": -0.26811,
+   "ret_voo": -0.06394,
+   "valor": 73.19,
+   "valor_voo": 93.61
   },
   {
    "fecha": "2026-08-27",
@@ -3818,13 +3865,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 706.11,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 88,
-   "ret": -0.09994,
-   "ret_voo": -0.09994,
-   "valor": 90.01,
-   "valor_voo": 90.01
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 89,
+   "ret": -0.05976,
+   "ret_voo": -0.05976,
+   "valor": 94.02,
+   "valor_voo": 94.02
   },
   {
    "fecha": "2026-08-27",
@@ -3832,13 +3879,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 177.5,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 88,
-   "ret": -0.19161,
-   "ret_voo": -0.09994,
-   "valor": 80.84,
-   "valor_voo": 90.01
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 89,
+   "ret": -0.1022,
+   "ret_voo": -0.05976,
+   "valor": 89.78,
+   "valor_voo": 94.02
   },
   {
    "fecha": "2026-08-27",
@@ -3846,13 +3893,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 232.0,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 88,
-   "ret": -0.22147,
-   "ret_voo": -0.09994,
-   "valor": 77.85,
-   "valor_voo": 90.01
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 89,
+   "ret": -0.2006,
+   "ret_voo": -0.05976,
+   "valor": 79.94,
+   "valor_voo": 94.02
   },
   {
    "fecha": "2026-08-26",
@@ -3860,13 +3907,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 703.19,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 89,
-   "ret": -0.0962,
-   "ret_voo": -0.0962,
-   "valor": 90.38,
-   "valor_voo": 90.38
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 90,
+   "ret": -0.05586,
+   "ret_voo": -0.05586,
+   "valor": 94.41,
+   "valor_voo": 94.41
   },
   {
    "fecha": "2026-08-26",
@@ -3874,13 +3921,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 153.88,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 89,
-   "ret": -0.196,
-   "ret_voo": -0.0962,
-   "valor": 80.4,
-   "valor_voo": 90.38
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 90,
+   "ret": -0.12724,
+   "ret_voo": -0.05586,
+   "valor": 87.28,
+   "valor_voo": 94.41
   },
   {
    "fecha": "2026-08-26",
@@ -3888,13 +3935,13 @@
    "nombre": "Microsoft",
    "tipo": "jugada",
    "precio_ini": 491.71,
-   "precio_hoy": 484.52,
-   "cierre": "2026-11-20",
-   "dias": 89,
-   "ret": -0.01462,
-   "ret_voo": -0.0962,
-   "valor": 98.54,
-   "valor_voo": 90.38
+   "precio_hoy": 492.5,
+   "cierre": "2026-11-23",
+   "dias": 90,
+   "ret": 0.00161,
+   "ret_voo": -0.05586,
+   "valor": 100.16,
+   "valor_voo": 94.41
   },
   {
    "fecha": "2026-08-25",
@@ -3902,13 +3949,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 704.22,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 90,
-   "ret": -0.09753,
-   "ret_voo": -0.09753,
-   "valor": 90.25,
-   "valor_voo": 90.25
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 91,
+   "ret": -0.05724,
+   "ret_voo": -0.05724,
+   "valor": 94.28,
+   "valor_voo": 94.28
   },
   {
    "fecha": "2026-08-25",
@@ -3916,13 +3963,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 176.21,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 90,
-   "ret": -0.18569,
-   "ret_voo": -0.09753,
-   "valor": 81.43,
-   "valor_voo": 90.25
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 91,
+   "ret": -0.09562,
+   "ret_voo": -0.05724,
+   "valor": 90.44,
+   "valor_voo": 94.28
   },
   {
    "fecha": "2026-08-25",
@@ -3930,13 +3977,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 206.47,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 90,
-   "ret": -0.1252,
-   "ret_voo": -0.09753,
-   "valor": 87.48,
-   "valor_voo": 90.25
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 91,
+   "ret": -0.10176,
+   "ret_voo": -0.05724,
+   "valor": 89.82,
+   "valor_voo": 94.28
   },
   {
    "fecha": "2026-08-24",
@@ -3944,13 +3991,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 701.83,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 91,
-   "ret": -0.09445,
-   "ret_voo": -0.09445,
-   "valor": 90.55,
-   "valor_voo": 90.55
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 92,
+   "ret": -0.05403,
+   "ret_voo": -0.05403,
+   "valor": 94.6,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-08-24",
@@ -3958,13 +4005,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 209.06,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 91,
-   "ret": -0.13604,
-   "ret_voo": -0.09445,
-   "valor": 86.4,
-   "valor_voo": 90.55
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 92,
+   "ret": -0.11289,
+   "ret_voo": -0.05403,
+   "valor": 88.71,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-08-24",
@@ -3972,13 +4019,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.22,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 91,
-   "ret": -0.33768,
-   "ret_voo": -0.09445,
-   "valor": 66.23,
-   "valor_voo": 90.55
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 92,
+   "ret": -0.34532,
+   "ret_voo": -0.05403,
+   "valor": 65.47,
+   "valor_voo": 94.6
   },
   {
    "fecha": "2026-08-23",
@@ -3986,13 +4033,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 703.71,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 92,
-   "ret": -0.09687,
-   "ret_voo": -0.09687,
-   "valor": 90.31,
-   "valor_voo": 90.31
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 93,
+   "ret": -0.05656,
+   "ret_voo": -0.05656,
+   "valor": 94.34,
+   "valor_voo": 94.34
   },
   {
    "fecha": "2026-08-23",
@@ -4000,13 +4047,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 209.17,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 92,
-   "ret": -0.13649,
-   "ret_voo": -0.09687,
-   "valor": 86.35,
-   "valor_voo": 90.31
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 93,
+   "ret": -0.11335,
+   "ret_voo": -0.05656,
+   "valor": 88.66,
+   "valor_voo": 94.34
   },
   {
    "fecha": "2026-08-23",
@@ -4014,13 +4061,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.22,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 92,
-   "ret": -0.33768,
-   "ret_voo": -0.09687,
-   "valor": 66.23,
-   "valor_voo": 90.31
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 93,
+   "ret": -0.34532,
+   "ret_voo": -0.05656,
+   "valor": 65.47,
+   "valor_voo": 94.34
   },
   {
    "fecha": "2026-08-21",
@@ -4028,13 +4075,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 703.82,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 94,
-   "ret": -0.09701,
-   "ret_voo": -0.09701,
-   "valor": 90.3,
-   "valor_voo": 90.3
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 95,
+   "ret": -0.0567,
+   "ret_voo": -0.0567,
+   "valor": 94.33,
+   "valor_voo": 94.33
   },
   {
    "fecha": "2026-08-21",
@@ -4042,13 +4089,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 206.12,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 94,
-   "ret": -0.12371,
-   "ret_voo": -0.09701,
-   "valor": 87.63,
-   "valor_voo": 90.3
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 95,
+   "ret": -0.10023,
+   "ret_voo": -0.0567,
+   "valor": 89.98,
+   "valor_voo": 94.33
   },
   {
    "fecha": "2026-08-21",
@@ -4056,13 +4103,13 @@
    "nombre": "Cardano",
    "tipo": "jugada",
    "precio_ini": 0.21,
-   "precio_hoy": 0.15,
-   "cierre": "2026-11-23",
-   "dias": 94,
-   "ret": -0.30614,
-   "ret_voo": -0.09701,
-   "valor": 69.39,
-   "valor_voo": 90.3
+   "precio_hoy": 0.14,
+   "cierre": "2026-11-24",
+   "dias": 95,
+   "ret": -0.31414,
+   "ret_voo": -0.0567,
+   "valor": 68.59,
+   "valor_voo": 94.33
   },
   {
    "fecha": "2026-08-20",
@@ -4070,13 +4117,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 704.17,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 95,
-   "ret": -0.09746,
-   "ret_voo": -0.09746,
-   "valor": 90.25,
-   "valor_voo": 90.25
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 96,
+   "ret": -0.05717,
+   "ret_voo": -0.05717,
+   "valor": 94.28,
+   "valor_voo": 94.28
   },
   {
    "fecha": "2026-08-20",
@@ -4084,13 +4131,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1276.4,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 95,
-   "ret": 0.0554,
-   "ret_voo": -0.09746,
-   "valor": 105.54,
-   "valor_voo": 90.25
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 96,
+   "ret": 0.0691,
+   "ret_voo": -0.05717,
+   "valor": 106.91,
+   "valor_voo": 94.28
   },
   {
    "fecha": "2026-08-20",
@@ -4098,13 +4145,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 206.09,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 95,
-   "ret": -0.12359,
-   "ret_voo": -0.09746,
-   "valor": 87.64,
-   "valor_voo": 90.25
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 96,
+   "ret": -0.1001,
+   "ret_voo": -0.05717,
+   "valor": 89.99,
+   "valor_voo": 94.28
   },
   {
    "fecha": "2026-08-19",
@@ -4112,13 +4159,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.2,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 96,
-   "ret": -0.1026,
-   "ret_voo": -0.1026,
-   "valor": 89.74,
-   "valor_voo": 89.74
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 97,
+   "ret": -0.06254,
+   "ret_voo": -0.06254,
+   "valor": 93.75,
+   "valor_voo": 93.75
   },
   {
    "fecha": "2026-08-19",
@@ -4126,13 +4173,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1252.87,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 96,
-   "ret": 0.07522,
-   "ret_voo": -0.1026,
-   "valor": 107.52,
-   "valor_voo": 89.74
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 97,
+   "ret": 0.08918,
+   "ret_voo": -0.06254,
+   "valor": 108.92,
+   "valor_voo": 93.75
   },
   {
    "fecha": "2026-08-19",
@@ -4140,13 +4187,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 195.52,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 96,
-   "ret": -0.07621,
-   "ret_voo": -0.1026,
-   "valor": 92.38,
-   "valor_voo": 89.74
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 97,
+   "ret": -0.05145,
+   "ret_voo": -0.06254,
+   "valor": 94.85,
+   "valor_voo": 93.75
   },
   {
    "fecha": "2026-08-18",
@@ -4154,13 +4201,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 705.4,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 97,
-   "ret": -0.09904,
-   "ret_voo": -0.09904,
-   "valor": 90.1,
-   "valor_voo": 90.1
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 98,
+   "ret": -0.05882,
+   "ret_voo": -0.05882,
+   "valor": 94.12,
+   "valor_voo": 94.12
   },
   {
    "fecha": "2026-08-18",
@@ -4168,13 +4215,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 146.58,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 97,
-   "ret": -0.15596,
-   "ret_voo": -0.09904,
-   "valor": 84.4,
-   "valor_voo": 90.1
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 98,
+   "ret": -0.08378,
+   "ret_voo": -0.05882,
+   "valor": 91.62,
+   "valor_voo": 94.12
   },
   {
    "fecha": "2026-08-18",
@@ -4182,13 +4229,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1225.73,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 97,
-   "ret": 0.09903,
-   "ret_voo": -0.09904,
-   "valor": 109.9,
-   "valor_voo": 90.1
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 98,
+   "ret": 0.1133,
+   "ret_voo": -0.05882,
+   "valor": 111.33,
+   "valor_voo": 94.12
   },
   {
    "fecha": "2026-08-17",
@@ -4196,13 +4243,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 713.9,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 98,
-   "ret": -0.10976,
-   "ret_voo": -0.10976,
-   "valor": 89.02,
-   "valor_voo": 89.02
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 99,
+   "ret": -0.07002,
+   "ret_voo": -0.07002,
+   "valor": 93.0,
+   "valor_voo": 93.0
   },
   {
    "fecha": "2026-08-17",
@@ -4210,13 +4257,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 154.32,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 98,
-   "ret": -0.19829,
-   "ret_voo": -0.10976,
-   "valor": 80.17,
-   "valor_voo": 89.02
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 99,
+   "ret": -0.12973,
+   "ret_voo": -0.07002,
+   "valor": 87.03,
+   "valor_voo": 93.0
   },
   {
    "fecha": "2026-08-17",
@@ -4224,13 +4271,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 971.66,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 98,
-   "ret": -0.38815,
-   "ret_voo": -0.10976,
-   "valor": 61.18,
-   "valor_voo": 89.02
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 99,
+   "ret": -0.27166,
+   "ret_voo": -0.07002,
+   "valor": 72.83,
+   "valor_voo": 93.0
   },
   {
    "fecha": "2026-08-16",
@@ -4238,13 +4285,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 713.61,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 99,
-   "ret": -0.1094,
-   "ret_voo": -0.1094,
-   "valor": 89.06,
-   "valor_voo": 89.06
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 100,
+   "ret": -0.06965,
+   "ret_voo": -0.06965,
+   "valor": 93.04,
+   "valor_voo": 93.04
   },
   {
    "fecha": "2026-08-16",
@@ -4252,13 +4299,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 154.32,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 99,
-   "ret": -0.19829,
-   "ret_voo": -0.1094,
-   "valor": 80.17,
-   "valor_voo": 89.06
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 100,
+   "ret": -0.12973,
+   "ret_voo": -0.06965,
+   "valor": 87.03,
+   "valor_voo": 93.04
   },
   {
    "fecha": "2026-08-16",
@@ -4266,13 +4313,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 174.04,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 99,
-   "ret": -0.17553,
-   "ret_voo": -0.1094,
-   "valor": 82.45,
-   "valor_voo": 89.06
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 100,
+   "ret": -0.08435,
+   "ret_voo": -0.06965,
+   "valor": 91.57,
+   "valor_voo": 93.04
   },
   {
    "fecha": "2026-08-12",
@@ -4280,13 +4327,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 710.17,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 103,
-   "ret": -0.10509,
-   "ret_voo": -0.10509,
-   "valor": 89.49,
-   "valor_voo": 89.49
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 104,
+   "ret": -0.06514,
+   "ret_voo": -0.06514,
+   "valor": 93.49,
+   "valor_voo": 93.49
   },
   {
    "fecha": "2026-08-12",
@@ -4294,13 +4341,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 171.04,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 103,
-   "ret": -0.16107,
-   "ret_voo": -0.10509,
-   "valor": 83.89,
-   "valor_voo": 89.49
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 104,
+   "ret": -0.06829,
+   "ret_voo": -0.06514,
+   "valor": 93.17,
+   "valor_voo": 93.49
   },
   {
    "fecha": "2026-08-12",
@@ -4308,13 +4355,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1220.28,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 103,
-   "ret": 0.10394,
-   "ret_voo": -0.10509,
-   "valor": 110.39,
-   "valor_voo": 89.49
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 104,
+   "ret": 0.11827,
+   "ret_voo": -0.06514,
+   "valor": 111.83,
+   "valor_voo": 93.49
   },
   {
    "fecha": "2026-08-11",
@@ -4322,13 +4369,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 711.54,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 104,
-   "ret": -0.10681,
-   "ret_voo": -0.10681,
-   "valor": 89.32,
-   "valor_voo": 89.32
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 105,
+   "ret": -0.06694,
+   "ret_voo": -0.06694,
+   "valor": 93.31,
+   "valor_voo": 93.31
   },
   {
    "fecha": "2026-08-11",
@@ -4336,13 +4383,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 153.61,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 104,
-   "ret": -0.19458,
-   "ret_voo": -0.10681,
-   "valor": 80.54,
-   "valor_voo": 89.32
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 105,
+   "ret": -0.12571,
+   "ret_voo": -0.06694,
+   "valor": 87.43,
+   "valor_voo": 93.31
   },
   {
    "fecha": "2026-08-11",
@@ -4350,13 +4397,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 176.12,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 104,
-   "ret": -0.18527,
-   "ret_voo": -0.10681,
-   "valor": 81.47,
-   "valor_voo": 89.32
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 105,
+   "ret": -0.09516,
+   "ret_voo": -0.06694,
+   "valor": 90.48,
+   "valor_voo": 93.31
   },
   {
    "fecha": "2026-08-10",
@@ -4364,13 +4411,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 710.29,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 105,
-   "ret": -0.10524,
-   "ret_voo": -0.10524,
-   "valor": 89.48,
-   "valor_voo": 89.48
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 106,
+   "ret": -0.0653,
+   "ret_voo": -0.0653,
+   "valor": 93.47,
+   "valor_voo": 93.47
   },
   {
    "fecha": "2026-08-10",
@@ -4378,13 +4425,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 150.45,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 105,
-   "ret": -0.17767,
-   "ret_voo": -0.10524,
-   "valor": 82.23,
-   "valor_voo": 89.48
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 106,
+   "ret": -0.10734,
+   "ret_voo": -0.0653,
+   "valor": 89.27,
+   "valor_voo": 93.47
   },
   {
    "fecha": "2026-08-10",
@@ -4392,13 +4439,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 172.0,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 105,
-   "ret": -0.16576,
-   "ret_voo": -0.10524,
-   "valor": 83.42,
-   "valor_voo": 89.48
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 106,
+   "ret": -0.07349,
+   "ret_voo": -0.0653,
+   "valor": 92.65,
+   "valor_voo": 93.47
   },
   {
    "fecha": "2026-08-09",
@@ -4406,13 +4453,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 710.71,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 106,
-   "ret": -0.10577,
-   "ret_voo": -0.10577,
-   "valor": 89.42,
-   "valor_voo": 89.42
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 107,
+   "ret": -0.06585,
+   "ret_voo": -0.06585,
+   "valor": 93.42,
+   "valor_voo": 93.42
   },
   {
    "fecha": "2026-08-09",
@@ -4420,13 +4467,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 151.57,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 106,
-   "ret": -0.18374,
-   "ret_voo": -0.10577,
-   "valor": 81.63,
-   "valor_voo": 89.42
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 107,
+   "ret": -0.11394,
+   "ret_voo": -0.06585,
+   "valor": 88.61,
+   "valor_voo": 93.42
   },
   {
    "fecha": "2026-08-09",
@@ -4434,13 +4481,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 172.01,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 106,
-   "ret": -0.1658,
-   "ret_voo": -0.10577,
-   "valor": 83.42,
-   "valor_voo": 89.42
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 107,
+   "ret": -0.07354,
+   "ret_voo": -0.06585,
+   "valor": 92.65,
+   "valor_voo": 93.42
   },
   {
    "fecha": "2026-08-08",
@@ -4448,13 +4495,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 710.71,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 107,
-   "ret": -0.10577,
-   "ret_voo": -0.10577,
-   "valor": 89.42,
-   "valor_voo": 89.42
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 108,
+   "ret": -0.06585,
+   "ret_voo": -0.06585,
+   "valor": 93.42,
+   "valor_voo": 93.42
   },
   {
    "fecha": "2026-08-08",
@@ -4462,13 +4509,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 151.57,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 107,
-   "ret": -0.18374,
-   "ret_voo": -0.10577,
-   "valor": 81.63,
-   "valor_voo": 89.42
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 108,
+   "ret": -0.11394,
+   "ret_voo": -0.06585,
+   "valor": 88.61,
+   "valor_voo": 93.42
   },
   {
    "fecha": "2026-08-08",
@@ -4476,13 +4523,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 172.01,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 107,
-   "ret": -0.1658,
-   "ret_voo": -0.10577,
-   "valor": 83.42,
-   "valor_voo": 89.42
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 108,
+   "ret": -0.07354,
+   "ret_voo": -0.06585,
+   "valor": 92.65,
+   "valor_voo": 93.42
   },
   {
    "fecha": "2026-08-07",
@@ -4490,13 +4537,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.51,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 108,
-   "ret": -0.10299,
-   "ret_voo": -0.10299,
-   "valor": 89.7,
-   "valor_voo": 89.7
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 109,
+   "ret": -0.06295,
+   "ret_voo": -0.06295,
+   "valor": 93.71,
+   "valor_voo": 93.71
   },
   {
    "fecha": "2026-08-07",
@@ -4504,13 +4551,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 147.99,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 108,
-   "ret": -0.164,
-   "ret_voo": -0.10299,
-   "valor": 83.6,
-   "valor_voo": 89.7
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 109,
+   "ret": -0.09251,
+   "ret_voo": -0.06295,
+   "valor": 90.75,
+   "valor_voo": 93.71
   },
   {
    "fecha": "2026-08-07",
@@ -4518,13 +4565,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 161.03,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 108,
-   "ret": -0.10892,
-   "ret_voo": -0.10299,
-   "valor": 89.11,
-   "valor_voo": 89.7
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 109,
+   "ret": -0.01037,
+   "ret_voo": -0.06295,
+   "valor": 98.96,
+   "valor_voo": 93.71
   },
   {
    "fecha": "2026-08-06",
@@ -4532,13 +4579,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 708.29,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 109,
-   "ret": -0.10271,
-   "ret_voo": -0.10271,
-   "valor": 89.73,
-   "valor_voo": 89.73
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 110,
+   "ret": -0.06266,
+   "ret_voo": -0.06266,
+   "valor": 93.73,
+   "valor_voo": 93.73
   },
   {
    "fecha": "2026-08-06",
@@ -4546,13 +4593,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 143.7,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 109,
-   "ret": -0.13904,
-   "ret_voo": -0.10271,
-   "valor": 86.1,
-   "valor_voo": 89.73
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 110,
+   "ret": -0.06541,
+   "ret_voo": -0.06266,
+   "valor": 93.46,
+   "valor_voo": 93.73
   },
   {
    "fecha": "2026-08-06",
@@ -4560,13 +4607,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 158.43,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 109,
-   "ret": -0.0943,
-   "ret_voo": -0.10271,
-   "valor": 90.57,
-   "valor_voo": 89.73
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 110,
+   "ret": 0.00587,
+   "ret_voo": -0.06266,
+   "valor": 100.59,
+   "valor_voo": 93.73
   },
   {
    "fecha": "2026-08-05",
@@ -4574,13 +4621,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 713.14,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 110,
-   "ret": -0.10881,
-   "ret_voo": -0.10881,
-   "valor": 89.12,
-   "valor_voo": 89.12
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 111,
+   "ret": -0.06903,
+   "ret_voo": -0.06903,
+   "valor": 93.1,
+   "valor_voo": 93.1
   },
   {
    "fecha": "2026-08-05",
@@ -4588,13 +4635,13 @@
    "nombre": "Palantir",
    "tipo": "jugada",
    "precio_ini": 162.66,
-   "precio_hoy": 143.49,
-   "cierre": "2026-11-20",
-   "dias": 110,
-   "ret": -0.11785,
-   "ret_voo": -0.10881,
-   "valor": 88.21,
-   "valor_voo": 89.12
+   "precio_hoy": 159.36,
+   "cierre": "2026-11-23",
+   "dias": 111,
+   "ret": -0.02029,
+   "ret_voo": -0.06903,
+   "valor": 97.97,
+   "valor_voo": 93.1
   },
   {
    "fecha": "2026-08-05",
@@ -4602,13 +4649,13 @@
    "nombre": "Amazon",
    "tipo": "jugada",
    "precio_ini": 277.42,
-   "precio_hoy": 246.82,
-   "cierre": "2026-11-20",
-   "dias": 110,
-   "ret": -0.1103,
-   "ret_voo": -0.10881,
-   "valor": 88.97,
-   "valor_voo": 89.12
+   "precio_hoy": 255.39,
+   "cierre": "2026-11-23",
+   "dias": 111,
+   "ret": -0.07941,
+   "ret_voo": -0.06903,
+   "valor": 92.06,
+   "valor_voo": 93.1
   },
   {
    "fecha": "2026-08-04",
@@ -4616,13 +4663,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 699.11,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 111,
-   "ret": -0.09093,
-   "ret_voo": -0.09093,
-   "valor": 90.91,
-   "valor_voo": 90.91
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 112,
+   "ret": -0.05035,
+   "ret_voo": -0.05035,
+   "valor": 94.97,
+   "valor_voo": 94.97
   },
   {
    "fecha": "2026-08-04",
@@ -4630,13 +4677,13 @@
    "nombre": "Microsoft",
    "tipo": "jugada",
    "precio_ini": 487.65,
-   "precio_hoy": 484.52,
-   "cierre": "2026-11-20",
-   "dias": 111,
-   "ret": -0.00642,
-   "ret_voo": -0.09093,
-   "valor": 99.36,
-   "valor_voo": 90.91
+   "precio_hoy": 492.5,
+   "cierre": "2026-11-23",
+   "dias": 112,
+   "ret": 0.00995,
+   "ret_voo": -0.05035,
+   "valor": 100.99,
+   "valor_voo": 94.97
   },
   {
    "fecha": "2026-08-04",
@@ -4644,13 +4691,13 @@
    "nombre": "Amazon",
    "tipo": "jugada",
    "precio_ini": 276.7,
-   "precio_hoy": 246.82,
-   "cierre": "2026-11-20",
-   "dias": 111,
-   "ret": -0.10799,
-   "ret_voo": -0.09093,
-   "valor": 89.2,
-   "valor_voo": 90.91
+   "precio_hoy": 255.39,
+   "cierre": "2026-11-23",
+   "dias": 112,
+   "ret": -0.07701,
+   "ret_voo": -0.05035,
+   "valor": 92.3,
+   "valor_voo": 94.97
   },
   {
    "fecha": "2026-08-03",
@@ -4658,13 +4705,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 696.4,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 112,
-   "ret": -0.08739,
-   "ret_voo": -0.08739,
-   "valor": 91.26,
-   "valor_voo": 91.26
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 113,
+   "ret": -0.04665,
+   "ret_voo": -0.04665,
+   "valor": 95.33,
+   "valor_voo": 95.33
   },
   {
    "fecha": "2026-08-03",
@@ -4672,13 +4719,13 @@
    "nombre": "Microsoft",
    "tipo": "jugada",
    "precio_ini": 487.65,
-   "precio_hoy": 484.52,
-   "cierre": "2026-11-20",
-   "dias": 112,
-   "ret": -0.00642,
-   "ret_voo": -0.08739,
-   "valor": 99.36,
-   "valor_voo": 91.26
+   "precio_hoy": 492.5,
+   "cierre": "2026-11-23",
+   "dias": 113,
+   "ret": 0.00995,
+   "ret_voo": -0.04665,
+   "valor": 100.99,
+   "valor_voo": 95.33
   },
   {
    "fecha": "2026-08-03",
@@ -4686,13 +4733,13 @@
    "nombre": "Salesforce",
    "tipo": "jugada",
    "precio_ini": 185.95,
-   "precio_hoy": 180.62,
-   "cierre": "2026-11-20",
-   "dias": 112,
-   "ret": -0.02866,
-   "ret_voo": -0.08739,
-   "valor": 97.13,
-   "valor_voo": 91.26
+   "precio_hoy": 185.46,
+   "cierre": "2026-11-23",
+   "dias": 113,
+   "ret": -0.00264,
+   "ret_voo": -0.04665,
+   "valor": 99.74,
+   "valor_voo": 95.33
   },
   {
    "fecha": "2026-08-02",
@@ -4700,13 +4747,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 686.65,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 113,
-   "ret": -0.07443,
-   "ret_voo": -0.07443,
-   "valor": 92.56,
-   "valor_voo": 92.56
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 114,
+   "ret": -0.03312,
+   "ret_voo": -0.03312,
+   "valor": 96.69,
+   "valor_voo": 96.69
   },
   {
    "fecha": "2026-08-02",
@@ -4714,13 +4761,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 573.1,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 113,
-   "ret": 0.09159,
-   "ret_voo": -0.07443,
-   "valor": 109.16,
-   "valor_voo": 92.56
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 114,
+   "ret": 0.10885,
+   "ret_voo": -0.03312,
+   "valor": 110.88,
+   "valor_voo": 96.69
   },
   {
    "fecha": "2026-08-02",
@@ -4728,13 +4775,13 @@
    "nombre": "Adobe",
    "tipo": "jugada",
    "precio_ini": 250.41,
-   "precio_hoy": 217.71,
-   "cierre": "2026-11-20",
-   "dias": 113,
-   "ret": -0.13059,
-   "ret_voo": -0.07443,
-   "valor": 86.94,
-   "valor_voo": 92.56
+   "precio_hoy": 223.98,
+   "cierre": "2026-11-23",
+   "dias": 114,
+   "ret": -0.10555,
+   "ret_voo": -0.03312,
+   "valor": 89.45,
+   "valor_voo": 96.69
   },
   {
    "fecha": "2026-08-01",
@@ -4742,13 +4789,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 686.65,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 114,
-   "ret": -0.07443,
-   "ret_voo": -0.07443,
-   "valor": 92.56,
-   "valor_voo": 92.56
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 115,
+   "ret": -0.03312,
+   "ret_voo": -0.03312,
+   "valor": 96.69,
+   "valor_voo": 96.69
   },
   {
    "fecha": "2026-08-01",
@@ -4756,13 +4803,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 573.1,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 114,
-   "ret": 0.09159,
-   "ret_voo": -0.07443,
-   "valor": 109.16,
-   "valor_voo": 92.56
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 115,
+   "ret": 0.10885,
+   "ret_voo": -0.03312,
+   "valor": 110.88,
+   "valor_voo": 96.69
   },
   {
    "fecha": "2026-08-01",
@@ -4770,13 +4817,13 @@
    "nombre": "Coca-Cola",
    "tipo": "jugada",
    "precio_ini": 87.59,
-   "precio_hoy": 96.99,
-   "cierre": "2026-11-20",
-   "dias": 114,
-   "ret": 0.10732,
-   "ret_voo": -0.07443,
-   "valor": 110.73,
-   "valor_voo": 92.56
+   "precio_hoy": 95.88,
+   "cierre": "2026-11-23",
+   "dias": 115,
+   "ret": 0.09465,
+   "ret_voo": -0.03312,
+   "valor": 109.46,
+   "valor_voo": 96.69
   },
   {
    "fecha": "2026-07-31",
@@ -4784,13 +4831,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 685.0,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 115,
-   "ret": -0.0722,
-   "ret_voo": -0.0722,
-   "valor": 92.78,
-   "valor_voo": 92.78
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 116,
+   "ret": -0.03079,
+   "ret_voo": -0.03079,
+   "valor": 96.92,
+   "valor_voo": 96.92
   },
   {
    "fecha": "2026-07-31",
@@ -4798,13 +4845,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 567.79,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 115,
-   "ret": 0.1018,
-   "ret_voo": -0.0722,
-   "valor": 110.18,
-   "valor_voo": 92.78
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 116,
+   "ret": 0.11922,
+   "ret_voo": -0.03079,
+   "valor": 111.92,
+   "valor_voo": 96.92
   },
   {
    "fecha": "2026-07-31",
@@ -4812,13 +4859,13 @@
    "nombre": "Coca-Cola",
    "tipo": "jugada",
    "precio_ini": 87.71,
-   "precio_hoy": 96.99,
-   "cierre": "2026-11-20",
-   "dias": 115,
-   "ret": 0.1058,
-   "ret_voo": -0.0722,
-   "valor": 110.58,
-   "valor_voo": 92.78
+   "precio_hoy": 95.88,
+   "cierre": "2026-11-23",
+   "dias": 116,
+   "ret": 0.09315,
+   "ret_voo": -0.03079,
+   "valor": 109.31,
+   "valor_voo": 96.92
   },
   {
    "fecha": "2026-07-30",
@@ -4826,13 +4873,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 676.31,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 116,
-   "ret": -0.06028,
-   "ret_voo": -0.06028,
-   "valor": 93.97,
-   "valor_voo": 93.97
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 117,
+   "ret": -0.01833,
+   "ret_voo": -0.01833,
+   "valor": 98.17,
+   "valor_voo": 98.17
   },
   {
    "fecha": "2026-07-30",
@@ -4840,13 +4887,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 575.7,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 116,
-   "ret": 0.08666,
-   "ret_voo": -0.06028,
-   "valor": 108.67,
-   "valor_voo": 93.97
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 117,
+   "ret": 0.10384,
+   "ret_voo": -0.01833,
+   "valor": 110.38,
+   "valor_voo": 98.17
   },
   {
    "fecha": "2026-07-30",
@@ -4854,13 +4901,13 @@
    "nombre": "Coca-Cola",
    "tipo": "jugada",
    "precio_ini": 87.68,
-   "precio_hoy": 96.99,
-   "cierre": "2026-11-20",
-   "dias": 116,
-   "ret": 0.10618,
-   "ret_voo": -0.06028,
-   "valor": 110.62,
-   "valor_voo": 93.97
+   "precio_hoy": 95.88,
+   "cierre": "2026-11-23",
+   "dias": 117,
+   "ret": 0.09352,
+   "ret_voo": -0.01833,
+   "valor": 109.35,
+   "valor_voo": 98.17
   },
   {
    "fecha": "2026-07-29",
@@ -4868,13 +4915,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 679.58,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 117,
-   "ret": -0.0648,
-   "ret_voo": -0.0648,
-   "valor": 93.52,
-   "valor_voo": 93.52
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 118,
+   "ret": -0.02306,
+   "ret_voo": -0.02306,
+   "valor": 97.69,
+   "valor_voo": 97.69
   },
   {
    "fecha": "2026-07-29",
@@ -4882,13 +4929,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 557.02,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 117,
-   "ret": 0.1231,
-   "ret_voo": -0.0648,
-   "valor": 112.31,
-   "valor_voo": 93.52
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 118,
+   "ret": 0.14086,
+   "ret_voo": -0.02306,
+   "valor": 114.09,
+   "valor_voo": 97.69
   },
   {
    "fecha": "2026-07-29",
@@ -4896,13 +4943,13 @@
    "nombre": "Coca-Cola",
    "tipo": "jugada",
    "precio_ini": 88.87,
-   "precio_hoy": 96.99,
-   "cierre": "2026-11-20",
-   "dias": 117,
-   "ret": 0.09137,
-   "ret_voo": -0.0648,
-   "valor": 109.14,
-   "valor_voo": 93.52
+   "precio_hoy": 95.88,
+   "cierre": "2026-11-23",
+   "dias": 118,
+   "ret": 0.07888,
+   "ret_voo": -0.02306,
+   "valor": 107.89,
+   "valor_voo": 97.69
   },
   {
    "fecha": "2026-07-28",
@@ -4910,13 +4957,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 679.53,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 118,
-   "ret": -0.06474,
-   "ret_voo": -0.06474,
-   "valor": 93.53,
-   "valor_voo": 93.53
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 119,
+   "ret": -0.02299,
+   "ret_voo": -0.02299,
+   "valor": 97.7,
+   "valor_voo": 97.7
   },
   {
    "fecha": "2026-07-28",
@@ -4924,13 +4971,13 @@
    "nombre": "Mastercard",
    "tipo": "jugada",
    "precio_ini": 561.61,
-   "precio_hoy": 625.59,
-   "cierre": "2026-11-20",
-   "dias": 118,
-   "ret": 0.11392,
-   "ret_voo": -0.06474,
-   "valor": 111.39,
-   "valor_voo": 93.53
+   "precio_hoy": 635.48,
+   "cierre": "2026-11-23",
+   "dias": 119,
+   "ret": 0.13153,
+   "ret_voo": -0.02299,
+   "valor": 113.15,
+   "valor_voo": 97.7
   },
   {
    "fecha": "2026-07-28",
@@ -4938,13 +4985,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1197.53,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 118,
-   "ret": 0.12491,
-   "ret_voo": -0.06474,
-   "valor": 112.49,
-   "valor_voo": 93.53
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 119,
+   "ret": 0.13951,
+   "ret_voo": -0.02299,
+   "valor": 113.95,
+   "valor_voo": 97.7
   },
   {
    "fecha": "2026-07-27",
@@ -4952,13 +4999,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 684.81,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 119,
-   "ret": -0.07195,
-   "ret_voo": -0.07195,
-   "valor": 92.81,
-   "valor_voo": 92.81
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 120,
+   "ret": -0.03052,
+   "ret_voo": -0.03052,
+   "valor": 96.95,
+   "valor_voo": 96.95
   },
   {
    "fecha": "2026-07-27",
@@ -4966,13 +5013,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1200.05,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 119,
-   "ret": 0.12254,
-   "ret_voo": -0.07195,
-   "valor": 112.25,
-   "valor_voo": 92.81
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 120,
+   "ret": 0.13712,
+   "ret_voo": -0.03052,
+   "valor": 113.71,
+   "valor_voo": 96.95
   },
   {
    "fecha": "2026-07-27",
@@ -4980,13 +5027,13 @@
    "nombre": "Apple",
    "tipo": "jugada",
    "precio_ini": 335.0,
-   "precio_hoy": 342.56,
-   "cierre": "2026-11-20",
-   "dias": 119,
-   "ret": 0.02257,
-   "ret_voo": -0.07195,
-   "valor": 102.26,
-   "valor_voo": 92.81
+   "precio_hoy": 349.08,
+   "cierre": "2026-11-23",
+   "dias": 120,
+   "ret": 0.04203,
+   "ret_voo": -0.03052,
+   "valor": 104.2,
+   "valor_voo": 96.95
   },
   {
    "fecha": "2026-07-26",
@@ -4994,13 +5041,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 679.14,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 120,
-   "ret": -0.0642,
-   "ret_voo": -0.0642,
-   "valor": 93.58,
-   "valor_voo": 93.58
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 121,
+   "ret": -0.02243,
+   "ret_voo": -0.02243,
+   "valor": 97.76,
+   "valor_voo": 97.76
   },
   {
    "fecha": "2026-07-26",
@@ -5008,13 +5055,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1196.03,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 120,
-   "ret": 0.12632,
-   "ret_voo": -0.0642,
-   "valor": 112.63,
-   "valor_voo": 93.58
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 121,
+   "ret": 0.14094,
+   "ret_voo": -0.02243,
+   "valor": 114.09,
+   "valor_voo": 97.76
   },
   {
    "fecha": "2026-07-26",
@@ -5022,13 +5069,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 521.95,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 120,
-   "ret": -0.18691,
-   "ret_voo": -0.0642,
-   "valor": 81.31,
-   "valor_voo": 93.58
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 121,
+   "ret": -0.13122,
+   "ret_voo": -0.02243,
+   "valor": 86.88,
+   "valor_voo": 97.76
   },
   {
    "fecha": "2026-07-25",
@@ -5036,13 +5083,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 679.14,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 121,
-   "ret": -0.0642,
-   "ret_voo": -0.0642,
-   "valor": 93.58,
-   "valor_voo": 93.58
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 122,
+   "ret": -0.02243,
+   "ret_voo": -0.02243,
+   "valor": 97.76,
+   "valor_voo": 97.76
   },
   {
    "fecha": "2026-07-25",
@@ -5050,13 +5097,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1196.03,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 121,
-   "ret": 0.12632,
-   "ret_voo": -0.0642,
-   "valor": 112.63,
-   "valor_voo": 93.58
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 122,
+   "ret": 0.14094,
+   "ret_voo": -0.02243,
+   "valor": 114.09,
+   "valor_voo": 97.76
   },
   {
    "fecha": "2026-07-25",
@@ -5064,13 +5111,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 521.95,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 121,
-   "ret": -0.18691,
-   "ret_voo": -0.0642,
-   "valor": 81.31,
-   "valor_voo": 93.58
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 122,
+   "ret": -0.13122,
+   "ret_voo": -0.02243,
+   "valor": 86.88,
+   "valor_voo": 97.76
   },
   {
    "fecha": "2026-07-24",
@@ -5078,13 +5125,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 678.84,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 122,
-   "ret": -0.06379,
-   "ret_voo": -0.06379,
-   "valor": 93.62,
-   "valor_voo": 93.62
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 123,
+   "ret": -0.02199,
+   "ret_voo": -0.02199,
+   "valor": 97.8,
+   "valor_voo": 97.8
   },
   {
    "fecha": "2026-07-24",
@@ -5092,13 +5139,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 990.21,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 122,
-   "ret": -0.39961,
-   "ret_voo": -0.06379,
-   "valor": 60.04,
-   "valor_voo": 93.62
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 123,
+   "ret": -0.2853,
+   "ret_voo": -0.02199,
+   "valor": 71.47,
+   "valor_voo": 97.8
   },
   {
    "fecha": "2026-07-24",
@@ -5106,13 +5153,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1196.03,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 122,
-   "ret": 0.12632,
-   "ret_voo": -0.0642,
-   "valor": 112.63,
-   "valor_voo": 93.58
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 123,
+   "ret": 0.14094,
+   "ret_voo": -0.02243,
+   "valor": 114.09,
+   "valor_voo": 97.76
   },
   {
    "fecha": "2026-07-24",
@@ -5120,13 +5167,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 539.69,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 122,
-   "ret": -0.21364,
-   "ret_voo": -0.06379,
-   "valor": 78.64,
-   "valor_voo": 93.62
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 123,
+   "ret": -0.15978,
+   "ret_voo": -0.02199,
+   "valor": 84.02,
+   "valor_voo": 97.8
   },
   {
    "fecha": "2026-07-23",
@@ -5134,13 +5181,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 678.61,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 123,
-   "ret": -0.06347,
-   "ret_voo": -0.06347,
-   "valor": 93.65,
-   "valor_voo": 93.65
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 124,
+   "ret": -0.02166,
+   "ret_voo": -0.02166,
+   "valor": 97.83,
+   "valor_voo": 97.83
   },
   {
    "fecha": "2026-07-23",
@@ -5148,13 +5195,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 990.21,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 123,
-   "ret": -0.39961,
-   "ret_voo": -0.06347,
-   "valor": 60.04,
-   "valor_voo": 93.65
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 124,
+   "ret": -0.2853,
+   "ret_voo": -0.02166,
+   "valor": 71.47,
+   "valor_voo": 97.83
   },
   {
    "fecha": "2026-07-23",
@@ -5162,13 +5209,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 539.69,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 123,
-   "ret": -0.21364,
-   "ret_voo": -0.06347,
-   "valor": 78.64,
-   "valor_voo": 93.65
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 124,
+   "ret": -0.15978,
+   "ret_voo": -0.02166,
+   "valor": 84.02,
+   "valor_voo": 97.83
   },
   {
    "fecha": "2026-07-22",
@@ -5176,13 +5223,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 686.3,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 124,
-   "ret": -0.07396,
-   "ret_voo": -0.07396,
-   "valor": 92.6,
-   "valor_voo": 92.6
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 125,
+   "ret": -0.03262,
+   "ret_voo": -0.03262,
+   "valor": 96.74,
+   "valor_voo": 96.74
   },
   {
    "fecha": "2026-07-22",
@@ -5190,13 +5237,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 123.35,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 124,
-   "ret": 0.003,
-   "ret_voo": -0.07396,
-   "valor": 100.3,
-   "valor_voo": 92.6
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 125,
+   "ret": 0.08877,
+   "ret_voo": -0.03262,
+   "valor": 108.88,
+   "valor_voo": 96.74
   },
   {
    "fecha": "2026-07-22",
@@ -5204,13 +5251,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1173.91,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 124,
-   "ret": 0.14754,
-   "ret_voo": -0.07396,
-   "valor": 114.75,
-   "valor_voo": 92.6
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 125,
+   "ret": 0.16244,
+   "ret_voo": -0.03262,
+   "valor": 116.24,
+   "valor_voo": 96.74
   },
   {
    "fecha": "2026-07-21",
@@ -5218,13 +5265,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 685.95,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 125,
-   "ret": -0.07349,
-   "ret_voo": -0.07349,
-   "valor": 92.65,
-   "valor_voo": 92.65
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 126,
+   "ret": -0.03213,
+   "ret_voo": -0.03213,
+   "valor": 96.79,
+   "valor_voo": 96.79
   },
   {
    "fecha": "2026-07-21",
@@ -5232,13 +5279,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 124.48,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 125,
-   "ret": -0.00611,
-   "ret_voo": -0.07349,
-   "valor": 99.39,
-   "valor_voo": 92.65
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 126,
+   "ret": 0.07889,
+   "ret_voo": -0.03213,
+   "valor": 107.89,
+   "valor_voo": 96.79
   },
   {
    "fecha": "2026-07-21",
@@ -5246,13 +5293,13 @@
    "nombre": "Meta",
    "tipo": "jugada",
    "precio_ini": 653.45,
-   "precio_hoy": 560.84,
-   "cierre": "2026-11-20",
-   "dias": 125,
-   "ret": -0.14172,
-   "ret_voo": -0.07349,
-   "valor": 85.83,
-   "valor_voo": 92.65
+   "precio_hoy": 597.6,
+   "cierre": "2026-11-23",
+   "dias": 126,
+   "ret": -0.08547,
+   "ret_voo": -0.03213,
+   "valor": 91.45,
+   "valor_voo": 96.79
   },
   {
    "fecha": "2026-07-20",
@@ -5260,13 +5307,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 686.84,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 126,
-   "ret": -0.07469,
-   "ret_voo": -0.07469,
-   "valor": 92.53,
-   "valor_voo": 92.53
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 127,
+   "ret": -0.03338,
+   "ret_voo": -0.03338,
+   "valor": 96.66,
+   "valor_voo": 96.66
   },
   {
    "fecha": "2026-07-20",
@@ -5274,13 +5321,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 123.97,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 126,
-   "ret": -0.00202,
-   "ret_voo": -0.07469,
-   "valor": 99.8,
-   "valor_voo": 92.53
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 127,
+   "ret": 0.08333,
+   "ret_voo": -0.03338,
+   "valor": 108.33,
+   "valor_voo": 96.66
   },
   {
    "fecha": "2026-07-20",
@@ -5288,13 +5335,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1179.11,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 126,
-   "ret": 0.14248,
-   "ret_voo": -0.07469,
-   "valor": 114.25,
-   "valor_voo": 92.53
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 127,
+   "ret": 0.15731,
+   "ret_voo": -0.03338,
+   "valor": 115.73,
+   "valor_voo": 96.66
   },
   {
    "fecha": "2026-07-19",
@@ -5302,13 +5349,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 683.17,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 127,
-   "ret": -0.06972,
-   "ret_voo": -0.06972,
-   "valor": 93.03,
-   "valor_voo": 93.03
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 128,
+   "ret": -0.02819,
+   "ret_voo": -0.02819,
+   "valor": 97.18,
+   "valor_voo": 97.18
   },
   {
    "fecha": "2026-07-19",
@@ -5316,13 +5363,13 @@
    "nombre": "Visa",
    "tipo": "jugada",
    "precio_ini": 358.56,
-   "precio_hoy": 401.87,
-   "cierre": "2026-11-20",
-   "dias": 127,
-   "ret": 0.12079,
-   "ret_voo": -0.06972,
-   "valor": 112.08,
-   "valor_voo": 93.03
+   "precio_hoy": 409.4,
+   "cierre": "2026-11-23",
+   "dias": 128,
+   "ret": 0.14179,
+   "ret_voo": -0.02819,
+   "valor": 114.18,
+   "valor_voo": 97.18
   },
   {
    "fecha": "2026-07-19",
@@ -5330,13 +5377,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1179.11,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 127,
-   "ret": 0.14248,
-   "ret_voo": -0.06972,
-   "valor": 114.25,
-   "valor_voo": 93.03
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 128,
+   "ret": 0.15731,
+   "ret_voo": -0.02819,
+   "valor": 115.73,
+   "valor_voo": 97.18
   },
   {
    "fecha": "2026-07-18",
@@ -5344,13 +5391,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 683.17,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 128,
-   "ret": -0.06972,
-   "ret_voo": -0.06972,
-   "valor": 93.03,
-   "valor_voo": 93.03
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 129,
+   "ret": -0.02819,
+   "ret_voo": -0.02819,
+   "valor": 97.18,
+   "valor_voo": 97.18
   },
   {
    "fecha": "2026-07-18",
@@ -5358,13 +5405,13 @@
    "nombre": "Visa",
    "tipo": "jugada",
    "precio_ini": 358.56,
-   "precio_hoy": 401.87,
-   "cierre": "2026-11-20",
-   "dias": 128,
-   "ret": 0.12079,
-   "ret_voo": -0.06972,
-   "valor": 112.08,
-   "valor_voo": 93.03
+   "precio_hoy": 409.4,
+   "cierre": "2026-11-23",
+   "dias": 129,
+   "ret": 0.14179,
+   "ret_voo": -0.02819,
+   "valor": 114.18,
+   "valor_voo": 97.18
   },
   {
    "fecha": "2026-07-18",
@@ -5372,13 +5419,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1179.11,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 128,
-   "ret": 0.14248,
-   "ret_voo": -0.06972,
-   "valor": 114.25,
-   "valor_voo": 93.03
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 129,
+   "ret": 0.15731,
+   "ret_voo": -0.02819,
+   "valor": 115.73,
+   "valor_voo": 97.18
   },
   {
    "fecha": "2026-07-17",
@@ -5386,13 +5433,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 682.25,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 129,
-   "ret": -0.06846,
-   "ret_voo": -0.06846,
-   "valor": 93.15,
-   "valor_voo": 93.15
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 130,
+   "ret": -0.02688,
+   "ret_voo": -0.02688,
+   "valor": 97.31,
+   "valor_voo": 97.31
   },
   {
    "fecha": "2026-07-17",
@@ -5400,13 +5447,13 @@
    "nombre": "Visa",
    "tipo": "jugada",
    "precio_ini": 363.13,
-   "precio_hoy": 401.87,
-   "cierre": "2026-11-20",
-   "dias": 129,
-   "ret": 0.10668,
-   "ret_voo": -0.06846,
-   "valor": 110.67,
-   "valor_voo": 93.15
+   "precio_hoy": 409.4,
+   "cierre": "2026-11-23",
+   "dias": 130,
+   "ret": 0.12742,
+   "ret_voo": -0.02688,
+   "valor": 112.74,
+   "valor_voo": 97.31
   },
   {
    "fecha": "2026-07-17",
@@ -5414,13 +5461,13 @@
    "nombre": "Coca-Cola",
    "tipo": "jugada",
    "precio_ini": 84.92,
-   "precio_hoy": 96.99,
-   "cierre": "2026-11-20",
-   "dias": 129,
-   "ret": 0.14213,
-   "ret_voo": -0.06846,
-   "valor": 114.21,
-   "valor_voo": 93.15
+   "precio_hoy": 95.88,
+   "cierre": "2026-11-23",
+   "dias": 130,
+   "ret": 0.12906,
+   "ret_voo": -0.02688,
+   "valor": 112.91,
+   "valor_voo": 97.31
   },
   {
    "fecha": "2026-07-16",
@@ -5428,13 +5475,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 690.14,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 130,
-   "ret": -0.07911,
-   "ret_voo": -0.07911,
-   "valor": 92.09,
-   "valor_voo": 92.09
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 131,
+   "ret": -0.03801,
+   "ret_voo": -0.03801,
+   "valor": 96.2,
+   "valor_voo": 96.2
   },
   {
    "fecha": "2026-07-16",
@@ -5442,13 +5489,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 125.06,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 130,
-   "ret": -0.01071,
-   "ret_voo": -0.07911,
-   "valor": 98.93,
-   "valor_voo": 92.09
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 131,
+   "ret": 0.07388,
+   "ret_voo": -0.03801,
+   "valor": 107.39,
+   "valor_voo": 96.2
   },
   {
    "fecha": "2026-07-16",
@@ -5456,13 +5503,13 @@
    "nombre": "Coca-Cola",
    "tipo": "jugada",
    "precio_ini": 84.92,
-   "precio_hoy": 96.99,
-   "cierre": "2026-11-20",
-   "dias": 130,
-   "ret": 0.14213,
-   "ret_voo": -0.07911,
-   "valor": 114.21,
-   "valor_voo": 92.09
+   "precio_hoy": 95.88,
+   "cierre": "2026-11-23",
+   "dias": 131,
+   "ret": 0.12906,
+   "ret_voo": -0.03801,
+   "valor": 112.91,
+   "valor_voo": 96.2
   },
   {
    "fecha": "2026-07-14",
@@ -5470,13 +5517,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 689.98,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 132,
-   "ret": -0.0789,
-   "ret_voo": -0.0789,
-   "valor": 92.11,
-   "valor_voo": 92.11
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 133,
+   "ret": -0.03778,
+   "ret_voo": -0.03778,
+   "valor": 96.22,
+   "valor_voo": 96.22
   },
   {
    "fecha": "2026-07-14",
@@ -5484,13 +5531,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 984.7,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 132,
-   "ret": -0.39625,
-   "ret_voo": -0.0789,
-   "valor": 60.37,
-   "valor_voo": 92.11
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 133,
+   "ret": -0.2813,
+   "ret_voo": -0.03778,
+   "valor": 71.87,
+   "valor_voo": 96.22
   },
   {
    "fecha": "2026-07-14",
@@ -5498,13 +5545,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 568.22,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 132,
-   "ret": -0.25312,
-   "ret_voo": -0.0789,
-   "valor": 74.69,
-   "valor_voo": 92.11
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 133,
+   "ret": -0.20196,
+   "ret_voo": -0.03778,
+   "valor": 79.8,
+   "valor_voo": 96.22
   },
   {
    "fecha": "2026-07-13",
@@ -5512,13 +5559,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 691.74,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 133,
-   "ret": -0.08124,
-   "ret_voo": -0.08124,
-   "valor": 91.88,
-   "valor_voo": 91.88
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 134,
+   "ret": -0.04023,
+   "ret_voo": -0.04023,
+   "valor": 95.98,
+   "valor_voo": 95.98
   },
   {
    "fecha": "2026-07-13",
@@ -5526,13 +5573,13 @@
    "nombre": "Shopify",
    "tipo": "jugada",
    "precio_ini": 124.7,
-   "precio_hoy": 123.72,
-   "cierre": "2026-11-20",
-   "dias": 133,
-   "ret": -0.00786,
-   "ret_voo": -0.08124,
-   "valor": 99.21,
-   "valor_voo": 91.88
+   "precio_hoy": 134.3,
+   "cierre": "2026-11-23",
+   "dias": 134,
+   "ret": 0.07698,
+   "ret_voo": -0.04023,
+   "valor": 107.7,
+   "valor_voo": 95.98
   },
   {
    "fecha": "2026-07-13",
@@ -5540,13 +5587,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 539.1,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 133,
-   "ret": -0.21278,
-   "ret_voo": -0.08124,
-   "valor": 78.72,
-   "valor_voo": 91.88
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 134,
+   "ret": -0.15886,
+   "ret_voo": -0.04023,
+   "valor": 84.11,
+   "valor_voo": 95.98
   },
   {
    "fecha": "2026-07-12",
@@ -5554,13 +5601,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 693.86,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 134,
-   "ret": -0.08405,
-   "ret_voo": -0.08405,
-   "valor": 91.59,
-   "valor_voo": 91.59
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 135,
+   "ret": -0.04316,
+   "ret_voo": -0.04316,
+   "valor": 95.68,
+   "valor_voo": 95.68
   },
   {
    "fecha": "2026-07-12",
@@ -5568,13 +5615,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 979.3,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 134,
-   "ret": -0.39292,
-   "ret_voo": -0.08405,
-   "valor": 60.71,
-   "valor_voo": 91.59
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 135,
+   "ret": -0.27734,
+   "ret_voo": -0.04316,
+   "valor": 72.27,
+   "valor_voo": 95.68
   },
   {
    "fecha": "2026-07-12",
@@ -5582,13 +5629,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 557.89,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 134,
-   "ret": -0.23929,
-   "ret_voo": -0.08405,
-   "valor": 76.07,
-   "valor_voo": 91.59
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 135,
+   "ret": -0.18719,
+   "ret_voo": -0.04316,
+   "valor": 81.28,
+   "valor_voo": 95.68
   },
   {
    "fecha": "2026-07-11",
@@ -5596,13 +5643,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 693.86,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 135,
-   "ret": -0.08405,
-   "ret_voo": -0.08405,
-   "valor": 91.59,
-   "valor_voo": 91.59
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 136,
+   "ret": -0.04316,
+   "ret_voo": -0.04316,
+   "valor": 95.68,
+   "valor_voo": 95.68
   },
   {
    "fecha": "2026-07-11",
@@ -5610,13 +5657,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 979.3,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 135,
-   "ret": -0.39292,
-   "ret_voo": -0.08405,
-   "valor": 60.71,
-   "valor_voo": 91.59
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 136,
+   "ret": -0.27734,
+   "ret_voo": -0.04316,
+   "valor": 72.27,
+   "valor_voo": 95.68
   },
   {
    "fecha": "2026-07-11",
@@ -5624,13 +5671,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 557.89,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 135,
-   "ret": -0.23929,
-   "ret_voo": -0.08405,
-   "valor": 76.07,
-   "valor_voo": 91.59
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 136,
+   "ret": -0.18719,
+   "ret_voo": -0.04316,
+   "valor": 81.28,
+   "valor_voo": 95.68
   },
   {
    "fecha": "2026-07-10",
@@ -5638,13 +5685,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 688.24,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 136,
-   "ret": -0.07657,
-   "ret_voo": -0.07657,
-   "valor": 92.34,
-   "valor_voo": 92.34
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 137,
+   "ret": -0.03535,
+   "ret_voo": -0.03535,
+   "valor": 96.46,
+   "valor_voo": 96.46
   },
   {
    "fecha": "2026-07-10",
@@ -5652,13 +5699,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 973.03,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 136,
-   "ret": -0.38901,
-   "ret_voo": -0.07657,
-   "valor": 61.1,
-   "valor_voo": 92.34
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 137,
+   "ret": -0.27268,
+   "ret_voo": -0.03535,
+   "valor": 72.73,
+   "valor_voo": 96.46
   },
   {
    "fecha": "2026-07-10",
@@ -5666,13 +5713,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 541.77,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 136,
-   "ret": -0.21666,
-   "ret_voo": -0.07657,
-   "valor": 78.33,
-   "valor_voo": 92.34
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 137,
+   "ret": -0.163,
+   "ret_voo": -0.03535,
+   "valor": 83.7,
+   "valor_voo": 96.46
   },
   {
    "fecha": "2026-07-09",
@@ -5680,13 +5727,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 690.88,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 137,
-   "ret": -0.0801,
-   "ret_voo": -0.0801,
-   "valor": 91.99,
-   "valor_voo": 91.99
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 138,
+   "ret": -0.03904,
+   "ret_voo": -0.03904,
+   "valor": 96.1,
+   "valor_voo": 96.1
   },
   {
    "fecha": "2026-07-09",
@@ -5694,13 +5741,13 @@
    "nombre": "Micron",
    "tipo": "jugada",
    "precio_ini": 1023.53,
-   "precio_hoy": 594.51,
-   "cierre": "2026-11-20",
-   "dias": 137,
-   "ret": -0.41916,
-   "ret_voo": -0.0801,
-   "valor": 58.08,
-   "valor_voo": 91.99
+   "precio_hoy": 707.7,
+   "cierre": "2026-11-23",
+   "dias": 138,
+   "ret": -0.30857,
+   "ret_voo": -0.03904,
+   "valor": 69.14,
+   "valor_voo": 96.1
   },
   {
    "fecha": "2026-07-09",
@@ -5708,13 +5755,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 549.18,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 137,
-   "ret": -0.22723,
-   "ret_voo": -0.0801,
-   "valor": 77.28,
-   "valor_voo": 91.99
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 138,
+   "ret": -0.1743,
+   "ret_voo": -0.03904,
+   "valor": 82.57,
+   "valor_voo": 96.1
   },
   {
    "fecha": "2026-07-06",
@@ -5722,13 +5769,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 688.24,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 140,
-   "ret": -0.07657,
-   "ret_voo": -0.07657,
-   "valor": 92.34,
-   "valor_voo": 92.34
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 141,
+   "ret": -0.03535,
+   "ret_voo": -0.03535,
+   "valor": 96.46,
+   "valor_voo": 96.46
   },
   {
    "fecha": "2026-07-06",
@@ -5736,13 +5783,13 @@
    "nombre": "Visa",
    "tipo": "jugada",
    "precio_ini": 350.84,
-   "precio_hoy": 401.87,
-   "cierre": "2026-11-20",
-   "dias": 140,
-   "ret": 0.14545,
-   "ret_voo": -0.07657,
-   "valor": 114.55,
-   "valor_voo": 92.34
+   "precio_hoy": 409.4,
+   "cierre": "2026-11-23",
+   "dias": 141,
+   "ret": 0.16691,
+   "ret_voo": -0.03535,
+   "valor": 116.69,
+   "valor_voo": 96.46
   },
   {
    "fecha": "2026-07-06",
@@ -5750,13 +5797,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 562.38,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 140,
-   "ret": -0.24537,
-   "ret_voo": -0.07657,
-   "valor": 75.46,
-   "valor_voo": 92.34
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 141,
+   "ret": -0.19368,
+   "ret_voo": -0.03535,
+   "valor": 80.63,
+   "valor_voo": 96.46
   },
   {
    "fecha": "2026-07-03",
@@ -5764,13 +5811,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 684.84,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 143,
-   "ret": -0.07199,
-   "ret_voo": -0.07199,
-   "valor": 92.8,
-   "valor_voo": 92.8
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 144,
+   "ret": -0.03056,
+   "ret_voo": -0.03056,
+   "valor": 96.94,
+   "valor_voo": 96.94
   },
   {
    "fecha": "2026-07-03",
@@ -5778,13 +5825,13 @@
    "nombre": "UnitedHealth",
    "tipo": "jugada",
    "precio_ini": 425.36,
-   "precio_hoy": 339.85,
-   "cierre": "2026-11-20",
-   "dias": 143,
-   "ret": -0.20103,
-   "ret_voo": -0.07199,
-   "valor": 79.9,
-   "valor_voo": 92.8
+   "precio_hoy": 336.08,
+   "cierre": "2026-11-23",
+   "dias": 144,
+   "ret": -0.20989,
+   "ret_voo": -0.03056,
+   "valor": 79.01,
+   "valor_voo": 96.94
   },
   {
    "fecha": "2026-07-03",
@@ -5792,13 +5839,13 @@
    "nombre": "Solana",
    "tipo": "jugada",
    "precio_ini": 81.37,
-   "precio_hoy": 72.55,
-   "cierre": "2026-11-23",
-   "dias": 143,
-   "ret": -0.10839,
-   "ret_voo": -0.07199,
-   "valor": 89.16,
-   "valor_voo": 92.8
+   "precio_hoy": 69.79,
+   "cierre": "2026-11-24",
+   "dias": 144,
+   "ret": -0.14231,
+   "ret_voo": -0.03056,
+   "valor": 85.77,
+   "valor_voo": 96.94
   },
   {
    "fecha": "2026-07-03",
@@ -5806,13 +5853,13 @@
    "nombre": "Eli Lilly",
    "tipo": "jugada",
    "precio_ini": 1213.91,
-   "precio_hoy": 1347.11,
-   "cierre": "2026-11-20",
-   "dias": 143,
-   "ret": 0.10973,
-   "ret_voo": -0.07199,
-   "valor": 110.97,
-   "valor_voo": 92.8
+   "precio_hoy": 1364.6,
+   "cierre": "2026-11-23",
+   "dias": 144,
+   "ret": 0.12414,
+   "ret_voo": -0.03056,
+   "valor": 112.41,
+   "valor_voo": 96.94
   },
   {
    "fecha": "2026-07-03",
@@ -5820,13 +5867,13 @@
    "nombre": "AMD",
    "tipo": "jugada",
    "precio_ini": 517.82,
-   "precio_hoy": 424.39,
-   "cierre": "2026-11-20",
-   "dias": 143,
-   "ret": -0.18043,
-   "ret_voo": -0.07199,
-   "valor": 81.96,
-   "valor_voo": 92.8
+   "precio_hoy": 453.46,
+   "cierre": "2026-11-23",
+   "dias": 144,
+   "ret": -0.12429,
+   "ret_voo": -0.03056,
+   "valor": 87.57,
+   "valor_voo": 96.94
   },
   {
    "fecha": "2026-07-03",
@@ -5834,13 +5881,13 @@
    "nombre": "Apple",
    "tipo": "jugada",
    "precio_ini": 308.63,
-   "precio_hoy": 342.56,
-   "cierre": "2026-11-20",
-   "dias": 143,
-   "ret": 0.10994,
-   "ret_voo": -0.07199,
-   "valor": 110.99,
-   "valor_voo": 92.8
+   "precio_hoy": 349.08,
+   "cierre": "2026-11-23",
+   "dias": 144,
+   "ret": 0.13106,
+   "ret_voo": -0.03056,
+   "valor": 113.11,
+   "valor_voo": 96.94
   },
   {
    "fecha": "2026-07-02",
@@ -5848,13 +5895,13 @@
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
    "precio_ini": 684.84,
-   "precio_hoy": 635.54,
-   "cierre": "2026-11-20",
-   "dias": 144,
-   "ret": -0.07199,
-   "ret_voo": -0.07199,
-   "valor": 92.8,
-   "valor_voo": 92.8
+   "precio_hoy": 663.91,
+   "cierre": "2026-11-23",
+   "dias": 145,
+   "ret": -0.03056,
+   "ret_voo": -0.03056,
+   "valor": 96.94,
+   "valor_voo": 96.94
   },
   {
    "fecha": "2026-07-02",
@@ -5862,13 +5909,13 @@
    "nombre": "Solana",
    "tipo": "jugada",
    "precio_ini": 81.1,
-   "precio_hoy": 72.55,
-   "cierre": "2026-11-23",
-   "dias": 144,
-   "ret": -0.10543,
-   "ret_voo": -0.07199,
-   "valor": 89.46,
-   "valor_voo": 92.8
+   "precio_hoy": 69.79,
+   "cierre": "2026-11-24",
+   "dias": 145,
+   "ret": -0.13946,
+   "ret_voo": -0.03056,
+   "valor": 86.05,
+   "valor_voo": 96.94
   },
   {
    "fecha": "2026-07-02",
@@ -5876,13 +5923,13 @@
    "nombre": "Apple",
    "tipo": "jugada",
    "precio_ini": 308.63,
-   "precio_hoy": 342.56,
-   "cierre": "2026-11-20",
-   "dias": 144,
-   "ret": 0.10994,
-   "ret_voo": -0.07199,
-   "valor": 110.99,
-   "valor_voo": 92.8
+   "precio_hoy": 349.08,
+   "cierre": "2026-11-23",
+   "dias": 145,
+   "ret": 0.13106,
+   "ret_voo": -0.03056,
+   "valor": 113.11,
+   "valor_voo": 96.94
   }
  ],
  "portafolio": [
@@ -5890,10 +5937,10 @@
    "ticker": "VOO",
    "nombre": "Vanguard S&P 500 ETF",
    "tipo": "núcleo",
-   "entradas": 125,
-   "invertido": 12500.0,
-   "valor": 11359.2,
-   "valor_voo": 11359.2,
+   "entradas": 126,
+   "invertido": 12600.0,
+   "valor": 11963.85,
+   "valor_voo": 11963.85,
    "fechas": [
     "2026-07-02",
     "2026-07-03",
@@ -6019,21 +6066,22 @@
     "2026-11-13",
     "2026-11-14",
     "2026-11-15",
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-17"
    ],
    "primera": "2026-07-02",
-   "ultima": "2026-11-16",
-   "ret": -0.09126,
-   "ret_voo": -0.09126
+   "ultima": "2026-11-17",
+   "ret": -0.05049,
+   "ret_voo": -0.05049
   },
   {
    "ticker": "LLY",
    "nombre": "Eli Lilly",
    "tipo": "jugada",
-   "entradas": 38,
-   "invertido": 3800.0,
-   "valor": 3940.92,
-   "valor_voo": 3487.44,
+   "entradas": 39,
+   "invertido": 3900.0,
+   "valor": 4087.42,
+   "valor_voo": 3740.69,
    "fechas": [
     "2026-07-03",
     "2026-07-18",
@@ -6072,12 +6120,13 @@
     "2026-11-13",
     "2026-11-14",
     "2026-11-15",
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-17"
    ],
    "primera": "2026-07-03",
-   "ultima": "2026-11-16",
-   "ret": 0.03708,
-   "ret_voo": -0.08225
+   "ultima": "2026-11-17",
+   "ret": 0.04806,
+   "ret_voo": -0.04085
   },
   {
    "ticker": "SHOP",
@@ -6085,8 +6134,8 @@
    "tipo": "jugada",
    "entradas": 30,
    "invertido": 3000.0,
-   "valor": 2406.55,
-   "valor_voo": 2706.35,
+   "valor": 2612.4,
+   "valor_voo": 2827.21,
    "fechas": [
     "2026-07-13",
     "2026-07-16",
@@ -6121,8 +6170,8 @@
    ],
    "primera": "2026-07-13",
    "ultima": "2026-10-26",
-   "ret": -0.19782,
-   "ret_voo": -0.09788
+   "ret": -0.1292,
+   "ret_voo": -0.0576
   },
   {
    "ticker": "PLTR",
@@ -6130,8 +6179,8 @@
    "tipo": "jugada",
    "entradas": 27,
    "invertido": 2700.0,
-   "valor": 2098.97,
-   "valor_voo": 2422.27,
+   "valor": 2331.11,
+   "valor_voo": 2530.42,
    "fechas": [
     "2026-08-05",
     "2026-08-06",
@@ -6163,8 +6212,8 @@
    ],
    "primera": "2026-08-05",
    "ultima": "2026-10-27",
-   "ret": -0.2226,
-   "ret_voo": -0.10286
+   "ret": -0.13663,
+   "ret_voo": -0.06281
   },
   {
    "ticker": "CRM",
@@ -6172,8 +6221,8 @@
    "tipo": "jugada",
    "entradas": 26,
    "invertido": 2600.0,
-   "valor": 2000.53,
-   "valor_voo": 2350.25,
+   "valor": 2054.15,
+   "valor_voo": 2455.17,
    "fechas": [
     "2026-08-03",
     "2026-08-19",
@@ -6204,8 +6253,8 @@
    ],
    "primera": "2026-08-03",
    "ultima": "2026-10-27",
-   "ret": -0.23057,
-   "ret_voo": -0.09606
+   "ret": -0.20994,
+   "ret_voo": -0.0557
   },
   {
    "ticker": "AMD",
@@ -6213,8 +6262,8 @@
    "tipo": "jugada",
    "entradas": 20,
    "invertido": 2000.0,
-   "valor": 1483.63,
-   "valor_voo": 1828.85,
+   "valor": 1585.23,
+   "valor_voo": 1910.49,
    "fechas": [
     "2026-07-03",
     "2026-07-06",
@@ -6239,8 +6288,8 @@
    ],
    "primera": "2026-07-03",
    "ultima": "2026-10-08",
-   "ret": -0.25819,
-   "ret_voo": -0.08558
+   "ret": -0.20739,
+   "ret_voo": -0.04475
   },
   {
    "ticker": "MSTR",
@@ -6248,8 +6297,8 @@
    "tipo": "jugada",
    "entradas": 20,
    "invertido": 2000.0,
-   "valor": 1014.07,
-   "valor_voo": 1799.3,
+   "valor": 1100.07,
+   "valor_voo": 1879.62,
    "fechas": [
     "2026-09-05",
     "2026-09-07",
@@ -6274,8 +6323,8 @@
    ],
    "primera": "2026-09-05",
    "ultima": "2026-10-05",
-   "ret": -0.49296,
-   "ret_voo": -0.10035
+   "ret": -0.44997,
+   "ret_voo": -0.06019
   },
   {
    "ticker": "MU",
@@ -6283,8 +6332,8 @@
    "tipo": "jugada",
    "entradas": 17,
    "invertido": 1700.0,
-   "valor": 1017.48,
-   "valor_voo": 1548.11,
+   "valor": 1211.24,
+   "valor_voo": 1617.24,
    "fechas": [
     "2026-07-09",
     "2026-07-10",
@@ -6306,8 +6355,35 @@
    ],
    "primera": "2026-07-09",
    "ultima": "2026-09-13",
-   "ret": -0.40148,
-   "ret_voo": -0.08935
+   "ret": -0.28751,
+   "ret_voo": -0.04868
+  },
+  {
+   "ticker": "MA",
+   "nombre": "Mastercard",
+   "tipo": "jugada",
+   "entradas": 12,
+   "invertido": 1200.0,
+   "valor": 1255.69,
+   "valor_voo": 1160.08,
+   "fechas": [
+    "2026-07-28",
+    "2026-07-29",
+    "2026-07-30",
+    "2026-07-31",
+    "2026-08-01",
+    "2026-08-02",
+    "2026-10-30",
+    "2026-10-31",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-09",
+    "2026-11-17"
+   ],
+   "primera": "2026-07-28",
+   "ultima": "2026-11-17",
+   "ret": 0.04641,
+   "ret_voo": -0.03327
   },
   {
    "ticker": "ADA-USD",
@@ -6315,8 +6391,8 @@
    "tipo": "jugada",
    "entradas": 12,
    "invertido": 1200.0,
-   "valor": 729.34,
-   "valor_voo": 1078.9,
+   "valor": 720.95,
+   "valor_voo": 1127.04,
    "fechas": [
     "2026-08-21",
     "2026-08-23",
@@ -6333,34 +6409,8 @@
    ],
    "primera": "2026-08-21",
    "ultima": "2026-10-07",
-   "ret": -0.39222,
-   "ret_voo": -0.10092
-  },
-  {
-   "ticker": "MA",
-   "nombre": "Mastercard",
-   "tipo": "jugada",
-   "entradas": 11,
-   "invertido": 1100.0,
-   "valor": 1141.63,
-   "valor_voo": 1017.1,
-   "fechas": [
-    "2026-07-28",
-    "2026-07-29",
-    "2026-07-30",
-    "2026-07-31",
-    "2026-08-01",
-    "2026-08-02",
-    "2026-10-30",
-    "2026-10-31",
-    "2026-11-04",
-    "2026-11-05",
-    "2026-11-09"
-   ],
-   "primera": "2026-07-28",
-   "ultima": "2026-11-09",
-   "ret": 0.03785,
-   "ret_voo": -0.07536
+   "ret": -0.39921,
+   "ret_voo": -0.0608
   },
   {
    "ticker": "V",
@@ -6368,8 +6418,8 @@
    "tipo": "jugada",
    "entradas": 7,
    "invertido": 700.0,
-   "valor": 730.95,
-   "valor_voo": 647.68,
+   "valor": 744.65,
+   "valor_voo": 676.58,
    "fechas": [
     "2026-07-06",
     "2026-07-17",
@@ -6381,8 +6431,8 @@
    ],
    "primera": "2026-07-06",
    "ultima": "2026-11-08",
-   "ret": 0.04421,
-   "ret_voo": -0.07474
+   "ret": 0.06379,
+   "ret_voo": -0.03346
   },
   {
    "ticker": "META",
@@ -6390,8 +6440,8 @@
    "tipo": "jugada",
    "entradas": 6,
    "invertido": 600.0,
-   "valor": 474.64,
-   "valor_voo": 543.47,
+   "valor": 505.75,
+   "valor_voo": 567.72,
    "fechas": [
     "2026-07-21",
     "2026-09-17",
@@ -6402,8 +6452,8 @@
    ],
    "primera": "2026-07-21",
    "ultima": "2026-10-05",
-   "ret": -0.20893,
-   "ret_voo": -0.09422
+   "ret": -0.15708,
+   "ret_voo": -0.0538
   },
   {
    "ticker": "KO",
@@ -6411,8 +6461,8 @@
    "tipo": "jugada",
    "entradas": 6,
    "invertido": 600.0,
-   "valor": 669.49,
-   "valor_voo": 558.07,
+   "valor": 661.83,
+   "valor_voo": 582.98,
    "fechas": [
     "2026-07-16",
     "2026-07-17",
@@ -6423,8 +6473,8 @@
    ],
    "primera": "2026-07-16",
    "ultima": "2026-08-01",
-   "ret": 0.11582,
-   "ret_voo": -0.06988
+   "ret": 0.10305,
+   "ret_voo": -0.02837
   },
   {
    "ticker": "COST",
@@ -6432,8 +6482,8 @@
    "tipo": "jugada",
    "entradas": 5,
    "invertido": 500.0,
-   "valor": 501.14,
-   "valor_voo": 457.3,
+   "valor": 499.22,
+   "valor_voo": 477.71,
    "fechas": [
     "2026-11-12",
     "2026-11-13",
@@ -6443,8 +6493,8 @@
    ],
    "primera": "2026-11-12",
    "ultima": "2026-11-16",
-   "ret": 0.00228,
-   "ret_voo": -0.0854
+   "ret": -0.00156,
+   "ret_voo": -0.04458
   },
   {
    "ticker": "SOL-USD",
@@ -6452,8 +6502,8 @@
    "tipo": "jugada",
    "entradas": 5,
    "invertido": 500.0,
-   "valor": 367.08,
-   "valor_voo": 455.17,
+   "valor": 353.11,
+   "valor_voo": 475.48,
    "fechas": [
     "2026-07-02",
     "2026-07-03",
@@ -6463,8 +6513,8 @@
    ],
    "primera": "2026-07-02",
    "ultima": "2026-10-04",
-   "ret": -0.26584,
-   "ret_voo": -0.08966
+   "ret": -0.29378,
+   "ret_voo": -0.04904
   },
   {
    "ticker": "AAPL",
@@ -6472,8 +6522,8 @@
    "tipo": "jugada",
    "entradas": 5,
    "invertido": 500.0,
-   "valor": 530.53,
-   "valor_voo": 460.41,
+   "valor": 540.63,
+   "valor_voo": 480.96,
    "fechas": [
     "2026-07-02",
     "2026-07-03",
@@ -6483,8 +6533,8 @@
    ],
    "primera": "2026-07-02",
    "ultima": "2026-09-16",
-   "ret": 0.06106,
-   "ret_voo": -0.07918
+   "ret": 0.08126,
+   "ret_voo": -0.03808
   },
   {
    "ticker": "XOM",
@@ -6492,8 +6542,8 @@
    "tipo": "jugada",
    "entradas": 3,
    "invertido": 300.0,
-   "valor": 265.71,
-   "valor_voo": 274.02,
+   "valor": 260.58,
+   "valor_voo": 286.24,
    "fechas": [
     "2026-09-14",
     "2026-11-01",
@@ -6501,8 +6551,8 @@
    ],
    "primera": "2026-09-14",
    "ultima": "2026-11-02",
-   "ret": -0.1143,
-   "ret_voo": -0.0866
+   "ret": -0.1314,
+   "ret_voo": -0.04587
   },
   {
    "ticker": "MSFT",
@@ -6510,8 +6560,8 @@
    "tipo": "jugada",
    "entradas": 3,
    "invertido": 300.0,
-   "valor": 297.26,
-   "valor_voo": 272.55,
+   "valor": 302.14,
+   "valor_voo": 284.71,
    "fechas": [
     "2026-08-03",
     "2026-08-04",
@@ -6519,8 +6569,8 @@
    ],
    "primera": "2026-08-03",
    "ultima": "2026-08-26",
-   "ret": -0.00913,
-   "ret_voo": -0.0915
+   "ret": 0.00713,
+   "ret_voo": -0.05097
   },
   {
    "ticker": "DIS",
@@ -6528,16 +6578,16 @@
    "tipo": "jugada",
    "entradas": 2,
    "invertido": 200.0,
-   "valor": 201.7,
-   "valor_voo": 188.32,
+   "valor": 205.61,
+   "valor_voo": 196.72,
    "fechas": [
     "2026-11-06",
     "2026-11-07"
    ],
    "primera": "2026-11-06",
    "ultima": "2026-11-07",
-   "ret": 0.0085,
-   "ret_voo": -0.0584
+   "ret": 0.02805,
+   "ret_voo": -0.0164
   },
   {
    "ticker": "TSLA",
@@ -6545,16 +6595,16 @@
    "tipo": "jugada",
    "entradas": 2,
    "invertido": 200.0,
-   "valor": 169.57,
-   "valor_voo": 179.62,
+   "valor": 189.0,
+   "valor_voo": 187.63,
    "fechas": [
     "2026-10-28",
     "2026-10-29"
    ],
    "primera": "2026-10-28",
    "ultima": "2026-10-29",
-   "ret": -0.15215,
-   "ret_voo": -0.1019
+   "ret": -0.055,
+   "ret_voo": -0.06185
   },
   {
    "ticker": "BTC-USD",
@@ -6562,16 +6612,16 @@
    "tipo": "jugada",
    "entradas": 2,
    "invertido": 200.0,
-   "valor": 156.9,
-   "valor_voo": 180.26,
+   "valor": 153.86,
+   "valor_voo": 188.31,
    "fechas": [
     "2026-09-02",
     "2026-09-04"
    ],
    "primera": "2026-09-02",
    "ultima": "2026-09-04",
-   "ret": -0.2155,
-   "ret_voo": -0.0987
+   "ret": -0.2307,
+   "ret_voo": -0.05845
   },
   {
    "ticker": "AMZN",
@@ -6579,16 +6629,16 @@
    "tipo": "jugada",
    "entradas": 2,
    "invertido": 200.0,
-   "valor": 178.17,
-   "valor_voo": 180.03,
+   "valor": 184.36,
+   "valor_voo": 188.07,
    "fechas": [
     "2026-08-04",
     "2026-08-05"
    ],
    "primera": "2026-08-04",
    "ultima": "2026-08-05",
-   "ret": -0.10915,
-   "ret_voo": -0.09985
+   "ret": -0.0782,
+   "ret_voo": -0.05965
   },
   {
    "ticker": "PG",
@@ -6596,15 +6646,15 @@
    "tipo": "jugada",
    "entradas": 1,
    "invertido": 100.0,
-   "valor": 100.62,
-   "valor_voo": 91.86,
+   "valor": 100.76,
+   "valor_voo": 95.96,
    "fechas": [
     "2026-11-10"
    ],
    "primera": "2026-11-10",
    "ultima": "2026-11-10",
-   "ret": 0.0062,
-   "ret_voo": -0.0814
+   "ret": 0.0076,
+   "ret_voo": -0.0404
   },
   {
    "ticker": "INTC",
@@ -6612,15 +6662,15 @@
    "tipo": "jugada",
    "entradas": 1,
    "invertido": 100.0,
-   "valor": 41.69,
-   "valor_voo": 89.41,
+   "valor": 48.5,
+   "valor_voo": 93.4,
    "fechas": [
     "2026-09-27"
    ],
    "primera": "2026-09-27",
    "ultima": "2026-09-27",
-   "ret": -0.5831,
-   "ret_voo": -0.1059
+   "ret": -0.515,
+   "ret_voo": -0.066
   },
   {
    "ticker": "QCOM",
@@ -6628,15 +6678,15 @@
    "tipo": "jugada",
    "entradas": 1,
    "invertido": 100.0,
-   "valor": 74.24,
-   "valor_voo": 89.41,
+   "valor": 81.88,
+   "valor_voo": 93.4,
    "fechas": [
     "2026-09-26"
    ],
    "primera": "2026-09-26",
    "ultima": "2026-09-26",
-   "ret": -0.2576,
-   "ret_voo": -0.1059
+   "ret": -0.1812,
+   "ret_voo": -0.066
   },
   {
    "ticker": "XRP-USD",
@@ -6644,15 +6694,15 @@
    "tipo": "jugada",
    "entradas": 1,
    "invertido": 100.0,
-   "valor": 59.97,
-   "valor_voo": 89.24,
+   "valor": 58.52,
+   "valor_voo": 93.22,
    "fechas": [
     "2026-09-23"
    ],
    "primera": "2026-09-23",
    "ultima": "2026-09-23",
-   "ret": -0.4003,
-   "ret_voo": -0.1076
+   "ret": -0.4148,
+   "ret_voo": -0.0678
   },
   {
    "ticker": "ORCL",
@@ -6660,15 +6710,15 @@
    "tipo": "jugada",
    "entradas": 1,
    "invertido": 100.0,
-   "valor": 61.41,
-   "valor_voo": 90.44,
+   "valor": 68.99,
+   "valor_voo": 94.48,
    "fechas": [
     "2026-09-11"
    ],
    "primera": "2026-09-11",
    "ultima": "2026-09-11",
-   "ret": -0.3859,
-   "ret_voo": -0.0956
+   "ret": -0.3101,
+   "ret_voo": -0.0552
   },
   {
    "ticker": "ETH-USD",
@@ -6676,15 +6726,15 @@
    "tipo": "jugada",
    "entradas": 1,
    "invertido": 100.0,
-   "valor": 70.28,
-   "valor_voo": 89.54,
+   "valor": 68.97,
+   "valor_voo": 93.54,
    "fechas": [
     "2026-09-04"
    ],
    "primera": "2026-09-04",
    "ultima": "2026-09-04",
-   "ret": -0.2972,
-   "ret_voo": -0.1046
+   "ret": -0.3103,
+   "ret_voo": -0.0646
   },
   {
    "ticker": "ADBE",
@@ -6692,15 +6742,15 @@
    "tipo": "jugada",
    "entradas": 1,
    "invertido": 100.0,
-   "valor": 86.94,
-   "valor_voo": 92.56,
+   "valor": 89.45,
+   "valor_voo": 96.69,
    "fechas": [
     "2026-08-02"
    ],
    "primera": "2026-08-02",
    "ultima": "2026-08-02",
-   "ret": -0.1306,
-   "ret_voo": -0.0744
+   "ret": -0.1055,
+   "ret_voo": -0.0331
   },
   {
    "ticker": "UNH",
@@ -6708,138 +6758,165 @@
    "tipo": "jugada",
    "entradas": 1,
    "invertido": 100.0,
-   "valor": 79.9,
-   "valor_voo": 92.8,
+   "valor": 79.01,
+   "valor_voo": 96.94,
    "fechas": [
     "2026-07-03"
    ],
    "primera": "2026-07-03",
    "ultima": "2026-07-03",
-   "ret": -0.201,
-   "ret_voo": -0.072
+   "ret": -0.2099,
+   "ret_voo": -0.0306
   }
  ],
  "antiguedad": {
   "todo": [
    {
     "dias": 1,
-    "n": 382,
-    "ret": -0.00347,
-    "ret_voo": -0.00207,
+    "n": 385,
+    "ret": -0.00363,
+    "ret_voo": -0.00216,
     "supera": 121
    },
    {
     "dias": 3,
-    "n": 382,
-    "ret": -0.00646,
-    "ret_voo": -0.00218,
-    "supera": 110
+    "n": 385,
+    "ret": -0.00688,
+    "ret_voo": -0.00267,
+    "supera": 112
    },
    {
     "dias": 7,
-    "n": 382,
-    "ret": -0.01171,
-    "ret_voo": -0.0039,
-    "supera": 107
+    "n": 385,
+    "ret": -0.01178,
+    "ret_voo": -0.00373,
+    "supera": 106
    },
    {
     "dias": 14,
-    "n": 364,
-    "ret": -0.01377,
-    "ret_voo": -0.00372,
-    "supera": 99
+    "n": 367,
+    "ret": -0.01365,
+    "ret_voo": -0.00367,
+    "supera": 100
    },
    {
     "dias": 30,
-    "n": 315,
-    "ret": -0.03361,
-    "ret_voo": -0.00227,
-    "supera": 71
+    "n": 318,
+    "ret": -0.03346,
+    "ret_voo": -0.00233,
+    "supera": 72
    },
    {
     "dias": 60,
-    "n": 229,
-    "ret": -0.02182,
-    "ret_voo": -0.00217,
+    "n": 232,
+    "ret": -0.02498,
+    "ret_voo": -0.00243,
     "supera": 66
    },
    {
     "dias": 90,
-    "n": 142,
-    "ret": 0.02989,
-    "ret_voo": 0.00029,
-    "supera": 64
+    "n": 145,
+    "ret": 0.02908,
+    "ret_voo": -4e-05,
+    "supera": 65
    }
   ],
   "jugadas": [
    {
     "dias": 1,
-    "n": 257,
-    "ret": -0.00412,
-    "ret_voo": -0.00204,
+    "n": 259,
+    "ret": -0.00433,
+    "ret_voo": -0.00213,
     "supera": 121
    },
    {
     "dias": 3,
-    "n": 257,
-    "ret": -0.0085,
-    "ret_voo": -0.00213,
-    "supera": 110
+    "n": 259,
+    "ret": -0.00887,
+    "ret_voo": -0.00262,
+    "supera": 112
    },
    {
     "dias": 7,
-    "n": 257,
-    "ret": -0.01542,
-    "ret_voo": -0.0038,
-    "supera": 107
+    "n": 259,
+    "ret": -0.0156,
+    "ret_voo": -0.00364,
+    "supera": 106
    },
    {
     "dias": 14,
-    "n": 245,
-    "ret": -0.01859,
-    "ret_voo": -0.00365,
-    "supera": 99
+    "n": 247,
+    "ret": -0.01843,
+    "ret_voo": -0.00361,
+    "supera": 100
    },
    {
     "dias": 30,
-    "n": 212,
-    "ret": -0.04877,
-    "ret_voo": -0.0022,
-    "supera": 71
+    "n": 214,
+    "ret": -0.04851,
+    "ret_voo": -0.00226,
+    "supera": 72
    },
    {
     "dias": 60,
-    "n": 154,
-    "ret": -0.03113,
-    "ret_voo": -0.00192,
+    "n": 156,
+    "ret": -0.03572,
+    "ret_voo": -0.00218,
     "supera": 66
    },
    {
     "dias": 90,
-    "n": 96,
-    "ret": 0.04446,
-    "ret_voo": 0.00067,
-    "supera": 64
+    "n": 98,
+    "ret": 0.04343,
+    "ret_voo": 0.00034,
+    "supera": 65
    }
   ]
  },
  "resumen": [
   {
    "horizonte": "1m",
-   "evaluaciones": 322,
+   "evaluaciones": 325,
    "supera_voo": 71,
-   "ret_modelo": -0.02715,
-   "ret_voo": 0.00068
+   "ret_modelo": -0.02841,
+   "ret_voo": 0.00011
   },
   {
    "horizonte": "1s",
-   "evaluaciones": 382,
+   "evaluaciones": 385,
    "supera_voo": 104,
-   "ret_modelo": -0.00929,
-   "ret_voo": -0.00119
+   "ret_modelo": -0.00939,
+   "ret_voo": -0.00129
   }
  ],
  "evaluaciones": [
+  {
+   "fecha_reco": "2026-11-17",
+   "ticker": "LLY",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.03599,
+   "ret_voo": -0.01379,
+   "nombre": "Eli Lilly"
+  },
+  {
+   "fecha_reco": "2026-11-17",
+   "ticker": "MA",
+   "tipo": "jugada",
+   "horizonte": "1s",
+   "ret": -0.01587,
+   "ret_voo": -0.01379,
+   "nombre": "Mastercard"
+  },
+  {
+   "fecha_reco": "2026-11-17",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1s",
+   "ret": -0.01379,
+   "ret_voo": -0.01379,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
   {
    "fecha_reco": "2026-11-16",
    "ticker": "COST",
@@ -7364,6 +7441,15 @@
   },
   {
    "fecha_reco": "2026-10-27",
+   "ticker": "CRM",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.2301,
+   "ret_voo": -0.06164,
+   "nombre": "Salesforce"
+  },
+  {
+   "fecha_reco": "2026-10-27",
    "ticker": "PLTR",
    "tipo": "jugada",
    "horizonte": "1s",
@@ -7373,11 +7459,29 @@
   },
   {
    "fecha_reco": "2026-10-27",
+   "ticker": "PLTR",
+   "tipo": "jugada",
+   "horizonte": "1m",
+   "ret": -0.19811,
+   "ret_voo": -0.06164,
+   "nombre": "Palantir"
+  },
+  {
+   "fecha_reco": "2026-10-27",
    "ticker": "VOO",
    "tipo": "núcleo",
    "horizonte": "1s",
    "ret": -0.0229,
    "ret_voo": -0.0229,
+   "nombre": "Vanguard S&P 500 ETF"
+  },
+  {
+   "fecha_reco": "2026-10-27",
+   "ticker": "VOO",
+   "tipo": "núcleo",
+   "horizonte": "1m",
+   "ret": -0.06164,
+   "ret_voo": -0.06164,
    "nombre": "Vanguard S&P 500 ETF"
   },
   {

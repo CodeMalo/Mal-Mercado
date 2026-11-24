@@ -1,132 +1,132 @@
 {
- "actualizado": "2026-11-23",
- "corte": "2026-11-16",
- "semana_de": "2026-11-16",
+ "actualizado": "2026-11-24",
+ "corte": "2026-11-17",
+ "semana_de": "2026-11-17",
  "conversacion": [
   {
    "ticker": "NVDA",
    "nombre": "NVIDIA",
-   "menciones": 2078,
-   "sentimiento": 0.39
+   "menciones": 3054,
+   "sentimiento": 0.194
   },
   {
    "ticker": "AMD",
    "nombre": "AMD",
-   "menciones": 463,
-   "sentimiento": 0.676
-  },
-  {
-   "ticker": "MSFT",
-   "nombre": "Microsoft",
-   "menciones": 292,
-   "sentimiento": 0.01
+   "menciones": 410,
+   "sentimiento": 0.489
   },
   {
    "ticker": "MU",
    "nombre": "Micron",
-   "menciones": 216,
-   "sentimiento": 0.709
-  },
-  {
-   "ticker": "AAPL",
-   "nombre": "Apple",
-   "menciones": 162,
-   "sentimiento": 0.064
+   "menciones": 354,
+   "sentimiento": 0.722
   },
   {
    "ticker": "VOO",
    "nombre": "Vanguard S&P 500 ETF",
-   "menciones": 159,
-   "sentimiento": 0.318
+   "menciones": 273,
+   "sentimiento": 0.515
   },
   {
-   "ticker": "TSLA",
-   "nombre": "Tesla",
-   "menciones": 152,
-   "sentimiento": 0.464
-  },
-  {
-   "ticker": "MSTR",
-   "nombre": "MicroStrategy",
-   "menciones": 145,
-   "sentimiento": -0.118
+   "ticker": "MSFT",
+   "nombre": "Microsoft",
+   "menciones": 244,
+   "sentimiento": 0.168
   },
   {
    "ticker": "GOOGL",
    "nombre": "Alphabet",
-   "menciones": 138,
-   "sentimiento": 0.543
+   "menciones": 238,
+   "sentimiento": 0.387
   },
   {
-   "ticker": "AMZN",
-   "nombre": "Amazon",
-   "menciones": 132,
-   "sentimiento": 0.481
+   "ticker": "AAPL",
+   "nombre": "Apple",
+   "menciones": 217,
+   "sentimiento": 0.001
+  },
+  {
+   "ticker": "TSLA",
+   "nombre": "Tesla",
+   "menciones": 202,
+   "sentimiento": 0.253
+  },
+  {
+   "ticker": "MSTR",
+   "nombre": "MicroStrategy",
+   "menciones": 196,
+   "sentimiento": 0.035
+  },
+  {
+   "ticker": "INTC",
+   "nombre": "Intel",
+   "menciones": 194,
+   "sentimiento": -0.047
   }
  ],
  "radar": [
   {
-   "ticker": "YOU",
-   "menciones_reddit": 18,
-   "ret_1m": 0.2708,
-   "ret_3m": 0.3095
-  },
-  {
    "ticker": "DTE",
-   "menciones_reddit": 20,
-   "ret_1m": 0.0888,
-   "ret_3m": -0.0011
-  },
-  {
-   "ticker": "PR",
-   "menciones_reddit": 22,
-   "ret_1m": -0.0237,
-   "ret_3m": 0.0461
-  },
-  {
-   "ticker": "HR",
-   "menciones_reddit": 30,
-   "ret_1m": 0.1269,
-   "ret_3m": 0.0215
+   "menciones_reddit": 56,
+   "ret_1m": 0.0785,
+   "ret_3m": 0.007
   },
   {
    "ticker": "IT",
-   "menciones_reddit": 22,
-   "ret_1m": -0.0731,
-   "ret_3m": 0.0723
+   "menciones_reddit": 65,
+   "ret_1m": -0.0868,
+   "ret_3m": 0.03
+  },
+  {
+   "ticker": "AM",
+   "menciones_reddit": 29,
+   "ret_1m": -0.001,
+   "ret_3m": -0.0912
+  },
+  {
+   "ticker": "ET",
+   "menciones_reddit": 52,
+   "ret_1m": -0.0381,
+   "ret_3m": -0.0902
+  },
+  {
+   "ticker": "SPY",
+   "menciones_reddit": 339,
+   "ret_1m": -0.0305,
+   "ret_3m": -0.0334
   }
  ],
- "cierre": "2026-11-23",
+ "cierre": "2026-11-24",
  "base": 100,
  "total": {
-  "entradas": 382,
-  "invertido": 38200,
-  "valor": 32310.51,
-  "valor_voo": 34719.93,
-  "ganan": 87,
+  "entradas": 385,
+  "invertido": 38500,
+  "valor": 34118.93,
+  "valor_voo": 36562.55,
+  "ganan": 83,
   "activos": 30,
-  "ret": -0.15418,
-  "ret_voo": -0.0911
+  "ret": -0.11379,
+  "ret_voo": -0.05032
  },
  "total_nucleo": {
-  "entradas": 125,
-  "invertido": 12500,
-  "valor": 11359.2,
-  "valor_voo": 11359.2,
+  "entradas": 126,
+  "invertido": 12600,
+  "valor": 11963.85,
+  "valor_voo": 11963.85,
   "ganan": 0,
   "activos": 1,
-  "ret": -0.09126,
-  "ret_voo": -0.09126
+  "ret": -0.05049,
+  "ret_voo": -0.05049
  },
  "total_jugadas": {
-  "entradas": 257,
-  "invertido": 25700,
-  "valor": 20951.31,
-  "valor_voo": 23360.73,
-  "ganan": 87,
+  "entradas": 259,
+  "invertido": 25900,
+  "valor": 22155.08,
+  "valor_voo": 24598.7,
+  "ganan": 83,
   "activos": 29,
-  "ret": -0.18477,
-  "ret_voo": -0.09102
+  "ret": -0.14459,
+  "ret_voo": -0.05024
  },
  "serie": [
   {
@@ -611,23 +611,28 @@
   },
   {
    "fecha": "2026-11-17",
-   "invertido": 38200,
-   "valor": 34912.08
+   "invertido": 38500,
+   "valor": 35207.5
   },
   {
    "fecha": "2026-11-18",
-   "invertido": 38200,
-   "valor": 34627.46
+   "invertido": 38500,
+   "valor": 34919.96
   },
   {
    "fecha": "2026-11-19",
-   "invertido": 38200,
-   "valor": 33677.62
+   "invertido": 38500,
+   "valor": 33963.41
   },
   {
    "fecha": "2026-11-20",
-   "invertido": 38200,
-   "valor": 32264.82
+   "invertido": 38500,
+   "valor": 32546.89
+  },
+  {
+   "fecha": "2026-11-23",
+   "invertido": 38500,
+   "valor": 34156.38
   }
  ]
 }
